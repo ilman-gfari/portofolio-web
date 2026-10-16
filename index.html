@@ -1,0 +1,421 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Ilman Gifari - Playground</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: satu halaman panjang, kolom 1080px, kartu studi kasus bertumpuk dengan mini-grafik di tiap kartu. */
+:root {
+  --bg: #eef2f0;
+  --surface: #f9fbfa;
+  --fg: #0e1b17;
+  --muted: #53635d;
+  --line: #cfd9d4;
+  --accent: #0a6b54;
+  --accent-ink: #ffffff;
+  --accent-soft: #d7ebe3;
+  --bar: #0a6b54;
+  --bar-dim: #b9d3c8;
+  --font-display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0c1613;
+    --surface: #131f1b;
+    --fg: #e7efeb;
+    --muted: #93a79f;
+    --line: #263832;
+    --accent: #4fd1a5;
+    --accent-ink: #06241b;
+    --accent-soft: #163a2f;
+    --bar: #4fd1a5;
+    --bar-dim: #2c4a3f;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0c1613;
+  --surface: #131f1b;
+  --fg: #e7efeb;
+  --muted: #93a79f;
+  --line: #263832;
+  --accent: #4fd1a5;
+  --accent-ink: #06241b;
+  --accent-soft: #163a2f;
+  --bar: #4fd1a5;
+  --bar-dim: #2c4a3f;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0;
+}
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: 1080px; margin: 0 auto; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.08; letter-spacing: -0.02em; }
+p { margin: 0; }
+.mono { font-family: var(--font-mono); }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+
+/* nav */
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 20px; flex-wrap: wrap; }
+.brand { font-family: var(--font-display); font-weight: 800; font-size: 20px; text-decoration: none; letter-spacing: -0.02em; }
+.brand span { color: var(--accent); }
+.nav ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; font-size: 14px; }
+.nav a.link { text-decoration: none; color: var(--muted); }
+.nav a.link:hover { color: var(--fg); }
+
+/* hero */
+.hero { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 48px; align-items: center; padding-block: 56px 72px; }
+.pill { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 13px; background: var(--surface); }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+.hero h1 { font-size: clamp(2.6rem, 7vw, 5rem); font-weight: 800; margin-top: 20px; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero .lead { margin-top: 22px; font-size: 18px; color: var(--muted); max-width: 52ch; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+.tag { font-family: var(--font-mono); font-size: 12.5px; padding: 4px 10px; background: var(--accent-soft); border-radius: 6px; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.btn { display: inline-block; padding: 12px 22px; border-radius: 8px; font-weight: 600; font-size: 15px; text-decoration: none; border: 1px solid var(--fg); cursor: pointer; font-family: var(--font-body); }
+.btn.primary { background: var(--fg); color: var(--bg); }
+.btn.primary:hover { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn.ghost { background: transparent; color: var(--fg); }
+.btn.ghost:hover { background: var(--surface); }
+
+/* hero chart */
+.board { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px; min-width: 0; }
+.board-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 18px; }
+.board-title { font-family: var(--font-display); font-weight: 700; font-size: 17px; }
+.board svg { width: 100%; height: auto; display: block; }
+.board-foot { margin-top: 14px; font-size: 12.5px; color: var(--muted); font-family: var(--font-mono); }
+
+/* marquee */
+.strip { border-block: 1px solid var(--line); overflow: hidden; padding-block: 14px; margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px))); }
+.strip-track { display: flex; gap: 40px; width: max-content; animation: slide 38s linear infinite; font-family: var(--font-mono); font-size: 14px; color: var(--muted); }
+.strip-track span::before { content: "+ "; color: var(--accent); }
+@keyframes slide { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .strip-track { animation: none; } html { scroll-behavior: auto; } }
+
+section { padding-block: 80px 0; }
+.sec-head { margin-bottom: 36px; max-width: 60ch; }
+.sec-head h2 { font-size: clamp(1.9rem, 4.2vw, 2.9rem); font-weight: 800; margin-top: 10px; }
+.sec-head p { color: var(--muted); margin-top: 12px; font-size: 17px; }
+
+/* case studies */
+.cases { display: grid; gap: 18px; }
+.case { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 32px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 28px; }
+.case-meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.role { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.case h3 { font-size: 1.7rem; font-weight: 700; margin-top: 10px; }
+.case .desc { color: var(--muted); margin-top: 12px; max-width: 60ch; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 18px; }
+.chip { font-size: 12.5px; padding: 3px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 18px; align-content: start; }
+.stat b { display: block; font-family: var(--font-display); font-size: 2rem; font-weight: 800; line-height: 1; font-variant-numeric: tabular-nums; }
+.stat span { font-size: 12.5px; color: var(--muted); }
+.mini { grid-column: 1 / -1; display: flex; align-items: flex-end; gap: 5px; height: 54px; margin-top: 4px; }
+.mini i { flex: 1; background: var(--bar-dim); border-radius: 2px 2px 0 0; display: block; }
+.mini i.hi { background: var(--bar); }
+.soon { margin-top: 18px; padding: 22px; border: 1px dashed var(--line); border-radius: 14px; text-align: center; color: var(--muted); font-family: var(--font-mono); font-size: 14px; }
+
+/* approach */
+.steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+.step { padding: 24px; border-left: 1px solid var(--line); min-width: 0; }
+.step:first-child { border-left: 0; }
+.step .k { font-family: var(--font-mono); font-size: 12px; color: var(--accent); letter-spacing: 0.1em; }
+.step h3 { font-size: 1.15rem; margin-top: 12px; font-weight: 700; }
+.step p { font-size: 14.5px; color: var(--muted); margin-top: 8px; }
+.bring { margin-top: 28px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 24px; align-items: start; }
+.bring h3 { font-size: 1.5rem; font-weight: 700; }
+.bring ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.bring li { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 8px; }
+.bring li::before { content: ""; width: 14px; height: 8px; margin-top: 8px; border-left: 2.5px solid var(--accent); border-bottom: 2.5px solid var(--accent); transform: rotate(-45deg) scale(.8); }
+
+/* contact */
+.contact { background: var(--fg); color: var(--bg); border-radius: 18px; padding: clamp(28px, 6vw, 64px); display: grid; gap: 28px; }
+.contact h2 { font-size: clamp(2rem, 5vw, 3.4rem); font-weight: 800; }
+.contact p { opacity: .78; max-width: 48ch; }
+.contact .row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.contact .addr { font-family: var(--font-mono); font-size: 15px; padding: 12px 16px; border: 1px solid color-mix(in srgb, var(--bg) 35%, transparent); border-radius: 8px; user-select: all; overflow-wrap: anywhere; }
+.contact .btn { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.contact .btn.alt { background: transparent; color: var(--bg); border-color: color-mix(in srgb, var(--bg) 45%, transparent); }
+footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-block: 36px; color: var(--muted); font-size: 13.5px; }
+
+@media (max-width: 860px) {
+  .hero { grid-template-columns: minmax(0, 1fr); gap: 36px; padding-block: 36px 52px; }
+  .case { grid-template-columns: minmax(0, 1fr); padding: 22px; }
+  .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .step:nth-child(3) { border-left: 0; }
+  .step:nth-child(n+3) { border-top: 1px solid var(--line); }
+  .bring { grid-template-columns: minmax(0, 1fr); }
+  section { padding-block: 60px 0; }
+}
+@media (max-width: 480px) {
+  .steps { grid-template-columns: minmax(0, 1fr); }
+  .step { border-left: 0; }
+  .step:nth-child(n+2) { border-top: 1px solid var(--line); }
+  .nav ul { gap: 16px; }
+}
+</style>
+
+<div class="wrap">
+  <header class="nav">
+    <a class="brand" href="#top" id="top">ilman<span>.data</span></a>
+    <ul>
+      <li><a class="link" href="#kerja">Karya</a></li>
+      <li><a class="link" href="#cara">Cara Kerja</a></li>
+      <li><a class="link" href="#kontak">Kontak</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <span class="pill"><span class="dot"></span> Terbuka untuk peluang baru</span>
+        <h1>Data berantakan jadi <em>keputusan bisnis.</em></h1>
+        <p class="lead">Saya Dimas Arkana, analis data. Saya mengerjakan analitik dari ujung ke ujung: mengumpulkan dan membersihkan data, lalu menyusun temuan yang bisa langsung dipakai tim untuk bertindak.</p>
+        <div class="tags">
+          <span class="tag">Business Intelligence</span>
+          <span class="tag">Analisis Data</span>
+          <span class="tag">Python</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Excel</span>
+          <span class="tag">Visualisasi Data</span>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="#kerja">Lihat Studi Kasus</a>
+          <a class="btn ghost" href="#kontak">Hubungi Saya</a>
+        </div>
+      </div>
+
+      <div class="board" aria-label="Contoh grafik penjualan bulanan">
+        <div class="board-head">
+          <span class="board-title">Penjualan per bulan</span>
+          <span class="eyebrow">Rp juta</span>
+        </div>
+        <svg viewBox="0 0 360 220" role="img" aria-label="Grafik batang penjualan Januari sampai Desember, puncak di Oktober sebesar 480 juta rupiah">
+          <g stroke="var(--line)" stroke-width="1">
+            <line x1="34" y1="20" x2="352" y2="20"/>
+            <line x1="34" y1="65" x2="352" y2="65"/>
+            <line x1="34" y1="110" x2="352" y2="110"/>
+            <line x1="34" y1="155" x2="352" y2="155"/>
+            <line x1="34" y1="190" x2="352" y2="190"/>
+          </g>
+          <g fill="var(--muted)" font-family="IBM Plex Mono, monospace" font-size="10" text-anchor="end">
+            <text x="28" y="23">500</text>
+            <text x="28" y="68">375</text>
+            <text x="28" y="113">250</text>
+            <text x="28" y="158">125</text>
+            <text x="28" y="193">0</text>
+          </g>
+          <g fill="var(--bar-dim)">
+            <rect x="42" y="124" width="18" height="66" rx="2"/>
+            <rect x="68" y="116" width="18" height="74" rx="2"/>
+            <rect x="94" y="108" width="18" height="82" rx="2"/>
+            <rect x="120" y="112" width="18" height="78" rx="2"/>
+            <rect x="146" y="98" width="18" height="92" rx="2"/>
+            <rect x="172" y="92" width="18" height="98" rx="2"/>
+            <rect x="198" y="86" width="18" height="104" rx="2"/>
+            <rect x="224" y="76" width="18" height="114" rx="2"/>
+            <rect x="250" y="62" width="18" height="128" rx="2"/>
+            <rect x="302" y="44" width="18" height="146" rx="2"/>
+            <rect x="328" y="52" width="18" height="138" rx="2"/>
+          </g>
+          <rect x="276" y="30" width="18" height="160" rx="2" fill="var(--bar)"/>
+          <g fill="var(--muted)" font-family="IBM Plex Mono, monospace" font-size="9.5" text-anchor="middle">
+            <text x="51" y="206">Jan</text>
+            <text x="103" y="206">Mar</text>
+            <text x="155" y="206">Mei</text>
+            <text x="207" y="206">Jul</text>
+            <text x="259" y="206">Sep</text>
+            <text x="337" y="206">Des</text>
+          </g>
+          <text x="285" y="22" fill="var(--fg)" font-family="IBM Plex Mono, monospace" font-size="10.5" font-weight="500" text-anchor="middle">480</text>
+        </svg>
+        <p class="board-foot">Contoh data. Puncak di bulan Oktober.</p>
+      </div>
+    </div>
+
+    <div class="strip" aria-hidden="true">
+      <div class="strip-track">
+        <span>Python</span><span>SQL</span><span>Excel</span><span>Google Sheets</span><span>Visualisasi Data</span><span>Business Intelligence</span><span>Web Scraping</span><span>Pembersihan Data</span><span>Analisis Statistik</span><span>Desain Dashboard</span>
+        <span>Python</span><span>SQL</span><span>Excel</span><span>Google Sheets</span><span>Visualisasi Data</span><span>Business Intelligence</span><span>Web Scraping</span><span>Pembersihan Data</span><span>Analisis Statistik</span><span>Desain Dashboard</span>
+      </div>
+    </div>
+
+    <section id="kerja">
+      <div class="sec-head">
+        <p class="eyebrow">Studi kasus</p>
+        <h2>Data nyata, masalah nyata, temuan yang bisa dipakai.</h2>
+        <p>Setiap studi kasus mensimulasikan pekerjaan analis di sebuah perusahaan, dari data mentah sampai rekomendasi.</p>
+      </div>
+
+      <div class="cases">
+        <article class="case">
+          <div>
+            <div class="case-meta"><span class="role">Analis Data Senior</span></div>
+            <h3>Jaringan Restoran Cepat Saji</h3>
+            <p class="desc">Analisis kinerja outlet dan optimasi bauran kanal penjualan di ratusan lokasi. Data lokasi dikumpulkan dengan scraping, lalu dicocokkan dengan laporan keuangan publik.</p>
+            <div class="chips"><span class="chip">Scraping Google Maps</span><span class="chip">Laporan keuangan</span><span class="chip">Bauran kanal</span></div>
+          </div>
+          <div class="stats">
+            <div class="stat"><b>500+</b><span>Outlet dianalisis</span></div>
+            <div class="stat"><b>3</b><span>Sumber data</span></div>
+            <div class="stat"><b>120rb</b><span>Baris transaksi</span></div>
+            <div class="stat"><b>8</b><span>Rekomendasi</span></div>
+            <div class="mini" aria-hidden="true"><i style="height:35%"></i><i style="height:48%"></i><i style="height:42%"></i><i style="height:60%"></i><i class="hi" style="height:92%"></i><i style="height:55%"></i><i style="height:66%"></i><i style="height:50%"></i></div>
+          </div>
+        </article>
+
+        <article class="case">
+          <div>
+            <div class="case-meta"><span class="role">Analis Data Penjualan</span></div>
+            <h3>Produsen Perawatan Tubuh</h3>
+            <p class="desc">Analisis persaingan penjualan untuk perusahaan barang konsumsi dengan beberapa merek di banyak kategori. Katalog produk diambil dari marketplace, penjualan 12 bulan disimulasikan di 10 wilayah dan 6 kanal.</p>
+            <div class="chips"><span class="chip">Katalog marketplace</span><span class="chip">Penjualan 12 bulan</span><span class="chip">Analisis kompetitor</span></div>
+          </div>
+          <div class="stats">
+            <div class="stat"><b>110+</b><span>SKU dipantau</span></div>
+            <div class="stat"><b>45</b><span>Merek dilacak</span></div>
+            <div class="stat"><b>10</b><span>Wilayah</span></div>
+            <div class="stat"><b>6</b><span>Rekomendasi</span></div>
+            <div class="mini" aria-hidden="true"><i style="height:70%"></i><i style="height:62%"></i><i class="hi" style="height:95%"></i><i style="height:58%"></i><i style="height:44%"></i><i style="height:52%"></i><i style="height:40%"></i><i style="height:34%"></i></div>
+          </div>
+        </article>
+
+        <article class="case">
+          <div>
+            <div class="case-meta"><span class="role">Analis Data Legal</span></div>
+            <h3>Waralaba Mi dan Minuman</h3>
+            <p class="desc">Pemantauan kepatuhan hukum di ratusan outlet: izin bangunan, masa sewa yang akan habis, sertifikasi halal, dan tingkat sengketa di 34 provinsi.</p>
+            <div class="chips"><span class="chip">Izin bangunan</span><span class="chip">Masa sewa</span><span class="chip">Sertifikasi halal</span></div>
+          </div>
+          <div class="stats">
+            <div class="stat"><b>550+</b><span>Outlet dipantau</span></div>
+            <div class="stat"><b>34</b><span>Provinsi</span></div>
+            <div class="stat"><b>27</b><span>Sewa kritis</span></div>
+            <div class="stat"><b>5</b><span>Rekomendasi</span></div>
+            <div class="mini" aria-hidden="true"><i style="height:30%"></i><i style="height:38%"></i><i style="height:34%"></i><i style="height:46%"></i><i style="height:40%"></i><i class="hi" style="height:88%"></i><i style="height:52%"></i><i style="height:36%"></i></div>
+          </div>
+        </article>
+
+        <article class="case">
+          <div>
+            <div class="case-meta"><span class="role">Sales Support dan Analis</span></div>
+            <h3>Merek Sepatu Premium</h3>
+            <p class="desc">Analisis penjualan kuartal pertama untuk merek sepatu lokal. Data dari toko department store, jaringan distributor, marketplace, dan bazar direkonsiliasi, lalu ulasan pelanggan dipakai untuk menguji klaim kenyamanan produk.</p>
+            <div class="chips"><span class="chip">4 kanal penjualan</span><span class="chip">Rekonsiliasi data</span><span class="chip">Analisis ulasan</span></div>
+          </div>
+          <div class="stats">
+            <div class="stat"><b>4</b><span>Kanal penjualan</span></div>
+            <div class="stat"><b>890</b><span>Ulasan pelanggan</span></div>
+            <div class="stat"><b>150+</b><span>Jaringan distributor</span></div>
+            <div class="stat"><b>7</b><span>Rekomendasi</span></div>
+            <div class="mini" aria-hidden="true"><i style="height:44%"></i><i style="height:60%"></i><i style="height:52%"></i><i class="hi" style="height:90%"></i><i style="height:68%"></i><i style="height:74%"></i><i style="height:58%"></i><i style="height:64%"></i></div>
+          </div>
+        </article>
+
+        <article class="case">
+          <div>
+            <div class="case-meta"><span class="role">Operation Analyst</span></div>
+            <h3>Jaringan Kedai Kopi</h3>
+            <p class="desc">Analitik performa gerai untuk ratusan outlet: transaksi, performa menu, bauran kanal pesanan, dan jarak antar gerai dengan rumus Haversine untuk melihat gerai yang saling berebut pelanggan.</p>
+            <div class="chips"><span class="chip">Data API</span><span class="chip">Jarak Haversine</span><span class="chip">6 kanal pesanan</span></div>
+          </div>
+          <div class="stats">
+            <div class="stat"><b>350</b><span>Outlet dianalisis</span></div>
+            <div class="stat"><b>6</b><span>Kanal pesanan</span></div>
+            <div class="stat"><b>90+</b><span>Item menu</span></div>
+            <div class="stat"><b>9</b><span>Rekomendasi</span></div>
+            <div class="mini" aria-hidden="true"><i style="height:28%"></i><i style="height:40%"></i><i style="height:56%"></i><i style="height:48%"></i><i style="height:64%"></i><i style="height:72%"></i><i class="hi" style="height:96%"></i><i style="height:80%"></i></div>
+          </div>
+        </article>
+      </div>
+      <p class="soon">Studi kasus lainnya segera hadir</p>
+    </section>
+
+    <section id="cara">
+      <div class="sec-head">
+        <p class="eyebrow">Cara kerja</p>
+        <h2>Mulai dari bisnis, baru ke data.</h2>
+        <p>Konteks bisnis lebih dulu, angka yang bisa dipertanggungjawabkan, dan dampak yang dihitung.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="k">PAHAMI</span><h3>Konteks bisnis dulu</h3><p>Pahami perusahaan, para pemangku kepentingan, dan keputusan apa yang perlu diambil sebelum menyentuh data.</p></div>
+        <div class="step"><span class="k">KUMPULKAN</span><h3>Data nyata, sumber nyata</h3><p>Scraping Google Maps, data marketplace, laporan keuangan publik. Tanpa dataset mainan.</p></div>
+        <div class="step"><span class="k">OLAH</span><h3>Pipeline ujung ke ujung</h3><p>Pengumpulan, pembersihan, analisis, visualisasi, lalu rekomendasi yang bisa dijalankan.</p></div>
+        <div class="step"><span class="k">UKUR</span><h3>Dampak terhitung</h3><p>Setiap rekomendasi disertai angka. Bukan hanya "lakukan X", tapi "lakukan X untuk menghemat Rp Y miliar".</p></div>
+      </div>
+      <div class="bring">
+        <h3>Yang saya bawa</h3>
+        <ul>
+          <li>Analitik ujung ke ujung, dari pengumpulan dan pembersihan sampai rekomendasi</li>
+          <li>Data dari sumber nyata, bukan dataset latihan</li>
+          <li>Konteks bisnis dulu, eksekusi teknis menyusul</li>
+          <li>Rekomendasi dengan proyeksi dampak yang terukur</li>
+          <li>Studi kasus siap portofolio dengan laporan HTML interaktif</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="kontak">
+      <div class="contact">
+        <div>
+          <p class="eyebrow" style="color:inherit;opacity:.7">Kontak</p>
+          <h2 style="margin-top:10px">Mari terhubung.</h2>
+        </div>
+        <p>Terbuka untuk posisi analis data, baik di dalam negeri maupun jarak jauh.</p>
+        <div class="row">
+          <span class="addr" id="email-text">gifariilman79@gmail.com</span>
+          <button class="btn" id="copy-btn" type="button">Salin email</button>
+          <a class="btn alt" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 ilman gifari</span>
+    <span>Studi kasus bersifat simulasi</span>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var btn = document.getElementById("copy-btn");
+  var txt = document.getElementById("email-text");
+  if (!btn || !txt) return;
+  btn.addEventListener("click", function () {
+    var done = function () {
+      btn.textContent = "Tersalin";
+      setTimeout(function () { btn.textContent = "Salin email"; }, 1800);
+    };
+    var fallback = function () {
+      try {
+        var r = document.createRange();
+        r.selectNodeContents(txt);
+        var s = window.getSelection();
+        s.removeAllRanges();
+        s.addRange(r);
+      } catch (e) {}
+    };
+    try {
+      navigator.clipboard.writeText(txt.textContent.trim()).then(done, fallback);
+    } catch (e) { fallback(); }
+  });
+})();
+</script>
+
+</body></html>
