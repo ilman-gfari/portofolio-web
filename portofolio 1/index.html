@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nama Kamu — Data Analytics Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--cb:#eef4ff;--cbd:#3b82f6;--ct:#1e3a5f;--card:#fff;--tx:#1c2a24;--mut:#6b7a73;--bd:#e3e9e6;--g:#166534;--g2:#15803d;--soft:#eaf5ee;
+--c1:#22c55e;--c2:#3b82f6;--c3:#f59e0b;--c4:#ef4444;--c5:#8b5cf6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1713;--card:#17211c;--tx:#e6efe9;--mut:#8da198;--bd:#26342d;--soft:#16281f;--cb:#16233a;--ct:#cfe0ff}}
+:root[data-theme="dark"]{--bg:#0f1713;--card:#17211c;--tx:#e6efe9;--mut:#8da198;--bd:#26342d;--soft:#16281f;--cb:#16233a;--ct:#cfe0ff}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.7 "Plus Jakarta Sans",-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+aside{position:fixed;inset:0 auto 0 0;width:230px;background:var(--card);border-right:1px solid var(--bd);padding:20px 14px;overflow-y:auto}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:16px;line-height:1.2;color:var(--g2);margin-bottom:14px}
+.logo{width:30px;height:30px;border-radius:8px;background:var(--g2);color:#fff;display:grid;place-items:center;font-size:15px;flex:none}
+.lbl{font-size:11px;letter-spacing:.08em;color:var(--mut);margin:18px 8px 6px}
+nav a{display:block;padding:8px 10px;border-radius:8px;color:var(--tx);text-decoration:none;font-size:14px;cursor:pointer}
+nav a:hover{background:var(--bg)}
+nav a.on{background:var(--soft);color:var(--g2);font-weight:600;box-shadow:inset 3px 0 0 var(--g2)}
+main{margin-left:230px;min-height:100vh}
+.top{display:flex;align-items:center;justify-content:space-between;padding:12px 28px;background:var(--card);border-bottom:1px solid var(--bd);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+.top b{font-size:14px}
+.pill{background:var(--soft);color:var(--g2);font-size:12px;font-weight:600;padding:2px 12px;border-radius:99px;position:absolute;left:50%;transform:translateX(-50%)}
+.id{background:var(--g2);color:#fff;font-size:12px;font-weight:700;padding:3px 12px;border-radius:6px}
+.top{position:sticky}
+.btn{background:var(--g2);color:#fff;border:0;border-radius:6px;padding:3px 10px;font-size:12px;cursor:pointer}
+.wrap{max-width:960px;margin:0 auto;padding:24px 28px 60px}
+.hero{background:linear-gradient(120deg,#14532d,#16a34a);color:#fff;border-radius:14px;padding:30px 34px;margin-bottom:20px;display:flex;align-items:center;gap:26px}
+.hero .logo{width:44px;height:44px;font-size:20px;background:rgba(255,255,255,.18);flex:none}
+.hero h1{margin:0 0 6px;font-size:24px;font-weight:800}.hero p{margin:0;opacity:.9;font-size:14px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-bottom:28px}
+.kpi{background:var(--card);border:1px solid var(--bd);border-top:3px solid var(--k);border-radius:10px;padding:18px 12px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.kpi b{display:block;font-size:26px;font-weight:800}.kpi span{font-size:12px;color:var(--mut);display:block}.kpi i{font-style:normal;font-size:10.5px;color:var(--mut);opacity:.75}
+h2{font-size:19px;margin:30px 0 8px;padding-bottom:8px;border-bottom:1px solid var(--bd)}
+.note{background:var(--soft);border-left:3px solid var(--g2);padding:10px 14px;border-radius:6px;font-size:14px;margin:12px 0}
+#findings .note{background:var(--cb);border-left-color:var(--cbd);color:var(--ct);font-size:13px}
+h2{font-weight:700}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:18px;margin-bottom:14px}
+.card h3{margin:0 0 4px;font-size:16px}
+.tag{display:inline-block;font-size:11px;background:var(--bg);border:1px solid var(--bd);border-radius:99px;padding:1px 9px;margin:6px 6px 0 0;color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+a.l{color:var(--g2)}
+.ct{font-weight:700;font-size:13px;margin-bottom:12px}
+.bars{display:grid;gap:7px}.bar{display:grid;grid-template-columns:96px 1fr 44px;gap:10px;align-items:center;font-size:12px}
+.bar .t{height:16px;background:var(--bg);border-radius:3px}.bar .f{height:100%;background:#3b82f6;border-radius:3px;width:0;transition:width .9s cubic-bezier(.2,.7,.2,1)}
+.bar.hl .f{background:#16a34a}.bar em{font-style:normal;color:var(--mut);text-align:right}
+.cols{display:flex;align-items:flex-end;gap:6px;height:180px}.col{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;font-size:10px;color:var(--mut)}
+.col .f{width:100%;background:#3b82f6;border-radius:3px 3px 0 0;transition:height .9s cubic-bezier(.2,.7,.2,1)}
+.note-r{background:var(--cb);border-left:3px solid var(--cbd);color:var(--ct);padding:10px 14px;border-radius:6px;font-size:13px;margin-bottom:10px}
+section{display:none}section.on{display:block;animation:fi .5s ease both}
+@keyframes fi{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.kpi{animation:fi .6s ease both}.kpi:nth-child(2){animation-delay:.08s}.kpi:nth-child(3){animation-delay:.16s}.kpi:nth-child(4){animation-delay:.24s}.kpi:nth-child(5){animation-delay:.32s}
+.menu{display:none}
+@media(max-width:780px){
+aside{transform:translateX(-100%);transition:.2s;z-index:10}aside.open{transform:none}
+main{margin-left:0}.menu{display:inline-block;background:none;border:1px solid var(--bd);color:var(--tx);border-radius:6px;padding:2px 9px;margin-right:10px;cursor:pointer}
+.top{padding:10px 16px}.wrap{padding:18px 16px 50px}.hero h1{font-size:19px}.pill{display:none}.bar{grid-template-columns:76px 1fr 34px}.hero{padding:22px 18px;gap:14px}}
+</style>
+</head>
+<body>
+<aside id="sb">
+  <div class="brand"><div class="logo">N</div><div>Nama Kamu<br>Analytics</div></div>
+  <nav><a href="#" style="color:var(--mut)">🌐 yourname.com</a></nav>
+  <div class="lbl">PORTFOLIO</div>
+  <nav>
+    <a data-p="index">🏠 Index</a>
+    <a data-p="context">🏢 Business Context</a>
+    <a data-p="questions">❓ Business Questions</a>
+    <a data-p="findings">💡 Findings &amp; Recs</a>
+  </nav>
+  <div class="lbl">REPORTS</div>
+  <nav><a data-p="report">📊 Data Report</a></nav>
+  <div class="lbl">APPENDIX</div>
+  <nav><a data-p="method">⚙️ Methodology</a></nav>
+  <div class="lbl">TEMA</div>
+  <nav><a id="theme">🌓 Ganti Terang/Gelap</a></nav>
+</aside>
+
+<main>
+  <div class="top">
+    <div><button class="menu" id="mb">☰</button><b id="ttl">Index</b></div>
+    <span class="pill">Portfolio · 03</span><span class="id">ID</span>
+  </div>
+  <div class="wrap">
+
+  <section id="index">
+    <div class="hero"><div class="logo">N</div><div><h1>Halo, saya [Nama Kamu]</h1><p>Data Analyst yang mengubah data penjualan menjadi keputusan bisnis yang jelas dan bisa dieksekusi.</p></div></div>
+    <div class="kpis">
+      <div class="kpi" style="--k:var(--c1)"><b>3</b><span>Project</span></div>
+      <div class="kpi" style="--k:var(--c2)"><b>2 th</b><span>Pengalaman</span></div>
+      <div class="kpi" style="--k:var(--c3)"><b>SQL · Python</b><span>Tools utama</span></div>
+      <div class="kpi" style="--k:var(--c5)"><b>Power BI</b><span>Dashboard</span></div>
+    </div>
+    <h2>Project</h2>
+    <div class="grid">
+      <div class="card"><h3>Portfolio 01 — Sales Analysis</h3><div>Analisis 12 bulan penjualan lintas wilayah dan channel.</div><span class="tag">SQL</span><span class="tag">Python</span><br><a class="l" href="#findings" data-go="findings">Lihat findings →</a></div>
+      <div class="card"><h3>Portfolio 02 — Customer Segmentation</h3><div>Segmentasi RFM untuk strategi retensi.</div><span class="tag">Python</span><span class="tag">Tableau</span></div>
+      <div class="card"><h3>Portfolio 03 — Dashboard Ops</h3><div>Dashboard KPI operasional harian.</div><span class="tag">Power BI</span><span class="tag">DAX</span></div>
+    </div>
+    <h2>Kontak</h2>
+    <p>Email: <a class="l" href="mailto:nama@email.com">nama@email.com</a> · <a class="l" href="#">LinkedIn</a> · <a class="l" href="#">GitHub</a></p>
+  </section>
+
+  <section id="context">
+    <h2>Business Context</h2>
+    <p>Jelaskan perusahaan/klien fiktif atau nyata, industri, dan masalah utamanya. Contoh: brand FMCG dengan 49 merek terlacak, ingin tahu di mana peluang pertumbuhan terbesar.</p>
+    <div class="note">Tujuan: menemukan wilayah dan channel dengan potensi terbesar dari data 12 bulan terakhir.</div>
+  </section>
+
+  <section id="questions">
+    <h2>Business Questions</h2>
+    <div class="card"><h3>1. Brand mana yang paling kuat?</h3>Kontribusi revenue per brand.</div>
+    <div class="card"><h3>2. Wilayah mana yang masih kurang terlayani?</h3>Penetrasi dibanding populasi.</div>
+    <div class="card"><h3>3. Bagaimana pola musiman?</h3>Tren bulanan dan lonjakan akhir tahun.</div>
+  </section>
+
+  <section id="findings">
+    <div class="hero"><div class="logo">N</div><div><h1>Key Findings &amp; Actionable Recommendations</h1><p>Data-driven insights dari 12 bulan data penjualan di 10 wilayah dan 6 channel.</p></div></div>
+    <div class="kpis">
+      <div class="kpi" style="--k:var(--c1)"><b>Rp 167B</b><span>Total Market Revenue</span><i>12 months</i></div>
+      <div class="kpi" style="--k:var(--c2)"><b>9.4%</b><span>Brand Share</span><i>Rp 15.7B</i></div>
+      <div class="kpi" style="--k:var(--c3)"><b>12,172</b><span>Transactions</span><i>Clean data</i></div>
+      <div class="kpi" style="--k:var(--c4)"><b>49</b><span>Brands Tracked</span><i>4 brand + 45 competitors</i></div>
+      <div class="kpi" style="--k:var(--c5)"><b>+30%</b><span>Dec Spike</span><i>Year-end seasonality</i></div>
+    </div>
+    <h2>Finding 1: Brand A adalah yang terkuat — tapi masih kecil</h2>
+    <p>Brand A menyumbang 40% revenue dan menjadi flagship. Namun di kategori kompetitif, pangsa pasarnya kecil dibanding brand multinasional.</p>
+    <div class="note">Kekuatan ada di niche dengan sedikit kompetitor. Fokuskan sumber daya di tempat yang bisa dimenangkan.</div>
+    <h2>Finding 2: Indonesia Timur kurang terlayani</h2>
+    <p>Jabodetabek mendominasi (20.6%), diikuti Jawa Timur dan Jawa Tengah. Wilayah timur menunjukkan penetrasi rendah relatif terhadap populasi.</p>
+    <div class="note">Kompetisi rendah, perdagangan modern tumbuh. Rekomendasi: perluas distribusi.</div>
+  </section>
+
+  <section id="report">
+    <!-- TEMPLATE: ganti teks/angka di bawah. Data chart ada di <script> (cari "CHARTS"). -->
+    <div class="hero"><div class="logo">N</div><div><h1>12-Month Sales Performance Overview</h1><p>113 SKUs · 10 Regions · 6 Channels · Mar 2025 – Feb 2026</p></div></div>
+    <div class="kpis">
+      <div class="kpi" style="--k:var(--c1)"><b>Rp 167B</b><span>Total Revenue</span></div>
+      <div class="kpi" style="--k:var(--c2)"><b>113</b><span>SKUs</span></div>
+      <div class="kpi" style="--k:var(--c3)"><b>49</b><span>Brands</span></div>
+      <div class="kpi" style="--k:var(--c4)"><b>9.4%</b><span>Brand Share</span></div>
+      <div class="kpi" style="--k:var(--c5)"><b>12,172</b><span>Transactions</span></div>
+    </div>
+
+    <h2>Revenue by Brand (Top 10)</h2>
+    <div class="card"><div class="ct">Top 10 Brands by Revenue (Billion IDR)</div><div class="bars" id="ch-brand"></div></div>
+    <div class="note-r">Tulis insight singkat untuk chart ini di sini.</div>
+
+    <h2>Revenue by Region</h2>
+    <div class="card"><div class="ct">Revenue by Region (Billion IDR)</div><div class="bars" id="ch-region"></div></div>
+    <div class="note-r">Tulis insight singkat untuk chart ini di sini.</div>
+
+    <h2>Monthly Trend</h2>
+    <div class="card"><div class="ct">Monthly Revenue (Billion IDR)</div><div class="cols" id="ch-month"></div></div>
+    <div class="note-r">Tulis insight singkat untuk chart ini di sini.</div>
+
+    <h2>Section Baru</h2>
+    <div class="card" style="text-align:center;color:var(--mut)">[ Duplikat blok "h2 + card + note-r" ini untuk menambah chart / tabel / embed dashboard ]</div>
+  </section>
+
+  <section id="method">
+    <h2>Methodology</h2>
+    <div class="card"><h3>Sumber data</h3>Dataset transaksi 12 bulan, sudah dibersihkan.</div>
+    <div class="card"><h3>Tools &amp; langkah</h3>SQL untuk ekstraksi, Python (pandas) untuk cleaning, Power BI untuk visualisasi.</div>
+  </section>
+
+  </div>
+</main>
+
+<script>
+/* ===== CHARTS: ganti data di sini. hl:true = disorot hijau (brand kamu) ===== */
+var brands=[["Kerastase",38],["Maybelline",29],["Wardah",25],["Somethinc",22],["Dove",20],["Make Over",18],["Natur ⭐",11,1],["Mizzu ⭐",8,1],["Olay",7],["Pantene",6]];
+var regions=[["Jabodetabek",34],["Jawa Timur",20],["Jawa Tengah",20],["Jawa Barat",18],["Sumatera",15],["Kalimantan",10],["Sulawesi",8],["Papua",3]];
+var months=[["Mar",12],["Apr",13],["May",13],["Jun",12],["Jul",14],["Aug",13],["Sep",14],["Oct",14],["Nov",15],["Dec",19],["Jan",14],["Feb",13]];
+function hbar(id,d){var m=Math.max.apply(null,d.map(function(x){return x[1]}));
+  document.getElementById(id).innerHTML=d.map(function(x){return '<div class="bar'+(x[2]?' hl':'')+'"><span>'+x[0]+'</span><div class="t"><div class="f" data-w="'+(x[1]/m*100)+'" style="width:0"></div></div><em>'+x[1]+'</em></div>'}).join("")}
+function vbar(id,d){var m=Math.max.apply(null,d.map(function(x){return x[1]}));
+  document.getElementById(id).innerHTML=d.map(function(x){return '<div class="col">'+x[1]+'<div class="f" data-h="'+(x[1]/m*80)+'" style="height:0"></div>'+x[0]+'</div>'}).join("")}
+hbar("ch-brand",brands);hbar("ch-region",regions);vbar("ch-month",months);
+var titles={index:"Index",context:"Business Context",questions:"Business Questions",findings:"Findings & Recommendations",report:"Data Report",method:"Methodology"};
+var pills={report:"Report · 04",findings:"Portfolio · 03"};
+function grow(){
+  var fs=document.querySelectorAll("#report .f");
+  fs.forEach(function(f){f.style.transition="none";f.style[f.dataset.w?"width":"height"]="0"});
+  void document.body.offsetHeight;
+  fs.forEach(function(f,i){f.style.transition="";f.style.transitionDelay=(i%12*60+250)+"ms";
+    if(f.dataset.w)f.style.width=f.dataset.w+"%";else f.style.height=f.dataset.h+"%"});
+}
+function go(p){
+  if(!titles[p])p="index";
+  document.querySelectorAll("section").forEach(function(s){s.classList.toggle("on",s.id===p)});
+  document.querySelectorAll("nav a[data-p]").forEach(function(a){a.classList.toggle("on",a.dataset.p===p)});
+  document.getElementById("ttl").textContent=p==="report"?"Sales Performance Report":titles[p];
+  document.querySelector(".pill").textContent=pills[p]||"Portfolio · 03";
+  document.getElementById("sb").classList.remove("open");
+  window.scrollTo(0,0);
+  if(p==="report")grow();
+}
+document.querySelectorAll("nav a[data-p]").forEach(function(a){a.onclick=function(){go(a.dataset.p)}});
+document.querySelectorAll("[data-go]").forEach(function(a){a.onclick=function(e){e.preventDefault();go(a.dataset.go)}});
+document.getElementById("mb").onclick=function(){document.getElementById("sb").classList.toggle("open")};
+document.getElementById("theme").onclick=function(){
+  var r=document.documentElement,d=r.dataset.theme==="dark"||(!r.dataset.theme&&matchMedia("(prefers-color-scheme:dark)").matches);
+  r.dataset.theme=d?"light":"dark";
+};
+go("index");
+</script>
+</body>
+</html>
