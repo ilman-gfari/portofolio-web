@@ -51,7 +51,7 @@ const PROFILE = {
       { company: "Perusahaan C", role: "Business Analyst",
         desc: "Monitoring kepatuhan dan kualitas data lintas cabang.",
         href: "#",
-        stats: [{ value: 557, suffix: "", label: "Cabang" }, { value: 4, suffix: "", label: "Dashboard" }] }
+        stats: [{ value: 557, suffix: "", label: "Cabang" }, { value: 4, suffix: "", label: "Dashboard" }, { value: 4, suffix: "", label: "Dashboard" },{ value: 4, suffix: "", label: "Dashboard" }] }
     ]
   },
 
