@@ -4,12 +4,12 @@
    ========================================================== */
 
 const PROFILE = {
-  name: "Nama Anda",
+  name: "Ilman Gifari",
   title: "Data Professional",
   tagline: "Mengubah data berantakan menjadi keputusan bisnis.",
   status: "Open to opportunities",          // kosongkan "" untuk menyembunyikan badge
   skills: ["Business Intelligence", "Data Analysis", "Python", "SQL", "Excel", "Data Visualization"],
-  ctaPrimary:   { label: "Lihat Case Study", href: "#work" },
+  ctaPrimary:   { label: "Lihat Case Study", href: "#Portofolio" },
   ctaSecondary: { label: "Hubungi Saya",     href: "#contact" },
 
   // Teks berjalan di bawah hero (ticker)
@@ -17,7 +17,7 @@ const PROFILE = {
             "Web Scraping", "Data Cleaning", "Statistical Analysis", "Dashboard Design"],
 
   nav: [
-    { label: "Work",    href: "#work" },
+    { label: "Portofolio",    href: "#Portofolio" },
     { label: "About",   href: "#approach" },
     { label: "Contact", href: "#contact" }
   ],
@@ -31,7 +31,7 @@ const PROFILE = {
     cases: [
       { company: "Perusahaan A", role: "Operation Analyst",
         desc: "Analisis performa outlet dan efisiensi operasional.",
-        href: "../portfolio/index.html",
+        href: "1-portofolio/index.html",
         stats: [{ value: 350, suffix: "", label: "Outlet dianalisis" }, { value: 51, suffix: "", label: "Kota" }] },
       { company: "Perusahaan B", role: "Sales Data Analyst",
         desc: "Analisis penjualan kompetitif untuk perusahaan FMCG.",
