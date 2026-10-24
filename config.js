@@ -4,12 +4,12 @@
    ========================================================== */
 
 const PROFILE = {
-  name: "Nama Anda",
+  name: "Ilman Gifari",
   title: "Data Professional",
   tagline: "Mengubah data berantakan menjadi keputusan bisnis.",
   status: "Open to opportunities",          // kosongkan "" untuk menyembunyikan badge
   skills: ["Business Intelligence", "Data Analysis", "Python", "SQL", "Excel", "Data Visualization"],
-  ctaPrimary:   { label: "Lihat Case Study", href: "#work" },
+  ctaPrimary:   { label: "Lihat Case Study", href: "#portofolio" },
   ctaSecondary: { label: "Hubungi Saya",     href: "#contact" },
 
   // Teks berjalan di bawah hero (ticker)
@@ -17,7 +17,7 @@ const PROFILE = {
             "Web Scraping", "Data Cleaning", "Statistical Analysis", "Dashboard Design"],
 
   nav: [
-    { label: "Work",    href: "#work" },
+    { label: "Portofolio",    href: "#portofolio" },
     { label: "About",   href: "#approach" },
     { label: "Contact", href: "#contact" }
   ],
@@ -70,12 +70,12 @@ const PROFILE = {
   contact: {
     heading: "Mari terhubung",
     text: "Terbuka untuk peluang di bidang data analytics.",
-    email: "nama@email.com",                  // "" untuk menyembunyikan tombol
-    linkedin: "https://www.linkedin.com/in/username",
+    email: "gifariilman79@email.com",                  // "" untuk menyembunyikan tombol
+    linkedin: "https://www.linkedin.com/in/ilman-gifari",
     github: ""
   },
 
-  footer: "© 2026 Nama Anda"
+  footer: "© 2026 Ilman Gifari"
 };
 
 /* ----------------------------------------------------------
