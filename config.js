@@ -9,7 +9,7 @@ const PROFILE = {
   tagline: "Mengubah data berantakan menjadi keputusan bisnis.",
   status: "Open to opportunities",          // kosongkan "" untuk menyembunyikan badge
   skills: ["Business Intelligence", "Data Analysis", "Python", "SQL", "Excel", "Data Visualization"],
-  ctaPrimary:   { label: "Lihat Case Study", href: "#Portofolio" },
+  ctaPrimary:   { label: "Lihat Case Study", href: "#work" },
   ctaSecondary: { label: "Hubungi Saya",     href: "#contact" },
 
   // Teks berjalan di bawah hero (ticker)
@@ -17,7 +17,7 @@ const PROFILE = {
             "Web Scraping", "Data Cleaning", "Statistical Analysis", "Dashboard Design"],
 
   nav: [
-    { label: "Portofolio",    href: "#Portofolio" },
+    { label: "Portofolio",    href: "#work" },
     { label: "About",   href: "#approach" },
     { label: "Contact", href: "#contact" }
   ],
