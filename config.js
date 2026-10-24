@@ -40,6 +40,17 @@ const PROFILE = {
       { company: "Perusahaan C", role: "Business Analyst",
         desc: "Monitoring kepatuhan dan kualitas data lintas cabang.",
         href: "#",
+        stats: [{ value: 557, suffix: "", label: "Cabang" }, { value: 4, suffix: "", label: "Dashboard" }] },      { company: "Perusahaan A", role: "Operation Analyst",
+        desc: "Analisis performa outlet dan efisiensi operasional.",
+        href: "1-portofolio/index.html",
+        stats: [{ value: 350, suffix: "", label: "Outlet dianalisis" }, { value: 51, suffix: "", label: "Kota" }] },
+      { company: "Perusahaan B", role: "Sales Data Analyst",
+        desc: "Analisis penjualan kompetitif untuk perusahaan FMCG.",
+        href: "#",
+        stats: [{ value: 120, suffix: "", label: "SKU" }, { value: 18, suffix: "%", label: "Potensi kenaikan" }] },
+      { company: "Perusahaan C", role: "Business Analyst",
+        desc: "Monitoring kepatuhan dan kualitas data lintas cabang.",
+        href: "#",
         stats: [{ value: 557, suffix: "", label: "Cabang" }, { value: 4, suffix: "", label: "Dashboard" }] }
     ]
   },
