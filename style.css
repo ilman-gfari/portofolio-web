@@ -10,7 +10,7 @@
   --maxw: 1080px;
 }
 :root[data-mode="dark"] {
-  --bg: #0a0e14; --bg-alt: #0f131b; --surface: #141a24; --border: #222b3a;
+  --bg: #0b0e14; --bg-alt: #0f131b; --surface: #141a24; --border: #222b3a;
   --text: #eef2f8; --muted: #93a0b4; --nav-bg: rgba(11,14,20,.72);
 }
 :root[data-mode="light"] {

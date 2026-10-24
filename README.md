@@ -32,3 +32,12 @@ Isi `href` dengan tautan ke halaman portofolio (contoh: `../portfolio/index.html
 ## Publish
 
 Unggah folder ini ke GitHub Pages, Netlify, atau Cloudflare Pages.
+
+## Animasi loading & pindah halaman
+
+File `page-transition.js` memberi: layar loading (nama + progress bar) saat pertama dibuka, dan animasi tutup–buka layar tiap klik link ke halaman lain.
+
+- Pasang di setiap halaman, di `<head>` setelah `style.css`: `<script src="page-transition.js"></script>` (sudah terpasang di `index.html`).
+- Semua pengaturan ada di objek `PT` di bagian atas file: `type` ("curtain" / "slide" / "fade"), `firstLoadDuration`, `quickDuration`, `exitDuration`, `leaveDuration`, `preloaderOnce`, `brand`, warna.
+- `enabled: false` untuk mematikan seluruhnya. Tambahkan `data-pt="off"` pada link tertentu agar tidak memakai transisi.
+- Link `#anchor`, `mailto:`, link ke domain lain, dan tab baru otomatis dilewati.

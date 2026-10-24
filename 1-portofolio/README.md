@@ -36,3 +36,9 @@ assets/
 - **Tambah baris tabel dari data:** tambahkan objek di `data.js`. Tabel dengan atribut `data-table="nama"` otomatis menampilkannya.
 - **Tambah gambar:** taruh di folder `assets/`, lalu `<img src="assets/gambar.png" alt="...">`.
 - **Publish gratis:** unggah seluruh folder ke GitHub Pages, Netlify, atau Cloudflare Pages.
+
+## Animasi loading & pindah halaman
+
+`assets/page-transition.js` sudah terpasang di semua halaman: layar loading saat pertama dibuka dan animasi tutup–buka saat pindah halaman.
+Atur lewat objek `PT` di bagian atas file itu (`type`: "curtain" / "slide" / "fade", durasi, warna, `enabled: false` untuk mematikan).
+Untuk halaman baru, tambahkan di `<head>`: `<script src="assets/page-transition.js"></script>`.

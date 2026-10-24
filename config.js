@@ -4,12 +4,12 @@
    ========================================================== */
 
 const PROFILE = {
-  name: "Ilman Gifari",
+  name: "Nama Anda",
   title: "Data Professional",
   tagline: "Mengubah data berantakan menjadi keputusan bisnis.",
   status: "Open to opportunities",          // kosongkan "" untuk menyembunyikan badge
   skills: ["Business Intelligence", "Data Analysis", "Python", "SQL", "Excel", "Data Visualization"],
-  ctaPrimary:   { label: "Lihat Case Study", href: "#portofolio" },
+  ctaPrimary:   { label: "Lihat Case Study", href: "#work" },
   ctaSecondary: { label: "Hubungi Saya",     href: "#contact" },
 
   // Teks berjalan di bawah hero (ticker)
@@ -17,7 +17,7 @@ const PROFILE = {
             "Web Scraping", "Data Cleaning", "Statistical Analysis", "Dashboard Design"],
 
   nav: [
-    { label: "Portofolio",    href: "#portofolio" },
+    { label: "Work",    href: "#work" },
     { label: "About",   href: "#approach" },
     { label: "Contact", href: "#contact" }
   ],
@@ -31,16 +31,12 @@ const PROFILE = {
     cases: [
       { company: "Perusahaan A", role: "Operation Analyst",
         desc: "Analisis performa outlet dan efisiensi operasional.",
-        href: "1_portofolio/index.html",
+        href: "../portfolio/index.html",
         stats: [{ value: 350, suffix: "", label: "Outlet dianalisis" }, { value: 51, suffix: "", label: "Kota" }] },
       { company: "Perusahaan B", role: "Sales Data Analyst",
         desc: "Analisis penjualan kompetitif untuk perusahaan FMCG.",
         href: "#",
         stats: [{ value: 120, suffix: "", label: "SKU" }, { value: 18, suffix: "%", label: "Potensi kenaikan" }] },
-      { company: "Perusahaan C", role: "Business Analyst",
-        desc: "Monitoring kepatuhan dan kualitas data lintas cabang.",
-        href: "#",
-        stats: [{ value: 557, suffix: "", label: "Cabang" }, { value: 4, suffix: "", label: "Dashboard" }] },
       { company: "Perusahaan C", role: "Business Analyst",
         desc: "Monitoring kepatuhan dan kualitas data lintas cabang.",
         href: "#",
@@ -70,12 +66,12 @@ const PROFILE = {
   contact: {
     heading: "Mari terhubung",
     text: "Terbuka untuk peluang di bidang data analytics.",
-    email: "gifariilman79@email.com",                  // "" untuk menyembunyikan tombol
-    linkedin: "https://www.linkedin.com/in/ilman-gifari",
+    email: "nama@email.com",                  // "" untuk menyembunyikan tombol
+    linkedin: "https://www.linkedin.com/in/username",
     github: ""
   },
 
-  footer: "© 2026 Ilman Gifari"
+  footer: "© 2026 Nama Anda"
 };
 
 /* ----------------------------------------------------------
