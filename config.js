@@ -5,7 +5,7 @@
 
 const PROFILE = {
   name: "Ilman Gifari",
-  title: "Data Professional",
+  title: "Portofolio",
   tagline: "Mengubah data berantakan menjadi keputusan bisnis.",
   status: "Open to opportunities",          // kosongkan "" untuk menyembunyikan badge
   skills: ["Business Intelligence", "Data Analysis", "Python", "SQL", "Excel", "Data Visualization"],
@@ -19,7 +19,9 @@ const PROFILE = {
   nav: [
     { label: "Portofolio",    href: "#work" },
     { label: "About",   href: "#approach" },
-    { label: "Contact", href: "#contact" }
+    { label: "Contact", href: "#contact" },
+    { label: "Loker", href: "loker/tutorial_techconnect_hc_analytics.html" }
+
   ],
 
   work: {

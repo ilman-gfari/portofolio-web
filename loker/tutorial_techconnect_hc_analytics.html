@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mock Project: Human Capital Data Analyst di TechConnect</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f1b33; --navy2:#16264a; --orange:#f26a1b; --yellow:#fbbf24;
+  --bg:#f4f5f8; --card:#fff; --ink:#1c2333; --muted:#5b6478; --line:#e3e6ee;
+  --green:#14804a; --greenbg:#e8f6ee; --redbg:#fdecec; --red:#b42318; --blue:#1d4ed8; --bluebg:#e8efff;
+  --codebg:#0d1424; --codeink:#d6e2ff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;line-height:1.7;font-size:16px}
+.wrap{max-width:900px;margin:0 auto;background:var(--card);box-shadow:0 0 40px rgba(15,27,51,.08)}
+header.hero{background:linear-gradient(160deg,var(--navy),var(--navy2));color:#fff;padding:48px 44px 40px;border-bottom:5px solid var(--orange)}
+.badge{display:inline-block;border:1.5px solid var(--orange);color:var(--yellow);background:rgba(242,106,27,.18);border-radius:999px;font-weight:700;font-size:12px;letter-spacing:.06em;padding:7px 16px;text-transform:uppercase}
+.hero h1{font-size:40px;line-height:1.15;margin:22px 0 16px;font-weight:800;letter-spacing:-.02em}
+.hero p{color:#c7d0e6;font-size:17px;margin:0;max-width:720px}
+nav.toc{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);padding:10px 24px;display:flex;gap:6px;overflow-x:auto;white-space:nowrap}
+nav.toc a{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;padding:6px 12px;border-radius:999px}
+nav.toc a:hover{background:var(--bluebg);color:var(--blue)}
+main{padding:36px 44px 60px}
+section{margin-bottom:56px}
+h2{font-size:27px;line-height:1.25;margin:0 0 6px;letter-spacing:-.01em}
+h2 .n{display:inline-block;background:var(--orange);color:#fff;font-size:14px;border-radius:8px;padding:2px 10px;margin-right:10px;vertical-align:middle}
+h3{font-size:19px;margin:30px 0 8px}
+.lead{color:var(--muted);margin:0 0 20px}
+blockquote{margin:0 0 22px;padding:6px 0 6px 18px;border-left:4px solid var(--line);color:var(--muted);font-style:italic}
+.callout{border-radius:12px;padding:16px 20px;margin:18px 0;border:1px solid}
+.callout.tip{background:#fffbea;border-color:#f6dc7a}
+.callout.warn{background:var(--redbg);border-color:#f5b5b0}
+.callout.ok{background:var(--greenbg);border-color:#a8dcc0}
+.callout.info{background:var(--bluebg);border-color:#b9ccff}
+.callout b.t{display:block;margin-bottom:4px}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.5px}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:var(--navy);color:#fff;font-weight:700}
+tr:nth-child(even) td{background:#fafbfd}
+code{font-family:'JetBrains Mono',monospace;font-size:13px;background:#eef1f8;padding:2px 6px;border-radius:5px}
+pre{background:var(--codebg);color:var(--codeink);padding:18px 20px;border-radius:12px;overflow-x:auto;font-size:13px;line-height:1.6;margin:14px 0}
+pre code{background:none;padding:0;color:inherit}
+.cm{color:#7f8db3}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:16px 0}
+.card{border:1px solid var(--line);border-radius:12px;padding:16px 18px;background:#fff}
+.card h4{margin:0 0 6px;font-size:16px}
+.card p{margin:0;font-size:14.5px;color:var(--muted)}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0}
+.kpi div{background:var(--navy);color:#fff;border-radius:12px;padding:14px 16px}
+.kpi small{display:block;color:#9fb0d6;font-size:12px}
+.kpi strong{font-size:24px}
+.kpi .bad{background:#7a1f16}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:16px 0}
+ol.steps>li{counter-increment:s;position:relative;padding:4px 0 18px 54px}
+ol.steps>li::before{content:counter(s);position:absolute;left:0;top:2px;width:36px;height:36px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+ol.steps>li b{display:block}
+details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background:#fff;overflow:hidden}
+summary{cursor:pointer;padding:14px 18px;font-weight:700;list-style:none;display:flex;gap:10px;align-items:flex-start}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"＋";color:var(--orange);font-weight:800;flex:none}
+details[open]>summary::before{content:"－"}
+details[open]>summary{background:#f7f8fc;border-bottom:1px solid var(--line)}
+.ans{padding:6px 20px 16px}
+.ans .lbl{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:6px;padding:2px 8px;margin:12px 0 4px}
+.lbl.why{background:var(--bluebg);color:var(--blue)}
+.lbl.ex{background:var(--greenbg);color:var(--green)}
+.lbl.avoid{background:var(--redbg);color:var(--red)}
+.ans p{margin:4px 0}
+.tag{font-size:11px;font-weight:700;border-radius:6px;padding:2px 8px;background:#eef1f8;color:var(--muted);margin-left:auto;flex:none}
+.check{list-style:none;padding:0;margin:10px 0}
+.check li{padding:8px 0;border-bottom:1px dashed var(--line)}
+.check label{cursor:pointer;display:flex;gap:10px;align-items:flex-start}
+.check input{margin-top:6px;accent-color:var(--orange);width:17px;height:17px;flex:none}
+.check input:checked+span{text-decoration:line-through;color:var(--muted)}
+.mock{background:#f0f3fa;border:1px dashed #b7c2de;border-radius:12px;padding:16px;margin:14px 0;font-size:13.5px}
+.mock .row{display:grid;gap:10px;margin-bottom:10px}
+.mock .box{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 12px;text-align:center;color:var(--muted)}
+.mock .r4{grid-template-columns:repeat(4,1fr)} .mock .r2{grid-template-columns:2fr 1fr} .mock .r3{grid-template-columns:repeat(3,1fr)}
+footer{padding:26px 44px;background:var(--navy);color:#9fb0d6;font-size:13px}
+@media(max-width:640px){
+  header.hero{padding:34px 22px 28px}.hero h1{font-size:28px}main{padding:26px 20px 50px}footer{padding:22px 20px}
+  .mock .r4,.mock .r3,.mock .r2{grid-template-columns:1fr 1fr}
+  table{display:block;overflow-x:auto}
+}
+@media print{nav.toc{display:none}details{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <span class="badge">Mock Project &amp; Studi Kasus</span>
+  <h1>Kalau Gua Ngelamar Jadi Human Capital Data Analyst di TechConnect, Ini yang Bakal Gua Lakuin</h1>
+  <p>Ini bukan tutorial bikin dashboard doang. Ini tentang memahami bisnis TechConnect, mengidentifikasi pertanyaan yang harus dijawab seorang analis Human Capital, dan membuktikan bahwa gua bisa deliver insight yang actionable, bukan cuma angka.</p>
+</header>
+
+<nav class="toc">
+  <a href="#job">1. Bedah Lowongan</a>
+  <a href="#bisnis">2. Pahami Bisnis</a>
+  <a href="#project">3. Mock Project</a>
+  <a href="#insight">4. Contoh Insight</a>
+  <a href="#hrd">5. Pertanyaan HRD</a>
+  <a href="#persiapan">6. Checklist</a>
+</nav>
+
+<main>
+
+<blockquote>"Nemu loker dari TechConnect: posisi data analytics di tim Human Capital. Tugasnya dashboard, workforce analytics, integrasi data antar sistem HC, sampai jaga kualitas data. Sebelum apply, gua mau pahami dulu: perusahaan ini sebenarnya kayak gimana, dan pertanyaan apa yang harus bisa dijawab orang di posisi ini?"</blockquote>
+
+<p>Kebanyakan portofolio fokus ke teknis: "gua bisa bikin dashboard", "gua bisa nulis SQL", "gua bisa formula canggih." Tapi yang sebenarnya dicari recruiter dan user (calon atasan) bukan itu. Yang dicari: <em>"Apakah orang ini ngerti masalah people di perusahaan sebesar kita, dan bisa kasih insight yang bikin HR berani ambil keputusan?"</em> Teknis itu vehicle. Yang drive semuanya adalah pertanyaan bisnis.</p>
+
+<div class="callout info"><b class="t">Catatan penting sebelum mulai</b>
+Judul posisi persisnya nggak ada di teks yang gua dapat, jadi gua pakai istilah "Human Capital Data Analyst". Ganti sesuai judul asli di LinkedIn. Semua angka di mock project ini <b>ilustrasi</b> (data sintetis), bukan data asli TechConnect. Gunakan buat latihan dan portofolio, jangan diklaim sebagai data perusahaan.</div>
+
+<!-- ============ 1 ============ -->
+<section id="job">
+<h2><span class="n">1</span>Bedah Job Posting</h2>
+<p class="lead">Baca lowongan kayak baca brief klien: tiap baris punya maksud tersembunyi.</p>
+
+<details>
+<summary>Job posting lengkapnya (klik untuk buka)</summary>
+<div class="ans">
+<p><b>Tugas &amp; Tanggung Jawab</b></p>
+<ul>
+<li>Mengembangkan dashboard, reporting, dan workforce analytics.</li>
+<li>Melakukan integrasi data antar sistem Human Capital.</li>
+<li>Menghasilkan insight berbasis data untuk mendukung pengambilan keputusan HR.</li>
+<li>Mengembangkan data model dan monitoring kualitas data secara berkelanjutan.</li>
+</ul>
+<p><b>Requirements</b></p>
+<ul>
+<li>S1 Teknik Informatika, Sistem Informasi, Ilmu Komputer, Statistika, Data Science, atau terkait.</li>
+<li>Pengalaman 2–3 tahun di Data Analytics, BI, Data Intelligence, atau terkait.</li>
+<li>Pengalaman dashboard, reporting, data integration, data visualization.</li>
+<li>SQL dan Power BI / Tableau atau sejenisnya.</li>
+<li>Paham konsep data warehouse, data integration, business intelligence.</li>
+<li>Mampu menerjemahkan kebutuhan bisnis jadi insight; komunikasi dan problem solving baik.</li>
+</ul>
+</div>
+</details>
+
+<h3>Terjemahan: apa maksud sebenarnya tiap poin</h3>
+<table>
+<tr><th>Yang tertulis</th><th>Artinya di dunia nyata</th><th>Bukti yang harus gua tunjukin</th></tr>
+<tr><td>Dashboard, reporting, workforce analytics</td><td>HR butuh angka headcount, attrition, rekrutmen yang konsisten tiap bulan, bukan Excel yang beda-beda tiap orang.</td><td>1 dashboard Power BI/Tableau dengan KPI HC yang definisinya jelas</td></tr>
+<tr><td>Integrasi data antar sistem HC</td><td>Data karyawan tersebar: HRIS, payroll, absensi, rekrutmen (ATS), LMS. ID dan format nggak seragam.</td><td>Contoh join dari 3+ sumber, termasuk cara menangani key yang nggak match</td></tr>
+<tr><td>Insight untuk keputusan HR</td><td>Bukan "attrition 14%", tapi "attrition 14% terkonsentrasi di mana, kenapa, dan HR harus ngapain".</td><td>1 studi kasus dengan rekomendasi + estimasi dampak</td></tr>
+<tr><td>Data model &amp; monitoring kualitas data</td><td>Ada struktur data yang rapi (star schema) dan cek otomatis: duplikat, data kosong, tanggal nggak masuk akal.</td><td>Skema tabel + query data quality + usulan alert</td></tr>
+<tr><td>Data warehouse, BI concepts</td><td>Paham fact vs dimension, ETL/ELT, grain, snapshot bulanan.</td><td>Bisa gambar dan jelasin ERD sederhana</td></tr>
+<tr><td>Komunikasi &amp; problem solving</td><td>Harus bisa ngobrol sama HRBP dan manajemen yang bukan orang data.</td><td>Cerita STAR + cara gua jelasin angka ke non-teknis</td></tr>
+</table>
+
+<div class="callout tip"><b class="t">Satu hal yang sering kelewat</b>
+Data HC itu <b>data sensitif</b> (gaji, performa, alasan resign, data pribadi). Perusahaan sebesar TechConnect pasti peduli soal akses data, masking, dan kerahasiaan. Sebutin ini di wawancara; itu langsung bedain gua dari kandidat yang cuma ngomongin chart.</div>
+</section>
+
+<!-- ============ 2 ============ -->
+<section id="bisnis">
+<h2><span class="n">2</span>Pahami Bisnisnya Dulu</h2>
+<p class="lead">Sebelum buka tools, gua pelajari konteks TechConnect dan masalah HC yang kemungkinan besar mereka hadapi.</p>
+
+<h3>Yang bisa gua simpulkan dari profil perusahaan</h3>
+<ul>
+<li><b>Skala besar:</b> 5.001–10.000 karyawan di LinkedIn, dan perusahaan menyebut dirinya tumbuh jadi ratusan entitas bisnis.</li>
+<li><b>Beragam industri:</b> teknologi, sumber daya energi, dan fintech. Artinya karakter tenaga kerja beda-beda (engineer, operasional lapangan, tim finansial).</li>
+<li><b>Struktur grup:</b> banyak entitas hampir pasti berarti banyak sistem HR, definisi yang beda-beda, dan kebutuhan konsolidasi data. Inilah alasan lowongan ini menekankan <em>integrasi</em> dan <em>kualitas data</em>.</li>
+<li><b>Nilai yang mereka tonjolkan:</b> tata kelola perusahaan (corporate governance) dan mengembangkan pemimpin dari dalam. Jadi insight soal talent pipeline, suksesi, dan retensi bakal relevan.</li>
+</ul>
+
+<div class="callout tip"><b class="t">Tips riset</b>
+Buka halaman karier dan halaman "Life" TechConnect di LinkedIn, baca berita terbaru, cek jumlah karyawan per entitas kalau ada. Catat 3 hal yang bisa lo sebut di interview, misalnya ekspansi entitas baru atau program pengembangan talenta.</div>
+
+<h3>Pertanyaan bisnis yang harus bisa dijawab posisi ini</h3>
+<div class="grid">
+<div class="card"><h4>Headcount &amp; komposisi</h4><p>Berapa karyawan per entitas, level, lokasi, status kerja? Gimana trennya per bulan?</p></div>
+<div class="card"><h4>Attrition &amp; retensi</h4><p>Siapa yang keluar, kapan (masa kerja), dari unit mana, sukarela atau tidak? Biayanya berapa?</p></div>
+<div class="card"><h4>Rekrutmen</h4><p>Time-to-hire, source of hire terbaik, offer acceptance rate, kualitas hire (bertahan &gt; 1 tahun?).</p></div>
+<div class="card"><h4>Produktivitas &amp; kehadiran</h4><p>Absensi, lembur, turnover tim dengan beban kerja tinggi.</p></div>
+<div class="card"><h4>Learning &amp; talent</h4><p>Pelatihan vs performa/promosi, kesiapan suksesor posisi kunci.</p></div>
+<div class="card"><h4>Kompensasi</h4><p>Compa-ratio, kesenjangan gaji antar level/entitas, dampaknya ke resign.</p></div>
+</div>
+
+<h3>Kamus KPI yang harus gua hafal (dan definisikan dengan jelas)</h3>
+<table>
+<tr><th>KPI</th><th>Rumus umum</th><th>Jebakan</th></tr>
+<tr><td>Headcount</td><td>Jumlah karyawan aktif pada akhir periode (snapshot)</td><td>Kontrak/magang dihitung nggak? Definisi harus sama antar entitas.</td></tr>
+<tr><td>Attrition rate</td><td>Jumlah karyawan keluar ÷ rata-rata headcount periode × 100%</td><td>Pakai headcount awal vs rata-rata bisa beda hasil. Pisahkan sukarela vs tidak.</td></tr>
+<tr><td>Turnover 90 hari</td><td>Karyawan baru yang keluar &lt; 90 hari ÷ total karyawan baru</td><td>Sinyal masalah onboarding atau salah rekrut.</td></tr>
+<tr><td>Time-to-hire</td><td>Tanggal offer diterima − tanggal kandidat apply</td><td>Bedakan dari time-to-fill (sejak lowongan dibuka).</td></tr>
+<tr><td>Offer acceptance rate</td><td>Offer diterima ÷ offer dikirim</td><td>Turun biasanya terkait kompetisi gaji.</td></tr>
+<tr><td>Span of control</td><td>Rata-rata anak buah langsung per manajer</td><td>Terlalu lebar/sempit sama-sama masalah.</td></tr>
+</table>
+</section>
+
+<!-- ============ 3 ============ -->
+<section id="project">
+<h2><span class="n">3</span>Mock Project: Workforce Analytics Dashboard</h2>
+<p class="lead">Studi kasus yang bisa dikerjain dalam 5–7 hari dan langsung masuk portofolio.</p>
+
+<div class="callout ok"><b class="t">Skenario</b>
+TechConnect Group punya 6 entitas (ilustrasi: <i>Tech Solutions, Energy Resources, Fintech Payments, Digital Media, Data Center, Corporate Shared Services</i>). Tiap entitas pakai file/sistem HR sendiri. Tim Human Capital grup butuh <b>satu dashboard konsolidasi</b> untuk rapat bulanan dengan manajemen: berapa headcount, kenapa attrition naik di beberapa unit, dan apakah proses rekrutmen cukup cepat. Di sisi lain, data sering inkonsisten, jadi monitoring kualitas data juga harus dibangun.</div>
+
+<h3>Deliverable</h3>
+<ol>
+<li>Data model (star schema) + dokumentasi definisi KPI</li>
+<li>Query SQL untuk KPI utama dan pengecekan data quality</li>
+<li>Dashboard 3 halaman di Power BI atau Tableau</li>
+<li>1 halaman "insight &amp; rekomendasi" (bukan cuma chart)</li>
+</ol>
+
+<h3>Langkah 1 — Siapkan data sintetis</h3>
+<p>Gua nggak punya data asli, jadi bikin sendiri. Ini juga nunjukin gua paham struktur data HC. Contoh generator sederhana (Python):</p>
+<pre><code><span class="cm"># generate_hc_data.py — data SINTETIS untuk latihan</span>
+import pandas as pd, numpy as np
+rng = np.random.default_rng(42)
+
+entities = ["Tech Solutions","Energy Resources","Fintech Payments",
+            "Digital Media","Data Center","Shared Services"]
+n = 3000
+emp = pd.DataFrame({
+    "employee_id": [f"E{i:05d}" for i in range(1, n+1)],
+    "entity": rng.choice(entities, n, p=[.28,.22,.18,.12,.08,.12]),
+    "job_level": rng.choice(["Staff","Senior","Lead","Manager"], n, p=[.55,.28,.12,.05]),
+    "gender": rng.choice(["F","M"], n, p=[.42,.58]),
+    "hire_date": pd.to_datetime("2019-01-01") + pd.to_timedelta(rng.integers(0, 2400, n), unit="D"),
+})
+<span class="cm"># ~12% resign, sebagian besar di masa kerja 1-2 tahun</span>
+left = rng.random(n) &lt; 0.12
+emp["termination_date"] = pd.NaT
+emp.loc[left, "termination_date"] = emp.loc[left, "hire_date"] + pd.to_timedelta(rng.integers(60, 900, left.sum()), unit="D")
+emp["termination_type"] = np.where(left, rng.choice(["Voluntary","Involuntary"], n, p=[.75,.25]), None)
+<span class="cm"># sengaja selipkan data kotor untuk latihan data quality</span>
+emp.loc[rng.choice(n, 25, replace=False), "entity"] = None
+emp.to_csv("dim_employee.csv", index=False)</code></pre>
+
+<h3>Langkah 2 — Rancang data model</h3>
+<table>
+<tr><th>Tabel</th><th>Tipe</th><th>Grain &amp; kolom kunci</th></tr>
+<tr><td><code>dim_employee</code></td><td>Dimension</td><td>1 baris per karyawan: employee_id, hire_date, job_level, gender, manager_id</td></tr>
+<tr><td><code>dim_org</code></td><td>Dimension</td><td>1 baris per unit: org_id, entity_name, division, location</td></tr>
+<tr><td><code>dim_date</code></td><td>Dimension</td><td>1 baris per hari/bulan</td></tr>
+<tr><td><code>fact_headcount_monthly</code></td><td>Fact (snapshot)</td><td>1 baris per karyawan per bulan: snapshot_month, employee_id, org_id</td></tr>
+<tr><td><code>fact_termination</code></td><td>Fact (event)</td><td>1 baris per resign: employee_id, termination_date, termination_type, reason</td></tr>
+<tr><td><code>fact_recruitment</code></td><td>Fact (event)</td><td>1 baris per kandidat: requisition_id, apply_date, offer_date, accept_date, source</td></tr>
+</table>
+<div class="callout tip"><b class="t">Kenapa snapshot bulanan?</b>
+Headcount itu "foto" per tanggal tertentu. Tanpa tabel snapshot, kita nggak bisa jawab "berapa headcount bulan Maret?" karena data karyawan cuma nyimpen status terakhir. Ini pertanyaan klasik di interview.</div>
+
+<h3>Langkah 3 — Tulis SQL untuk KPI</h3>
+<pre><code><span class="cm">-- 1) Headcount per entitas per bulan</span>
+SELECT o.entity_name, f.snapshot_month, COUNT(DISTINCT f.employee_id) AS headcount
+FROM fact_headcount_monthly f
+JOIN dim_org o ON o.org_id = f.org_id
+GROUP BY o.entity_name, f.snapshot_month
+ORDER BY o.entity_name, f.snapshot_month;
+
+<span class="cm">-- 2) Attrition rate 2025 per entitas (pakai rata-rata headcount)</span>
+WITH monthly AS (
+  SELECT org_id, snapshot_month, COUNT(*) AS hc
+  FROM fact_headcount_monthly
+  WHERE snapshot_month BETWEEN '2025-01-01' AND '2025-12-01'
+  GROUP BY org_id, snapshot_month
+), avg_hc AS (
+  SELECT org_id, AVG(hc) AS avg_headcount FROM monthly GROUP BY org_id
+), leavers AS (
+  SELECT org_id,
+         COUNT(*) AS total_leavers,
+         SUM(CASE WHEN termination_type = 'Voluntary' THEN 1 ELSE 0 END) AS voluntary
+  FROM fact_termination
+  WHERE termination_date BETWEEN '2025-01-01' AND '2025-12-31'
+  GROUP BY org_id
+)
+SELECT o.entity_name,
+       ROUND(a.avg_headcount) AS avg_headcount,
+       l.total_leavers,
+       ROUND(100.0 * l.total_leavers / a.avg_headcount, 1) AS attrition_pct,
+       ROUND(100.0 * l.voluntary    / a.avg_headcount, 1) AS voluntary_pct
+FROM avg_hc a
+JOIN leavers l USING (org_id)
+JOIN dim_org o USING (org_id)
+ORDER BY attrition_pct DESC;
+
+<span class="cm">-- 3) Resign di bawah 90 hari (sinyal masalah onboarding)</span>
+SELECT o.entity_name,
+       COUNT(*) AS early_leavers
+FROM fact_termination t
+JOIN dim_employee e ON e.employee_id = t.employee_id
+JOIN dim_org o      ON o.org_id = t.org_id
+WHERE t.termination_date - e.hire_date &lt; 90
+GROUP BY o.entity_name
+ORDER BY early_leavers DESC;</code></pre>
+
+<h3>Langkah 4 — Monitoring kualitas data</h3>
+<p>Ini yang jarang ada di portofolio kandidat lain, padahal tertulis eksplisit di lowongan.</p>
+<pre><code><span class="cm">-- Daftar cek kualitas data (jalankan terjadwal, simpan hasil ke tabel dq_log)</span>
+
+<span class="cm">-- a) Employee ID duplikat</span>
+SELECT employee_id, COUNT(*) FROM dim_employee GROUP BY employee_id HAVING COUNT(*) &gt; 1;
+
+<span class="cm">-- b) Tanggal keluar lebih awal dari tanggal masuk</span>
+SELECT e.employee_id FROM dim_employee e
+JOIN fact_termination t ON t.employee_id = e.employee_id
+WHERE t.termination_date &lt; e.hire_date;
+
+<span class="cm">-- c) Karyawan tanpa entitas/unit (orphan)</span>
+SELECT employee_id FROM dim_employee WHERE entity IS NULL OR org_id IS NULL;
+
+<span class="cm">-- d) Karyawan sudah resign tapi masih ada di snapshot bulan setelahnya</span>
+SELECT f.employee_id, f.snapshot_month
+FROM fact_headcount_monthly f
+JOIN fact_termination t ON t.employee_id = f.employee_id
+WHERE f.snapshot_month &gt; DATE_TRUNC('month', t.termination_date);
+
+<span class="cm">-- e) Skor kelengkapan data per kolom penting</span>
+SELECT ROUND(100.0 * COUNT(manager_id) / COUNT(*), 1) AS pct_manager_filled,
+       ROUND(100.0 * COUNT(job_level)  / COUNT(*), 1) AS pct_level_filled
+FROM dim_employee;</code></pre>
+<div class="callout info"><b class="t">Cara jelasinnya</b>
+"Data quality bukan cuma bersihin sekali. Gua bikin cek otomatis, hasilnya dicatat tiap hari, dan kalau skor turun di bawah ambang (misal kelengkapan &lt; 98%), PIC data di entitas itu dapat notifikasi."</div>
+
+<h3>Langkah 5 — Bangun dashboard (3 halaman)</h3>
+<div class="mock">
+<b>Halaman 1 — Executive Overview</b>
+<div class="row r4" style="margin-top:8px"><div class="box">Headcount</div><div class="box">Attrition %</div><div class="box">Time-to-hire</div><div class="box">Offer Accept %</div></div>
+<div class="row r2"><div class="box">Tren headcount per bulan (line)</div><div class="box">Komposisi per entitas (bar)</div></div>
+<b>Halaman 2 — Attrition Deep Dive</b>
+<div class="row r3" style="margin-top:8px"><div class="box">Attrition per entitas</div><div class="box">Per masa kerja</div><div class="box">Sukarela vs tidak</div></div>
+<b>Halaman 3 — Recruitment &amp; Data Quality</b>
+<div class="row r2" style="margin-top:8px"><div class="box">Funnel rekrutmen &amp; source of hire</div><div class="box">Skor data quality per entitas</div></div>
+</div>
+<p>Contoh measure DAX (Power BI):</p>
+<pre><code>Headcount = DISTINCTCOUNT ( fact_headcount_monthly[employee_id] )
+
+Avg Headcount =
+AVERAGEX ( VALUES ( dim_date[month_start] ), [Headcount] )
+
+Leavers = COUNTROWS ( fact_termination )
+
+Attrition % = DIVIDE ( [Leavers], [Avg Headcount] )
+
+Voluntary Attrition % =
+DIVIDE (
+    CALCULATE ( [Leavers], fact_termination[termination_type] = "Voluntary" ),
+    [Avg Headcount]
+)</code></pre>
+<p><b>Prinsip desain:</b> maksimal 5–6 visual per halaman, KPI di atas, filter entitas/periode konsisten, judul visual berupa kalimat insight ("Attrition tertinggi ada di Tech Solutions") bukan label netral.</p>
+
+<h3>Timeline pengerjaan</h3>
+<ol class="steps">
+<li><b>Hari 1: Definisi &amp; data</b>Tulis kamus KPI, generate data sintetis, rancang ERD.</li>
+<li><b>Hari 2: SQL &amp; data model</b>Load ke database (PostgreSQL/SQLite), tulis query KPI.</li>
+<li><b>Hari 3: Data quality</b>Query pengecekan, tabel log, ringkasan temuan data kotor.</li>
+<li><b>Hari 4–5: Dashboard</b>Bangun 3 halaman, uji filter, rapikan visual.</li>
+<li><b>Hari 6: Insight &amp; rekomendasi</b>Tulis 1 halaman temuan utama + langkah HR.</li>
+<li><b>Hari 7: Dokumentasi &amp; latihan presentasi</b>README, screenshot, rekaman singkat 3 menit.</li>
+</ol>
+</section>
+
+<!-- ============ 4 ============ -->
+<section id="insight">
+<h2><span class="n">4</span>Contoh Insight yang Actionable</h2>
+<p class="lead">Ini bedanya laporan angka dengan analisis yang berguna.</p>
+
+<div class="callout warn"><b class="t">Ilustrasi</b> Angka di bawah ini fiktif untuk latihan, bukan data TechConnect.</div>
+
+<div class="kpi">
+<div><small>Attrition grup 2025</small><strong>12,4%</strong></div>
+<div class="bad"><small>Tech Solutions</small><strong>19,1%</strong></div>
+<div><small>Shared Services</small><strong>7,3%</strong></div>
+<div class="bad"><small>Resign &lt; 2 tahun masa kerja</small><strong>61%</strong></div>
+</div>
+
+<h3>❌ Versi lemah</h3>
+<blockquote>"Attrition tahun 2025 sebesar 12,4%. Tech Solutions paling tinggi."</blockquote>
+
+<h3>✅ Versi kuat</h3>
+<div class="callout ok">
+<b class="t">Temuan</b>
+Attrition grup 12,4%, tapi <b>Tech Solutions mencapai 19,1%</b> (hampir 2,6× Shared Services). 61% yang keluar adalah karyawan dengan masa kerja di bawah 2 tahun, dan mayoritas berstatus <i>voluntary</i> di level Staff–Senior.
+<br><br>
+<b class="t">Interpretasi</b>
+Pola ini lebih menunjuk ke masalah onboarding, jenjang karier, atau pasar kerja yang agresif untuk talenta teknologi, bukan ke masalah umum seluruh perusahaan. Ini hipotesis, perlu divalidasi lewat exit interview dan data kompensasi.
+<br><br>
+<b class="t">Rekomendasi</b>
+<ol>
+<li>Prioritaskan program retensi untuk talenta 1–2 tahun di Tech Solutions (career path jelas, mentoring).</li>
+<li>Tarik data compa-ratio unit tersebut untuk cek apakah gaji tertinggal dari pasar.</li>
+<li>Rapikan alasan resign di HRIS (saat ini 30% terisi "Lainnya") supaya analisis berikutnya lebih tajam.</li>
+</ol>
+<b class="t">Dampak yang bisa dihitung</b>
+Jika attrition Tech Solutions turun dari 19,1% ke 15% pada ~850 karyawan, ada sekitar 35 orang yang nggak perlu diganti. Dengan asumsi biaya penggantian 0,5× gaji tahunan, tinggal dikalikan untuk dapat nilai rupiahnya. Asumsi harus ditulis eksplisit.
+</div>
+
+<div class="callout tip"><b class="t">Rumus insight</b>
+<b>Apa yang terjadi</b> → <b>di mana/siapa</b> → <b>kemungkinan kenapa (beri label hipotesis)</b> → <b>apa yang HR harus lakukan</b> → <b>seberapa besar dampaknya</b>.</div>
+</section>
+
+<!-- ============ 5 ============ -->
+<section id="hrd">
+<h2><span class="n">5</span>Pertanyaan yang Kemungkinan Muncul</h2>
+<p class="lead">Klik tiap pertanyaan untuk melihat maksudnya, contoh jawaban, dan hal yang harus dihindari. Jawaban contoh harus lo sesuaikan dengan pengalaman asli, jangan dihafal mentah-mentah.</p>
+
+<h3>A. Sesi HR / Recruiter: motivasi &amp; kecocokan</h3>
+
+<details>
+<summary>Ceritakan tentang diri Anda. <span class="tag">Pembuka</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Mau lihat apakah profil lo nyambung dengan posisi, dan kemampuan lo menyusun cerita singkat.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya data analyst dengan pengalaman [X] tahun di [bidang]. Fokus saya di SQL dan Power BI untuk bikin dashboard yang dipakai tim bisnis mengambil keputusan. Di [perusahaan sebelumnya] saya membangun [contoh konkret] yang [hasil terukur]. Saya tertarik dengan posisi ini karena data Human Capital itu menarik: dampaknya langsung ke orang, dan skala TechConnect dengan banyak entitas membuat tantangan integrasi datanya nyata."</p>
+<span class="lbl avoid">Hindari</span><p>Membacakan CV dari lahir sampai sekarang, atau terlalu panjang (&gt; 2 menit).</p>
+</div>
+</details>
+
+<details>
+<summary>Kenapa tertarik ke TechConnect dan ke bidang Human Capital? <span class="tag">Motivasi</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Cek apakah lo riset perusahaan dan nggak sekadar apply massal.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"TechConnect bergerak di teknologi, energi, dan fintech dengan banyak entitas. Dari sisi data, itu berarti tantangan konsolidasi dan standarisasi yang menarik. Saya juga lihat TechConnect menekankan pengembangan pemimpin dari dalam, dan analitik talenta punya peran besar di situ. Saya ingin pekerjaan saya berdampak ke keputusan soal orang, bukan cuma ke laporan."</p>
+<span class="lbl avoid">Hindari</span><p>"Karena perusahaannya besar dan gajinya bagus." Jujur boleh, tapi jangan jadi alasan utama.</p>
+</div>
+</details>
+
+<details>
+<summary>Ekspektasi gaji dan kapan bisa mulai bekerja? <span class="tag">Administratif</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Screening kecocokan budget dan ketersediaan.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Berdasarkan riset range untuk posisi dan pengalaman setara di Jakarta dan skill yang saya bawa, ekspektasi saya di kisaran Rp [X]–[Y], terbuka untuk dibahas sesuai total benefit. Saya bisa bergabung [notice period] setelah offer."</p>
+<span class="lbl avoid">Hindari</span><p>Menyebut angka tanpa riset, atau menjawab "terserah perusahaan".</p>
+</div>
+</details>
+
+<details>
+<summary>Bagaimana dengan sistem kerja dan lokasi penempatan? <span class="tag">Logistik</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Pastikan lo siap dengan pola kerja yang ditetapkan (cek lagi di lowongan: WFO/hybrid/remote dan lokasinya).</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya siap dengan pola kerja yang ditetapkan. Untuk lokasi, [tempat tinggal + estimasi waktu tempuh]. Saya terbiasa kolaborasi tatap muka maupun jarak jauh."</p>
+</div>
+</details>
+
+<h3>B. Sesi User / Hiring Manager: teknis</h3>
+
+<details>
+<summary>Jelaskan perbedaan INNER JOIN, LEFT JOIN, dan kapan masing-masing dipakai dalam konteks data karyawan. <span class="tag">SQL</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Dasar SQL, plus apakah lo paham dampaknya ke angka.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"INNER JOIN hanya mengambil baris yang cocok di kedua tabel. LEFT JOIN mempertahankan semua baris tabel kiri. Misalnya, kalau saya join <code>dim_employee</code> ke <code>fact_termination</code> pakai INNER JOIN, hasilnya hanya yang sudah resign, sehingga hitung attrition jadi salah. Untuk mengetahui karyawan aktif, saya pakai LEFT JOIN dan filter yang termination_date-nya NULL."</p>
+<span class="lbl avoid">Hindari</span><p>Jawaban hanya definisi tanpa contoh.</p>
+</div>
+</details>
+
+<details>
+<summary>Bagaimana Anda menghitung attrition rate? Apa saja jebakannya? <span class="tag">KPI</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Ini pertanyaan favorit untuk posisi HC analytics. Mereka menguji apakah lo paham definisi, bukan sekadar rumus.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Attrition rate = jumlah karyawan keluar dalam periode dibagi rata-rata headcount periode itu. Jebakannya: pertama, penyebut harus konsisten. Pakai headcount awal atau rata-rata akan memberi angka berbeda. Kedua, pisahkan sukarela dan tidak sukarela karena penanganannya beda. Ketiga, definisi karyawan harus sama antar entitas, misalnya apakah kontrak dan magang dihitung. Dan kalau periodenya bukan setahun, saya anualisasi supaya bisa dibandingkan."</p>
+</div>
+</details>
+
+<details>
+<summary>Bagaimana Anda menghitung headcount bulan lalu kalau data hanya menyimpan status terkini karyawan? <span class="tag">Data model</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Menguji pemahaman snapshot dan data historis.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Idealnya ada tabel snapshot bulanan yang disimpan tiap akhir bulan. Kalau belum ada, saya rekonstruksi dari tanggal masuk dan tanggal keluar: karyawan aktif pada tanggal T adalah yang hire_date ≤ T dan (termination_date kosong atau &gt; T). Tapi rekonstruksi nggak menangkap perubahan seperti mutasi unit, jadi saya sarankan membangun snapshot ke depan."</p>
+</div>
+</details>
+
+<details>
+<summary>Jelaskan star schema. Fact dan dimension untuk data HR apa saja? <span class="tag">Data warehouse</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Lowongan menyebut data model dan data warehouse secara eksplisit.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Star schema punya tabel fact di tengah yang menyimpan kejadian atau pengukuran, dikelilingi tabel dimension yang menyimpan konteks. Untuk HR: fact-nya headcount snapshot bulanan, terminasi, dan rekrutmen; dimension-nya karyawan, organisasi, tanggal, dan jabatan. Saya tentukan grain dulu per tabel, misalnya satu baris per karyawan per bulan, supaya agregasi nggak dobel."</p>
+<span class="lbl avoid">Hindari</span><p>Lupa menyebut grain. Itu hal pertama yang ditanya kalau interviewer berpengalaman.</p>
+</div>
+</details>
+
+<details>
+<summary>Data karyawan datang dari HRIS, payroll, dan absensi dengan ID yang berbeda. Bagaimana mengintegrasikannya? <span class="tag">Integrasi</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Ini inti tugas "integrasi data antar sistem Human Capital".</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Langkah pertama, tentukan <i>source of truth</i> per atribut, misalnya HRIS untuk data organisasi dan payroll untuk kompensasi. Kedua, bikin tabel pemetaan ID (mapping) untuk menyatukan key. Ketiga, standarkan format tanggal, kode unit, dan nilai kategori di staging layer. Keempat, catat baris yang gagal match ke tabel exception, bukan dibuang diam-diam, lalu kirim ke PIC untuk diperbaiki. Terakhir, otomatisasi lewat pipeline terjadwal dan beri log."</p>
+</div>
+</details>
+
+<details>
+<summary>Anda menemukan data yang tidak konsisten di dashboard. Apa yang Anda lakukan? <span class="tag">Data quality</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Menguji kebiasaan lo menjaga integritas data.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Pertama, reproduksi masalahnya: di tahap mana angka mulai berbeda, source atau transformasi. Kedua, cek dengan query validasi (duplikat, null, tanggal tidak logis). Ketiga, beri tahu pengguna dashboard kalau angkanya terdampak sebelum rapat. Keempat, perbaiki akarnya dan tambahkan cek otomatis supaya nggak terulang. Saya juga catat di changelog."</p>
+</div>
+</details>
+
+<details>
+<summary>Power BI atau Tableau, mana yang lebih Anda kuasai? Bagaimana Anda mengoptimalkan dashboard yang lambat? <span class="tag">BI tools</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Cek kedalaman, bukan sekadar "pernah pakai".</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya paling nyaman di [tool]. Kalau dashboard lambat, saya cek dulu di mana bottleneck-nya: model data (kurangi kolom yang nggak dipakai, pakai star schema), measure yang berat (hindari kalkulasi berulang), jumlah visual per halaman, dan mode koneksi, import atau direct query. Agregasi di sisi database juga membantu."</p>
+<span class="lbl avoid">Hindari</span><p>Mengaku jago dua-duanya padahal cuma satu. Lebih baik jujur dan tunjukkan kecepatan belajar.</p>
+</div>
+</details>
+
+<h3>C. Studi kasus bisnis</h3>
+
+<details>
+<summary>Attrition di salah satu entitas naik dari 9% ke 16% dalam setahun. Bagaimana Anda menganalisisnya? <span class="tag">Case</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Mereka lihat cara berpikir terstruktur, bukan jawaban tunggal yang benar.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Pertama, validasi dulu: apakah kenaikan nyata atau karena perubahan definisi atau data? Kedua, <b>segmentasi</b>: per unit, level, masa kerja, manajer, lokasi, sukarela vs tidak. Biasanya kenaikan terkonsentrasi di segmen tertentu. Ketiga, bandingkan dengan sinyal lain: kompensasi, beban kerja atau lembur, hasil survei engagement, perubahan manajer. Keempat, bentuk hipotesis dan tes dengan data atau exit interview. Terakhir, rekomendasi plus indikator yang dipantau untuk melihat apakah intervensinya berhasil."</p>
+</div>
+</details>
+
+<details>
+<summary>Manajemen ingin tahu apakah program pelatihan efektif. Data apa yang Anda butuhkan dan bagaimana mengukurnya? <span class="tag">Case</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Menguji cara lo mengaitkan data ke dampak bisnis dan kehati-hatian soal kausalitas.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya butuh data peserta dan non-peserta, tanggal pelatihan, serta metrik hasil seperti performa, promosi, atau retensi sebelum dan sesudah. Idealnya bandingkan kelompok peserta dengan kelompok pembanding yang mirip supaya nggak bias, karena peserta pelatihan biasanya memang karyawan yang lebih termotivasi. Saya akan sampaikan hasilnya sebagai <i>asosiasi</i>, bukan klaim sebab-akibat, kecuali desainnya mendukung."</p>
+</div>
+</details>
+
+<details>
+<summary>Bagaimana Anda menjaga kerahasiaan data sensitif karyawan di dashboard? <span class="tag">Governance</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Perusahaan menekankan tata kelola. Data HC sangat sensitif.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya terapkan akses berbasis peran (row-level security), hanya tampilkan data agregat untuk grup kecil supaya individu tidak bisa diidentifikasi (misalnya sembunyikan segmen di bawah 5 orang), masking atau pseudonimisasi ID, dan batasi kolom sensitif seperti gaji dan alasan resign. Semua akses sebaiknya ter-log."</p>
+</div>
+</details>
+
+<h3>D. Perilaku &amp; soft skill</h3>
+
+<details>
+<summary>Ceritakan saat Anda menerjemahkan permintaan bisnis yang kabur menjadi analisis. <span class="tag">STAR</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Tertulis di requirements: "menerjemahkan kebutuhan bisnis menjadi insight".</p>
+<span class="lbl ex">Contoh jawaban (kerangka STAR)</span>
+<p><b>Situation:</b> Manajer minta "laporan performa tim" tanpa detail.<br>
+<b>Task:</b> Saya harus memastikan laporannya benar-benar dipakai.<br>
+<b>Action:</b> Saya tanya keputusan apa yang mau diambil dari laporan itu, siapa pembacanya, dan seberapa sering. Dari situ saya usulkan 5 KPI, bikin prototipe sederhana, dan iterasi dua kali.<br>
+<b>Result:</b> Laporan dipakai di rapat mingguan dan waktu penyusunan turun dari [X] jam ke [Y] menit.</p>
+<span class="lbl avoid">Hindari</span><p>Cerita tanpa hasil terukur atau cerita yang semua pencapaiannya "kami", tanpa peran lo.</p>
+</div>
+</details>
+
+<details>
+<summary>Bagaimana Anda menjelaskan temuan analisis ke orang non-teknis yang tidak setuju dengan hasilnya? <span class="tag">Komunikasi</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Analis HC sering berhadapan dengan HRBP dan pimpinan yang punya intuisi sendiri.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya mulai dengan mendengarkan alasan mereka karena sering ada konteks yang nggak ada di data. Lalu saya tunjukkan data dan asumsinya secara transparan, bukan sekadar kesimpulan. Kalau memang ada perbedaan, kita sepakati cara memvalidasinya, misalnya cek sampel atau tambah data. Tujuannya sama-sama dapat keputusan yang tepat, bukan menang debat."</p>
+</div>
+</details>
+
+<details>
+<summary>Ceritakan kesalahan dalam analisis Anda dan apa yang Anda lakukan. <span class="tag">STAR</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Mereka menilai kejujuran dan cara lo belajar.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya pernah salah menghitung [KPI] karena join menghasilkan baris ganda. Saya sadar saat angkanya nggak cocok dengan laporan sumber. Saya langsung kasih tahu stakeholder, koreksi, dan menambah pengecekan jumlah baris sebelum dan sesudah join di proses saya. Sejak itu saya rutin validasi total ke sumber."</p>
+<span class="lbl avoid">Hindari</span><p>"Saya perfeksionis jadi nggak pernah salah."</p>
+</div>
+</details>
+
+<details>
+<summary>Anda punya 3 permintaan dashboard dari tiga pihak dengan tenggat sama. Apa yang dilakukan? <span class="tag">Prioritas</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Menguji prioritisasi dan komunikasi ekspektasi.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya klarifikasi urgensi dan dampak bisnis tiap permintaan, lalu diskusikan prioritas dengan atasan atau para pemintanya. Yang bisa disederhanakan, saya kirim versi awal dulu. Jadwal dan batasan saya sampaikan sejak awal supaya nggak ada kejutan."</p>
+</div>
+</details>
+
+<h3>E. Pertanyaan yang sebaiknya lo ajukan balik</h3>
+<p>Di akhir interview hampir pasti ditanya "ada pertanyaan?". Jangan jawab "tidak ada". Pilih 2–3:</p>
+<ul>
+<li>Sistem HC apa saja yang saat ini dipakai, dan seberapa terintegrasi datanya antar entitas?</li>
+<li>Stack data dan BI-nya apa? Sudah ada data warehouse, atau sedang dibangun?</li>
+<li>Seperti apa 3 bulan pertama yang dianggap sukses untuk posisi ini?</li>
+<li>Siapa pengguna utama dashboard-nya (HRBP, manajemen, grup, atau entitas)?</li>
+<li>Bagaimana proses saat ini untuk menjaga kualitas data, dan di mana masalah terbesarnya?</li>
+</ul>
+</section>
+
+<!-- ============ 6 ============ -->
+<section id="persiapan">
+<h2><span class="n">6</span>Checklist Persiapan</h2>
+<p class="lead">Centang sambil jalan. Progres tersimpan di browser lo (kalau browser mengizinkan).</p>
+
+<h3>Portofolio &amp; dokumen</h3>
+<ul class="check" data-group="doc">
+<li><label><input type="checkbox"><span>CV disesuaikan dengan kata kunci lowongan (dashboard, workforce analytics, data integration, data quality)</span></label></li>
+<li><label><input type="checkbox"><span>Setiap pengalaman di CV punya angka hasil (waktu hemat, akurasi, jumlah pengguna)</span></label></li>
+<li><label><input type="checkbox"><span>Mock project di atas selesai dan diunggah (GitHub / Tableau Public / PDF)</span></label></li>
+<li><label><input type="checkbox"><span>README yang menjelaskan masalah, data, langkah, dan insight</span></label></li>
+<li><label><input type="checkbox"><span>Rekaman atau slide presentasi 3 menit untuk menjelaskan project</span></label></li>
+</ul>
+
+<h3>Skill teknis</h3>
+<ul class="check" data-group="tech">
+<li><label><input type="checkbox"><span>SQL: JOIN, GROUP BY, window function (ROW_NUMBER, LAG), CTE, CASE WHEN</span></label></li>
+<li><label><input type="checkbox"><span>Power BI/Tableau: relasi model, measure (DAX/LOD), filter, row-level security</span></label></li>
+<li><label><input type="checkbox"><span>Konsep: star schema, ETL vs ELT, grain, slowly changing dimension</span></label></li>
+<li><label><input type="checkbox"><span>Data quality: jenis cek, ambang batas, log dan notifikasi</span></label></li>
+<li><label><input type="checkbox"><span>Statistik dasar: korelasi vs kausalitas, ukuran sampel, outlier</span></label></li>
+</ul>
+
+<h3>Pemahaman bisnis</h3>
+<ul class="check" data-group="biz">
+<li><label><input type="checkbox"><span>Hafal definisi KPI HC utama (headcount, attrition, time-to-hire, offer acceptance)</span></label></li>
+<li><label><input type="checkbox"><span>Riset TechConnect: lini bisnis, berita terbaru, nilai perusahaan</span></label></li>
+<li><label><input type="checkbox"><span>Siapkan 3 cerita STAR (masalah data, konflik/negosiasi, kesalahan)</span></label></li>
+<li><label><input type="checkbox"><span>Siapkan 3 pertanyaan balik untuk interviewer</span></label></li>
+<li><label><input type="checkbox"><span>Riset range gaji dan tentukan angka ekspektasi</span></label></li>
+</ul>
+
+<div class="callout tip"><b class="t">Urutan prioritas kalau waktu mepet</b>
+1) Mock project yang selesai &gt; 2) SQL yang lancar &gt; 3) Cerita STAR &gt; 4) Riset perusahaan. Satu project rapi yang bisa lo jelaskan dengan percaya diri lebih berharga daripada lima project setengah jadi.</div>
+
+<h3>Latihan akhir: pitch 60 detik</h3>
+<div class="callout ok">
+"Saya membuat dashboard workforce analytics untuk grup dengan enam entitas, menggunakan data sintetis. Saya merancang star schema, menulis SQL untuk KPI dan cek kualitas data, lalu membangun dashboard tiga halaman. Temuan utamanya: attrition terkonsentrasi di satu entitas pada karyawan dengan masa kerja di bawah dua tahun, dan saya merekomendasikan program retensi plus perbaikan pencatatan alasan resign. Saya ingin membawa cara kerja yang sama ke TechConnect, dengan fokus pada data yang konsisten dan insight yang bisa langsung ditindaklanjuti HR."
+</div>
+</section>
+
+</main>
+
+<footer>
+Dibuat berdasarkan teks lowongan Human Capital data analytics di TechConnect (disalin pengguna dari LinkedIn). Semua data dan angka dalam mock project adalah ilustrasi untuk latihan. Jawaban wawancara hanyalah kerangka; sesuaikan dengan pengalaman lo yang sebenarnya.
+</footer>
+</div>
+
+<script>
+(function(){
+  var boxes = document.querySelectorAll('.check input');
+  var key = 'techconnect_hc_checklist_v1';
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(key) || '{}'); } catch(e){}
+  boxes.forEach(function(b, i){
+    if (saved[i]) b.checked = true;
+    b.addEventListener('change', function(){
+      saved[i] = b.checked;
+      try { localStorage.setItem(key, JSON.stringify(saved)); } catch(e){}
+    });
+  });
+})();
+</script>
+</body>
+</html>
