@@ -1,0 +1,136 @@
+/* ==========================================================
+   STYLE — warna utama diatur di config.js (THEME).
+   Durasi animasi ada di bagian "ANIMASI" paling bawah.
+   ========================================================== */
+:root {
+  --accent: #7c9cff;
+  --accent2: #5eead4;
+  --font: Inter, system-ui, sans-serif;
+  --radius: 18px;
+  --maxw: 1080px;
+}
+:root[data-mode="dark"] {
+  --bg: #0b0e14; --bg-alt: #0f131b; --surface: #141a24; --border: #222b3a;
+  --text: #eef2f8; --muted: #93a0b4; --nav-bg: rgba(11,14,20,.72);
+}
+:root[data-mode="light"] {
+  --bg: #fafbfd; --bg-alt: #f1f4f9; --surface: #ffffff; --border: #e0e6ef;
+  --text: #121826; --muted: #566175; --nav-bg: rgba(250,251,253,.78);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+body { margin: 0; font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+.center { text-align: center; }
+
+/* ---------- Progress & Nav ---------- */
+.progress { position: fixed; top: 0; left: 0; height: 3px; width: 0; z-index: 60;
+  background: linear-gradient(90deg, var(--accent), var(--accent2)); }
+.nav { position: fixed; inset: 0 0 auto 0; z-index: 50; display: flex; align-items: center; justify-content: space-between;
+  padding: 14px clamp(18px, 4vw, 40px); transition: background .3s, border-color .3s, backdrop-filter .3s; border-bottom: 1px solid transparent; }
+.nav.scrolled { background: var(--nav-bg); backdrop-filter: blur(14px); border-color: var(--border); }
+.logo { font-weight: 800; letter-spacing: -.02em; }
+.nav nav { display: flex; gap: 26px; margin-left: auto; margin-right: 18px; }
+.nav nav a { color: var(--muted); font-size: .94rem; font-weight: 500; position: relative; transition: color .2s; }
+.nav nav a:hover { color: var(--text); }
+.nav nav a::after { content: ""; position: absolute; left: 0; bottom: -4px; height: 2px; width: 0; background: var(--accent); transition: width .25s; }
+.nav nav a:hover::after { width: 100%; }
+.theme-btn { background: var(--surface); color: var(--text); border: 1px solid var(--border); width: 36px; height: 36px; border-radius: 50%; cursor: pointer; font-size: 1rem; }
+@media (max-width: 600px) { .nav nav { gap: 16px; } }
+
+/* ---------- Hero ---------- */
+.hero { position: relative; min-height: 100vh; display: grid; align-items: center; padding: 120px 0 80px; overflow: hidden; }
+.hero .wrap { position: relative; z-index: 2; }
+.blob { position: absolute; border-radius: 50%; filter: blur(90px); opacity: .35; z-index: 0; }
+.b1 { width: 460px; height: 460px; background: var(--accent);  top: -80px; left: -80px; animation: float1 var(--blob-s, 18s) ease-in-out infinite alternate; }
+.b2 { width: 400px; height: 400px; background: var(--accent2); bottom: -60px; right: -40px; animation: float2 var(--blob-s, 18s) ease-in-out infinite alternate; }
+.no-blobs .blob { display: none; }
+
+.status { display: inline-flex; align-items: center; gap: 9px; padding: 6px 14px; border-radius: 999px; font-size: .85rem; font-weight: 500;
+  background: var(--surface); border: 1px solid var(--border); color: var(--muted); margin-bottom: 22px; }
+.status i { width: 8px; height: 8px; border-radius: 50%; background: #34d399; box-shadow: 0 0 0 0 rgba(52,211,153,.6); animation: pulse 2s infinite; }
+.hero h1 { font-size: clamp(2.6rem, 8vw, 5.4rem); line-height: 1.04; letter-spacing: -.035em; margin: 0 0 18px; font-weight: 800;
+  background: linear-gradient(120deg, var(--text) 30%, var(--accent) 70%, var(--accent2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.tagline { font-size: clamp(1.1rem, 2.4vw, 1.5rem); color: var(--muted); max-width: 640px; margin: 0 0 26px; min-height: 1.6em; }
+.caret::after { content: "▍"; color: var(--accent); animation: blink 1s steps(1) infinite; margin-left: 2px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+.chip { padding: 6px 14px; border-radius: 999px; border: 1px solid var(--border); background: var(--surface); font-size: .85rem; color: var(--muted); }
+
+.cta { display: flex; flex-wrap: wrap; gap: 12px; }
+.center .cta { justify-content: center; }
+.btn { display: inline-block; padding: 13px 26px; border-radius: 12px; font-weight: 600; font-size: .96rem; transition: transform .2s, box-shadow .2s, background .2s; }
+.btn.primary { background: linear-gradient(120deg, var(--accent), var(--accent2)); color: #0b0e14; }
+.btn.primary:hover { transform: translateY(-2px); box-shadow: 0 10px 30px -8px var(--accent); }
+.btn.ghost { border: 1px solid var(--border); background: var(--surface); }
+.btn.ghost:hover { transform: translateY(-2px); border-color: var(--accent); }
+
+/* ---------- Marquee ---------- */
+.marquee { overflow: hidden; border-block: 1px solid var(--border); background: var(--bg-alt); padding: 16px 0; }
+.track { display: flex; gap: 48px; width: max-content; animation: scroll var(--marquee-s, 28s) linear infinite; }
+.track span { color: var(--muted); font-weight: 600; font-size: .95rem; white-space: nowrap; }
+.track span::before { content: "✦"; color: var(--accent); margin-right: 48px; }
+.marquee:hover .track { animation-play-state: paused; }
+
+/* ---------- Sections ---------- */
+.section { padding: 110px 0; }
+.section.alt { background: var(--bg-alt); border-block: 1px solid var(--border); }
+.section h2 { font-size: clamp(1.8rem, 4.4vw, 2.8rem); letter-spacing: -.025em; line-height: 1.15; margin: 0 0 12px; }
+.sub { color: var(--muted); font-size: 1.1rem; margin: 0 0 44px; max-width: 620px; }
+.center .sub { margin-inline: auto; }
+.more { color: var(--muted); text-align: center; margin-top: 36px; font-size: .95rem; }
+
+/* ---------- Cards ---------- */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; perspective: 900px; }
+.card { position: relative; display: flex; flex-direction: column; gap: 10px; padding: 26px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); transition: border-color .25s, box-shadow .25s, transform .15s ease-out; transform-style: preserve-3d; overflow: hidden; }
+.card::before { content: ""; position: absolute; inset: 0; background: radial-gradient(400px circle at var(--mx, 50%) var(--my, 0%), color-mix(in srgb, var(--accent) 16%, transparent), transparent 60%);
+  opacity: 0; transition: opacity .3s; pointer-events: none; }
+.card:hover { border-color: color-mix(in srgb, var(--accent) 60%, var(--border)); box-shadow: 0 20px 50px -20px rgba(0,0,0,.45); }
+.card:hover::before { opacity: 1; }
+.card .role { font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+.card h3 { margin: 0; font-size: 1.35rem; letter-spacing: -.01em; }
+.card p { margin: 0; color: var(--muted); font-size: .96rem; }
+.stats { display: flex; gap: 22px; margin-top: auto; padding-top: 14px; border-top: 1px dashed var(--border); }
+.stat b { display: block; font-size: 1.5rem; font-variant-numeric: tabular-nums; }
+.stat span { font-size: .78rem; color: var(--muted); }
+.card .arrow { position: absolute; top: 22px; right: 24px; opacity: 0; transform: translate(-6px, 6px); transition: .25s; color: var(--accent); }
+.card:hover .arrow { opacity: 1; transform: none; }
+
+/* ---------- Approach ---------- */
+.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; margin-bottom: 48px; }
+.step { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; transition: transform .25s, border-color .25s; }
+.step:hover { transform: translateY(-4px); border-color: var(--accent); }
+.step .n { font-size: .8rem; font-weight: 700; color: var(--accent); letter-spacing: .1em; }
+.step .ic { font-size: 1.8rem; margin: 8px 0; display: block; transition: transform .3s; }
+.step:hover .ic { transform: scale(1.15) rotate(-6deg); }
+.step h4 { margin: 0 0 6px; font-size: 1.05rem; }
+.step p { margin: 0; color: var(--muted); font-size: .92rem; }
+.bring { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; }
+.bring h3 { margin: 0 0 14px; }
+.bring ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.bring li { padding-left: 30px; position: relative; }
+.bring li::before { content: "✓"; position: absolute; left: 0; width: 20px; height: 20px; border-radius: 50%; background: color-mix(in srgb, var(--accent2) 25%, transparent);
+  color: var(--accent2); display: grid; place-items: center; font-size: .75rem; font-weight: 700; top: 3px; }
+
+.footer { padding: 28px 0; border-top: 1px solid var(--border); color: var(--muted); font-size: .88rem; text-align: center; }
+
+/* ==========================================================
+   ANIMASI — durasi/jarak utama juga bisa diubah di config.js (ANIM)
+   ========================================================== */
+@keyframes float1 { to { transform: translate(120px, 90px) scale(1.15); } }
+@keyframes float2 { to { transform: translate(-110px, -80px) scale(1.1); } }
+@keyframes scroll { to { transform: translateX(-50%); } }
+@keyframes pulse  { 70% { box-shadow: 0 0 0 9px rgba(52,211,153,0); } 100% { box-shadow: 0 0 0 0 rgba(52,211,153,0); } }
+@keyframes blink  { 50% { opacity: 0; } }
+
+/* Reveal saat scroll: kelas .reveal diberi oleh main.js */
+.reveal { opacity: 0; transform: translateY(var(--rv-dist, 28px));
+  transition: opacity var(--rv-dur, 700ms) ease, transform var(--rv-dur, 700ms) cubic-bezier(.2,.7,.2,1); transition-delay: var(--rv-delay, 0ms); }
+.reveal.in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .reveal { opacity: 1; transform: none; }
+}

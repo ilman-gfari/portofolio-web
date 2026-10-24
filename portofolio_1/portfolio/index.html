@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Index</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="index">
+<main id="content">
+
+  <!-- Teks di bawah diambil otomatis dari assets/config.js -->
+  <p class="eyebrow"><span data-site="company"></span> — <span data-site="role"></span> Portfolio</p>
+  <h1><span data-site="company"></span></h1>
+  <p class="lead"><span data-site="tagline"></span> · <span data-site="scope"></span></p>
+
+  <div class="kpis" id="kpis"></div>   <!-- KPI diisi dari config.js -->
+
+  <!-- EDIT: ringkasan singkat tentang diri/tujuan portofolio -->
+  <div class="callout">
+    <p><strong>Tentang portofolio ini.</strong> Tulis 2–3 kalimat: siapa Anda, apa yang dianalisis,
+    dan apa hasil utamanya. Contoh: "Analisis performa 000 outlet untuk menemukan peluang efisiensi operasional."</p>
+  </div>
+
+  <div id="cards"></div>               <!-- Kartu navigasi diisi dari config.js -->
+
+</main>
+<script src="assets/config.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/layout.js"></script>
+</body>
+</html>

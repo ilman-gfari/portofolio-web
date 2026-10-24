@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cara Kerja</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="cara-kerja">
+<main id="content">
+
+  <p class="eyebrow">Appendix</p>
+  <h1>Cara Kerja: Metodologi</h1>
+  <p class="lead">Bagaimana data dikumpulkan, dibersihkan, dan dianalisis — agar hasilnya bisa direproduksi.</p>
+
+  <h2>Pipeline Data</h2>
+  <ol class="steps">
+    <li><strong>Pengumpulan.</strong> Sumber data (API publik, scraping, export), tanggal pengambilan.</li>
+    <li><strong>Cleaning.</strong> Duplikat, nilai kosong, format. Lihat log di <a href="report-data.html">Report Data</a>.</li>
+    <li><strong>Transformasi.</strong> Kolom turunan, agregasi, penggabungan tabel.</li>
+    <li><strong>Analisis.</strong> Segmentasi, statistik deskriptif, analisis geografis.</li>
+    <li><strong>Visualisasi &amp; pelaporan.</strong> Chart, tabel, dan rekomendasi.</li>
+  </ol>
+
+  <h2>Rumus &amp; Metode Penting</h2>
+  <div class="callout">
+    <p><strong>Contoh: jarak Haversine.</strong> Tulis rumus, variabel, dan alasan memilih metode ini.</p>
+  </div>
+
+  <h2>Tools &amp; Stack</h2>
+  <div class="grid">
+    <div class="card"><h3>Python</h3><p>pandas, numpy, requests</p></div>
+    <div class="card"><h3>SQL</h3><p>Query &amp; agregasi data</p></div>
+    <div class="card"><h3>Visualisasi</h3><p>Chart.js, Excel, Tableau / Power BI</p></div>
+  </div>
+
+  <h2>Reproducibility</h2>
+  <p>Cantumkan tautan repositori (GitHub), versi dataset, dan langkah menjalankan ulang analisis.</p>
+
+</main>
+<script src="assets/config.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/layout.js"></script>
+</body>
+</html>

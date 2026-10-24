@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deep Dive</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="deep-dive">
+<main id="content">
+
+  <p class="eyebrow">06 · Reports</p>
+  <h1>Deep Dive: Analisis Outlet</h1>
+  <p class="lead">Segmentasi, geografis, jarak antar-outlet, jam operasional, dan usia outlet.</p>
+
+  <h2>Segmentasi Konsep Outlet</h2>
+  <div class="chart-box"><div class="canvas-h"><canvas id="cKonsep"></canvas></div></div>
+  <p>Jelaskan perbedaan tiap konsep dan performanya.</p>
+
+  <h2>Sebaran Geografis</h2>
+  <div class="chart-box"><div class="canvas-h"><canvas id="cKota"></canvas></div></div>
+  <div class="placeholder">📍 Tempel peta (gambar / embed) di sini — ganti blok <code>.placeholder</code> dengan <code>&lt;img src="assets/peta.png"&gt;</code></div>
+
+  <h2>Analisis Jarak Antar-Outlet (Haversine)</h2>
+  <p>Jelaskan cara menghitung jarak terdekat antar-outlet dan apa implikasinya (misalnya risiko kanibalisasi).</p>
+  <div class="callout"><p>Temuan: tulis angka jarak rata-rata / terdekat dan outlet yang paling berdekatan.</p></div>
+
+  <h2>Jam Operasional</h2>
+  <p>Pola jam buka–tutup dan hubungannya dengan performa.</p>
+
+  <h2>Usia Outlet</h2>
+  <p>Apakah outlet yang lebih lama beroperasi performanya lebih baik?</p>
+
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="assets/config.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/layout.js"></script>
+<script>
+  const css = getComputedStyle(document.documentElement);
+  const accent = css.getPropertyValue("--accent").trim();
+  Chart.defaults.color = css.getPropertyValue("--muted").trim();
+  const opt = { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } };
+
+  new Chart(cKonsep, { type: "bar", options: opt,
+    data: { labels: DATA.konsep.map(d => d.nama),
+            datasets: [{ label: "Jumlah outlet", data: DATA.konsep.map(d => d.jumlah), backgroundColor: accent, borderRadius: 6 }] } });
+
+  new Chart(cKota, { type: "bar", options: { ...opt, indexAxis: "y" },
+    data: { labels: DATA.kota.map(d => d.nama),
+            datasets: [{ label: "Jumlah outlet", data: DATA.kota.map(d => d.outlet), backgroundColor: accent, borderRadius: 6 }] } });
+</script>
+</body>
+</html>
