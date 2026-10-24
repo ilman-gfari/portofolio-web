@@ -5,7 +5,7 @@
 
 const SITE = {
   // --- Identitas ---
-  owner: "Nama Anda",
+  owner: "Ilman Gifari",
   role: "Operation Analyst",
   company: "Nama Perusahaan",            // perusahaan / studi kasus yang dianalisis
   logo: "",                              // URL logo (opsional), contoh: "assets/logo.png"
@@ -36,6 +36,9 @@ const SITE = {
   // --- Menu sidebar + kartu di Index ---
   // id harus sama dengan atribut data-page di <body> tiap halaman.
   nav: [
+    { group: "", items: [
+      { id: "",              icon: "🏠", label: "ilman.gifari",              href: "../index.html" },
+    ]},
     { group: "Portfolio", items: [
       { id: "index",              icon: "🏠", label: "Index",              href: "index.html" },
       { id: "konteks-bisnis",     icon: "🏢", label: "Konteks Bisnis",     href: "konteks-bisnis.html",

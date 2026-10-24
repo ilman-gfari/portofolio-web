@@ -31,7 +31,7 @@ const PROFILE = {
     cases: [
       { company: "Perusahaan A", role: "Operation Analyst",
         desc: "Analisis performa outlet dan efisiensi operasional.",
-        href: "../portfolio/index.html",
+        href: "1_portofolio/index.html",
         stats: [{ value: 350, suffix: "", label: "Outlet dianalisis" }, { value: 51, suffix: "", label: "Kota" }] },
       { company: "Perusahaan B", role: "Sales Data Analyst",
         desc: "Analisis penjualan kompetitif untuk perusahaan FMCG.",
