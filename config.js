@@ -20,8 +20,7 @@ const PROFILE = {
     { label: "Portofolio",    href: "#work" },
     { label: "About",   href: "#approach" },
     { label: "Contact", href: "#contact" },
-    { label: "Loker", href: "loker/tutorial_techconnect_hc_analytics.html" }
-
+    { label: "Info Loker", href: "loker/index.html" }
   ],
 
   work: {

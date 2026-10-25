@@ -1,0 +1,24 @@
+/* Hub Info Loker — melengkapi ../landing/style.css (tidak mengubahnya) */
+.nav nav a.active { color: var(--text); }
+.nav nav a.active::after { width: 100%; }
+.page-head { padding: 130px 0 10px; }
+.page-head h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); letter-spacing: -.03em; line-height: 1.1; margin: 0 0 10px;
+  background: linear-gradient(120deg, var(--text) 30%, var(--accent) 75%, var(--accent2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.meta { color: var(--muted); font-size: .85rem; }
+
+/* 1 kolom ke bawah. Mau 2 kolom? ganti 1fr jadi: repeat(2, 1fr) */
+.cards.loker-cards { grid-template-columns: 1fr; margin-top: 28px; }
+
+.card .top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.card .ico { font-size: 1.7rem; line-height: 1; }
+.card .pill { font-size: .72rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; padding: 3px 10px; border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 18%, transparent); color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); }
+.card .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.card .tags span { font-size: .75rem; padding: 2px 10px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); }
+.card .go { font-weight: 600; font-size: .92rem; color: var(--accent); }
+.card.soon { cursor: default; opacity: .7; }
+.card.soon:hover { border-color: var(--border); box-shadow: none; }
+.card.soon .arrow { display: none; }
+.stats { display: flex; flex-wrap: wrap; justify-content: var(--stats-justify, flex-start); gap: 16px 40px; margin-top: auto; padding-top: 14px; border-top: 1px dashed var(--border); }
+.stats-equal .stat { flex: 1; }
+.card .stats:empty { display: none; }

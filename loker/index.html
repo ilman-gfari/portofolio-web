@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Info Loker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- memakai file landing (folder loker/ harus sejajar dengan landing/) -->
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="loker.css">
+  <script>try{document.documentElement.dataset.mode=localStorage.getItem("mode")||"dark"}catch(e){document.documentElement.dataset.mode="dark"}</script>
+  <script src="../page-transition.js"></script>
+</head>
+<body>
+  <header class="nav" id="nav">
+    <a class="logo" href="../landing/index.html" id="logo"></a>
+    <nav id="navLinks"></nav>
+    <button class="theme-btn" id="themeBtn" aria-label="Ganti tema">◐</button>
+  </header>
+
+  <main id="content">
+    <section class="page-head"><div class="wrap">
+      <h1 id="heading"></h1>
+      <p class="sub" id="sub"></p>
+      <div class="meta" id="updated"></div>
+    </div></section>
+
+    <section style="padding: 0 0 90px"><div class="wrap">
+      <div class="cards loker-cards" id="cards"></div>
+    </div></section>
+  </main>
+
+  <footer class="footer"><div class="wrap" id="footer"></div></footer>
+
+  <script src="..\config.js"></script>
+  <script src="loker-data.js"></script>
+  <script src="loker.js"></script>
+</body>
+</html>
