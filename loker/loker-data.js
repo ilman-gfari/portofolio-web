@@ -18,7 +18,7 @@ const LOKER = {
       company: "Perusahaan A",
       role: "Operation Analyst",
       desc: "Analisis performa outlet dan efisiensi operasional, dipetakan ke requirement lowongan.",
-      file: "projects/contoh-mock-project.html",     // ← file HTML mock project
+      file: "projects/tutorial_techconnect_hc_analytics.html",     // ← file HTML mock project
       stats: [{ value: 350, suffix: "", label: "Outlet dianalisis" }, { value: 51, suffix: "", label: "Kota" }],
       tags: ["SQL", "Excel", "Dashboard"],
       // opsi gaya per-kartu (semua opsional, sama seperti kartu di landing):
