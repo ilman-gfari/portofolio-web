@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mock Project: Operations Analyst (Data & Automation) Logistik</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f1b33; --navy2:#16264a; --orange:#f26a1b; --yellow:#fbbf24;
+  --bg:#f4f5f8; --card:#fff; --ink:#1c2333; --muted:#5b6478; --line:#e3e6ee;
+  --green:#14804a; --greenbg:#e8f6ee; --redbg:#fdecec; --red:#b42318; --blue:#1d4ed8; --bluebg:#e8efff;
+  --codebg:#0d1424; --codeink:#d6e2ff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;line-height:1.7;font-size:16px}
+.wrap{max-width:900px;margin:0 auto;background:var(--card);box-shadow:0 0 40px rgba(15,27,51,.08)}
+header.hero{background:linear-gradient(160deg,var(--navy),var(--navy2));color:#fff;padding:48px 44px 40px;border-bottom:5px solid var(--orange)}
+.badge{display:inline-block;border:1.5px solid var(--orange);color:var(--yellow);background:rgba(242,106,27,.18);border-radius:999px;font-weight:700;font-size:12px;letter-spacing:.06em;padding:7px 16px;text-transform:uppercase}
+.hero h1{font-size:38px;line-height:1.15;margin:22px 0 16px;font-weight:800;letter-spacing:-.02em}
+.hero p{color:#c7d0e6;font-size:17px;margin:0;max-width:720px}
+nav.toc{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);padding:10px 24px;display:flex;gap:6px;overflow-x:auto;white-space:nowrap}
+nav.toc a{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;padding:6px 12px;border-radius:999px}
+nav.toc a:hover{background:var(--bluebg);color:var(--blue)}
+main{padding:36px 44px 60px}
+section{margin-bottom:56px}
+h2{font-size:27px;line-height:1.25;margin:0 0 6px;letter-spacing:-.01em}
+h2 .n{display:inline-block;background:var(--orange);color:#fff;font-size:14px;border-radius:8px;padding:2px 10px;margin-right:10px;vertical-align:middle}
+h3{font-size:19px;margin:30px 0 8px}
+.lead{color:var(--muted);margin:0 0 20px}
+blockquote{margin:0 0 22px;padding:6px 0 6px 18px;border-left:4px solid var(--line);color:var(--muted);font-style:italic}
+.callout{border-radius:12px;padding:16px 20px;margin:18px 0;border:1px solid}
+.callout.tip{background:#fffbea;border-color:#f6dc7a}
+.callout.warn{background:var(--redbg);border-color:#f5b5b0}
+.callout.ok{background:var(--greenbg);border-color:#a8dcc0}
+.callout.info{background:var(--bluebg);border-color:#b9ccff}
+.callout b.t{display:block;margin-bottom:4px}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.5px}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:var(--navy);color:#fff;font-weight:700}
+tr:nth-child(even) td{background:#fafbfd}
+code{font-family:'JetBrains Mono',monospace;font-size:13px;background:#eef1f8;padding:2px 6px;border-radius:5px}
+pre{background:var(--codebg);color:var(--codeink);padding:18px 20px;border-radius:12px;overflow-x:auto;font-size:13px;line-height:1.6;margin:14px 0}
+pre code{background:none;padding:0;color:inherit}
+.cm{color:#7f8db3}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:16px 0}
+.card{border:1px solid var(--line);border-radius:12px;padding:16px 18px;background:#fff}
+.card h4{margin:0 0 6px;font-size:16px}
+.card p{margin:0;font-size:14.5px;color:var(--muted)}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0}
+.kpi div{background:var(--navy);color:#fff;border-radius:12px;padding:14px 16px}
+.kpi small{display:block;color:#9fb0d6;font-size:12px}
+.kpi strong{font-size:24px}
+.kpi .bad{background:#7a1f16}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:16px 0}
+ol.steps>li{counter-increment:s;position:relative;padding:4px 0 18px 54px}
+ol.steps>li::before{content:counter(s);position:absolute;left:0;top:2px;width:36px;height:36px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+ol.steps>li b{display:block}
+details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background:#fff;overflow:hidden}
+summary{cursor:pointer;padding:14px 18px;font-weight:700;list-style:none;display:flex;gap:10px;align-items:flex-start}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"＋";color:var(--orange);font-weight:800;flex:none}
+details[open]>summary::before{content:"－"}
+details[open]>summary{background:#f7f8fc;border-bottom:1px solid var(--line)}
+.ans{padding:6px 20px 16px}
+.ans .lbl{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:6px;padding:2px 8px;margin:12px 0 4px}
+.lbl.why{background:var(--bluebg);color:var(--blue)}
+.lbl.ex{background:var(--greenbg);color:var(--green)}
+.lbl.avoid{background:var(--redbg);color:var(--red)}
+.ans p{margin:4px 0}
+.tag{font-size:11px;font-weight:700;border-radius:6px;padding:2px 8px;background:#eef1f8;color:var(--muted);margin-left:auto;flex:none}
+.check{list-style:none;padding:0;margin:10px 0}
+.check li{padding:8px 0;border-bottom:1px dashed var(--line)}
+.check label{cursor:pointer;display:flex;gap:10px;align-items:flex-start}
+.check input{margin-top:6px;accent-color:var(--orange);width:17px;height:17px;flex:none}
+.check input:checked+span{text-decoration:line-through;color:var(--muted)}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0;font-size:13.5px}
+.flow .s{background:#f0f3fa;border:1px solid #b7c2de;border-radius:8px;padding:8px 12px;font-weight:600}
+.flow .a{color:var(--orange);font-weight:800}
+footer{padding:26px 44px;background:var(--navy);color:#9fb0d6;font-size:13px}
+@media(max-width:640px){
+  header.hero{padding:34px 22px 28px}.hero h1{font-size:27px}main{padding:26px 20px 50px}footer{padding:22px 20px}
+  table{display:block;overflow-x:auto}
+}
+@media print{nav.toc{display:none}details{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <span class="badge">Mock Project &amp; Studi Kasus</span>
+  <h1>Kalau Gua Ngelamar Jadi Operations Analyst (Data &amp; Automation) di Tim Logistik, Ini yang Bakal Gua Lakuin</h1>
+  <p>Ini bukan tutorial "bikin dashboard cantik". Peran ini adalah builder: bikin tool kecil yang andal, datanya bisa direkonsiliasi, dipakai orang logistik tiap hari, dan kodenya bisa gua jelasin sampai ke barisnya. Jadi buktinya harus berupa tool yang jalan, bukan sekadar skill di CV.</p>
+</header>
+
+<nav class="toc">
+  <a href="#job">1. Bedah Lowongan</a>
+  <a href="#bisnis">2. Pahami Logistik</a>
+  <a href="#project">3. Mock Project</a>
+  <a href="#ai">4. AI &amp; Penilaian Kode</a>
+  <a href="#hrd">5. Pertanyaan Interview</a>
+  <a href="#persiapan">6. Checklist</a>
+</nav>
+
+<main>
+
+<blockquote>"Nemu loker Operations Analyst (Data &amp; Automation) di tim Logistik. Tugasnya bikin ETL, tool web buat input data operasional yang nggak ada API-nya, desain database, dashboard, workflow berbasis AI, plus nulis tes dan dokumentasi. Sebelum apply, gua mau pahami dulu: apa yang sebenarnya mereka cari, dan apa yang bisa gua tunjukin yang beneran meyakinkan?"</blockquote>
+
+<p>Dari deskripsinya, ini peran <b>engineer-analis hibrida</b>: separuh analis operasional, separuh pembuat tool. Dua kalimat di kualifikasi paling menentukan: <em>"Has built at least one project end-to-end that other people used"</em> dan <em>"Experience with AI coding assistants, and the judgment to check their output."</em> Artinya yang dinilai bukan seberapa banyak tools yang lo sebut, tapi (1) apakah lo pernah menyelesaikan sesuatu yang dipakai orang, dan (2) apakah lo bertanggung jawab atas kode yang lo kirim, termasuk yang ditulis AI.</p>
+
+<div class="callout info"><b class="t">Catatan sebelum mulai</b>
+Nama perusahaan dan industrinya nggak ada di teks yang lo tempel, jadi dokumen ini bersifat umum untuk tim logistik. Kalau lo kasih nama perusahaannya, bagian "Pahami Logistik" bisa gua pertajam dengan konteks bisnis mereka. Semua data dan angka di mock project adalah <b>sintetis</b>. Kode contoh adalah kerangka kerja untuk dipelajari dan dijalankan ulang sendiri, jadi uji dulu di lingkungan lo sebelum dijadikan portofolio.</div>
+
+<!-- ============ 1 ============ -->
+<section id="job">
+<h2><span class="n">1</span>Bedah Job Posting</h2>
+<p class="lead">Tiap tanggung jawab di sini punya sinyal tentang cara kerja yang mereka inginkan.</p>
+
+<details>
+<summary>Job posting lengkapnya (klik untuk buka)</summary>
+<div class="ans">
+<p><b>Deskripsi</b></p>
+<p>The Operations Analyst (Data &amp; Automation) is the Logistics team's in-house builder of data tools and automation: ETL flows, dashboards and reports, data-entry tools for scattered operational data, and AI-assisted workflows. They also support the Business Analyst with requirement gathering, SOP documentation and reporting.</p>
+<ul>
+<li>Build and maintain ETL flows with deterministic, verifiable output, reconciled against source data.</li>
+<li>Build internal web tools to capture operational data not available via API, with input validation and audit trails.</li>
+<li>Design and maintain database schemas using constraints and validation (no duplicates, no orphaned records).</li>
+<li>Build dashboards and reports on top of the existing data platform.</li>
+<li>Build AI-assisted workflows where they fit, with checks on the AI's output.</li>
+<li>Write tests from known-input and expected-output cases agreed with the requester.</li>
+<li>Reuse and extend existing live tools as templates; document each tool shipped.</li>
+<li>Use AI coding tools daily and be able to explain any code shipped.</li>
+<li>Work with Logistics team members, collect feedback after each launch, improve tools.</li>
+<li>Support requirement gathering, SOP documentation, and ad hoc reporting.</li>
+</ul>
+<p><b>Kualifikasi</b></p>
+<ul>
+<li>S1 Computer Science, Information Systems, Data, atau terkait; 0–2 tahun pengalaman; fresh graduate diterima bila punya internship, freelance, atau part-time yang relevan.</li>
+<li>Pernah membangun minimal satu proyek end-to-end yang dipakai orang lain.</li>
+<li>Pengalaman dengan AI coding assistant dan kemampuan menilai hasilnya.</li>
+<li>Python dan SQL (baca, tulis, debug mandiri); dasar database relasional (desain tabel, PK/FK, constraint, join, index, transaksi) di PostgreSQL/MySQL/SQL Server.</li>
+<li>Git dan automated testing dasar.</li>
+<li>Komunikasi tertulis jelas, nyaman menerima kebutuhan dari rekan non-teknis, minat pada operasi logistik, bisa bekerja dari kantor bila diperlukan.</li>
+</ul>
+</div>
+</details>
+
+<h3>Terjemahan: apa maksud sebenarnya tiap poin</h3>
+<table>
+<tr><th>Yang tertulis</th><th>Artinya di dunia nyata</th><th>Bukti yang harus gua tunjukin</th></tr>
+<tr><td>ETL yang deterministic, verifiable, reconciled</td><td>Input sama harus selalu menghasilkan output sama, dan ada bukti angka output cocok dengan sumber (jumlah baris, total nilai).</td><td>Pipeline dengan langkah rekonsiliasi dan tabel reject beralasan</td></tr>
+<tr><td>Web tool untuk data tanpa API + validasi + audit trail</td><td>Banyak data logistik masih di spreadsheet, WhatsApp, atau input manual. Mereka butuh form yang menolak data salah dan mencatat siapa mengubah apa.</td><td>Satu tool web kecil yang live dan dipakai orang</td></tr>
+<tr><td>Schema dengan constraint (no duplicate, no orphan)</td><td>Kualitas data dijaga <b>di database</b>, bukan hanya di aplikasi.</td><td>DDL dengan PK, FK, UNIQUE, CHECK, dan alasannya</td></tr>
+<tr><td>Dashboard di atas data platform yang ada</td><td>Konsumsi data yang sudah tersedia, bukan membangun dari nol.</td><td>Query dan dashboard KPI logistik dengan definisi jelas</td></tr>
+<tr><td>AI-assisted workflow dengan pengecekan output</td><td>Pakai AI di tempat yang cocok, tapi jangan percaya buta: ada validasi, ambang batas, dan jalur review manusia.</td><td>Contoh klasifikasi AI dengan guardrail dan evaluasi</td></tr>
+<tr><td>Tes dari kasus input dan output yang disepakati</td><td>Test dimulai dari contoh nyata yang disetujui peminta, bukan hanya dari asumsi developer.</td><td>pytest dengan kasus "golden" dan bukti kasus itu disepakati</td></tr>
+<tr><td>Reuse tool, dokumentasi tiap tool</td><td>Jangan bikin dari nol terus; tool harus bisa diteruskan orang lain.</td><td>README standar: tujuan, input/output, deploy, test</td></tr>
+<tr><td>Pakai AI coding tool dan bisa menjelaskan kodenya</td><td>AI boleh membantu, tapi lo yang bertanggung jawab. Interview kemungkinan meminta lo menjelaskan kode baris per baris.</td><td>Cerita konkret kapan lo menemukan dan memperbaiki kesalahan AI</td></tr>
+<tr><td>Kumpulkan feedback setelah launch</td><td>Tool dinilai dari pemakaian nyata, bukan dari "sudah selesai".</td><td>Catatan feedback dan perubahan yang dibuat setelahnya</td></tr>
+</table>
+
+<div class="callout tip"><b class="t">Cara membaca lowongan ini</b>
+Setiap kali ada kata "verifiable", "audit trail", "constraints", "checks on output", "tests", dan "explain any code", itu satu pesan yang sama: <b>mereka butuh orang yang bisa dipercaya, bukan orang yang paling cepat mengeluarkan kode.</b> Tunjukkan kebiasaan memverifikasi di setiap bagian portofolio.</div>
+</section>
+
+<!-- ============ 2 ============ -->
+<section id="bisnis">
+<h2><span class="n">2</span>Pahami Dunia Logistik Dulu</h2>
+<p class="lead">Lo nggak perlu jadi ahli logistik, tapi harus paham bahasa dan masalah sehari-harinya.</p>
+
+<h3>Alur dasar yang perlu dipahami</h3>
+<div class="flow">
+<span class="s">Order</span><span class="a">→</span>
+<span class="s">Gudang (picking, packing)</span><span class="a">→</span>
+<span class="s">Pengiriman (carrier / armada)</span><span class="a">→</span>
+<span class="s">Transit</span><span class="a">→</span>
+<span class="s">Pengantaran (last mile)</span><span class="a">→</span>
+<span class="s">POD (proof of delivery)</span><span class="a">→</span>
+<span class="s">Retur / klaim</span>
+</div>
+
+<h3>Kosakata &amp; KPI yang sering muncul</h3>
+<table>
+<tr><th>Istilah</th><th>Artinya</th><th>Hal yang perlu diwaspadai saat menghitung</th></tr>
+<tr><td>On-time delivery (OTD)</td><td>Persentase pengiriman tiba sesuai janji.</td><td>Penyebut: hanya yang sudah terkirim, atau semua? Definisi "tepat waktu" (toleransi hari)?</td></tr>
+<tr><td>OTIF</td><td>On time <i>and</i> in full: tepat waktu dan jumlah lengkap.</td><td>Butuh data jumlah kirim vs jumlah diterima.</td></tr>
+<tr><td>Lead time / transit time</td><td>Durasi dari order atau kirim sampai diterima.</td><td>Mulai dihitung dari kapan? Hari kerja atau kalender?</td></tr>
+<tr><td>Freight cost per kg / per shipment</td><td>Biaya angkut per satuan.</td><td>Berat aktual vs berat volumetrik.</td></tr>
+<tr><td>Damage / claim rate</td><td>Persentase barang rusak atau diklaim.</td><td>Klaim sering tercatat terlambat dari kejadian.</td></tr>
+<tr><td>Dwell time</td><td>Lama barang menunggu di satu titik (gudang, depo, bea cukai).</td><td>Butuh timestamp masuk dan keluar yang konsisten.</td></tr>
+<tr><td>Inventory accuracy / fill rate</td><td>Kecocokan stok sistem vs fisik, dan persentase permintaan yang terpenuhi.</td><td>Selisih biasanya berakar dari proses, bukan sistem.</td></tr>
+<tr><td>SLA carrier</td><td>Janji layanan per rute dan layanan.</td><td>Tiap carrier punya definisi berbeda.</td></tr>
+</table>
+
+<h3>Masalah data yang hampir pasti ada di operasi logistik</h3>
+<div class="grid">
+<div class="card"><h4>Data tersebar</h4><p>Spreadsheet per tim, WhatsApp, email dari carrier, portal tanpa API. Tool input data ada karena ini.</p></div>
+<div class="card"><h4>Format tidak seragam</h4><p>Kode carrier, tanggal, nama kota, dan satuan berbeda-beda antar sumber.</p></div>
+<div class="card"><h4>Duplikasi &amp; data yatim</h4><p>Nomor resi ganda, kendala tanpa pengiriman induk, pengiriman tanpa carrier valid.</p></div>
+<div class="card"><h4>Catatan bebas</h4><p>Kolom "keterangan" berisi teks acak ("barang basah", "alamat gak ketemu"), yang sulit dianalisis tanpa pengelompokan.</p></div>
+<div class="card"><h4>Definisi berbeda</h4><p>"Terlambat" menurut gudang bisa beda dengan menurut carrier atau finance.</p></div>
+<div class="card"><h4>Proses berubah cepat</h4><p>Tool harus mudah diubah dan didokumentasikan karena prosesnya sering berubah.</p></div>
+</div>
+
+<div class="callout tip"><b class="t">Cara belajar cepat</b>
+Baca 2–3 artikel dasar tentang supply chain dan last-mile delivery, lalu coba "bayangkan satu paket" dari gudang sampai diterima dan tulis di titik mana data dicatat dan oleh siapa. Latihan itu otomatis menunjukkan di mana data bisa salah. Di interview, ceritakan latihan tersebut, jauh lebih meyakinkan daripada "saya tertarik logistik".</div>
+
+<h3>Cara menggali kebutuhan dari rekan non-teknis</h3>
+<p>Poin penting di lowongan: "comfortable taking requirements from non-technical colleagues." Gunakan pertanyaan seperti ini:</p>
+<ul>
+<li>"Hari ini lo ngerjain ini gimana? Bisa tunjukin langsung?" (amati prosesnya, jangan hanya dengar ceritanya)</li>
+<li>"Datanya datang dari mana, siapa yang update, seberapa sering?"</li>
+<li>"Kalau datanya salah, apa dampaknya dan siapa yang tahu duluan?"</li>
+<li>"Hasilnya dipakai siapa untuk keputusan apa?"</li>
+<li>"Apa definisi 'terlambat' / 'selesai' / 'rusak' di tim lo? Ada contoh kasus perbatasan?"</li>
+<li>"Seperti apa hasil yang bikin lo bilang 'ini berhasil'?" (jadi acceptance criteria)</li>
+</ul>
+<pre><code><span class="cm">## User story + acceptance criteria (template)</span>
+Sebagai  : koordinator pengiriman
+Saya mau : mencatat kendala pengiriman lewat form, bukan lewat chat
+Supaya   : kendala tidak hilang dan bisa dilaporkan mingguan
+
+Acceptance criteria (disepakati dengan peminta):
+1. Form menolak nomor resi yang tidak ada di data pengiriman.
+2. Kategori kendala dipilih dari daftar baku (tidak boleh teks bebas).
+3. Kendala yang sama (resi + kategori) tidak bisa dicatat dua kali selama masih OPEN.
+4. Setiap pembuatan/perubahan tercatat: siapa, kapan, nilai sebelum dan sesudah.
+5. Laporan mingguan menampilkan jumlah kendala per carrier dan kategori.
+
+Contoh kasus (input → output yang diharapkan): lihat sheet "kasus_uji".</code></pre>
+</section>
+
+<!-- ============ 3 ============ -->
+<section id="project">
+<h2><span class="n">3</span>Mock Project: Shipment Exception Tracker</h2>
+<p class="lead">Satu proyek yang mencakup hampir semua poin lowongan: ETL, schema, web tool, dashboard, workflow AI, tes, dan dokumentasi.</p>
+
+<div class="callout ok"><b class="t">Skenario</b>
+Tim Logistik (ilustrasi) menerima data pengiriman dari beberapa carrier lewat file CSV/Excel dengan format berbeda-beda. Kendala pengiriman (rusak, terlambat, hilang, alamat salah) saat ini dicatat di spreadsheet dan chat, tanpa validasi. Akibatnya laporan mingguan sering berbeda antar orang, nomor resi ganda, dan kendala yang "hilang". Kebutuhan: <b>(1)</b> ETL yang membersihkan data carrier dan terbukti cocok dengan sumber, <b>(2)</b> web tool untuk mencatat kendala dengan validasi dan jejak audit, <b>(3)</b> database yang menjaga kebersihan data, <b>(4)</b> dashboard performa carrier, <b>(5)</b> pengelompokan catatan bebas dengan bantuan AI yang aman.</div>
+
+<h3>Arsitektur sederhana</h3>
+<div class="flow">
+<span class="s">File carrier (CSV/Excel)</span><span class="a">→</span>
+<span class="s">ETL: bersihkan, tolak, rekonsiliasi</span><span class="a">→</span>
+<span class="s">PostgreSQL (constraint + audit log)</span><span class="a">→</span>
+<span class="s">Dashboard / laporan</span>
+</div>
+<div class="flow">
+<span class="s">Form web (FastAPI)</span><span class="a">→</span>
+<span class="s">Validasi input</span><span class="a">→</span>
+<span class="s">PostgreSQL</span><span class="a">→</span>
+<span class="s">Klasifikasi catatan (AI + guardrail)</span>
+</div>
+
+<h3>Langkah 1 — Rancang schema (constraint adalah garis pertahanan pertama)</h3>
+<pre><code><span class="cm">-- schema.sql (PostgreSQL)</span>
+CREATE TABLE carrier (
+  carrier_id   SERIAL PRIMARY KEY,
+  carrier_code TEXT NOT NULL UNIQUE,
+  carrier_name TEXT NOT NULL
+);
+
+CREATE TABLE shipment (
+  shipment_id    BIGSERIAL PRIMARY KEY,
+  shipment_ref   TEXT NOT NULL UNIQUE,                       <span class="cm">-- cegah resi ganda</span>
+  carrier_id     INT  NOT NULL REFERENCES carrier(carrier_id),<span class="cm">-- cegah carrier tak dikenal</span>
+  origin         TEXT NOT NULL,
+  destination    TEXT NOT NULL,
+  ship_date      DATE NOT NULL,
+  promised_date  DATE NOT NULL,
+  delivered_date DATE,
+  weight_kg      NUMERIC(10,2) NOT NULL CHECK (weight_kg &gt; 0),
+  freight_cost   NUMERIC(14,2) NOT NULL CHECK (freight_cost &gt;= 0),
+  CHECK (promised_date &gt;= ship_date),
+  CHECK (delivered_date IS NULL OR delivered_date &gt;= ship_date)
+);
+CREATE INDEX ix_shipment_carrier_date ON shipment (carrier_id, ship_date);
+
+CREATE TABLE delivery_exception (
+  exception_id BIGSERIAL PRIMARY KEY,
+  shipment_id  BIGINT NOT NULL REFERENCES shipment(shipment_id) ON DELETE RESTRICT, <span class="cm">-- cegah data yatim</span>
+  category     TEXT NOT NULL CHECK (category IN
+               ('DAMAGED','DELAYED','LOST','WRONG_ADDRESS','REFUSED','OTHER')),
+  status       TEXT NOT NULL DEFAULT 'OPEN' CHECK (status IN ('OPEN','RESOLVED')),
+  note         TEXT,
+  reported_by  TEXT NOT NULL,
+  reported_at  TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+<span class="cm">-- satu kendala OPEN per resi + kategori (kendala sudah RESOLVED boleh muncul lagi)</span>
+CREATE UNIQUE INDEX ux_open_exception ON delivery_exception (shipment_id, category)
+  WHERE status = 'OPEN';
+
+CREATE TABLE audit_log (
+  audit_id   BIGSERIAL PRIMARY KEY,
+  table_name TEXT NOT NULL,
+  record_id  BIGINT NOT NULL,
+  action     TEXT NOT NULL CHECK (action IN ('INSERT','UPDATE')),
+  changed_by TEXT NOT NULL,
+  changed_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+  old_data   JSONB,
+  new_data   JSONB
+);
+
+CREATE FUNCTION log_exception_change() RETURNS trigger AS $$
+BEGIN
+  INSERT INTO audit_log (table_name, record_id, action, changed_by, old_data, new_data)
+  VALUES ('delivery_exception', NEW.exception_id, TG_OP,
+          COALESCE(current_setting('app.user', true), 'unknown'),
+          CASE WHEN TG_OP = 'UPDATE' THEN to_jsonb(OLD) END,
+          to_jsonb(NEW));
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER trg_exception_audit
+AFTER INSERT OR UPDATE ON delivery_exception
+FOR EACH ROW EXECUTE FUNCTION log_exception_change();</code></pre>
+<div class="callout info"><b class="t">Cara menjelaskannya di interview</b>
+"Validasi di aplikasi bisa dilewati (skrip lain, import manual). Constraint di database nggak bisa. Jadi saya taruh aturan inti di sana: PRIMARY KEY dan UNIQUE untuk mencegah duplikat, FOREIGN KEY untuk mencegah data yatim, CHECK untuk nilai yang masuk akal, dan partial unique index untuk aturan 'satu kendala OPEN per resi dan kategori'. Delete sengaja tidak dipakai; yang ada hanya status RESOLVED, supaya jejaknya tidak hilang."</div>
+
+<h3>Langkah 2 — ETL yang deterministik dan bisa direkonsiliasi</h3>
+<p>Prinsip: input sama → output sama (tidak ada angka acak, urutan diurutkan eksplisit), tidak ada baris yang hilang diam-diam (setiap baris masuk ke <i>clean</i> atau <i>rejects</i> dengan alasan), dan ada pengecekan jumlah.</p>
+<pre><code><span class="cm"># etl.py</span>
+import pandas as pd
+
+TEXT_COLS = ["shipment_ref", "carrier_code", "origin", "destination"]
+DATE_COLS = ["ship_date", "promised_date", "delivered_date"]
+
+def transform(raw: pd.DataFrame):
+    df = raw.copy()
+    df.columns = [c.strip().lower() for c in df.columns]
+
+    for c in TEXT_COLS:
+        df[c] = df[c].astype("string").str.strip()
+    df["shipment_ref"] = df["shipment_ref"].str.upper()
+    df["carrier_code"] = df["carrier_code"].str.upper()
+
+    for c in DATE_COLS:   <span class="cm"># format eksplisit: tidak menebak (menghindari ambiguitas 03/04)</span>
+        df[c] = pd.to_datetime(df[c], format="%Y-%m-%d", errors="coerce")
+    df["weight_kg"]    = pd.to_numeric(df["weight_kg"], errors="coerce")
+    df["freight_cost"] = pd.to_numeric(df["freight_cost"], errors="coerce")
+
+    <span class="cm"># aturan validasi: alasan penolakan pertama yang cocok yang dipakai</span>
+    rules = [
+        ("MISSING_REF",       (df["shipment_ref"].isna() | (df["shipment_ref"] == "")).fillna(True)),
+        ("BAD_SHIP_DATE",     df["ship_date"].isna()),
+        ("BAD_PROMISED_DATE", df["promised_date"].isna() | (df["promised_date"] &lt; df["ship_date"])),
+        ("INVALID_WEIGHT",    ~(df["weight_kg"] &gt; 0)),
+        ("INVALID_COST",      ~(df["freight_cost"] &gt;= 0)),
+    ]
+    reason = pd.Series("", index=df.index)
+    for name, mask in rules:
+        reason = reason.mask((reason == "") &amp; mask, name)
+
+    rejects = df[reason != ""].assign(reject_reason=reason[reason != ""])
+    ok = df[reason == ""].sort_values(
+        ["shipment_ref", "ship_date", "freight_cost"], kind="mergesort")  <span class="cm"># urutan pasti</span>
+
+    dup = ok.duplicated(subset="shipment_ref", keep="first")
+    rejects = pd.concat([rejects, ok[dup].assign(reject_reason="DUPLICATE_REF")])
+    clean = ok[~dup]
+    return clean, rejects
+
+def reconcile(raw: pd.DataFrame, clean: pd.DataFrame, rejects: pd.DataFrame):
+    <span class="cm"># 1) setiap baris input harus berakhir di clean ATAU rejects</span>
+    assert len(raw) == len(clean) + len(rejects), "Jumlah baris tidak cocok"
+    <span class="cm"># 2) total biaya input harus sama dengan total clean + rejects</span>
+    raw_cost = pd.to_numeric(raw["freight_cost"], errors="coerce").fillna(0).sum()
+    out_cost = clean["freight_cost"].fillna(0).sum() + rejects["freight_cost"].fillna(0).sum()
+    assert abs(raw_cost - out_cost) &lt; 0.01, "Total biaya tidak cocok"</code></pre>
+
+<pre><code><span class="cm"># load.py — idempotent: dijalankan dua kali hasilnya sama (upsert), dalam satu transaksi</span>
+SQL = """
+INSERT INTO shipment (shipment_ref, carrier_id, origin, destination,
+                      ship_date, promised_date, delivered_date, weight_kg, freight_cost)
+SELECT %s, c.carrier_id, %s, %s, %s, %s, %s, %s, %s
+FROM carrier c WHERE c.carrier_code = %s
+ON CONFLICT (shipment_ref) DO UPDATE SET
+  carrier_id = EXCLUDED.carrier_id, origin = EXCLUDED.origin, destination = EXCLUDED.destination,
+  ship_date = EXCLUDED.ship_date, promised_date = EXCLUDED.promised_date,
+  delivered_date = EXCLUDED.delivered_date, weight_kg = EXCLUDED.weight_kg,
+  freight_cost = EXCLUDED.freight_cost
+"""
+
+def load(clean, conn):
+    rows = [(r.shipment_ref, r.origin, r.destination, r.ship_date.date(), r.promised_date.date(),
+             None if pd.isna(r.delivered_date) else r.delivered_date.date(),
+             float(r.weight_kg), float(r.freight_cost), r.carrier_code)
+            for r in clean.itertuples()]
+    with conn.transaction():                 <span class="cm"># semua berhasil, atau tidak sama sekali</span>
+        with conn.cursor() as cur:
+            cur.executemany(SQL, rows)
+            <span class="cm"># cek pasca-load: carrier tak dikenal membuat SELECT di atas menghasilkan 0 baris
+            # (baris hilang diam-diam!). Pastikan semua resi benar-benar ada di tabel.</span>
+            cur.execute("SELECT COUNT(*) FROM shipment WHERE shipment_ref = ANY(%s)",
+                        (list(clean["shipment_ref"]),))
+            assert cur.fetchone()[0] == len(clean), "Ada resi yang tidak ter-load (carrier tak dikenal?)"</code></pre>
+
+<h3>Langkah 3 — Tes dari kasus yang disepakati</h3>
+<p>Mulai dari contoh nyata yang disetujui peminta (di sini: kasus-kasus kecil yang mewakili aturan bisnis), lalu jadikan tes.</p>
+<pre><code><span class="cm"># test_etl.py (jalankan: pytest -q)</span>
+import pandas as pd
+from etl import transform, reconcile
+
+COLS = ["shipment_ref","carrier_code","origin","destination",
+        "ship_date","promised_date","delivered_date","weight_kg","freight_cost"]
+
+def make(rows):
+    return pd.DataFrame(rows, columns=COLS)
+
+RAW = make([
+    [" sh-001 ", "jne ", "JKT", "SBY", "2025-03-01", "2025-03-04", "2025-03-03", "12.5", "150000"],  <span class="cm"># valid, perlu dirapikan</span>
+    ["SH-002",   "JNE",  "JKT", "BDG", "2025-03-01", "2025-03-03", None,         "0",    "90000"],   <span class="cm"># berat 0</span>
+    ["SH-003",   "SICEPAT","JKT","MDN", "2025-03-01", "2025-02-27", None,         "5",    "70000"],   <span class="cm"># janji sebelum kirim</span>
+    ["SH-001",   "JNE",  "JKT", "SBY", "2025-03-01", "2025-03-04", "2025-03-03", "12.5", "150000"],  <span class="cm"># duplikat resi</span>
+])
+
+def test_known_cases():
+    clean, rejects = transform(RAW)
+    assert list(clean["shipment_ref"]) == ["SH-001"]
+    assert list(clean["carrier_code"]) == ["JNE"]
+    assert sorted(rejects["reject_reason"]) == [
+        "BAD_PROMISED_DATE", "DUPLICATE_REF", "INVALID_WEIGHT"]
+
+def test_reconciliation_holds():
+    clean, rejects = transform(RAW)
+    reconcile(RAW, clean, rejects)           <span class="cm"># tidak boleh melempar error</span>
+
+def test_deterministic():
+    a, _ = transform(RAW)
+    b, _ = transform(RAW.sample(frac=1, random_state=1))   <span class="cm"># urutan input diacak</span>
+    assert a.reset_index(drop=True).equals(b.reset_index(drop=True))</code></pre>
+<div class="callout tip"><b class="t">Kenapa tes ketiga penting?</b>
+Itu bukti "deterministic" yang tertulis di lowongan. Jangan lupa jalankan tesnya sendiri dan perbaiki bila ada yang gagal; kode di sini adalah kerangka untuk dipelajari, bukan sesuatu yang boleh dipercaya tanpa dijalankan.</div>
+
+<h3>Langkah 4 — Web tool untuk mencatat kendala (validasi + audit trail)</h3>
+<pre><code><span class="cm"># app.py (FastAPI) — kerangka; autentikasi di dunia nyata pakai SSO perusahaan, bukan header</span>
+from typing import Literal, Optional
+from fastapi import FastAPI, Header, HTTPException
+from pydantic import BaseModel, Field
+import psycopg
+from psycopg import errors
+
+app = FastAPI()
+Category = Literal["DAMAGED", "DELAYED", "LOST", "WRONG_ADDRESS", "REFUSED", "OTHER"]
+
+class ExceptionIn(BaseModel):
+    shipment_ref: str = Field(min_length=3, max_length=40)
+    category: Category                                  <span class="cm"># hanya nilai baku</span>
+    note: Optional[str] = Field(default=None, max_length=500)
+
+@app.post("/exceptions", status_code=201)
+def create_exception(body: ExceptionIn, x_user: str = Header(...)):
+    ref = body.shipment_ref.strip().upper()
+    with psycopg.connect(DSN) as conn:                  <span class="cm"># satu transaksi; rollback bila error</span>
+        with conn.cursor() as cur:
+            cur.execute("SELECT set_config('app.user', %s, true)", (x_user,))  <span class="cm"># untuk audit trigger</span>
+            cur.execute("SELECT shipment_id FROM shipment WHERE shipment_ref = %s", (ref,))
+            row = cur.fetchone()
+            if row is None:
+                raise HTTPException(404, f"Resi {ref} tidak ditemukan")
+            try:
+                cur.execute(
+                    "INSERT INTO delivery_exception (shipment_id, category, note, reported_by) "
+                    "VALUES (%s, %s, %s, %s) RETURNING exception_id",
+                    (row[0], body.category, body.note, x_user))
+            except errors.UniqueViolation:
+                raise HTTPException(409, "Kendala OPEN untuk resi dan kategori ini sudah ada")
+            return {"exception_id": cur.fetchone()[0]}</code></pre>
+<p>Hal yang membedakan tool "jalan" dengan tool "bisa dipercaya": pesan error yang jelas untuk pengguna non-teknis, validasi di dua lapis (aplikasi dan database), dan jejak audit yang otomatis dari trigger sehingga nggak bergantung pada kode aplikasi.</p>
+
+<h3>Langkah 5 — Dashboard performa carrier</h3>
+<pre><code><span class="cm">-- v_carrier_performance: on-time %, lead time, biaya per kg, dan rasio kendala per bulan</span>
+CREATE VIEW v_carrier_performance AS
+SELECT c.carrier_name,
+       DATE_TRUNC('month', s.ship_date)::date AS bulan,
+       COUNT(*)                                            AS total_kirim,
+       COUNT(*) FILTER (WHERE s.delivered_date IS NOT NULL) AS terkirim,
+       ROUND(100.0 * COUNT(*) FILTER (WHERE s.delivered_date &lt;= s.promised_date)
+             / NULLIF(COUNT(*) FILTER (WHERE s.delivered_date IS NOT NULL), 0), 1) AS on_time_pct,
+       ROUND(AVG(s.delivered_date - s.ship_date)
+             FILTER (WHERE s.delivered_date IS NOT NULL), 1)  AS avg_lead_days,
+       ROUND(SUM(s.freight_cost) / NULLIF(SUM(s.weight_kg), 0)) AS biaya_per_kg,
+       ROUND(100.0 * COUNT(DISTINCT e.shipment_id) / COUNT(*), 1) AS pct_ada_kendala
+FROM shipment s
+JOIN carrier c            ON c.carrier_id = s.carrier_id
+LEFT JOIN delivery_exception e ON e.shipment_id = s.shipment_id
+GROUP BY c.carrier_name, DATE_TRUNC('month', s.ship_date);</code></pre>
+<div class="callout warn"><b class="t">Dokumentasikan definisinya</b>
+On-time % di atas memakai penyebut "sudah terkirim". Pengiriman yang belum tiba tidak dihitung, dan itu bisa membuat angka terlihat terlalu bagus. Tulis definisi ini di dashboard dan konfirmasi dengan tim logistik, atau sediakan versi alternatif yang memperlakukan pengiriman lewat tenggat tapi belum tiba sebagai terlambat.</div>
+
+<div class="kpi">
+<div><small>Pengiriman diproses (ilustrasi)</small><strong>12.480</strong></div>
+<div><small>On-time rata-rata</small><strong>91,3%</strong></div>
+<div class="bad"><small>Carrier terendah</small><strong>82,7%</strong></div>
+<div class="bad"><small>Kendala OPEN &gt; 7 hari</small><strong>38</strong></div>
+</div>
+
+<h3>Langkah 6 — Dokumentasi tiap tool (template README)</h3>
+<pre><code><span class="cm"># Shipment Exception Tracker</span>
+## Tujuan
+Mencatat kendala pengiriman dengan validasi dan jejak audit; menggantikan pencatatan di chat/spreadsheet.
+
+## Input &amp; Output
+- Input: file carrier (CSV) dengan kolom [...]; form web (resi, kategori, catatan)
+- Output: tabel shipment, delivery_exception, audit_log; view v_carrier_performance
+
+## Cara menjalankan (lokal)
+1. cp .env.example .env  (isi DSN database)
+2. psql -f schema.sql
+3. python etl.py data/carrier_march.csv
+4. uvicorn app:app --reload
+
+## Cara mengetes
+pytest -q   (kasus uji disepakati dengan tim logistik: lihat tests/cases.md)
+
+## Deploy
+(langkah deploy / jadwal job)
+
+## Pemilik &amp; kontak
+Dibuat oleh [nama], pengguna utama: tim koordinasi pengiriman
+
+## Keterbatasan yang diketahui
+- Carrier baru butuh baris di tabel carrier sebelum file mereka bisa di-load.</code></pre>
+
+<h3>Langkah 7 — Git &amp; alur kerja</h3>
+<ul>
+<li>Satu repo per tool, commit kecil dengan pesan jelas ("etl: tolak berat nol dan catat alasannya").</li>
+<li>Branch per perubahan, Pull Request kecil, tes dijalankan sebelum merge.</li>
+<li><code>.gitignore</code> untuk data dan <code>.env</code>; jangan pernah commit kredensial atau data asli.</li>
+<li>Gunakan tool lama sebagai template: salin struktur folder, README, dan pola tes dari tool yang sudah live.</li>
+</ul>
+
+<h3>Timeline pengerjaan</h3>
+<ol class="steps">
+<li><b>Hari 1: Kebutuhan &amp; schema</b>Tulis user story dan acceptance criteria, rancang schema dan constraint, jalankan di PostgreSQL lokal.</li>
+<li><b>Hari 2: ETL + tes</b>Transform, reconcile, load idempotent, dan tes kasus yang disepakati.</li>
+<li><b>Hari 3: Web tool</b>Form dan endpoint dengan validasi, error yang jelas, audit trail.</li>
+<li><b>Hari 4: Dashboard</b>View KPI dan dashboard di tools BI yang tersedia, definisi KPI tertulis.</li>
+<li><b>Hari 5: Workflow AI</b>Klasifikasi catatan dengan guardrail dan evaluasi (lihat bagian berikut).</li>
+<li><b>Hari 6: Dokumentasi &amp; deploy</b>README, deploy ke server/cloud gratis atau Docker, uji dari komputer lain.</li>
+<li><b>Hari 7: Pakai oleh orang lain</b>Minta 2–3 teman mencoba, catat kesulitan mereka, perbaiki. Ini bukti "dipakai orang lain".</li>
+</ol>
+
+<div class="callout ok"><b class="t">Cara memenuhi "proyek yang dipakai orang lain" kalau belum punya</b>
+Cari proses nyata di sekitar lo (organisasi kampus, usaha keluarga, komunitas, tempat magang) yang masih pakai spreadsheet atau chat, bangun tool kecil untuk mereka, dan catat: siapa pakai, seberapa sering, apa yang berubah. Satu tool sederhana yang benar-benar dipakai 5 orang selama sebulan lebih kuat daripada tiga proyek demo yang nggak pernah dipakai siapa pun.</div>
+</section>
+
+<!-- ============ 4 ============ -->
+<section id="ai">
+<h2><span class="n">4</span>Workflow AI &amp; Penilaian atas Kode AI</h2>
+<p class="lead">Dua topik yang pasti dibahas: membangun alur kerja berbasis AI yang aman, dan bertanggung jawab atas kode yang dibantu AI.</p>
+
+<h3>Contoh: mengelompokkan catatan bebas kendala dengan guardrail</h3>
+<p>Catatan seperti "paket penyok kena hujan, penerima nolak" harus dipetakan ke kategori baku. AI membantu, tapi hasilnya diperiksa berlapis; kalau ragu, diarahkan ke manusia.</p>
+<pre><code><span class="cm"># classify.py — call_llm adalah fungsi yang lo sediakan (API model apa pun); di tes diganti stub</span>
+import json
+
+ALLOWED = ["DAMAGED", "DELAYED", "LOST", "WRONG_ADDRESS", "REFUSED", "OTHER"]
+PROMPT = ("Klasifikasikan catatan kendala pengiriman ke SATU kategori dari: {cats}. "
+          'Balas HANYA JSON: {{"category": "...", "confidence": 0.0}}. Catatan: {note}')
+
+KEYWORDS = {
+    "LOST":          ["hilang", "lost"],
+    "DAMAGED":       ["rusak", "penyok", "pecah", "basah"],
+    "DELAYED":       ["telat", "terlambat", "macet"],
+    "REFUSED":       ["tolak", "menolak"],
+    "WRONG_ADDRESS": ["alamat salah", "alamat tidak ditemukan"],
+}
+
+def rule_based(note: str):
+    n = note.lower()
+    for cat, words in KEYWORDS.items():
+        if any(w in n for w in words):
+            return cat
+    return None
+
+def review(reason): return {"category": "NEEDS_REVIEW", "reason": reason}
+
+def classify(note: str, call_llm, threshold: float = 0.7):
+    try:
+        out = json.loads(call_llm(PROMPT.format(cats=", ".join(ALLOWED), note=note)))
+        cat, conf = out["category"], float(out["confidence"])
+        assert cat in ALLOWED and 0 &lt;= conf &lt;= 1
+    except Exception:
+        return review("output AI tidak valid")           <span class="cm"># lapis 1: format &amp; nilai harus sah</span>
+    if conf &lt; threshold:
+        return review("confidence rendah")               <span class="cm"># lapis 2: ambang keyakinan</span>
+    rule = rule_based(note)
+    if rule and rule != cat:
+        return review(f"AI={cat} tidak sesuai aturan={rule}")  <span class="cm"># lapis 3: cross-check independen</span>
+    return {"category": cat, "confidence": conf, "reason": "ok"}</code></pre>
+
+<table>
+<tr><th>Lapis pengaman</th><th>Mencegah apa</th></tr>
+<tr><td>Validasi format &amp; daftar nilai baku</td><td>Output ngawur, kategori karangan, JSON rusak</td></tr>
+<tr><td>Ambang keyakinan</td><td>Tebakan lemah masuk ke laporan</td></tr>
+<tr><td>Cross-check dengan aturan sederhana</td><td>Kesalahan yang terdengar meyakinkan tapi bertentangan dengan teks</td></tr>
+<tr><td>Jalur NEEDS_REVIEW ke manusia</td><td>Keputusan penting diambil tanpa pengawasan</td></tr>
+<tr><td>Log prompt, output, keputusan akhir</td><td>Tidak bisa ditelusuri saat ada keluhan</td></tr>
+<tr><td>Evaluasi berkala pada data berlabel</td><td>Kualitas menurun tanpa disadari (data atau model berubah)</td></tr>
+</table>
+<p><b>Evaluasi:</b> label manual 100–200 catatan sebagai "kunci jawaban", jalankan <code>classify</code>, lalu laporkan akurasi pada yang diproses otomatis, persentase yang dilempar ke review, dan contoh kesalahan terbesar. Ubah ambang berdasarkan hasilnya, bukan perasaan. Jangan sembunyikan angka yang jelek; itu justru menunjukkan kematangan.</p>
+
+<div class="callout warn"><b class="t">Kapan AI tidak cocok?</b>
+Kalau ada aturan deterministik yang cukup (misalnya mencocokkan kode carrier ke daftar baku), pakai aturan. AI untuk teks bebas dan pola yang sulit ditulis sebagai aturan. Alasan memilih "tidak pakai AI" kadang justru jawaban terbaik di interview.</div>
+
+<h3>Checklist memeriksa kode buatan AI sebelum dikirim</h3>
+<ul class="check">
+<li><label><input type="checkbox"><span>Gua bisa menjelaskan tiap baris dan alasannya (kalau tidak, gua sederhanakan atau pelajari dulu)</span></label></li>
+<li><label><input type="checkbox"><span>Dijalankan dengan data nyata atau realistis, bukan hanya contoh dari AI</span></label></li>
+<li><label><input type="checkbox"><span>Ada tes, termasuk kasus tepi (kosong, duplikat, nilai negatif, tanggal salah format)</span></label></li>
+<li><label><input type="checkbox"><span>Library dan fungsi yang dipakai benar-benar ada dan sesuai versi (AI kadang mengarang nama fungsi)</span></label></li>
+<li><label><input type="checkbox"><span>Query SQL dicek: join tidak menggandakan baris, NULL ditangani, filter tanggal benar</span></label></li>
+<li><label><input type="checkbox"><span>Keamanan: tidak ada kredensial di kode, query berparameter (bukan string concatenation), input divalidasi</span></label></li>
+<li><label><input type="checkbox"><span>Penanganan error jelas, tidak "diam-diam menelan" masalah</span></label></li>
+<li><label><input type="checkbox"><span>Tidak menambah dependency atau kompleksitas yang tidak perlu</span></label></li>
+<li><label><input type="checkbox"><span>Dibaca ulang dan dirapikan sesuai gaya repo; commit message ditulis sendiri</span></label></li>
+</ul>
+
+<div class="callout tip"><b class="t">Siapkan satu cerita nyata</b>
+Interviewer hampir pasti bertanya: "Pernah AI memberi kode yang salah? Bagaimana lo tahu?" Siapkan satu contoh konkret: apa yang AI tulis, bagaimana lo menemukan kesalahannya (tes gagal, hasil tidak cocok dengan sumber, fungsi tidak ada), dan apa yang lo ubah. Contoh yang jujur lebih meyakinkan daripada klaim "saya selalu mengecek".</div>
+</section>
+
+<!-- ============ 5 ============ -->
+<section id="hrd">
+<h2><span class="n">5</span>Pertanyaan yang Kemungkinan Muncul</h2>
+<p class="lead">Klik tiap pertanyaan untuk melihat maksudnya, contoh jawaban, dan hal yang harus dihindari. Sesuaikan jawaban dengan pengalaman asli lo dan jangan dihafal mentah-mentah.</p>
+
+<h3>A. Sesi HR: motivasi &amp; kecocokan</h3>
+
+<details>
+<summary>Ceritakan tentang diri Anda. <span class="tag">Pembuka</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Melihat kecocokan dan kemampuan menyusun cerita singkat.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya [lulusan/profesional] di bidang [X] dengan pengalaman membangun [tool/proyek] yang dipakai oleh [siapa]. Saya paling menikmati mengubah proses yang berantakan menjadi alur yang rapi dan terukur, misalnya [contoh]. Posisi ini menarik karena menggabungkan data, otomatisasi, dan kerja langsung dengan tim operasional."</p>
+<span class="lbl avoid">Hindari</span><p>Hanya menyebut daftar tools tanpa hasil atau pengguna.</p>
+</div>
+</details>
+
+<details>
+<summary>Kenapa tertarik ke logistik dan operasi? <span class="tag">Motivasi</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Lowongan menyebut "genuine interest in business operations". Mereka tidak mau orang yang hanya ingin coding.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Logistik itu tempat data langsung berdampak pada kejadian nyata: paket terlambat, biaya naik, pelanggan kecewa. Saya mencoba memetakan perjalanan satu paket dari gudang sampai diterima dan melihat betapa banyak titik pencatatan yang masih manual, dan di situlah tool kecil yang rapi bisa berdampak besar. Saya ingin belajar prosesnya langsung dari tim."</p>
+<span class="lbl avoid">Hindari</span><p>Alasan umum seperti "logistik sedang berkembang" tanpa contoh.</p>
+</div>
+</details>
+
+<details>
+<summary>Ceritakan proyek end-to-end yang dipakai orang lain. <span class="tag">Pengalaman</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Syarat eksplisit di lowongan. Mereka ingin melihat siklus penuh: kebutuhan, pembuatan, rilis, feedback, perbaikan.</p>
+<span class="lbl ex">Contoh jawaban (kerangka)</span>
+<p><b>Masalah:</b> [siapa] mencatat [apa] di [spreadsheet/chat], sering [masalah].<br>
+<b>Yang saya lakukan:</b> mengamati proses mereka, menyepakati kebutuhan dan contoh kasus, membangun [tool], menambahkan validasi dan pencatatan perubahan, menulis tes, dan menulis panduan singkat.<br>
+<b>Peluncuran &amp; feedback:</b> [N] orang memakainya, dari feedback saya mengubah [hal konkret].<br>
+<b>Hasil:</b> [waktu hemat / kesalahan berkurang / laporan tidak lagi berbeda]. Kalau diulang, saya akan [pelajaran].</p>
+<span class="lbl avoid">Hindari</span><p>Menyebut proyek demo yang tidak pernah dipakai orang lain sebagai "dipakai". Kalau memang belum ada, jujur dan ceritakan yang paling dekat.</p>
+</div>
+</details>
+
+<details>
+<summary>Anda siap bekerja dari kantor dan berinteraksi langsung dengan tim logistik? <span class="tag">Logistik</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Peran ini butuh melihat proses langsung.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Siap. Saya memang ingin melihat proses langsung karena sering kebutuhan yang sebenarnya baru terlihat saat kita mengamati cara kerja mereka, bukan hanya dari permintaan tertulis."</p>
+</div>
+</details>
+
+<details>
+<summary>Ekspektasi gaji dan kapan bisa mulai? <span class="tag">Administratif</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Screening anggaran dan ketersediaan.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Berdasarkan riset kisaran untuk level fresh graduate/junior di [kota], ekspektasi saya Rp [X]–[Y], terbuka untuk dibahas sesuai total kompensasi dan peluang belajar. Saya bisa mulai [tanggal/notice period]."</p>
+</div>
+</details>
+
+<h3>B. Teknis: database &amp; SQL</h3>
+
+<details>
+<summary>Bagaimana mencegah duplikat dan data yatim di database? <span class="tag">Schema</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Tertulis eksplisit di lowongan.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Duplikat dicegah dengan PRIMARY KEY atau UNIQUE constraint pada kunci bisnis, misalnya nomor resi. Data yatim dicegah dengan FOREIGN KEY, dan ON DELETE RESTRICT supaya induk tidak bisa dihapus selagi masih punya anak. Nilai tidak masuk akal ditahan dengan CHECK dan NOT NULL. Validasi di aplikasi tetap perlu untuk pesan error yang ramah, tapi aturan intinya di database karena bisa dilewati kalau hanya ada di aplikasi."</p>
+</div>
+</details>
+
+<details>
+<summary>Apa itu transaksi dan kapan Anda membutuhkannya? <span class="tag">Transaksi</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Dasar yang disebutkan di kualifikasi.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Transaksi mengelompokkan beberapa operasi menjadi satu kesatuan: semua berhasil atau semua dibatalkan (atomic). Contohnya saat memuat ratusan baris pengiriman: kalau baris ke-300 gagal, saya tidak mau 299 baris pertama sudah masuk dan menyisakan data setengah jadi. Jadi load dibungkus satu transaksi dan di-rollback saat ada error."</p>
+</div>
+</details>
+
+<details>
+<summary>Kapan Anda menambahkan index, dan apa risikonya? <span class="tag">Index</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Cek pemahaman performa dasar.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Index mempercepat pencarian, join, dan pengurutan pada kolom yang sering dipakai di WHERE atau JOIN, misalnya <code>(carrier_id, ship_date)</code> untuk laporan per carrier per periode. Risikonya: memperlambat INSERT/UPDATE dan memakan ruang, jadi saya tidak menambah index berlebihan. Saya cek dengan EXPLAIN apakah index benar-benar dipakai."</p>
+</div>
+</details>
+
+<details>
+<summary>Kenapa join bisa membuat angka penjumlahan menjadi dobel? Bagaimana mencegahnya? <span class="tag">SQL</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Kesalahan klasik yang merusak laporan.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Kalau saya join pengiriman ke kendala (satu pengiriman bisa punya banyak kendala) lalu SUM biaya pengiriman, biayanya terhitung sekali per kendala. Solusinya: agregasi dulu di tabel anak sebelum join, atau pakai COUNT(DISTINCT ...) bila cocok, dan selalu bandingkan total hasil dengan total tabel sumber. Itu juga alasan saya menambahkan pengecekan rekonsiliasi."</p>
+</div>
+</details>
+
+<details>
+<summary>Tulis query: 3 carrier dengan persentase keterlambatan tertinggi bulan lalu. <span class="tag">Live coding</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Kemungkinan ada tes langsung. Mereka melihat cara berpikir, bukan hanya hasil.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<pre><code>SELECT c.carrier_name,
+       COUNT(*) AS terkirim,
+       ROUND(100.0 * COUNT(*) FILTER (WHERE s.delivered_date &gt; s.promised_date) / COUNT(*), 1) AS late_pct
+FROM shipment s
+JOIN carrier c ON c.carrier_id = s.carrier_id
+WHERE s.delivered_date IS NOT NULL
+  AND s.ship_date &gt;= DATE_TRUNC('month', CURRENT_DATE) - INTERVAL '1 month'
+  AND s.ship_date &lt;  DATE_TRUNC('month', CURRENT_DATE)
+GROUP BY c.carrier_name
+HAVING COUNT(*) &gt;= 30           <span class="cm">-- abaikan carrier dengan sampel kecil</span>
+ORDER BY late_pct DESC
+LIMIT 3;</code></pre>
+<p>Sambil menulis, ucapkan asumsinya: "Saya hitung hanya yang sudah terkirim, dan saya pakai minimum 30 pengiriman supaya persentasenya tidak menipu."</p>
+</div>
+</details>
+
+<h3>C. Teknis: Python, ETL, tes, Git</h3>
+
+<details>
+<summary>Apa arti ETL yang "deterministic" dan "verifiable"? Bagaimana memastikannya? <span class="tag">ETL</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Frasa dari lowongan, hampir pasti ditanya.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Deterministic: input yang sama selalu menghasilkan output sama. Saya pastikan dengan tidak memakai nilai acak atau waktu sekarang di dalam transformasi, mengurutkan secara eksplisit sebelum deduplikasi, dan menulis tes yang mengacak urutan input lalu membandingkan hasilnya. Verifiable: ada rekonsiliasi, yaitu jumlah baris input sama dengan clean ditambah reject, total nilai cocok dengan sumber, dan setiap baris yang ditolak punya alasan tertulis. Hasil rekonsiliasi disimpan sebagai log."</p>
+</div>
+</details>
+
+<details>
+<summary>Apa arti pipeline yang idempotent? Kenapa penting? <span class="tag">ETL</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Job sering dijalankan ulang (gagal di tengah, file diperbarui).</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Idempotent artinya dijalankan sekali atau berkali-kali hasil akhirnya sama. Caranya pakai upsert (INSERT ... ON CONFLICT DO UPDATE) pada kunci bisnis dan transaksi. Tanpa itu, menjalankan ulang job menghasilkan duplikat atau data setengah masuk."</p>
+</div>
+</details>
+
+<details>
+<summary>Sumber data carrier tiba-tiba mengubah format kolomnya. Apa yang terjadi pada pipeline Anda? <span class="tag">Ketahanan</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Perubahan format adalah hal biasa; mereka ingin lihat desain yang tidak diam-diam rusak.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Pipeline saya memeriksa kolom wajib dan tipe di awal, dan berhenti dengan pesan jelas kalau tidak sesuai, bukan memproses diam-diam dengan hasil salah. Baris yang tidak lolos masuk ke tabel reject. Setelah itu saya perbarui mapping, tambahkan kasus baru ke tes, dan beri tahu pemilik data."</p>
+</div>
+</details>
+
+<details>
+<summary>Bagaimana Anda menulis tes untuk sebuah tool? Dari mana kasusnya? <span class="tag">Testing</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>"Tests from known-input and expected-output cases agreed with the requester."</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya minta peminta memberi contoh nyata: input ini harus menghasilkan output ini, termasuk kasus aneh yang pernah bikin masalah. Kasus itu saya jadikan tes (pytest) dan simpan di repo bersama catatan siapa yang menyetujuinya. Bila ada bug baru, saya tambah kasusnya dulu sebagai tes yang gagal, baru memperbaiki."</p>
+</div>
+</details>
+
+<details>
+<summary>Jelaskan alur kerja Git Anda saat menambah fitur pada tool yang sudah live. <span class="tag">Git</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Cek kebiasaan kerja tim.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya buat branch dari main, perubahan kecil dengan commit jelas, jalankan tes lokal, buka Pull Request dengan ringkasan dan cara mengujinya, lalu merge setelah direview. Rahasia seperti kredensial tidak pernah di-commit. Bila ada masalah di produksi, saya bisa revert ke commit sebelumnya."</p>
+</div>
+</details>
+
+<details>
+<summary>Tulis fungsi pandas untuk menghapus duplikat resi dengan mempertahankan data terbaru. Apa risikonya? <span class="tag">Live coding</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Soal sederhana, tapi mereka lihat apakah lo memikirkan definisi "terbaru" dan jejak data yang dibuang.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<pre><code>def dedupe_latest(df):
+    df = df.sort_values(["shipment_ref", "updated_at"], kind="mergesort")
+    dup = df.duplicated("shipment_ref", keep="last")
+    removed = df[dup]                     <span class="cm"># simpan untuk jejak, jangan buang diam-diam</span>
+    return df[~dup], removed</code></pre>
+<p>Risikonya: "terbaru" harus didefinisikan jelas (kolom apa?), dan baris yang dibuang harus dicatat agar bisa diaudit.</p>
+</div>
+</details>
+
+<h3>D. AI &amp; penilaian</h3>
+
+<details>
+<summary>Bagaimana Anda memakai AI coding assistant sehari-hari? Bagaimana mengecek hasilnya? <span class="tag">AI</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Kualifikasi dan tanggung jawab sama-sama menyebutnya.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya pakai untuk kerangka kode, ide query, dan menjelaskan error, tapi tidak menempel hasilnya begitu saja. Saya baca dan pastikan paham tiap bagian, jalankan dengan data realistis, dan tulis tes termasuk kasus tepi. Saya cek bahwa fungsi dan library-nya benar-benar ada, query tidak menggandakan baris, dan tidak ada rahasia atau praktik tidak aman. Setelah itu saya rapikan dan buat commit sendiri, karena saya yang bertanggung jawab atas kode itu."</p>
+<span class="lbl avoid">Hindari</span><p>"AI-nya sudah benar, tinggal saya pakai", atau sebaliknya menolak AI sama sekali.</p>
+</div>
+</details>
+
+<details>
+<summary>Kapan Anda memilih tidak memakai AI untuk suatu alur kerja? <span class="tag">AI</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Menguji penilaian, bukan antusiasme.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Kalau aturannya jelas dan deterministik, misalnya mencocokkan kode carrier atau menghitung biaya per kg, saya pakai kode biasa karena lebih murah, bisa diuji, dan hasilnya selalu sama. AI saya pakai untuk teks bebas atau pola yang sulit ditulis sebagai aturan, dan tetap dengan validasi output, ambang keyakinan, jalur review manusia, dan evaluasi berkala."</p>
+</div>
+</details>
+
+<details>
+<summary>Jelaskan baris kode ini (interviewer menunjuk kode dari proyek Anda). <span class="tag">Explain code</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>"Be able to explain any code shipped." Siapkan diri untuk ini.</p>
+<span class="lbl ex">Persiapan</span>
+<p>Baca ulang proyek lo sendiri sebelum interview. Untuk tiap fungsi kunci, siapkan jawaban: apa tujuannya, kenapa dibuat begitu, apa yang terjadi saat input salah, dan alternatif yang dipertimbangkan. Kalau ada bagian yang lo tidak paham, hapus atau pelajari dulu, jangan dibawa ke interview.</p>
+<span class="lbl avoid">Hindari</span><p>"Ini dari AI jadi saya kurang tahu detailnya."</p>
+</div>
+</details>
+
+<h3>E. Studi kasus &amp; perilaku</h3>
+
+<details>
+<summary>Seorang koordinator meminta "tolong bikin dashboard biar kami tahu kondisi pengiriman". Apa langkah Anda? <span class="tag">Requirement</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Permintaan kabur adalah ujian utama peran ini.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya tidak langsung membangun. Saya minta melihat cara mereka memantau hari ini, siapa yang memakai laporan itu, keputusan apa yang diambil darinya, dan seberapa sering. Saya tuliskan definisi tiap metrik ('terlambat' itu berapa hari?) dan minta persetujuan, lalu buat prototipe sederhana dan iterasi. Kriteria berhasil kami sepakati di awal."</p>
+</div>
+</details>
+
+<details>
+<summary>Angka on-time di dashboard Anda berbeda dengan laporan tim. Apa yang Anda lakukan? <span class="tag">Rekonsiliasi</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Masalah sehari-hari: dua angka, satu kebenaran.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya bandingkan dulu definisi dan cakupannya: periode, penyebut (hanya terkirim atau semua?), toleransi hari, dan sumber data. Lalu saya telusuri beberapa pengiriman secara individual sampai menemukan pembeda. Hasilnya saya tuliskan sebagai definisi resmi dan kedua pihak menyetujuinya, supaya perbedaan tidak muncul lagi."</p>
+</div>
+</details>
+
+<details>
+<summary>Setelah tool diluncurkan, pengguna jarang memakainya dan tetap mengirim chat. Apa yang Anda lakukan? <span class="tag">Adopsi</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>"Collect feedback after each launch, improve tools based on how they are used."</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya anggap itu masukan tentang tool, bukan kesalahan pengguna. Saya amati atau tanya langsung kenapa chat lebih mudah: apakah form terlalu panjang, terlalu banyak langkah, atau kurang bermanfaat bagi mereka? Lalu saya sederhanakan, misalnya mengurangi kolom wajib atau menyediakan akses dari ponsel, dan ukur pemakaian lagi setelah perubahan."</p>
+</div>
+</details>
+
+<details>
+<summary>Ceritakan kesalahan yang pernah Anda buat pada kode atau data dan bagaimana Anda memperbaikinya. <span class="tag">STAR</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Kejujuran dan kebiasaan belajar.</p>
+<span class="lbl ex">Contoh jawaban (kerangka)</span>
+<p><b>Situation:</b> Total biaya di laporan saya lebih besar dari sumber.<br>
+<b>Action:</b> Saya telusuri dan menemukan join yang menggandakan baris. Saya perbaiki dengan agregasi sebelum join, menambah pengecekan rekonsiliasi, dan tes untuk kasus itu.<br>
+<b>Result:</b> Angka cocok dan masalah serupa tertangkap otomatis sejak itu.</p>
+</div>
+</details>
+
+<details>
+<summary>Dua peminta dari tim berbeda minta tool dengan tenggat sama. Bagaimana Anda memutuskan? <span class="tag">Prioritas</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Menguji prioritisasi dan komunikasi.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya cari tahu dampak dan urgensi masing-masing (apa yang terjadi jika terlambat), lalu diskusikan dengan atasan atau Business Analyst untuk memutuskan prioritas. Saya bisa menawarkan versi minimum dulu untuk salah satunya dan jelaskan jadwal dengan terbuka kepada kedua peminta."</p>
+</div>
+</details>
+
+<h3>F. Pertanyaan yang sebaiknya lo ajukan balik</h3>
+<ul>
+<li>Tool apa saja yang sudah live dan dipakai tim logistik, dan bagaimana struktur/template-nya?</li>
+<li>Stack data dan database apa yang dipakai, dan seperti apa proses deploy serta review kode?</li>
+<li>Siapa pengguna utama tool-tool ini, dan bagaimana feedback dikumpulkan setelah peluncuran?</li>
+<li>Seperti apa 3 bulan pertama yang dianggap sukses?</li>
+<li>Bagaimana pembagian kerja dengan Business Analyst, dan berapa banyak waktu di lapangan atau bersama tim?</li>
+<li>Bagaimana kebijakan perusahaan soal penggunaan AI coding tools dan data?</li>
+</ul>
+</section>
+
+<!-- ============ 6 ============ -->
+<section id="persiapan">
+<h2><span class="n">6</span>Checklist Persiapan</h2>
+<p class="lead">Centang sambil jalan. Progres tersimpan di browser lo (kalau browser mengizinkan).</p>
+
+<h3>Portofolio &amp; dokumen</h3>
+<ul class="check">
+<li><label><input type="checkbox"><span>Satu proyek end-to-end di GitHub, lengkap README (tujuan, input/output, cara deploy, cara tes)</span></label></li>
+<li><label><input type="checkbox"><span>Bukti pemakaian orang lain: siapa, seberapa sering, apa yang berubah setelah feedback</span></label></li>
+<li><label><input type="checkbox"><span>Tes otomatis yang berjalan (pytest) dan kasus uji yang disepakati dengan pengguna</span></label></li>
+<li><label><input type="checkbox"><span>Schema dengan constraint dan penjelasan tiap keputusan desain</span></label></li>
+<li><label><input type="checkbox"><span>CV memakai kata kunci lowongan (ETL, reconciliation, audit trail, validation, PostgreSQL, Git, testing)</span></label></li>
+<li><label><input type="checkbox"><span>Setiap pengalaman di CV punya hasil terukur (waktu hemat, kesalahan berkurang, jumlah pengguna)</span></label></li>
+</ul>
+
+<h3>Skill teknis</h3>
+<ul class="check">
+<li><label><input type="checkbox"><span>SQL: JOIN, GROUP BY, CTE, window function, FILTER, DATE_TRUNC, penanganan NULL</span></label></li>
+<li><label><input type="checkbox"><span>Desain tabel: PK, FK, UNIQUE, CHECK, partial index, normalisasi dasar</span></label></li>
+<li><label><input type="checkbox"><span>Transaksi, rollback, upsert, dan EXPLAIN dasar</span></label></li>
+<li><label><input type="checkbox"><span>Python: pandas (merge, groupby, datetime, validasi), fungsi dan struktur kode rapi, penanganan error</span></label></li>
+<li><label><input type="checkbox"><span>Satu framework web sederhana (FastAPI/Flask) dengan validasi input</span></label></li>
+<li><label><input type="checkbox"><span>Git: branch, PR, resolve konflik, revert</span></label></li>
+<li><label><input type="checkbox"><span>Docker atau cara deploy sederhana yang bisa dijelaskan</span></label></li>
+</ul>
+
+<h3>Penilaian &amp; domain</h3>
+<ul class="check">
+<li><label><input type="checkbox"><span>Satu cerita nyata tentang kesalahan AI yang berhasil gua tangkap</span></label></li>
+<li><label><input type="checkbox"><span>Bisa menjelaskan tiap bagian kode di proyek gua tanpa membuka AI</span></label></li>
+<li><label><input type="checkbox"><span>Paham KPI logistik dasar: OTD, OTIF, lead time, biaya per kg, dwell time, klaim</span></label></li>
+<li><label><input type="checkbox"><span>Riset perusahaan: jenis logistik yang dijalankan, mitra/carrier, berita terbaru</span></label></li>
+<li><label><input type="checkbox"><span>Siapkan 3 cerita STAR (kesalahan, menggali kebutuhan, menangani feedback)</span></label></li>
+<li><label><input type="checkbox"><span>Siapkan 3 pertanyaan balik untuk interviewer</span></label></li>
+</ul>
+
+<div class="callout tip"><b class="t">Urutan prioritas kalau waktu mepet</b>
+1) Satu proyek yang jalan, punya tes, dan bisa gua jelaskan sampai ke barisnya &gt; 2) SQL dan desain schema yang kuat &gt; 3) Cerita proyek dipakai orang lain &gt; 4) Penilaian atas kode AI &gt; 5) Pengetahuan dasar logistik &gt; 6) Riset perusahaan.</div>
+
+<h3>Latihan akhir: pitch 60 detik</h3>
+<div class="callout ok">
+"Saya membangun Shipment Exception Tracker: ETL yang membersihkan data carrier dan terbukti cocok dengan sumber lewat rekonsiliasi, database PostgreSQL dengan constraint yang mencegah resi ganda dan data yatim, serta form web untuk mencatat kendala dengan validasi dan jejak audit otomatis. Kasus ujinya saya sepakati dengan pengguna, dan [N] orang sudah memakainya. Dari feedback mereka, saya [perubahan konkret]. Saya juga menambahkan klasifikasi catatan dengan AI yang punya validasi, ambang keyakinan, dan jalur review manusia. Saya ingin membawa cara kerja yang sama ke tim Logistik: tool kecil yang andal, datanya bisa dipercaya, dan benar-benar dipakai."
+</div>
+</section>
+
+</main>
+
+<footer>
+Dibuat berdasarkan teks lowongan Operations Analyst (Data &amp; Automation) tim Logistik (disalin pengguna). Nama perusahaan tidak disebutkan. Semua data dan angka dalam mock project adalah ilustrasi; kode adalah kerangka belajar yang perlu dijalankan dan diuji sendiri. Jawaban wawancara hanyalah kerangka; sesuaikan dengan pengalaman lo yang sebenarnya.
+</footer>
+</div>
+
+<script>
+(function(){
+  var boxes = document.querySelectorAll('.check input');
+  var key = 'ops_analyst_logistics_checklist_v1';
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(key) || '{}'); } catch(e){}
+  boxes.forEach(function(b, i){
+    if (saved[i]) b.checked = true;
+    b.addEventListener('change', function(){
+      saved[i] = b.checked;
+      try { localStorage.setItem(key, JSON.stringify(saved)); } catch(e){}
+    });
+  });
+})();
+</script>
+</body>
+</html>
