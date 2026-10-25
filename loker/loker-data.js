@@ -26,10 +26,10 @@ const LOKER = {
       badge: "Open", icon: "💼", cta: "Buka mock project"
     },
     {
-      company: "Perusahaan B",
-      role: "Sales Data Analyst",
+      company: "Era Jaya",
+      role: "Data Analyst - Internal Audit",
       desc: "Analisis penjualan kompetitif untuk perusahaan FMCG.",
-      file: "projects/contoh-mock-project.html",
+      file: "projects/tutorial_techconnect_hc_analytics.html",
       stats: [{ value: 120, suffix: "", label: "SKU" }, { value: 18, suffix: "%", label: "Potensi kenaikan" }],
       tags: ["Python", "Power BI"],
       icon: "📦"

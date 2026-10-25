@@ -1,0 +1,814 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mock Project: Data Analyst Internal Audit di Erajaya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f1b33; --navy2:#16264a; --orange:#f26a1b; --yellow:#fbbf24;
+  --bg:#f4f5f8; --card:#fff; --ink:#1c2333; --muted:#5b6478; --line:#e3e6ee;
+  --green:#14804a; --greenbg:#e8f6ee; --redbg:#fdecec; --red:#b42318; --blue:#1d4ed8; --bluebg:#e8efff;
+  --codebg:#0d1424; --codeink:#d6e2ff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;line-height:1.7;font-size:16px}
+.wrap{max-width:900px;margin:0 auto;background:var(--card);box-shadow:0 0 40px rgba(15,27,51,.08)}
+header.hero{background:linear-gradient(160deg,var(--navy),var(--navy2));color:#fff;padding:48px 44px 40px;border-bottom:5px solid var(--orange)}
+.badge{display:inline-block;border:1.5px solid var(--orange);color:var(--yellow);background:rgba(242,106,27,.18);border-radius:999px;font-weight:700;font-size:12px;letter-spacing:.06em;padding:7px 16px;text-transform:uppercase}
+.hero h1{font-size:40px;line-height:1.15;margin:22px 0 16px;font-weight:800;letter-spacing:-.02em}
+.hero p{color:#c7d0e6;font-size:17px;margin:0;max-width:720px}
+nav.toc{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);padding:10px 24px;display:flex;gap:6px;overflow-x:auto;white-space:nowrap}
+nav.toc a{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;padding:6px 12px;border-radius:999px}
+nav.toc a:hover{background:var(--bluebg);color:var(--blue)}
+main{padding:36px 44px 60px}
+section{margin-bottom:56px}
+h2{font-size:27px;line-height:1.25;margin:0 0 6px;letter-spacing:-.01em}
+h2 .n{display:inline-block;background:var(--orange);color:#fff;font-size:14px;border-radius:8px;padding:2px 10px;margin-right:10px;vertical-align:middle}
+h3{font-size:19px;margin:30px 0 8px}
+.lead{color:var(--muted);margin:0 0 20px}
+blockquote{margin:0 0 22px;padding:6px 0 6px 18px;border-left:4px solid var(--line);color:var(--muted);font-style:italic}
+.callout{border-radius:12px;padding:16px 20px;margin:18px 0;border:1px solid}
+.callout.tip{background:#fffbea;border-color:#f6dc7a}
+.callout.warn{background:var(--redbg);border-color:#f5b5b0}
+.callout.ok{background:var(--greenbg);border-color:#a8dcc0}
+.callout.info{background:var(--bluebg);border-color:#b9ccff}
+.callout b.t{display:block;margin-bottom:4px}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.5px}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:var(--navy);color:#fff;font-weight:700}
+tr:nth-child(even) td{background:#fafbfd}
+code{font-family:'JetBrains Mono',monospace;font-size:13px;background:#eef1f8;padding:2px 6px;border-radius:5px}
+pre{background:var(--codebg);color:var(--codeink);padding:18px 20px;border-radius:12px;overflow-x:auto;font-size:13px;line-height:1.6;margin:14px 0}
+pre code{background:none;padding:0;color:inherit}
+.cm{color:#7f8db3}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:16px 0}
+.card{border:1px solid var(--line);border-radius:12px;padding:16px 18px;background:#fff}
+.card h4{margin:0 0 6px;font-size:16px}
+.card p{margin:0;font-size:14.5px;color:var(--muted)}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0}
+.kpi div{background:var(--navy);color:#fff;border-radius:12px;padding:14px 16px}
+.kpi small{display:block;color:#9fb0d6;font-size:12px}
+.kpi strong{font-size:24px}
+.kpi .bad{background:#7a1f16}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:16px 0}
+ol.steps>li{counter-increment:s;position:relative;padding:4px 0 18px 54px}
+ol.steps>li::before{content:counter(s);position:absolute;left:0;top:2px;width:36px;height:36px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+ol.steps>li b{display:block}
+details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background:#fff;overflow:hidden}
+summary{cursor:pointer;padding:14px 18px;font-weight:700;list-style:none;display:flex;gap:10px;align-items:flex-start}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"＋";color:var(--orange);font-weight:800;flex:none}
+details[open]>summary::before{content:"－"}
+details[open]>summary{background:#f7f8fc;border-bottom:1px solid var(--line)}
+.ans{padding:6px 20px 16px}
+.ans .lbl{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:6px;padding:2px 8px;margin:12px 0 4px}
+.lbl.why{background:var(--bluebg);color:var(--blue)}
+.lbl.ex{background:var(--greenbg);color:var(--green)}
+.lbl.avoid{background:var(--redbg);color:var(--red)}
+.ans p{margin:4px 0}
+.tag{font-size:11px;font-weight:700;border-radius:6px;padding:2px 8px;background:#eef1f8;color:var(--muted);margin-left:auto;flex:none}
+.check{list-style:none;padding:0;margin:10px 0}
+.check li{padding:8px 0;border-bottom:1px dashed var(--line)}
+.check label{cursor:pointer;display:flex;gap:10px;align-items:flex-start}
+.check input{margin-top:6px;accent-color:var(--orange);width:17px;height:17px;flex:none}
+.check input:checked+span{text-decoration:line-through;color:var(--muted)}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0;font-size:13.5px}
+.flow .s{background:#f0f3fa;border:1px solid #b7c2de;border-radius:8px;padding:8px 12px;font-weight:600}
+.flow .a{color:var(--orange);font-weight:800}
+.mock{background:#f0f3fa;border:1px dashed #b7c2de;border-radius:12px;padding:16px;margin:14px 0;font-size:13.5px}
+.mock .row{display:grid;gap:10px;margin-bottom:10px}
+.mock .box{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 12px;text-align:center;color:var(--muted)}
+.mock .r4{grid-template-columns:repeat(4,1fr)} .mock .r2{grid-template-columns:2fr 1fr} .mock .r3{grid-template-columns:repeat(3,1fr)}
+footer{padding:26px 44px;background:var(--navy);color:#9fb0d6;font-size:13px}
+@media(max-width:640px){
+  header.hero{padding:34px 22px 28px}.hero h1{font-size:28px}main{padding:26px 20px 50px}footer{padding:22px 20px}
+  .mock .r4,.mock .r3,.mock .r2{grid-template-columns:1fr 1fr}
+  table{display:block;overflow-x:auto}
+}
+@media print{nav.toc{display:none}details{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <span class="badge">Mock Project &amp; Studi Kasus</span>
+  <h1>Kalau Gua Ngelamar Jadi Data Analyst Internal Audit di Erajaya, Ini yang Bakal Gua Lakuin</h1>
+  <p>Ini bukan tutorial nulis query doang. Ini tentang memahami bisnis ritel dan distribusi Erajaya, memahami cara kerja Internal Audit, dan membuktikan bahwa gua bisa mengubah data jadi temuan audit yang bisa dipertanggungjawabkan, bukan cuma daftar angka yang aneh.</p>
+</header>
+
+<nav class="toc">
+  <a href="#job">1. Bedah Lowongan</a>
+  <a href="#bisnis">2. Pahami Bisnis &amp; Audit</a>
+  <a href="#project">3. Mock Project</a>
+  <a href="#temuan">4. Contoh Temuan</a>
+  <a href="#hrd">5. Pertanyaan Interview</a>
+  <a href="#persiapan">6. Checklist</a>
+</nav>
+
+<main>
+
+<blockquote>"Nemu loker Data Analyst buat Internal Audit di Erajaya. Bukan analis bisnis biasa: tugasnya bikin data pipeline buat audit, nyari anomali dan indikasi fraud, ngasih rekomendasi audit, sampai mantau apakah tindak lanjut manajemen beneran dijalankan. Sebelum apply, gua mau pahami dulu: Erajaya itu bisnisnya gimana, risikonya di mana, dan pertanyaan apa yang bakal dilempar ke orang di posisi ini?"</blockquote>
+
+<p>Posisi ini beda dari data analyst di umumnya. Di sini lo bukan bantu tim sales jualan lebih banyak, tapi bantu perusahaan <b>memastikan kontrol berjalan dan risiko terdeteksi</b>. Artinya, selain SQL dan Python, yang dinilai adalah <b>skeptisisme profesional, ketelitian pada bukti, dan cara lo menyampaikan temuan tanpa asal menuduh</b>. Itu yang bikin kandidat berbeda dari yang cuma jago query.</p>
+
+<div class="callout info"><b class="t">Catatan penting sebelum mulai</b>
+Informasi tentang Erajaya di sini berasal dari deskripsi perusahaan di lowongan. Bagian "area risiko" adalah <b>hipotesis gua</b> berdasarkan model bisnis ritel dan distribusi, bukan fakta internal. Semua data dan angka di mock project adalah <b>sintetis</b>. Judul posisi persisnya nggak ada di teks yang gua dapat, jadi gua pakai "Data Analyst Internal Audit". Sesuaikan dengan judul asli di LinkedIn.</div>
+
+<!-- ============ 1 ============ -->
+<section id="job">
+<h2><span class="n">1</span>Bedah Job Posting</h2>
+<p class="lead">Baca lowongan kayak baca terms of reference audit: tiap kalimat punya implikasi kerja.</p>
+
+<details>
+<summary>Job posting lengkapnya (klik untuk buka)</summary>
+<div class="ans">
+<p><b>Responsibilities</b></p>
+<ul>
+<li>Develop and maintain data pipelines and analytical datasets to support Internal Audit activities, including data extraction, transformation, validation, and analysis.</li>
+<li>Perform data analytics on structured and unstructured data to identify anomalies, unusual patterns, potential fraud indicators, policy violations, and emerging risks.</li>
+<li>Translate complex data analysis results into clear, actionable insights to support audit planning, risk assessment, and decision-making.</li>
+<li>Execute data-driven audit procedures by analyzing and testing audit evidence, identifying control weaknesses, anomalies, and potential risks, and translating findings into clear, practical audit recommendations.</li>
+<li>Validate audit findings and management action plans through data analysis and supporting evidence, and monitor remediation progress to ensure agreed actions are effectively implemented and risks are adequately addressed.</li>
+</ul>
+<p><b>Requirements</b></p>
+<ul>
+<li>Minimum 1–3 years of experience in Data Analytics, BI, Data Analysis, or related field.</li>
+<li>Strong SQL (GoogleSQL, MySQL, or PostgreSQL preferred).</li>
+<li>Python and/or R for data analysis, manipulation, and basic automation; Pandas or similar is a plus.</li>
+<li>Good understanding of data modeling, data mining, data visualization, anomaly detection, and analytical problem-solving.</li>
+<li>Willing to work as Internal Audit, leveraging Data Analytics to conduct audit execution and risk assessment.</li>
+</ul>
+</div>
+</details>
+
+<h3>Terjemahan: apa maksud sebenarnya tiap poin</h3>
+<table>
+<tr><th>Yang tertulis</th><th>Artinya di dunia nyata</th><th>Bukti yang harus gua tunjukin</th></tr>
+<tr><td>Data pipeline &amp; analytical dataset, termasuk validasi</td><td>Data audit diambil dari sistem (ERP, POS, keuangan), dibersihkan, dan harus <b>terbukti lengkap dan akurat</b> sebelum dianalisis, karena hasilnya jadi bukti audit.</td><td>Script ekstraksi + cek rekonsiliasi (jumlah baris, total nilai) + log</td></tr>
+<tr><td>Structured &amp; unstructured data</td><td>Selain tabel transaksi, ada teks: deskripsi klaim, catatan retur, komentar approval, mungkin email atau dokumen.</td><td>Contoh keyword flagging / fuzzy matching pada kolom teks</td></tr>
+<tr><td>Anomali, pola tidak wajar, indikasi fraud, pelanggaran kebijakan</td><td>Menjalankan tes seperti duplikasi pembayaran, transaksi di bawah batas approval, void/refund tidak wajar, pemisahan tugas.</td><td>Kumpulan tes analitik + penjelasan logika dan false positive-nya</td></tr>
+<tr><td>Insight untuk audit planning &amp; risk assessment</td><td>Data dipakai untuk menentukan <b>area mana yang diaudit dulu</b> (risk-based audit), bukan hanya setelah audit berjalan.</td><td>Risk heatmap / ranking unit berdasarkan indikator data</td></tr>
+<tr><td>Audit procedure &amp; rekomendasi praktis</td><td>Temuan harus punya struktur (kondisi, kriteria, penyebab, dampak) dan rekomendasi yang bisa dijalankan auditee.</td><td>Contoh temuan format 4C + rekomendasi</td></tr>
+<tr><td>Validasi action plan &amp; monitoring remediasi</td><td>Setelah temuan, mereka tinggal tanya: "sudah diperbaiki belum?" Dibuktikan dengan data, bukan klaim manajemen.</td><td>Tracker tindak lanjut + query verifikasi (apakah masalah masih terjadi?)</td></tr>
+<tr><td>"Willing to work as Internal Audit"</td><td>Ini peran audit, bukan sekadar IT/data. Kemungkinan ada interaksi dengan auditee, kunjungan lapangan, dan standar etika audit.</td><td>Sikap dan jawaban yang menunjukkan lo paham independensi dan objektivitas</td></tr>
+</table>
+
+<div class="callout tip"><b class="t">Satu hal yang sering kelewat</b>
+Temuan analitik <b>bukan</b> kesimpulan fraud. Anomali adalah <i>indikator</i> yang butuh verifikasi dan konteks. Kandidat yang bilang "saya menemukan fraud" langsung kelihatan kurang matang. Gunakan bahasa "indikasi", "perlu dikonfirmasi", dan "perlu bukti pendukung".</div>
+</section>
+
+<!-- ============ 2 ============ -->
+<section id="bisnis">
+<h2><span class="n">2</span>Pahami Bisnis &amp; Cara Kerja Audit</h2>
+<p class="lead">Dua hal yang harus dipahami: bisnis Erajaya, dan cara Internal Audit bekerja.</p>
+
+<h3>Yang bisa gua simpulkan dari profil perusahaan</h3>
+<ul>
+<li><b>Skala besar dan perusahaan terbuka:</b> 10.001+ karyawan, tercatat di Bursa Efek Indonesia (kode ERAA). Perusahaan tercatat punya tuntutan tata kelola, pelaporan, dan komite audit, sehingga fungsi Internal Audit punya peran penting.</li>
+<li><b>Model bisnis:</b> impor, distribusi, dan ritel perangkat telekomunikasi (ponsel, tablet), kartu SIM, voucher isi ulang operator, aksesori, dan gadget lain, juga produk sendiri (Venera).</li>
+<li><b>Kemitraan:</b> bekerja sama dengan merek global dan operator jaringan, artinya ada transaksi bernilai besar dengan pemasok dan rekonsiliasi dengan mitra.</li>
+<li><b>Operasional tersebar:</b> sebagai peritel besar, kemungkinan ada banyak gerai dan gudang, jadi kontrol di lapangan (kas, stok, diskon) perlu dipantau lewat data.</li>
+</ul>
+
+<h3>Hipotesis area risiko (untuk bahan diskusi, bukan fakta internal)</h3>
+<div class="grid">
+<div class="card"><h4>Persediaan</h4><p>Barang bernilai tinggi dan mudah dibawa: selisih stok, penyesuaian stok (adjustment), retur, barang rusak, pencatatan IMEI/serial number.</p></div>
+<div class="card"><h4>Penjualan &amp; kasir</h4><p>Void, refund, diskon manual, penjualan di luar jam, transaksi terpisah-pisah (split), promo yang disalahgunakan.</p></div>
+<div class="card"><h4>Pengadaan &amp; pembayaran</h4><p>Pembayaran ganda ke pemasok, pemasok fiktif, pemecahan transaksi di bawah batas persetujuan, harga beli menyimpang.</p></div>
+<div class="card"><h4>Voucher &amp; top-up</h4><p>Rekonsiliasi saldo dengan operator, transaksi bernilai kecil bervolume tinggi, selisih pencatatan.</p></div>
+<div class="card"><h4>Biaya &amp; klaim karyawan</h4><p>Klaim ganda, kuitansi berulang, deskripsi mencurigakan, konflik kepentingan.</p></div>
+<div class="card"><h4>Garansi &amp; after-sales</h4><p>Klaim garansi tidak wajar, penggantian unit, pola retur berulang oleh pihak yang sama.</p></div>
+</div>
+
+<div class="callout tip"><b class="t">Cara memakai ini di interview</b>
+Sebutkan area risiko sebagai hipotesis: "Karena Erajaya menjual barang bernilai tinggi dengan volume besar di banyak lokasi, saya akan menduga risiko persediaan dan kontrol kasir sebagai prioritas. Saya ingin menguji hipotesis itu dengan data." Itu terdengar seperti auditor yang berpikir berbasis risiko.</div>
+
+<h3>Cara kerja Internal Audit (singkat tapi wajib paham)</h3>
+<div class="flow">
+<span class="s">Risk assessment</span><span class="a">→</span>
+<span class="s">Audit planning</span><span class="a">→</span>
+<span class="s">Fieldwork / pengujian</span><span class="a">→</span>
+<span class="s">Pelaporan temuan</span><span class="a">→</span>
+<span class="s">Tindak lanjut (follow-up)</span>
+</div>
+<table>
+<tr><th>Konsep</th><th>Artinya</th><th>Peran data analytics</th></tr>
+<tr><td>Risk-based audit</td><td>Fokus audit pada area berisiko tinggi, bukan merata.</td><td>Skor risiko dari data untuk menentukan prioritas gerai/proses.</td></tr>
+<tr><td>Sampling vs full population</td><td>Auditor tradisional menguji sampel. Dengan data, bisa menguji <b>seluruh populasi</b>.</td><td>Jalankan tes ke semua transaksi, lalu fokus ke eksepsi.</td></tr>
+<tr><td>Continuous auditing / monitoring</td><td>Tes dijalankan berkala, bukan setahun sekali.</td><td>Pipeline terjadwal yang menghasilkan daftar eksepsi.</td></tr>
+<tr><td>Kondisi, kriteria, penyebab, dampak (4C)</td><td>Struktur standar temuan audit.</td><td>Data menyediakan "kondisi" dan "dampak" yang terukur.</td></tr>
+<tr><td>Bukti audit</td><td>Harus relevan, andal, dan dapat ditelusuri.</td><td>Dokumentasi sumber data, query, tanggal tarik, dan rekonsiliasi.</td></tr>
+<tr><td>Independensi &amp; objektivitas</td><td>Auditor tidak boleh bias atau terlibat dalam operasi yang diaudit.</td><td>Analisis harus netral, tidak dikondisikan oleh keinginan auditee.</td></tr>
+<tr><td>Tiga lini (Three Lines)</td><td>Lini 1 operasional, lini 2 risiko/kepatuhan, lini 3 internal audit.</td><td>Internal Audit memberi jaminan independen ke manajemen dan komite audit.</td></tr>
+</table>
+</section>
+
+<!-- ============ 3 ============ -->
+<section id="project">
+<h2><span class="n">3</span>Mock Project: Audit Analytics Toolkit</h2>
+<p class="lead">Satu proyek yang menunjukkan lo bisa menarik data, memvalidasinya, menjalankan tes, dan melaporkan temuan.</p>
+
+<div class="callout ok"><b class="t">Skenario</b>
+Internal Audit "Retail Group (ilustrasi)" ingin membangun toolkit analitik untuk tiga area: (1) <b>pembayaran pemasok</b> (duplikasi, pemecahan transaksi, pemasok fiktif), (2) <b>transaksi kasir di gerai</b> (void, refund, diskon manual), dan (3) <b>persediaan</b> (penyesuaian stok mencurigakan dan IMEI ganda). Output: daftar eksepsi berprioritas yang siap ditindaklanjuti auditor, plus tracker tindak lanjut.</div>
+
+<h3>Deliverable</h3>
+<ol>
+<li>Pipeline data (ekstraksi → staging → validasi → dataset analitik) dengan log</li>
+<li>6–8 tes analitik audit (SQL dan Python) beserta logika dan keterbatasannya</li>
+<li>Skor risiko per gerai/pengguna</li>
+<li>Dashboard ringkas untuk auditor</li>
+<li>Contoh working paper temuan + tracker remediasi</li>
+</ol>
+
+<h3>Langkah 1 — Siapkan data sintetis</h3>
+<pre><code><span class="cm"># make_audit_data.py — data SINTETIS, bukan data perusahaan mana pun</span>
+import numpy as np, pandas as pd
+rng = np.random.default_rng(7)
+
+<span class="cm"># --- Pembayaran pemasok ---</span>
+n = 8000
+pay = pd.DataFrame({
+    "payment_id":  range(1, n+1),
+    "vendor_id":   rng.integers(1, 300, n),
+    "invoice_no":  [f"INV-{i:06d}" for i in rng.integers(1, 7600, n)],  <span class="cm"># sebagian invoice sengaja berulang</span>
+    "amount":      np.round(rng.lognormal(16, 1.1, n), -3),
+    "payment_date": pd.to_datetime("2025-01-01") + pd.to_timedelta(rng.integers(0, 365, n), unit="D"),
+    "approver_id": rng.integers(1, 40, n),
+})
+<span class="cm"># selipkan anomali: split transaksi di bawah batas approval Rp50 juta</span>
+split = pay.sample(60, random_state=1).copy()
+split["amount"] = rng.integers(46, 50, len(split)) * 1_000_000
+pay.update(split)
+
+<span class="cm"># --- Transaksi POS ---</span>
+m = 60000
+pos = pd.DataFrame({
+    "txn_id":    range(1, m+1),
+    "store_id":  rng.integers(1, 80, m),
+    "cashier_id": rng.integers(1, 600, m),
+    "txn_type":  rng.choice(["SALE","VOID","REFUND"], m, p=[.94,.04,.02]),
+    "txn_ts":    pd.to_datetime("2025-01-01") + pd.to_timedelta(rng.integers(0, 365*86400, m), unit="s"),
+    "amount":    np.round(rng.lognormal(13, 1.0, m), -3),
+})
+<span class="cm"># selipkan satu kasir dengan void/refund tinggi</span>
+bad = pos.sample(400, random_state=2).index
+pos.loc[bad, "cashier_id"] = 999
+pos.loc[bad, "txn_type"] = rng.choice(["VOID","REFUND"], len(bad))
+
+pay.to_csv("payments.csv", index=False)
+pos.to_csv("pos_transactions.csv", index=False)</code></pre>
+
+<h3>Langkah 2 — Pipeline &amp; validasi data (ini yang bikin hasil bisa jadi bukti)</h3>
+<div class="flow">
+<span class="s">Extract (sumber → file/staging)</span><span class="a">→</span>
+<span class="s">Cek kelengkapan &amp; akurasi</span><span class="a">→</span>
+<span class="s">Transform &amp; standarisasi</span><span class="a">→</span>
+<span class="s">Dataset analitik</span><span class="a">→</span>
+<span class="s">Log &amp; versi</span>
+</div>
+<pre><code><span class="cm"># validate_load.py — validasi sebelum data dipakai sebagai dasar tes audit</span>
+import pandas as pd, hashlib, json, datetime as dt
+
+def file_hash(path):
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(1 &lt;&lt; 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+def validate(df, name, control_rows, control_total, amount_col, date_col, start, end):
+    checks = {
+        "rows_match_source":     len(df) == control_rows,
+        "total_match_source":    round(df[amount_col].sum(), 0) == round(control_total, 0),
+        "no_null_keys":          df.iloc[:, 0].notna().all(),
+        "dates_in_scope":        df[date_col].between(start, end).all(),
+        "no_negative_amount":    (df[amount_col] &gt;= 0).all(),
+    }
+    return {"dataset": name, "checks": checks, "passed": all(checks.values())}
+
+pay = pd.read_csv("payments.csv", parse_dates=["payment_date"])
+res = validate(pay, "payments",
+               control_rows=8000, control_total=pay["amount"].sum(),   <span class="cm"># di dunia nyata: angka dari laporan sumber/pemilik data</span>
+               amount_col="amount", date_col="payment_date",
+               start="2025-01-01", end="2025-12-31")
+
+log = {"run_at": dt.datetime.now().isoformat(),
+       "source_file": "payments.csv", "sha256": file_hash("payments.csv"), **res}
+json.dump(log, open("validation_log.json", "w"), indent=2, default=str)
+print(log["passed"], log["checks"])</code></pre>
+<div class="callout info"><b class="t">Kenapa hash dan log?</b>
+Supaya ada jejak: data apa, ditarik kapan, dari file apa, dan lolos cek apa. Kalau ada yang mempertanyakan hasil tes, lo bisa menunjukkan bahwa dataset-nya tidak berubah. Catatan: di contoh ini <code>control_total</code> memakai total dari file itu sendiri hanya untuk demo. Di dunia nyata, angka kontrol harus berasal dari sumber independen (laporan sistem atau pemilik data).</div>
+
+<h3>Langkah 3 — Tes analitik audit (SQL, gaya PostgreSQL)</h3>
+<pre><code><span class="cm">-- T1) Duplikasi pembayaran persis: vendor + invoice + nominal sama</span>
+SELECT vendor_id, invoice_no, amount,
+       COUNT(*) AS jumlah_bayar,
+       MIN(payment_date) AS pertama, MAX(payment_date) AS terakhir
+FROM payments
+GROUP BY vendor_id, invoice_no, amount
+HAVING COUNT(*) &gt; 1
+ORDER BY amount * COUNT(*) DESC;
+
+<span class="cm">-- T2) Potensi duplikasi "dekat": vendor &amp; nominal sama, invoice beda, selisih &lt;= 7 hari</span>
+SELECT a.vendor_id, a.amount,
+       a.payment_id AS bayar_1, b.payment_id AS bayar_2,
+       a.invoice_no AS inv_1,   b.invoice_no AS inv_2,
+       (b.payment_date - a.payment_date) AS selisih_hari
+FROM payments a
+JOIN payments b
+  ON a.vendor_id = b.vendor_id
+ AND a.amount    = b.amount
+ AND a.payment_id &lt; b.payment_id
+ AND a.invoice_no &lt;&gt; b.invoice_no
+ AND b.payment_date - a.payment_date BETWEEN 0 AND 7;
+
+<span class="cm">-- T3) Pemecahan transaksi: tiap nominal di bawah batas approval (Rp50 jt),
+--     tapi total per vendor/approver/minggu melewati batas</span>
+SELECT vendor_id, approver_id,
+       DATE_TRUNC('week', payment_date) AS minggu,
+       COUNT(*) AS jumlah_transaksi,
+       SUM(amount) AS total,
+       MAX(amount) AS terbesar
+FROM payments
+GROUP BY vendor_id, approver_id, DATE_TRUNC('week', payment_date)
+HAVING COUNT(*) &gt;= 2
+   AND MAX(amount) &lt; 50000000
+   AND SUM(amount) &gt;= 50000000
+ORDER BY total DESC;
+
+<span class="cm">-- T4) Pemasok fiktif: rekening bank pemasok sama dengan rekening karyawan</span>
+SELECT v.vendor_id, v.vendor_name, e.employee_id, e.employee_name
+FROM dim_vendor v
+JOIN dim_employee e ON v.bank_account = e.bank_account;
+
+<span class="cm">-- T5) Void/refund kasir dibanding rekan sekasir di gerai yang sama (z-score)</span>
+WITH per_kasir AS (
+  SELECT store_id, cashier_id,
+         COUNT(*) AS total_txn,
+         SUM(CASE WHEN txn_type IN ('VOID','REFUND') THEN 1 ELSE 0 END) AS void_refund
+  FROM pos_transactions
+  GROUP BY store_id, cashier_id
+  HAVING COUNT(*) &gt;= 100
+), rate AS (
+  SELECT *, void_refund * 1.0 / total_txn AS rate FROM per_kasir
+)
+SELECT store_id, cashier_id, total_txn, void_refund, ROUND(rate::numeric, 3) AS rate,
+       ROUND(((rate - AVG(rate) OVER (PARTITION BY store_id))
+              / NULLIF(STDDEV_SAMP(rate) OVER (PARTITION BY store_id), 0))::numeric, 2) AS z_score
+FROM rate
+ORDER BY z_score DESC NULLS LAST;
+
+<span class="cm">-- T6) Penyesuaian stok negatif di luar jam kerja</span>
+SELECT store_id, user_id, sku, adj_qty, adj_time
+FROM inventory_adjustments
+WHERE adj_qty &lt; 0
+  AND (EXTRACT(HOUR FROM adj_time) &lt; 7 OR EXTRACT(HOUR FROM adj_time) &gt;= 22)
+ORDER BY adj_time;
+
+<span class="cm">-- T7) IMEI terjual lebih dari sekali tanpa retur di antaranya</span>
+SELECT imei, COUNT(*) AS kali_terjual, MIN(sold_at) AS pertama, MAX(sold_at) AS terakhir
+FROM pos_items
+WHERE txn_type = 'SALE'
+GROUP BY imei
+HAVING COUNT(*) &gt; 1;</code></pre>
+
+<div class="callout tip"><b class="t">Selalu sebut keterbatasan tiap tes</b>
+T2 bisa menghasilkan false positive (pembelian rutin dengan nominal tetap, misalnya sewa). T5 butuh konteks (kasir shift ramai atau bagian retur). T7 harus memeriksa apakah ada transaksi retur di antara dua penjualan. Auditor lebih percaya analis yang jujur soal false positive.</div>
+
+<h3>Langkah 4 — Tes statistik &amp; teks (Python)</h3>
+<pre><code>import numpy as np, pandas as pd
+from scipy import stats
+
+pay = pd.read_csv("payments.csv")
+
+<span class="cm"># --- Benford's Law: distribusi digit pertama nominal ---</span>
+amt = pay.loc[pay["amount"] &gt; 0, "amount"]
+first = (amt / 10 ** np.floor(np.log10(amt))).astype(int)
+obs = first.value_counts(normalize=True).reindex(range(1, 10), fill_value=0)
+exp = pd.Series({d: np.log10(1 + 1/d) for d in range(1, 10)})
+mad = (obs - exp).abs().mean()
+chi2, p = stats.chisquare(obs * len(amt), exp * len(amt))
+print(f"MAD={mad:.4f}  chi2={chi2:.1f}  p={p:.4f}")
+<span class="cm"># Catatan: penyimpangan = alasan melihat lebih dalam, BUKAN bukti fraud.
+# Benford kurang cocok untuk data dengan batas/tarif tetap.</span>
+
+<span class="cm"># --- Outlier robust (modified z-score pakai MAD) per vendor ---</span>
+def mod_z(s):
+    med = s.median()
+    mad = (s - med).abs().median()
+    return 0.6745 * (s - med) / mad if mad else s * 0
+
+pay["z"] = pay.groupby("vendor_id")["amount"].transform(mod_z)
+outliers = pay[pay["z"].abs() &gt; 3.5].sort_values("amount", ascending=False)
+
+<span class="cm"># --- Data tidak terstruktur: keyword flag + fuzzy match nama ---</span>
+from difflib import SequenceMatcher
+claims = pd.read_csv("expense_claims.csv")      <span class="cm"># kolom: claim_id, employee_id, description, amount</span>
+kw = r"(?i)\b(cash|tunai|pribadi|personal|hadiah|gift|tanpa kuitansi|no receipt)\b"
+claims["flag_kw"] = claims["description"].str.contains(kw, regex=True, na=False)
+
+def sim(a, b):
+    return SequenceMatcher(None, str(a).lower(), str(b).lower()).ratio()
+
+<span class="cm"># contoh: nama pemasok mirip nama karyawan (indikasi konflik kepentingan; perlu verifikasi manual)</span>
+pairs = [(v, e, sim(v, e)) for v in vendors["vendor_name"] for e in employees["employee_name"]]
+suspect = [p for p in pairs if p[2] &gt;= 0.9]</code></pre>
+
+<div class="callout warn"><b class="t">Hati-hati dengan model "AI" yang terlalu fancy</b>
+Untuk audit, tes yang bisa dijelaskan lebih baik daripada model black-box. Isolation Forest atau clustering boleh dipakai sebagai pelengkap untuk <i>menyaring prioritas</i>, tapi auditor harus bisa menjelaskan kenapa sebuah transaksi ditandai, karena temuan akan dibahas dengan auditee dan manajemen.</div>
+
+<h3>Langkah 5 — Skor risiko &amp; prioritas</h3>
+<pre><code><span class="cm"># Gabungkan indikator per gerai menjadi skor risiko sederhana (bobot bisa didiskusikan dengan auditor)</span>
+w = {"void_refund_z": 0.30, "after_hours_adj": 0.25, "dup_payment": 0.25, "imei_dup": 0.20}
+
+def scale(s):                       <span class="cm"># 0-1</span>
+    return (s - s.min()) / (s.max() - s.min() + 1e-9)
+
+store = indikator_per_gerai.copy()  <span class="cm"># DataFrame: store_id + 4 kolom indikator di atas</span>
+for c in w: store[c + "_s"] = scale(store[c])
+store["risk_score"] = sum(store[c + "_s"] * w[c] for c in w)
+prioritas = store.sort_values("risk_score", ascending=False).head(10)</code></pre>
+
+<h3>Langkah 6 — Dashboard untuk auditor</h3>
+<div class="mock">
+<b>Halaman 1 — Ringkasan Risiko</b>
+<div class="row r4" style="margin-top:8px"><div class="box">Total eksepsi</div><div class="box">Nilai terdampak</div><div class="box">Gerai berisiko tinggi</div><div class="box">Temuan terbuka</div></div>
+<div class="row r2"><div class="box">Peta risiko per gerai (ranking)</div><div class="box">Eksepsi per jenis tes</div></div>
+<b>Halaman 2 — Detail Tes</b>
+<div class="row r3" style="margin-top:8px"><div class="box">Daftar eksepsi + filter</div><div class="box">Tren per bulan</div><div class="box">Drill-down transaksi</div></div>
+<b>Halaman 3 — Tindak Lanjut</b>
+<div class="row r2" style="margin-top:8px"><div class="box">Status action plan (open / in progress / closed)</div><div class="box">Aging &amp; overdue</div></div>
+</div>
+
+<h3>Langkah 7 — Monitor remediasi (poin terakhir di lowongan)</h3>
+<p>Setelah temuan disepakati, manajemen membuat action plan. Tugas analis: <b>membuktikan dengan data apakah masalahnya benar-benar hilang</b>.</p>
+<pre><code><span class="cm">-- Tracker tindak lanjut</span>
+CREATE TABLE audit_action_plan (
+  finding_id      TEXT,
+  action_desc     TEXT,
+  owner           TEXT,
+  due_date        DATE,
+  status          TEXT,          <span class="cm">-- OPEN / IN_PROGRESS / CLOSED_CLAIMED / VERIFIED</span>
+  verified_at     DATE,
+  verification_note TEXT
+);
+
+<span class="cm">-- Aging dan overdue</span>
+SELECT finding_id, owner, due_date,
+       CURRENT_DATE - due_date AS hari_terlambat
+FROM audit_action_plan
+WHERE status NOT IN ('VERIFIED') AND due_date &lt; CURRENT_DATE
+ORDER BY hari_terlambat DESC;
+
+<span class="cm">-- Verifikasi efektivitas: ulangi tes T1 setelah tanggal perbaikan (mis. 1 Agustus 2025).
+-- Kalau eksepsi masih muncul setelah tanggal itu, status "closed" belum bisa diverifikasi.</span>
+SELECT COUNT(*) AS duplikat_setelah_perbaikan
+FROM (
+  SELECT vendor_id, invoice_no, amount
+  FROM payments
+  WHERE payment_date &gt;= DATE '2025-08-01'
+  GROUP BY vendor_id, invoice_no, amount
+  HAVING COUNT(*) &gt; 1
+) x;</code></pre>
+
+<h3>Timeline pengerjaan</h3>
+<ol class="steps">
+<li><b>Hari 1: Konsep &amp; data</b>Tentukan 3 area risiko, tulis daftar tes dan logikanya, generate data sintetis.</li>
+<li><b>Hari 2: Pipeline &amp; validasi</b>Skrip load, cek rekonsiliasi, hash, dan log.</li>
+<li><b>Hari 3–4: Tes SQL</b>T1–T7, catat false positive dan keterbatasan.</li>
+<li><b>Hari 5: Python</b>Benford, outlier robust, teks, dan skor risiko.</li>
+<li><b>Hari 6: Dashboard &amp; temuan</b>Bangun dashboard, tulis 1–2 working paper temuan.</li>
+<li><b>Hari 7: Tracker &amp; presentasi</b>Tracker remediasi, README, latihan presentasi 5 menit.</li>
+</ol>
+</section>
+
+<!-- ============ 4 ============ -->
+<section id="temuan">
+<h2><span class="n">4</span>Contoh Temuan Audit yang Baik</h2>
+<p class="lead">Beda antara "daftar anomali" dan temuan audit yang bisa ditindaklanjuti.</p>
+
+<div class="callout warn"><b class="t">Ilustrasi</b> Semua angka di bawah ini fiktif untuk latihan.</div>
+
+<div class="kpi">
+<div><small>Pembayaran diuji</small><strong>8.000</strong></div>
+<div class="bad"><small>Indikasi pembayaran ganda</small><strong>14</strong></div>
+<div class="bad"><small>Nilai terdampak</small><strong>Rp 1,9 M</strong></div>
+<div><small>Pemasok terlibat</small><strong>6</strong></div>
+</div>
+
+<h3>❌ Versi lemah</h3>
+<blockquote>"Ditemukan 14 pembayaran duplikat. Mungkin ada fraud di bagian pembayaran."</blockquote>
+<p>Masalah: menuduh tanpa bukti, tidak ada kriteria, penyebab, dampak, maupun rekomendasi.</p>
+
+<h3>✅ Versi kuat (format kondisi, kriteria, penyebab, dampak)</h3>
+<div class="callout ok">
+<b class="t">Judul temuan</b>
+Pembayaran ke pemasok dengan nomor invoice dan nominal yang sama tercatat lebih dari satu kali.
+<br><br>
+<b class="t">Kondisi</b>
+Pengujian terhadap 100% pembayaran periode Januari–Desember 2025 (8.000 transaksi) menunjukkan 14 kasus kombinasi pemasok, nomor invoice, dan nominal yang sama dibayarkan dua kali, melibatkan 6 pemasok dengan total Rp 1,9 miliar. Dua belas kasus dibayar dalam selang 1–5 hari.
+<br><br>
+<b class="t">Kriteria</b>
+Prosedur pembayaran mensyaratkan satu invoice hanya dibayar satu kali dan harus melewati pengecekan duplikasi sebelum persetujuan (rujuk nomor SOP yang berlaku).
+<br><br>
+<b class="t">Penyebab (hipotesis, perlu dikonfirmasi dengan auditee)</b>
+Sistem tidak menolak input invoice dengan nomor sama. Pengecekan duplikasi bergantung pada pemeriksaan manual.
+<br><br>
+<b class="t">Dampak</b>
+Potensi kelebihan bayar Rp 1,9 miliar dan risiko pembayaran tidak terdeteksi. Sampai tanggal pengujian, 9 dari 14 kasus belum ada pengembalian dana yang tercatat.
+<br><br>
+<b class="t">Rekomendasi</b>
+<ol>
+<li>Verifikasi 14 kasus dengan bagian Accounts Payable; tuntut pengembalian untuk yang terbukti kelebihan bayar.</li>
+<li>Aktifkan validasi sistem untuk menolak kombinasi pemasok + invoice yang sudah dibayar.</li>
+<li>Jalankan tes duplikasi ini secara berkala (bulanan) sebagai continuous monitoring.</li>
+</ol>
+<b class="t">Tindak lanjut</b>
+Verifikasi setelah tanggal implementasi: ulangi tes T1 pada data transaksi berikutnya; status ditutup hanya jika tidak ada eksepsi baru.
+</div>
+
+<div class="callout tip"><b class="t">Rumus temuan yang meyakinkan</b>
+<b>Apa yang ditemukan (terukur, populasi diuji)</b> → <b>standar yang dilanggar</b> → <b>kenapa terjadi (hipotesis)</b> → <b>dampak (nilai, risiko)</b> → <b>rekomendasi praktis</b> → <b>cara memverifikasi perbaikan</b>.</div>
+</section>
+
+<!-- ============ 5 ============ -->
+<section id="hrd">
+<h2><span class="n">5</span>Pertanyaan yang Kemungkinan Muncul</h2>
+<p class="lead">Klik tiap pertanyaan untuk melihat maksudnya, contoh jawaban, dan hal yang harus dihindari. Sesuaikan jawaban dengan pengalaman asli lo.</p>
+
+<h3>A. Sesi HR: motivasi &amp; kecocokan</h3>
+
+<details>
+<summary>Ceritakan tentang diri Anda. <span class="tag">Pembuka</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Melihat alur karier dan kecocokan dengan peran audit-analytics.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya data analyst dengan pengalaman [X] tahun, fokus di SQL dan Python untuk [bidang]. Saya terbiasa memastikan data benar sebelum dianalisis, misalnya [contoh validasi atau rekonsiliasi]. Belakangan saya tertarik memakai data untuk menjaga kontrol dan risiko, dan peran ini menggabungkan keduanya."</p>
+<span class="lbl avoid">Hindari</span><p>Hanya menyebut tools tanpa menyinggung ketelitian atau dampak.</p>
+</div>
+</details>
+
+<details>
+<summary>Kenapa mau pindah ke Internal Audit? Bukannya data analyst di bisnis lebih "keren"? <span class="tag">Motivasi</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Peran ini bukan peran bisnis; mereka ingin memastikan lo benar-benar mau jadi bagian audit.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya menikmati bagian analisis yang menuntut ketelitian dan pembuktian. Di audit, hasil analisis dipakai untuk melindungi perusahaan dan memperbaiki kontrol. Saya juga ingin mempelajari sisi proses bisnis dan tata kelola, bukan hanya angka. Dan menurut saya, kemampuan data akan makin dibutuhkan di audit."</p>
+<span class="lbl avoid">Hindari</span><p>Menyebut alasan seperti "karena sepi lowongan lain" atau meremehkan fungsi audit.</p>
+</div>
+</details>
+
+<details>
+<summary>Anda siap bekerja sebagai auditor, termasuk bertemu auditee dan mungkin ke lapangan? <span class="tag">Kesiapan</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>"Willing to work as Internal Audit" ditulis eksplisit. Mereka ingin kepastian lo nggak mau di balik layar saja.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Siap. Saya paham data hanya sebagian dari pekerjaan audit; konfirmasi dan konteks datang dari komunikasi dengan auditee dan observasi. Saya terbuka untuk kunjungan lapangan dan belajar standar serta metodologi audit, termasuk bila perlu mengikuti sertifikasi."</p>
+</div>
+</details>
+
+<details>
+<summary>Ekspektasi gaji dan kapan bisa mulai? <span class="tag">Administratif</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Screening anggaran dan ketersediaan.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Berdasarkan riset kisaran untuk posisi dan pengalaman setara di Jakarta, ekspektasi saya Rp [X]–[Y], terbuka untuk dibahas sesuai total kompensasi. Saya bisa mulai [notice period] setelah offer."</p>
+</div>
+</details>
+
+<h3>B. Teknis: SQL</h3>
+
+<details>
+<summary>Bagaimana menemukan pembayaran duplikat? Query-nya seperti apa? <span class="tag">SQL</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Pertanyaan audit analytics paling klasik. Dinilai juga cara lo memikirkan false positive.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya mulai dari duplikasi persis dengan <code>GROUP BY vendor_id, invoice_no, amount HAVING COUNT(*) &gt; 1</code>. Lalu saya perluas ke duplikasi dekat: self-join pada vendor dan nominal sama, nomor invoice berbeda, dengan selisih tanggal kecil. Hasilnya saya anggap sebagai daftar yang perlu diverifikasi, karena ada kasus sah seperti tagihan berkala dengan nominal tetap."</p>
+<span class="lbl avoid">Hindari</span><p>Langsung menyebut hasilnya "pasti duplikat".</p>
+</div>
+</details>
+
+<details>
+<summary>Jelaskan window function. Kapan Anda memakainya dalam analisis audit? <span class="tag">SQL</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Window function sangat berguna untuk membandingkan entitas dengan rekannya.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Window function menghitung nilai atas sekumpulan baris tanpa menggabungkannya jadi satu baris. Contoh: <code>AVG(rate) OVER (PARTITION BY store_id)</code> untuk membandingkan tingkat void tiap kasir dengan rata-rata gerai, atau <code>ROW_NUMBER()</code> untuk mengurutkan transaksi tiap karyawan, atau <code>LAG()</code> untuk mencari dua transaksi berurutan yang berdekatan waktunya."</p>
+</div>
+</details>
+
+<details>
+<summary>Query Anda lambat di tabel ratusan juta baris. Apa yang Anda lakukan? <span class="tag">SQL</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Data ritel besar; mereka butuh orang yang bisa bekerja dengan volume besar.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya cek rencana eksekusi (EXPLAIN), filter periode dan kolom lebih awal, pilih hanya kolom yang perlu, pastikan kolom join punya indeks atau partisi, dan hindari fungsi pada kolom filter yang membuat indeks tak terpakai. Untuk tes berulang, saya agregasi dulu ke tabel staging atau materialized view."</p>
+</div>
+</details>
+
+<h3>C. Teknis: Python</h3>
+
+<details>
+<summary>Bagaimana membersihkan dan menggabungkan dua dataset dengan ID berbeda memakai Pandas? <span class="tag">Python</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Integrasi data dari sistem berbeda adalah pekerjaan harian.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya standarkan tipe dan format key (strip, upper, hilangkan nol di depan), cek duplikasi key dengan <code>duplicated()</code>, lalu <code>merge</code> dengan <code>indicator=True</code> agar terlihat baris yang tidak cocok. Baris yang tidak cocok saya simpan ke tabel eksepsi, bukan dibuang. Jumlah baris sebelum dan sesudah merge saya bandingkan untuk memastikan tidak ada penggandaan."</p>
+</div>
+</details>
+
+<details>
+<summary>Apa itu Benford's Law dan apa kelemahannya dalam audit? <span class="tag">Statistik</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Menguji pemahaman tes forensik populer dan kehati-hatian dalam menafsirkan.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Benford's Law menyatakan bahwa pada banyak data alami, digit pertama 1 muncul sekitar 30% dan makin kecil untuk digit lebih besar. Penyimpangan bisa jadi petunjuk manipulasi atau pembulatan. Kelemahannya: tidak cocok untuk data dengan rentang sempit, tarif tetap, atau batas persetujuan, dan penyimpangan bukan bukti fraud. Saya memakainya untuk memilih area yang perlu ditelaah lebih lanjut."</p>
+</div>
+</details>
+
+<details>
+<summary>Bagaimana Anda mengurangi false positive pada deteksi anomali? <span class="tag">Anomaly</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Auditor tidak punya waktu menyelidiki ribuan eksepsi. Kualitas prioritas penting.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Pertama, bandingkan dengan kelompok sebanding (rekan sekasir, gerai sejenis) bukan rata-rata global. Kedua, pakai ukuran robust seperti median dan MAD. Ketiga, gabungkan beberapa indikator jadi skor, jadi yang muncul di banyak tes naik prioritas. Keempat, validasi sampel hasil dengan auditor dan pemilik proses, lalu sesuaikan ambang batas dari umpan balik."</p>
+</div>
+</details>
+
+<h3>D. Konsep audit &amp; studi kasus</h3>
+
+<details>
+<summary>Apa beda sampling dan menguji seluruh populasi? Kenapa data analytics membantu? <span class="tag">Audit</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Inti nilai analitik di audit.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Sampling menguji sebagian transaksi lalu menyimpulkan ke populasi, ada risiko sampling. Dengan data analytics, tes bisa dijalankan ke 100% populasi sehingga eksepsi tidak terlewat, dan auditor bisa memakai waktunya untuk memeriksa eksepsi dan memahami penyebab. Tapi tetap perlu memastikan populasi lengkap dan akurat sebelum menyimpulkan."</p>
+</div>
+</details>
+
+<details>
+<summary>Bagaimana Anda memastikan data yang Anda tarik lengkap dan akurat sebelum dipakai sebagai bukti? <span class="tag">Data integrity</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Tertulis eksplisit: "extraction, transformation, validation".</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya cocokkan jumlah baris dan total nilai dengan laporan dari pemilik data (control total), cek kunci kosong atau duplikat, cakupan tanggal, dan nilai tidak wajar. Saya dokumentasikan sumber, tanggal tarik, query yang dipakai, dan hash file, supaya hasil bisa direproduksi dan ditelusuri. Kalau ada selisih, saya selesaikan dulu sebelum menjalankan tes."</p>
+<span class="lbl avoid">Hindari</span><p>Langsung menganalisis tanpa mengecek kelengkapan data.</p>
+</div>
+</details>
+
+<details>
+<summary>Anda menemukan transaksi mencurigakan oleh seorang manajer senior. Apa yang Anda lakukan? <span class="tag">Etika</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Menguji integritas, kerahasiaan, dan prosedur eskalasi.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya verifikasi dulu bahwa data dan logika tesnya benar, dokumentasikan bukti, lalu eskalasi ke atasan atau kepala audit sesuai prosedur, tanpa membahasnya dengan pihak terkait atau rekan lain. Saya tidak menyimpulkan ada pelanggaran; yang saya sampaikan adalah fakta dan indikasinya, dan keputusan investigasi ada di jalur yang berwenang. Kerahasiaan dijaga ketat."</p>
+<span class="lbl avoid">Hindari</span><p>Mengonfrontasi orangnya langsung atau menyebarkan temuan sebelum diverifikasi.</p>
+</div>
+</details>
+
+<details>
+<summary>Auditee menolak temuan Anda: "Itu bukan kesalahan, memang begitu prosesnya." Bagaimana respons Anda? <span class="tag">Komunikasi</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Sering terjadi. Mereka menilai ketenangan, bukti, dan kemampuan mendengar.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya dengarkan penjelasan mereka karena mungkin ada konteks yang saya lewatkan. Lalu saya tunjukkan data, logika tes, dan kriteria yang dipakai secara transparan. Kalau penjelasannya valid, saya perbaiki analisis atau catat sebagai pengecualian. Kalau tidak, kita bahas dampak risikonya dan sepakati cara memverifikasinya. Tujuannya memperbaiki kontrol, bukan menang debat."</p>
+</div>
+</details>
+
+<details>
+<summary>Kasus: Selisih stok di gerai-gerai naik 30% dalam 6 bulan. Bagaimana Anda menganalisisnya? <span class="tag">Case</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Melihat kerangka berpikir berbasis risiko dan penyelidikan bertahap.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Pertama, validasi bahwa kenaikan bukan karena perubahan cara hitung atau data. Kedua, segmentasi: gerai, kategori produk (aksesori vs ponsel), periode, pengguna yang melakukan penyesuaian. Ketiga, cari pola: terkonsentrasi di gerai atau pengguna tertentu, jam tidak wajar, penyesuaian tanpa dokumen pendukung, IMEI yang hilang. Keempat, bandingkan dengan sinyal lain seperti retur, penjualan, dan pergantian staf. Kelima, tetapkan hipotesis penyebab (proses, sistem, atau perilaku) dan rekomendasikan prosedur untuk memverifikasi di lapangan, misalnya stock opname sebagian."</p>
+</div>
+</details>
+
+<details>
+<summary>Bagaimana Anda memastikan action plan manajemen benar-benar efektif, bukan sekadar "closed"? <span class="tag">Follow-up</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Poin terakhir tanggung jawab di lowongan.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya bedakan status dilaporkan selesai dengan status terverifikasi. Untuk terverifikasi, saya ulangi tes yang sama pada data setelah tanggal perbaikan dan cek apakah eksepsi berhenti, sekaligus melihat bukti pendukung seperti perubahan konfigurasi sistem atau SOP. Saya pantau aging dan keterlambatan di tracker, dan tindak lanjut yang belum efektif saya eskalasikan sesuai prosedur."</p>
+</div>
+</details>
+
+<h3>E. Perilaku</h3>
+
+<details>
+<summary>Ceritakan saat Anda menemukan kesalahan atau anomali dalam data dan apa yang Anda lakukan. <span class="tag">STAR</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Mereka ingin melihat skeptisisme dan ketelitian di pengalaman nyata.</p>
+<span class="lbl ex">Contoh jawaban (kerangka STAR)</span>
+<p><b>Situation:</b> Saat menyusun laporan [X], angka total tidak cocok dengan laporan sumber.<br>
+<b>Task:</b> Saya harus memastikan laporan akurat sebelum dikirim.<br>
+<b>Action:</b> Saya telusuri per tahap dan menemukan [penyebab, mis. duplikasi akibat join]. Saya perbaiki, dokumentasikan, dan tambahkan cek jumlah baris otomatis.<br>
+<b>Result:</b> Angka cocok, laporan terkirim tepat waktu, dan masalah serupa tidak terulang.</p>
+</div>
+</details>
+
+<details>
+<summary>Bagaimana Anda menjaga kerahasiaan informasi sensitif? <span class="tag">Integritas</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Auditor mengakses data sensitif: keuangan, karyawan, kemungkinan investigasi.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Akses data sesuai kebutuhan saja, simpan di lokasi yang disetujui, tidak membagikan lewat kanal pribadi, masking data pribadi saat tidak perlu, dan tidak membahas temuan di luar pihak yang berwenang. Saya juga memahami bahwa independensi dan objektivitas menuntut saya tidak terpengaruh pihak yang diaudit."</p>
+</div>
+</details>
+
+<details>
+<summary>Anda punya 3 permintaan analisis dengan tenggat sama dari tim audit yang berbeda. Apa yang dilakukan? <span class="tag">Prioritas</span></summary>
+<div class="ans">
+<span class="lbl why">Maksudnya</span><p>Menguji prioritisasi berbasis risiko dan komunikasi.</p>
+<span class="lbl ex">Contoh jawaban</span>
+<p>"Saya klarifikasi urgensi, risiko, dan tenggat tiap permintaan, lalu diskusikan dengan atasan untuk prioritas berdasarkan risiko dan komitmen kepada komite audit. Yang bisa disederhanakan atau dibagi ke tahap, saya kirim versi awal dulu. Kendala dan jadwal saya sampaikan sejak awal."</p>
+</div>
+</details>
+
+<h3>F. Pertanyaan yang sebaiknya lo ajukan balik</h3>
+<ul>
+<li>Sumber data apa yang tersedia untuk Internal Audit (ERP, POS, keuangan), dan apakah ada akses langsung atau lewat permintaan ke tim lain?</li>
+<li>Stack analitik saat ini apa (SQL engine, Python, tools visualisasi), dan apakah sudah ada pipeline berkala?</li>
+<li>Seberapa besar porsi pekerjaan di analitik versus ikut fieldwork dan interaksi dengan auditee?</li>
+<li>Seperti apa 3–6 bulan pertama yang dianggap sukses?</li>
+<li>Apakah ada dukungan pengembangan, misalnya sertifikasi audit atau pelatihan metodologi?</li>
+</ul>
+</section>
+
+<!-- ============ 6 ============ -->
+<section id="persiapan">
+<h2><span class="n">6</span>Checklist Persiapan</h2>
+<p class="lead">Centang sambil jalan. Progres tersimpan di browser lo (kalau browser mengizinkan).</p>
+
+<h3>Portofolio &amp; dokumen</h3>
+<ul class="check">
+<li><label><input type="checkbox"><span>CV disesuaikan dengan kata kunci lowongan (data pipeline, anomaly detection, validation, SQL, Python)</span></label></li>
+<li><label><input type="checkbox"><span>Setiap pengalaman di CV punya hasil terukur (waktu hemat, kesalahan terdeteksi, nilai dihemat)</span></label></li>
+<li><label><input type="checkbox"><span>Mock project selesai dan diunggah (GitHub dengan README yang jelas)</span></label></li>
+<li><label><input type="checkbox"><span>Minimal 1 working paper temuan format kondisi, kriteria, penyebab, dampak, rekomendasi</span></label></li>
+<li><label><input type="checkbox"><span>Presentasi 5 menit untuk menjelaskan project</span></label></li>
+</ul>
+
+<h3>Skill teknis</h3>
+<ul class="check">
+<li><label><input type="checkbox"><span>SQL: JOIN, self-join, window function (LAG, ROW_NUMBER, AVG OVER), CTE, DATE_TRUNC, HAVING</span></label></li>
+<li><label><input type="checkbox"><span>Pandas: merge dengan indicator, groupby/transform, duplicated, datetime, regex</span></label></li>
+<li><label><input type="checkbox"><span>Statistik: z-score vs modified z-score (MAD), Benford, korelasi vs kausalitas</span></label></li>
+<li><label><input type="checkbox"><span>Validasi data: control total, rekonsiliasi, log dan hash</span></label></li>
+<li><label><input type="checkbox"><span>Visualisasi: dashboard ringkas dengan drill-down ke transaksi</span></label></li>
+</ul>
+
+<h3>Pemahaman audit &amp; bisnis</h3>
+<ul class="check">
+<li><label><input type="checkbox"><span>Pahami alur audit: risk assessment, planning, fieldwork, reporting, follow-up</span></label></li>
+<li><label><input type="checkbox"><span>Hafal struktur temuan (kondisi, kriteria, penyebab, dampak, rekomendasi)</span></label></li>
+<li><label><input type="checkbox"><span>Pahami fraud triangle (tekanan, kesempatan, rasionalisasi) dan konsep three lines</span></label></li>
+<li><label><input type="checkbox"><span>Riset Erajaya: lini bisnis, berita terbaru, laporan tahunan dan bagian tata kelola</span></label></li>
+<li><label><input type="checkbox"><span>Siapkan 3 cerita STAR (data bermasalah, konflik komunikasi, kesalahan sendiri)</span></label></li>
+<li><label><input type="checkbox"><span>Siapkan 3 pertanyaan balik untuk interviewer</span></label></li>
+</ul>
+
+<div class="callout tip"><b class="t">Nilai tambah (opsional)</b>
+Mulai baca materi dasar sertifikasi seperti CIA (Certified Internal Auditor), CFE (fraud examiner), atau CISA, dan pelajari kerangka COSO secara singkat. Nggak wajib untuk melamar, tapi menunjukkan keseriusan terhadap profesi audit. Sebutkan hanya yang benar-benar sudah lo pelajari.</div>
+
+<div class="callout tip"><b class="t">Urutan prioritas kalau waktu mepet</b>
+1) SQL dan Python yang lancar (kemungkinan ada tes praktik) &gt; 2) Mock project dengan validasi data dan false-positive handling &gt; 3) Pemahaman alur audit &amp; struktur temuan &gt; 4) Cerita STAR &gt; 5) Riset perusahaan.</div>
+
+<h3>Latihan akhir: pitch 60 detik</h3>
+<div class="callout ok">
+"Saya membangun toolkit analitik audit untuk tiga area: pembayaran pemasok, transaksi kasir, dan persediaan, memakai data sintetis. Saya memvalidasi data lewat rekonsiliasi dan log, menjalankan tujuh tes SQL plus Benford dan outlier robust di Python, lalu menggabungkannya jadi skor risiko per gerai. Saya menuliskan temuan dengan format kondisi, kriteria, penyebab, dampak, dan rekomendasi, serta tracker yang memverifikasi efektivitas perbaikan dengan mengulang tes. Saya ingin membawa pendekatan yang sama ke Internal Audit Erajaya: tes terhadap seluruh populasi, bukti yang bisa ditelusuri, dan temuan yang bisa ditindaklanjuti."
+</div>
+</section>
+
+</main>
+
+<footer>
+Dibuat berdasarkan teks lowongan Data Analyst Internal Audit di Erajaya (disalin pengguna dari LinkedIn). Area risiko adalah hipotesis, bukan informasi internal perusahaan. Semua data dan angka dalam mock project adalah ilustrasi untuk latihan. Jawaban wawancara hanyalah kerangka; sesuaikan dengan pengalaman lo yang sebenarnya.
+</footer>
+</div>
+
+<script>
+(function(){
+  var boxes = document.querySelectorAll('.check input');
+  var key = 'erajaya_ia_checklist_v1';
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(key) || '{}'); } catch(e){}
+  boxes.forEach(function(b, i){
+    if (saved[i]) b.checked = true;
+    b.addEventListener('change', function(){
+      saved[i] = b.checked;
+      try { localStorage.setItem(key, JSON.stringify(saved)); } catch(e){}
+    });
+  });
+})();
+</script>
+</body>
+</html>
+
+</body></html>
