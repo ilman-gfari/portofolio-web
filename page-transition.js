@@ -14,7 +14,17 @@
     //   "fade"    = memudar
     type: "curtain",
 
-    brand: "",              // teks di layar loading. Kosong = otomatis dari config.js
+    // ----- TEKS DI LAYAR TRANSISI -----
+    //   "clicked" = nama link yang diklik (mis. "Portfolio", "Contact")  ← default
+    //   "brand"   = selalu nama situs (lihat `brand`)
+    //   "none"    = tanpa teks
+    labelMode: "clicked",
+    brand: "",              // dipakai saat loading pertama / mode "brand". Kosong = otomatis dari config.js
+    labels: {},             // ganti teks per tujuan, cocokkan akhir URL: { "portfolio/index.html": "Portofolio", "#contact": "Hubungi Saya" }
+    labelPrefix: "",        // teks sebelum label, mis. "Membuka "
+    labelSuffix: "",        // teks sesudah label, mis. "…"
+    labelMax: 40,           // batas panjang label (karakter)
+    // Cara tercepat mengubah teks satu link saja: tambah atribut di HTML-nya →  <a href="..." data-pt-label="Teks Saya">
     showProgress: true,     // progress bar
 
     firstLoadDuration: 1100, // ms — loading pertama dalam satu sesi (minimal ditampilkan)
@@ -88,7 +98,16 @@
   doc.appendChild(pt);
   const brandEl = pt.querySelector(".pt-brand");
   const bar = pt.querySelector(".pt-bar");
-  brandEl.textContent = PT.brand || document.title || "";
+  // label dari halaman sebelumnya (link yang diklik) — dibaca sekali, berlaku maksimal 15 detik
+  let carried = "";
+  try {
+    const raw = sessionStorage.getItem("pt-label");
+    sessionStorage.removeItem("pt-label");
+    const o = raw && JSON.parse(raw);
+    if (o && PT.labelMode === "clicked" && Date.now() - o.t < 15000) carried = o.v;
+  } catch (e) {}
+  if (PT.labelMode === "none") pt.querySelector(".pt-brand").style.display = "none";
+  brandEl.textContent = carried || PT.brand || document.title || "";
 
   const t0 = performance.now();
   let opened = false;
@@ -112,7 +131,7 @@
 
   // ambil nama brand dari config.js situs jika tersedia
   document.addEventListener("DOMContentLoaded", () => {
-    if (!PT.brand) {
+    if (!PT.brand && !carried) {
       const n = (window.PROFILE && PROFILE.name) || (window.SITE && (SITE.company || SITE.owner));
       if (n) brandEl.textContent = n;
     }
@@ -135,12 +154,31 @@
     return true;
   }
 
+  // Menentukan teks dari link: data-pt-label → PT.labels → judul di dalam kartu → teks link
+  function labelFor(a) {
+    if (a.dataset.ptLabel) return a.dataset.ptLabel;
+    const raw = a.getAttribute("href") || "";
+    for (const k in PT.labels) { if (raw.endsWith(k) || a.href.endsWith(k)) return PT.labels[k]; }
+    const h = a.querySelector("h1,h2,h3,h4");
+    let t = a.getAttribute("aria-label") || (h ? h.textContent : a.textContent) || "";
+    t = t.replace(/\s+/g, " ").trim().replace(/^[^\p{L}\p{N}]+/u, "");   // buang emoji/simbol di depan
+    return t.length > PT.labelMax ? t.slice(0, PT.labelMax - 1) + "…" : t;
+  }
+
   document.addEventListener("click", (e) => {
     const a = e.target.closest && e.target.closest("a");
     if (!isInternalNav(a, e)) return;
     e.preventDefault();
     const href = a.href;
-    brandEl.textContent = brandEl.textContent; // tetap
+    // teks layar = nama link yang diklik (atau sesuai labelMode)
+    if (PT.labelMode === "clicked") {
+      const label = labelFor(a);
+      if (label) {
+        const txt = PT.labelPrefix + label + PT.labelSuffix;
+        brandEl.textContent = txt;
+        try { sessionStorage.setItem("pt-label", JSON.stringify({ v: txt, t: Date.now() })); } catch (e) {}
+      }
+    }
     bar.classList.remove("done");
     pt.classList.remove("show-bar"); pt.classList.add("nobar");
     pt.classList.remove("out");        // layar menutup

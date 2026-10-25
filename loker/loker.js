@@ -16,15 +16,22 @@
     try { localStorage.setItem("mode", mode); } catch (e) {}
   });
 
-  // ---- navbar dari PROFILE.nav (landing). loker/ sejajar dengan landing/ ----
-  const fix = (h) => /^(https?:|mailto:|tel:|\.\.\/|\/)/.test(h) ? h
-    : h.startsWith("#") ? "../landing/index.html" + h
-    : "../landing/" + h.replace(/^\.\//, "");
-  $("logo").textContent = PROFILE.name; $("logo").href = "../landing/index.html";
+  // ---- navbar dari PROFILE.nav (landing) ----
+  // Link di config.js landing ditulis relatif terhadap folder landing. Di sini setiap link
+  // dihitung ulang dari lokasi config.js yang dimuat <script src="..."> di index.html,
+  // jadi tetap benar apa pun susunan foldernya (sejajar, atau landing di folder induk).
+  const cfgScript = document.querySelector('script[src$="config.js"]');
+  const landingBase = new URL(cfgScript ? cfgScript.getAttribute("src") : "../landing/config.js", location.href);
+  const fix = (h) => {
+    if (/^(mailto:|tel:)/.test(h)) return h;
+    return new URL(h.startsWith("#") ? "index.html" + h : h, landingBase).href;   // "#contact" → <folder landing>/index.html#contact
+  };
+  const norm = (u) => new URL(u).pathname.replace(/index\.html$/, "");
+  $("logo").textContent = PROFILE.name; $("logo").href = fix("#top");
   $("navLinks").innerHTML = PROFILE.nav.map((n) => {
     const href = fix(n.href);
-    const active = /(^|\/)loker\/(index\.html)?$/.test(href) ? "active" : "";
-    return `<a class="${active}" href="${esc(href)}">${esc(n.label)}</a>`;
+    const same = !/^(mailto:|tel:)/.test(href) && norm(href) === norm(location.href) && !new URL(href).hash;
+    return `<a class="${same ? "active" : ""}" href="${esc(href)}">${esc(n.label)}</a>`;
   }).join("");
   $("footer").textContent = PROFILE.footer;
   const nav = $("nav");
