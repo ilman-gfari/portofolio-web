@@ -47,15 +47,38 @@
   $("workHeading").textContent = P.work.heading;
   $("workSub").textContent = P.work.sub;
   $("workMore").textContent = P.work.more;
-  $("cards").innerHTML = P.work.cases.map((c) => `
-    <a class="card" href="${esc(c.href)}">
+  // Gaya per-kartu: opsi di config.js diubah menjadi CSS inline pada kartu itu saja.
+  const cardStyle = (c) => {
+    const vars = { accent: "--accent", bg: "--surface", border: "--border", text: "--text", muted: "--muted",
+                   radius: "--radius", padding: "--pad", statsJustify: "--stats-justify" };
+    const out = Object.keys(vars).filter((k) => c[k]).map((k) => `${vars[k]}:${c[k]}`);
+    if (c.span) out.push(`grid-column:span ${Number(c.span) || 1}`);
+    if (c.minHeight) out.push(`min-height:${c.minHeight}`);
+    if (c.style) out.push(c.style);
+    return out.join(";");
+  };
+  $("cards").innerHTML = P.work.cases.map((c) => {
+    const slug = c.id || String(c.company).toLowerCase().replace(/[^a-z0-9]+/g, "-");
+    const top = (c.icon || c.badge)
+      ? `<div class="top">${c.icon ? `<span class="ico">${esc(c.icon)}</span>` : ""}${c.badge ? `<span class="pill">${esc(c.badge)}</span>` : ""}</div>` : "";
+    const media = c.image
+      ? `<div class="media" style="background-image:url('${esc(c.image)}');height:${esc(c.imageHeight || "170px")}"></div>` : "";
+    const tags = (c.tags && c.tags.length)
+      ? `<div class="tags">${c.tags.map((t) => `<span>${esc(t)}</span>`).join("")}</div>` : "";
+    const stats = (c.stats || []).map((s) =>
+      `<div class="stat"><b data-count="${Number(s.value) || 0}" data-suffix="${esc(s.suffix || "")}">0${esc(s.suffix || "")}</b><span>${esc(s.label)}</span></div>`).join("");
+    return `
+    <a class="card ${esc(c.class || "")}" id="card-${esc(slug)}" data-card="${esc(slug)}" href="${esc(c.href)}" style="${esc(cardStyle(c))}">
+      ${media}${top}
       <span class="arrow">↗</span>
       <span class="role">${esc(c.role)}</span>
       <h3>${esc(c.company)}</h3>
       <p>${esc(c.desc)}</p>
-      <div class="stats">${(c.stats || []).map((s) =>
-        `<div class="stat"><b data-count="${Number(s.value) || 0}" data-suffix="${esc(s.suffix || "")}">0${esc(s.suffix || "")}</b><span>${esc(s.label)}</span></div>`).join("")}</div>
-    </a>`).join("");
+      ${tags}
+      <div class="stats ${c.statsEqual ? "stats-equal" : ""}">${stats}</div>
+      ${c.cta ? `<span class="go">${esc(c.cta)} →</span>` : ""}
+    </a>`;
+  }).join("");
 
   $("apHeading").textContent = P.approach.heading;
   $("apTag").textContent = P.approach.tagline;
@@ -142,4 +165,42 @@
     });
     card.addEventListener("pointerleave", () => { card.style.transform = ""; });
   });
+
+  // ---------- Warna + logo per kartu (opsi `color`, `logo`, `logoSize`, `logoBg` di config.js) ----------
+  const CX = { topBar: true, tint: true, tintStrength: 9, logoRadius: "12px", logoPad: "6px" };  // ← atur gaya umum di sini
+  (function () {
+    const css = document.createElement("style");
+    css.textContent =
+      ".card.has-color{" + (CX.topBar ? "border-top:3px solid var(--accent);" : "") + "}" +
+      (CX.tint ? ".card.has-color{background:linear-gradient(180deg,color-mix(in srgb,var(--accent) " + CX.tintStrength + "%,var(--surface)),var(--surface) 70%)}" : "") +
+      ".card.has-color:hover{border-color:var(--accent)}" +
+      ".card .logo-box{display:grid;place-items:center;width:var(--logo-size,44px);height:var(--logo-size,44px);flex-shrink:0;border-radius:" + CX.logoRadius + ";overflow:hidden;font-size:calc(var(--logo-size,44px)*.6);line-height:1}" +
+      ".card .logo-box img{width:100%;height:100%;object-fit:contain;padding:" + CX.logoPad + ";box-sizing:border-box}" +
+      ".card .logo-row{display:flex;align-items:center;gap:12px}";
+    document.head.appendChild(css);
+    const isImg = (s) => /^(https?:|data:|\.{0,2}\/)|\.(png|jpe?g|gif|svg|webp|avif|ico)(\?.*)?$/i.test(s);
+    document.querySelectorAll("#cards > .card").forEach((card, i) => {
+      const c = P.work.cases[i]; if (!c) return;
+      const color = c.color || c.accent;
+      if (color) { card.style.setProperty("--accent", color); card.classList.add("has-color"); }
+      if (!c.logo) return;
+      const box = document.createElement("span");
+      box.className = "logo-box";
+      if (c.logoSize) box.style.setProperty("--logo-size", c.logoSize);
+      if (c.logoBg) box.style.background = c.logoBg;
+      if (isImg(c.logo)) {
+        const img = document.createElement("img");
+        img.src = c.logo; img.alt = ""; img.loading = "lazy";
+        img.onerror = () => { box.style.display = "none"; };   // gagal dimuat → disembunyikan
+        box.appendChild(img);
+      } else box.textContent = c.logo;                           // emoji / teks pendek
+      const top = card.querySelector(".top");
+      if (top) { const ico = top.querySelector(".ico"); if (ico) ico.remove(); top.insertBefore(box, top.firstChild); }
+      else {
+        const row = document.createElement("div"); row.className = "logo-row"; row.appendChild(box);
+        const arrow = card.querySelector(".arrow");
+        card.insertBefore(row, arrow ? arrow.nextSibling : card.firstChild);
+      }
+    });
+  })();
 })();

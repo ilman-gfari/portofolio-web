@@ -5,13 +5,22 @@
 
 const SITE = {
   // --- Identitas ---
-  owner: "Nama Anda",
+  owner: "Ilman Gifari",
   role: "Operation Analyst",
-  company: "Nama Perusahaan",            // perusahaan / studi kasus yang dianalisis
+  company: "TokoMart",            // perusahaan / studi kasus yang dianalisis
   logo: "",                              // URL logo (opsional), contoh: "assets/logo.png"
-  tagline: "Store Performance & Operational Efficiency Analysis",
-  scope: "000 Outlet · 00 Kota",         // baris kecil di bawah judul
+  tagline: "Analisis tren penjualan bulanan",
+  scope: "10 Cabang",         // baris kecil di bawah judul
   updated: "Oktober 2026",
+
+  // tambahkan thema
+  theme: {
+  id: "1-portofolio",
+  enabled: true,                        // false = matikan fitur ini
+  source: "../config.js",       // lokasi config landing (otomatis dicoba ../landing, ../../landing, ../../../landing)
+  match: "Perusahaan A",                // paksa pilih kartu tertentu
+  color: "", logo: "", logoBg: ""       // isi untuk mengganti secara manual, tanpa membaca landing
+ },
 
   // Tampilkan badge "DATA CONTOH" di semua halaman. Ubah ke false kalau data sudah asli.
   showSampleBadge: true,
@@ -19,23 +28,26 @@ const SITE = {
   // --- Kontak (kosongkan "" untuk menyembunyikan) ---
   contact: {
     website: "",
-    linkedin: "https://www.linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/ilmangifari",
     email: "nama@email.com",
     github: ""
   },
 
   // --- KPI di halaman Index ---
   kpis: [
-    { value: "000",       label: "Outlet" },
-    { value: "00.000",    label: "Baris Data Bersih" },
-    { value: "Rp 000 M",  label: "Revenue" },
-    { value: "00",        label: "Menu Item" },
-    { value: "00",        label: "Kota" }
+    { value: "10",       label: "Cabang" },
+    { value: "4.112",    label: "Baris Data Bersih" },
+    { value: "Rp 24,99 M",  label: "Revenue" },
+    { value: "04",        label: "Kategori Produk" },
+    { value: "20",        label: "Total Produk" }
   ],
 
   // --- Menu sidebar + kartu di Index ---
   // id harus sama dengan atribut data-page di <body> tiap halaman.
   nav: [
+    { group: "", items: [
+      { id: "",              icon: "🌐 ", label: "IlmanGifari",              href: "../index.html" }
+    ]},
     { group: "Portfolio", items: [
       { id: "index",              icon: "🏠", label: "Index",              href: "index.html" },
       { id: "konteks-bisnis",     icon: "🏢", label: "Konteks Bisnis",     href: "konteks-bisnis.html",
@@ -48,8 +60,6 @@ const SITE = {
     { group: "Reports", items: [
       { id: "visualisasi",  icon: "📊", label: "Visualisasi",  href: "visualisasi.html",
         desc: "Chart interaktif: revenue per kategori, distribusi channel, pola weekend, ranking menu." },
-      { id: "deep-dive",    icon: "🔬", label: "Deep Dive",    href: "deep-dive.html",
-        desc: "Segmentasi konsep outlet, sebaran geografis, analisis jarak antar-outlet, jam operasional." },
       { id: "report-data",  icon: "📋", label: "Report Data",  href: "report-data.html",
         desc: "Log data cleaning, angka lengkap, ranking penuh — untuk verifikasi." }
     ]},

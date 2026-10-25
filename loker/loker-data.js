@@ -15,8 +15,8 @@ const LOKER = {
 
   jobs: [
     {
-      company: "Perusahaan A",
-      role: "Operation Analyst",
+      company: "Tech Connect",
+      role: "Human Capital Analytics",
       desc: "Analisis performa outlet dan efisiensi operasional, dipetakan ke requirement lowongan.",
       file: "projects/tutorial_techconnect_hc_analytics.html",     // ← file HTML mock project
       stats: [{ value: 350, suffix: "", label: "Outlet dianalisis" }, { value: 51, suffix: "", label: "Kota" }],
@@ -29,14 +29,14 @@ const LOKER = {
       company: "Era Jaya",
       role: "Data Analyst - Internal Audit",
       desc: "Analisis penjualan kompetitif untuk perusahaan FMCG.",
-      file: "projects/tutorial_techconnect_hc_analytics.html",
+      file: "projects/Mock Project_ Data Analyst Internal Audit di Erajaya.html",
       stats: [{ value: 120, suffix: "", label: "SKU" }, { value: 18, suffix: "%", label: "Potensi kenaikan" }],
       tags: ["Python", "Power BI"],
       icon: "📦"
     },
     {
-      company: "Perusahaan C",
-      role: "Operations Analyst Logistics",
+      company: "Y Ventures Group Ltd",
+      role: "Operations Analyst (Data & Automation)",
       desc: "Membangun dashboard dan merapikan data pelaporan.",
       file: "projects/tutorial_ops_analyst_logistics.html",                       // kosong = tampil "segera hadir" dan tidak bisa diklik
       tags: ["Excel", "SQL"]

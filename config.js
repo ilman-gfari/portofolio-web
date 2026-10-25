@@ -8,13 +8,13 @@ const PROFILE = {
   title: "Portofolio",
   tagline: "Mengubah data berantakan menjadi keputusan bisnis.",
   status: "Open to opportunities",          // kosongkan "" untuk menyembunyikan badge
-  skills: ["Business Intelligence", "Data Analysis", "Python", "SQL", "Excel", "Data Visualization"],
+  skills: ["Business Intelligence", "Data Analysis", "Python", "SQL", "Microsoft Excel","Google Spreadsheet","Data Visualization"],
   ctaPrimary:   { label: "Lihat Case Study", href: "#work" },
   ctaSecondary: { label: "Hubungi Saya",     href: "#contact" },
 
   // Teks berjalan di bawah hero (ticker)
-  marquee: ["Python", "SQL", "Excel", "Google Sheets", "Data Visualization", "Business Intelligence",
-            "Web Scraping", "Data Cleaning", "Statistical Analysis", "Dashboard Design"],
+  marquee: ["Python", "SQL", "Microsoft Excel", "Google Sheets", "Data Visualization", "Business Intelligence",
+            , "Data Cleaning", "Statistical Analysis", "Dashboard Design"],
 
   nav: [
     { label: "Portofolio",    href: "#work" },
@@ -24,16 +24,19 @@ const PROFILE = {
   ],
 
   work: {
-    heading: "Perusahaan nyata. Data nyata. Insight nyata.",
+    heading: "Temukan pola, atasi masalah, berikan dampak.",
     sub: "Case study yang mensimulasikan pekerjaan di perusahaan sungguhan.",
     more: "Case study lainnya segera hadir",
     // Salin satu blok { ... } untuk menambah kartu.
     // stats.value berupa angka → otomatis count-up. stats.suffix opsional (mis. "%", "+").
     cases: [
-      { company: "Perusahaan A", role: "Operation Analyst",
-        desc: "Analisis performa outlet dan efisiensi operasional.",
+      { company: "TokoMart", role: "Operation Analyst", id: "1-portofolio",
+        desc: "Analisis tren penjualan bulanan untuk perusahaan retail",
+        color: "#c53b22",
+        logo: "🏪",
+        logoSize: "52px",
         href: "1-portofolio/index.html",
-        stats: [{ value: 557, suffix: "", label: "Cabang" }, { value: 4, suffix: "", label: "Dashboard" }, { value: 4, suffix: "", label: "Dashboard" },{ value: 4, suffix: "", label: "Temuan" }] },
+        stats: [{ value: 10, suffix: "", label: "Cabang" }, { value: 5145, suffix: "", label: "Data transaksi" }, { value: 4, suffix: "", label: "Temuan" },{ value: 4, suffix: "", label: "Temuan" }] },
       { company: "Perusahaan B", role: "Sales Data Analyst",
         desc: "Analisis penjualan kompetitif untuk perusahaan FMCG.",
         href: "#",
@@ -57,7 +60,7 @@ const PROFILE = {
     heading: "Cara saya bekerja",
     tagline: "Business-first. Data nyata. Hasil terukur.",
     steps: [
-      { icon: "🎯", title: "Konteks Bisnis Dulu",   text: "Mulai dari pertanyaan bisnis, bukan dari tools." },
+      { icon: "🎯", title: "Pahami Bisnis Dulu",   text: "Mulai dari pertanyaan bisnis, bukan dari tools." },
       { icon: "🔎", title: "Data & Sumber Nyata",    text: "Memakai data publik atau data nyata, bukan angka karangan." },
       { icon: "⚙️", title: "Pipeline End-to-End",    text: "Dari pengumpulan, cleaning, analisis, sampai laporan." },
       { icon: "📈", title: "Dampak Terukur",         text: "Setiap rekomendasi disertai proyeksi angka." }
@@ -75,12 +78,12 @@ const PROFILE = {
   contact: {
     heading: "Mari terhubung",
     text: "Terbuka untuk peluang di bidang data analytics.",
-    email: "nama@email.com",                  // "" untuk menyembunyikan tombol
+    email: "gifariilman79@email.com",                  // "" untuk menyembunyikan tombol
     linkedin: "https://www.linkedin.com/in/username",
-    github: ""
+    github: "https://github.com/ilman-gfari"
   },
 
-  footer: "© 2026 Nama Anda"
+  footer: "© 2026 Ilman Gifari"
 };
 
 /* ----------------------------------------------------------
