@@ -38,7 +38,7 @@ const LOKER = {
       company: "Perusahaan C",
       role: "Operations Analyst Logistics",
       desc: "Membangun dashboard dan merapikan data pelaporan.",
-      file: "projects/tutorial_techconnect_hc_analytics.html",                       // kosong = tampil "segera hadir" dan tidak bisa diklik
+      file: "projects/tutorial_ops_analyst_logistics.html",                       // kosong = tampil "segera hadir" dan tidak bisa diklik
       tags: ["Excel", "SQL"]
     },
     
