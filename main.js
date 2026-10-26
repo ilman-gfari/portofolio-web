@@ -174,9 +174,9 @@
       ".card.has-color{" + (CX.topBar ? "border-top:3px solid var(--accent);" : "") + "}" +
       (CX.tint ? ".card.has-color{background:linear-gradient(180deg,color-mix(in srgb,var(--accent) " + CX.tintStrength + "%,var(--surface)),var(--surface) 70%)}" : "") +
       ".card.has-color:hover{border-color:var(--accent)}" +
-      ".card .logo-box{display:grid;place-items:center;width:var(--logo-size,44px);height:var(--logo-size,44px);flex-shrink:0;border-radius:" + CX.logoRadius + ";overflow:hidden;font-size:calc(var(--logo-size,44px)*.6);line-height:1}" +
+      ".card .logo-box{display:grid;place-items:center;width:var(--logo-size,25px);height:var(--logo-size,20px);flex-shrink:0;border-radius:" + CX.logoRadius + ";overflow:hidden;font-size:calc(var(--logo-size,44px)*.6);line-height:1}" +
       ".card .logo-box img{width:100%;height:100%;object-fit:contain;padding:" + CX.logoPad + ";box-sizing:border-box}" +
-      ".card .logo-row{display:flex;align-items:center;gap:12px}";
+      ".card .logo-row{display:flex;align-items:center;gap:5px}";
     document.head.appendChild(css);
     const isImg = (s) => /^(https?:|data:|\.{0,2}\/)|\.(png|jpe?g|gif|svg|webp|avif|ico)(\?.*)?$/i.test(s);
     document.querySelectorAll("#cards > .card").forEach((card, i) => {
