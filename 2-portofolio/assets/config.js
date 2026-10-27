@@ -29,7 +29,7 @@ const SITE = {
   contact: {
     website: "",
     linkedin: "https://www.linkedin.com/in/ilmangifari",
-    email: "nama@email.com",
+    email: "gifariilman79@email.com",
     github: ""
   },
 
