@@ -9,10 +9,10 @@
   --radius: 18px;
   --maxw: 1080px;
 }
-:root[data-mode="dark"] {
+/* :root[data-mode="dark"] {
   --bg: #0b0e14; --bg-alt: #0f131b; --surface: #141a24; --border: #222b3a;
   --text: #eef2f8; --muted: #93a0b4; --nav-bg: rgba(11,14,20,.72);
-}
+} */
 :root[data-mode="light"] {
   --bg: #fafbfd; --bg-alt: #f1f4f9; --surface: #ffffff; --border: #e0e6ef;
   --text: #121826; --muted: #566175; --nav-bg: rgba(250,251,253,.78);

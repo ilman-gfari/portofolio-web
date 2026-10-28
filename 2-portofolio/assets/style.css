@@ -14,17 +14,17 @@
   --bad: #b83a3a;
   --sidebar-w: 260px;
   --radius: 12px;
-  --font: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --accent: #7fb0ee;
-    --accent-soft: #1b2a3d;
-    --bg: #12161c;
-    --surface: #1a2029;
-    --text: #e6eaf0;
-    --muted: #98a3b3;
-    --border: #2a323d;
+    --accent: #2563eb;
+    --accent-soft: #eff6ff;
+    --bg: #f8fafc;
+    --surface: #ffffff;
+    --text: #1e293b;
+    --muted: #64748b;
+    --border: #e2e8f0;
   }
 }
 
@@ -59,8 +59,8 @@ a { color: var(--accent); }
 .contact a { display: block; padding: 4px 10px; font-size: .88rem; }
 
 .main { flex: 1; min-width: 0; padding: 40px clamp(18px, 4vw, 56px) 24px; }
-.content { max-width: 980px; margin: 0 auto; }
-.footer { max-width: 980px; margin: 48px auto 0; padding-top: 16px; border-top: 1px solid var(--border);
+.content { margin: 0 auto; }
+.footer { margin: 48px auto 0; padding-top: 16px; border-top: 1px solid var(--border);
   color: var(--muted); font-size: .85rem; }
 
 .menu-btn {
@@ -81,7 +81,7 @@ h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.2; margin: 0 0 8px; }
 h2 { font-size: 1.4rem; margin: 40px 0 12px; }
 h3 { font-size: 1.1rem; margin: 24px 0 8px; }
 .lead { color: var(--muted); font-size: 1.08rem; margin: 0 0 24px; }
-p, li { max-width: fit-content; }
+p, li { max-width: 74ch; }
 
 /* ---------- Komponen ---------- */
 .badge {
@@ -103,10 +103,46 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); transit
 .card p { margin: 0; color: var(--muted); font-size: .94rem; }
 .card .num { color: var(--accent); font-weight: 700; font-size: .85rem; }
 
+.hero {
+  background: linear-gradient(
+    135deg,
+    var(--accent) 0%,
+    color-mix(in srgb, var(--accent) 100%, #000 2%) 60%,
+    #111111 2%
+  );
+  border: 1px solid color-mix(in srgb, var(--accent) 70%, #000 30%);
+  padding: 24px 28px;
+  border-radius: 12px;
+  margin: 18px 0;
+  color: #fff;
+}
+
+.hero-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero-heading h1 {
+  margin: 0;
+}
+
+.hero-subheading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+
+.hero-subheading .eyebrow,
+.hero-subheading .lead {
+  margin: 0;
+}
+
 .callout { background: var(--accent-soft); border-left: 4px solid var(--accent); padding: 14px 18px; border-radius: 8px; margin: 18px 0; }
 .callout.good { border-color: var(--good); }
 .callout.warn { border-color: var(--warn); }
-.callout p { margin: 0; max-width: fit-content;}
+.callout p { margin: 0; }
 
 .finding .big { font-size: 2rem; font-weight: 700; color: var(--accent); line-height: 1.1; }
 .tag { display: inline-block; font-size: .75rem; padding: 2px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-weight: 600; }
@@ -129,3 +165,50 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 }
 .placeholder { background: repeating-linear-gradient(45deg, var(--accent-soft), var(--accent-soft) 10px, transparent 10px, transparent 20px);
   border: 2px dashed var(--accent); border-radius: var(--radius); padding: 28px; text-align: center; color: var(--muted); margin: 16px 0; }
+
+/* ==========================================================
+   LAYOUT v2 — gaya halaman portofolio (hero + chip + kartu per grup)
+   Tempel blok ini di AKHIR style.css. Semua di sini bisa diedit.
+   ========================================================== */
+
+/* ---- Hero: logo, eyebrow, judul, subjudul, chip ---- */
+.hero-logo { width: 58px; height: 58px; border-radius: 14px; overflow: hidden; display: grid; place-items: center; font-size: 2rem; line-height: 1;
+  background: var(--surface); border: 1px solid var(--border); margin-bottom: 18px; }
+.hero-logo img { width: 100%; height: 100%; object-fit: contain; padding: 7px; box-sizing: border-box; }
+.eyebrow { letter-spacing: .14em; font-size: .78rem; }
+h1 { font-size: clamp(1.9rem, 4.2vw, 2.7rem); line-height: 1.15; }
+.lead { font-size: 1.1rem; margin-bottom: 20px; }
+
+/* KPI → chip (satu baris, membungkus bila sempit) */
+.kpis { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 6px; }
+.kpi { display: inline-flex; align-items: baseline; gap: 6px; padding: 6px 14px; border-radius: 999px;
+  background: var(--accent-soft); border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent); }
+.kpi .v { font-size: .98rem; color: var(--accent); font-weight: 700; }
+.kpi .l { font-size: .88rem; color: var(--text); }
+
+/* ---- Grup kartu: judul grup + garis, kolom menyesuaikan jumlah kartu ---- */
+#cards h2 { display: flex; align-items: center; gap: 14px; font-size: .78rem; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--muted); margin: 38px 0 14px; }
+#cards h2::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+.grid.cols-1 { grid-template-columns: 1fr; }
+.grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 1000px) { .grid.cols-3 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px)  { .grid.cols-2, .grid.cols-3 { grid-template-columns: 1fr; } }
+
+/* ---- Kartu bernomor ---- */
+.card { position: relative; padding: 22px 22px 24px; min-height: 150px; }
+.card .num { display: inline-grid; place-items: center; min-width: 30px; height: 24px; padding: 0 8px; border-radius: 7px;
+  background: var(--accent-soft); color: var(--accent); font-weight: 700; font-size: .78rem; margin-bottom: 12px; }
+.card h3 { font-size: 1.08rem; margin: 0 0 6px; }
+.card::after { content: "→"; position: absolute; right: 20px; top: 20px; color: var(--accent); opacity: 0; transform: translateX(-6px); transition: .2s; }
+a.card:hover::after { opacity: 1; transform: none; }
+
+/* ---- Sidebar sedikit lebih rapi ---- */
+.nav-link { display: flex; align-items: center; gap: 8px; padding: 9px 12px; }
+.brand { font-size: 1.02rem; }
+
+/* ---- Keterbacaan di atas warna tema (otomatis dari --on-accent) ---- */
+.nav-link.active { color: var(--on-accent, #fff); }
+.eyebrow, .kpi .v, .card .num, .contact a { color: color-mix(in srgb, var(--accent) 72%, var(--text)); }
+@media (prefers-color-scheme: dark) { .eyebrow, .kpi .v, .card .num, .contact a { color: var(--accent); } }

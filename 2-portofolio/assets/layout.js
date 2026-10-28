@@ -124,6 +124,14 @@
       if (color) {
         rootEl.style.setProperty("--accent", color);
         rootEl.style.setProperty("--accent-soft", "color-mix(in srgb, " + color + " 14%, var(--surface))");
+        // teks di atas warna aksen: hitam bila aksen terang, putih bila gelap (agar menu aktif tetap terbaca)
+        const m = /^#([0-9a-f]{3}|[0-9a-f]{6})$/i.exec(String(color).trim());
+        if (m) {
+          let h = m[1]; if (h.length === 3) h = h.split("").map((x) => x + x).join("");
+          const lin = (v) => { v /= 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); };
+          const L = 0.2126 * lin(parseInt(h.slice(0, 2), 16)) + 0.7152 * lin(parseInt(h.slice(2, 4), 16)) + 0.0722 * lin(parseInt(h.slice(4, 6), 16));
+          rootEl.style.setProperty("--on-accent", L > 0.4 ? "#10151c" : "#ffffff");
+        }
       }
       if (logo) setLogo(logo, logoBg, c && c.logo === logo ? base : null);
     }
@@ -157,5 +165,48 @@
       s.onerror = () => load(i + 1);                                 // coba lokasi berikutnya
       document.head.appendChild(s);
     })(0);
+  })();
+
+  // ---------- LAYOUT v2: kolom kartu per grup, penomoran, logo di hero ----------
+  // Opsional di assets/config.js → SITE.nav: beri grup  numPrefix: "A"  agar kartunya bernomor A1, A2, ... (mis. Appendix)
+  (function () {
+    const cards = document.getElementById("cards");
+    if (cards) {
+      let n = 0;
+      cards.querySelectorAll("h2").forEach((h) => {
+        const grid = h.nextElementSibling;
+        if (!grid || !grid.classList.contains("grid")) return;
+        const items = grid.querySelectorAll(".card");
+        grid.classList.add("cols-" + Math.min(Math.max(items.length, 1), 3));   // 1–3 kolom sesuai jumlah kartu
+        const g = SITE.nav.find((x) => x.group === h.textContent.trim());
+        items.forEach((c, i) => {
+          const num = c.querySelector(".num"); if (!num) return;
+          num.textContent = (g && g.numPrefix) ? g.numPrefix + (i + 1) : String(++n).padStart(2, "0");
+        });
+      });
+    }
+
+    // logo di atas judul (halaman index) — mengambil logo yang sama dengan sidebar / tema landing
+    if (document.body.dataset.page === "index") {
+      const place = () => {
+        if (document.querySelector(".hero-logo")) return true;
+        const src = document.querySelector(".brand .logo-box, .brand img");
+        const eb = document.querySelector("#content .eyebrow");
+        if (!src || !eb) return false;
+        const box = document.createElement("div");
+        box.className = "hero-logo";
+        box.innerHTML = src.matches(".logo-box") ? src.innerHTML : src.outerHTML;
+        eb.parentNode.insertBefore(box, eb);
+        return true;
+      };
+      if (!place()) {
+        const brand = document.querySelector(".brand");
+        if (brand) {                                    // logo dari tema landing datang belakangan → tunggu
+          const mo = new MutationObserver(() => { if (place()) mo.disconnect(); });
+          mo.observe(brand, { childList: true });
+          setTimeout(() => mo.disconnect(), 8000);
+        }
+      }
+    }
   })();
 })();

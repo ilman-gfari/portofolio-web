@@ -23,7 +23,7 @@ const SITE = {
  },
 
   // Tampilkan badge "DATA CONTOH" di semua halaman. Ubah ke false kalau data sudah asli.
-  showSampleBadge: true,
+  showSampleBadge: false,
 
   // --- Kontak (kosongkan "" untuk menyembunyikan) ---
   contact: {
