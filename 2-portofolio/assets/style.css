@@ -35,26 +35,10 @@
   }
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-family: var(--font);
-  color: var(--text);
-  background: var(--bg);
-  line-height: 1.65;
-  font-size: 14px;
-}
-
-a {
-  color: var(--accent);
-}
+* {box-sizing: border-box;}
+html {scroll-behavior: smooth;}
+body {margin: 0;font-family: var(--font);color: var(--text);background: var(--bg);line-height: 1.65;font-size: 14px;}
+a {color: var(--accent);}
 
 
 /* ---------- Layout ---------- */
