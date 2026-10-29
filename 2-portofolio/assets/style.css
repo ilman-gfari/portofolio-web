@@ -198,7 +198,8 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); transit
 
 
 /* KPI dari config.js ditampilkan sebagai tags */
-.hero .kpis {display: flex;flex-wrap: wrap;align-items: center;gap: 6px;margin: 0;padding: 0; grid-template-columns: none;}
+.hero .kpis {display: flex;flex-wrap: wrap;align-items: center;gap: 6px;margin: 0;padding: 0;grid-template-columns: none;
+}
 
 /* Setiap KPI menjadi pill/tag */
 .hero .kpi {
