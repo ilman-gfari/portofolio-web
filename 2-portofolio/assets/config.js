@@ -45,9 +45,9 @@ const SITE = {
   // --- Menu sidebar + kartu di Index ---
   // id harus sama dengan atribut data-page di <body> tiap halaman.
   nav: [
-    { group: "", items: [
-      { id: "",              icon: "🌐 ", label: "IlmanGifari",              href: "../index.html" }
-    ]},
+    // { group: "", items: [
+    //   { id: "",              icon: "🌐 ", label: "IlmanGifari",              href: "../index.html" }
+    // ]},
     { group: "Portfolio", items: [
       { id: "index",              icon: "🏠", label: "Index",              href: "index.html" },
       { id: "konteks-bisnis",     icon: "🏢", label: "Konteks Bisnis",     href: "konteks-bisnis.html",
