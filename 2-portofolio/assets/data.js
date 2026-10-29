@@ -7,7 +7,7 @@
 const DATA = {
 
     // Pertanyataan bisnis
-  cleaning: [
+  pertanyaan-bisnis: [
     { Lensa Analisis: "Operational Decomposition", Metrik: "Total Revenue, Total Booking, Sesi Kehadiran, ARPV (Average Revenue per Visit)", Kenapa Penting: "Mengidentifikasi akar masalah fluktuasi pendapatan secara presisi (apakah di volume atau nilai transaksi)." },
     { Lensa Analisis: "Competitive Intelligence", Metrik: "Pola Referral Source, Distribusi Asal Pasien, Price Point Pembanding", Kenapa Penting: "Memahami siapa kompetitor langsung yang memperebutkan jalur rujukan dan segmen pasar yang sama." },
     { Lensa Analisis: "Product Portfolio Optimization",     Metrik: "Kontribusi Revenue per Tier/Package, Completion Rate Sesi",  Kenapa Penting: "Menerapkan prinsip Pareto untuk mempertahankan layanan unggulan dan mengeleminasi layanan yang tidak efisien." },
