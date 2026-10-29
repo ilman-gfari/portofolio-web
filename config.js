@@ -37,7 +37,7 @@ const PROFILE = {
         logoSize: "52px",
         href: "1-portofolio/index.html",
         stats: [{ value: 10, suffix: "", label: "Cabang" }, { value: 5145, suffix: "", label: "Data transaksi" }, { value: 4, suffix: "", label: "Temuan" },{ value: 4, suffix: "", label: "Temuan" }] },
-      { company: "Physiorehab Clinic", role: "Data Analyst – Expansion", id: "2-portofolio",
+      { company: "PT Fisio Tunas Abadi", role: "Data Analyst – Expansion", id: "2-portofolio",
         color: "rgb(35, 178, 77)",
         logo : "2-portofolio/assets/logo.png", logoSize: "100px",
         desc: "Analisis wilayah berpotensi dan analisis lokasi untuk ekspansi.",
