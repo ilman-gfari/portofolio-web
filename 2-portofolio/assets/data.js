@@ -24,10 +24,11 @@ const DATA = {
 
   // Distribusi channel penjualan (persen)
   channel: [
-    { nama: "Dine-in / Pickup", persen: 45 },
-    { nama: "Delivery",         persen: 30 },
-    { nama: "Aplikasi",         persen: 20 },
-    { nama: "Lainnya",          persen: 5 }
+    { Channel: "Media Sosial", Share: "37,51%", Deskripsi: "Dominan (B2C) — Corong utama pasien organic / walk-in baru." },
+    { Channel: "Rujukan Dokter", Share: "23,29%", Deskripsi: "High Trust (B2B2C) — Pasien medis/rehabilitasi dengan konversi & ticket size tinggi." },
+    { Channel: "Google Maps", Share: "19,89%", Deskripsi: "Organic Catchment — Menjangkau pasien lokal terdekat (location-based)." },
+    { Channel: "Komunitas GYM", Share: "10,20%", Deskripsi: "Niche/Sports — Segmen cedera olahraga (sports injury & recovery)." },
+    { Channel: "Kantor Korporat", Share: "9,21%", Deskripsi: "B2B Benefit — Kemitraan wellness karyawan perusahaan." },
   ],
 
   // Pola transaksi per hari (indeks relatif, rata-rata hari kerja = 100)
