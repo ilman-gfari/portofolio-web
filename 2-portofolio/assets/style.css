@@ -245,7 +245,7 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); transit
 .callout p { margin: 0; }
 
 .finding .big { font-size: 2rem; font-weight: 700; color: var(--accent); line-height: 1.1; }
-.tag { display: inline-block; font-size: .75rem; padding: 2px 10px; border-radius: 12px; background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.tag { display: inline-block; font-size: .75rem; padding: 2px 10px; border-radius: 7px; background: var(--accent-soft); color: var(--accent); font-weight: 600; }
 
 table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; font-size: .92rem; }
 th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--border); }
