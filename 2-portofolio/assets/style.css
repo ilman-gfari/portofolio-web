@@ -305,9 +305,9 @@ h1 { font-size: clamp(1.9rem, 4.2vw, 2.7rem); line-height: 1.15; }
 #cards h2 { display: flex; align-items: center; gap: 14px; font-size: .78rem; letter-spacing: .14em; text-transform: uppercase;
   color: var(--muted); margin: 38px 0 14px; }
 #cards h2::after { content: ""; flex: 1; height: 1px; background: var(--border); }
-.grid.cols-1 { grid-template-columns: 1fr; }
+/* .grid.cols-1 { grid-template-columns: 1fr; }
 .grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
-.grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.grid.cols-3 { grid-template-columns: repeat(3, 1fr); } */
 @media (max-width: 1000px) { .grid.cols-3 { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 640px)  { .grid.cols-2, .grid.cols-3 { grid-template-columns: 1fr; } }
 
