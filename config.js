@@ -39,7 +39,7 @@ const PROFILE = {
         stats: [{ value: 10, suffix: "", label: "Cabang" }, { value: 5145, suffix: "", label: "Data transaksi" }, { value: 4, suffix: "", label: "Temuan" },{ value: 4, suffix: "", label: "Temuan" }] },
       { company: "Physiorehab Clinic", role: "Data Analyst – Expansion", id: "2-portofolio",
         color: "rgb(35, 178, 77)",
-        logo : "2-portofolio/assets/logo.svg", logoSize: "100px",
+        logo : "2-portofolio/assets/logo.png", logoSize: "100px",
         desc: "Analisis wilayah berpotensi dan analisis lokasi untuk ekspansi.",
         href: "2-portofolio/index.html",
         stats: [{ value: 557, suffix: "", label: "Cabang" }, { value: 4, suffix: "", label: "Dashboard" }, { value: 4, suffix: "", label: "Dashboard" },{ value: 4, suffix: "", label: "Temuan" }] },

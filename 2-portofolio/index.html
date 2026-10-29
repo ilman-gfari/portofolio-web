@@ -8,28 +8,26 @@
   <script src="assets/page-transition.js"></script>
 </head>
 <body data-page="index">
-<main id="content">
-  <div class="hero">
-    <!-- Teks di bawah diambil otomatis dari assets/config.js -->
-    <div class="hero-heading">
-      <h1><span data-site="company"></span></h1>
-      <div class="hero-subheading">
-        <p class="eyebrow">
-          <span data-site="company"></span> — <span data-site="role"></span> Portfolio
-        </p>
+  <main id="content">
+    <div class="hero">
+      <div class="hero-logo">
+        <img src="assets/logo.png" alt="Logo perusahaan">
       </div>
+
+      <div class="hero-content">
+        <h1><span data-site="company"></span></h1>
+
+        <p class="hero-description">
+          Analisis Performa Penjualan &amp; Kompetitif — FMCG Personal Care
+        </p>
+
+        <!-- KPI otomatis dari config.js -->
+        <div class="kpis" id="kpis"></div>
+      </div>
+
     </div>
-
-    <div class="kpis" id="kpis"></div>   <!-- KPI diisi dari config.js -->
-
-    <!-- EDIT: ringkasan singkat tentang diri/tujuan portofolio -->
-  
-    <p class="header"><strong>Analisis penjualan bulanan </strong>Sebagai Data analyst operations, diarahkan untuk mencek tren penjualan bulanan karena moment lebaran akan terjadi.</p>
-  </div>
-
-  <div id="cards"></div>               <!-- Kartu navigasi diisi dari config.js -->
-
-</main>
+    <div id="cards"></div>
+  </main>
 <script src="assets/config.js"></script>
 <script src="assets/data.js"></script>
 <script src="assets/layout.js"></script>
