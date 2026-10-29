@@ -126,7 +126,7 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); transit
 .card p { margin: 0; color: var(--muted); font-size: .94rem; }
 .card .num { color: var(--accent); font-weight: 700; font-size: .85rem; }
 
-/* ---------- Hero Banner Gondowangi ---------- */
+/* ---------- Hero Banner ---------- */
 .hero {
   display: flex;
   align-items: center;
@@ -176,46 +176,16 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); transit
 }
 
 .hero-content h1 {
-  margin: 0 0 8px;
-  color: #ffffff;
-  font-size: clamp(1.25rem, 2vw, 1.65rem);
-  font-weight: 800;
-  line-height: 1.3;
-  letter-spacing: -0.03em;
-}
-
+  margin: 0 0 8px;color: #ffffff;font-size: clamp(1.25rem, 2vw, 1.65rem);font-weight: 800;line-height: 1.3;letter-spacing: -0.03em;}
 .hero-description {
-  margin: 0 0 12px;
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
+  margin: 0 0 12px;color: rgba(255, 255, 255, 0.85);font-size: 0.9rem;line-height: 1.5;}
 
 /* Tags kecil seperti desain referensi */
-.hero .tags {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 6px;
-  margin: 0;
-}
+.hero .tags {display: flex;flex-wrap: wrap;align-items: center;gap: 6px;margin: 0;}
 
-.hero .tag {
-  display: inline-flex;
-  align-items: center;
-
-  padding: 5px 10px;
-  border-radius: 5px;
-
-  background: rgba(255, 255, 255, 0.13);
-  border: 1px solid rgba(255, 255, 255, 0.28);
-
-  color: #ffffff;
-  font-size: 0.68rem;
-  font-weight: 600;
-  line-height: 1.4;
-  white-space: nowrap;
-}
+.hero .tag {display: inline-flex;align-items: center;padding: 5px 10px;border-radius: 5px;
+  background: rgba(255, 255, 255, 0.13);border: 1px solid rgba(255, 255, 255, 0.28);
+  color: #ffffff;font-size: 0.68rem;font-weight: 600;line-height: 1.4;white-space: nowrap;}
 
 /* ---------- Responsive ---------- */
 @media (max-width: 600px) {
@@ -228,16 +198,7 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); transit
 
 
 /* KPI dari config.js ditampilkan sebagai tags */
-.hero .kpis {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 6px;
-
-  margin: 0;
-  padding: 0;
-  grid-template-columns: none;
-}
+.hero .kpis {display: flex;flex-wrap: wrap;align-items: center;gap: 6px;margin: 0;padding: 0; grid-template-columns: none;}
 
 /* Setiap KPI menjadi pill/tag */
 .hero .kpi {
