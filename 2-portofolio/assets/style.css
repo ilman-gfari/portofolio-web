@@ -311,7 +311,7 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); transit
 .callout { background: var(--accent-soft); border-left: 4px solid var(--accent); padding: 14px 18px; border-radius: 8px; margin: 18px 0; }
 .callout.good { border-color: var(--good); }
 .callout.warn { border-color: var(--warn); }
-.callout-blue { border-color: var(--warn); }
+.callout.blue { border-color: var(--accent); }
 .callout p { margin: 0; }
 
 
