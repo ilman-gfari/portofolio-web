@@ -101,6 +101,7 @@ p.header {color: var(--surface);}
 .kpi .l { color: var(--muted); font-size: .85rem; }
 
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.grid-content {display: grid;grid-template-columns: 1fr;gap: 16px;}
 .card {
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
   padding: 20px; text-decoration: none; color: inherit; display: block;
