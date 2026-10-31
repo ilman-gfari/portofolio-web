@@ -37,7 +37,7 @@ const SITE = {
   kpis: [
     { value: "13",       label: "Cabang" },
     { value: "12",    label: "Bulan History Data Penjualan" },
-    { value: "Rp 24,99 M",  label: "Revenue" },
+    { value: "3",  label: "Paket Varian" },
     { value: "333",        label: "Competitors" },
   ],
 
@@ -59,16 +59,12 @@ const SITE = {
     { group: "Reports", items: [
       { id: "visualisasi",  icon: "📊", label: "Visualisasi",  href: "visualisasi.html",
         desc: "Chart interaktif: revenue per kategori, distribusi channel, pola weekend, ranking menu." },
-      { id: "deep-dive",    icon: "🔬", label: "Deep Dive",    href: "deep-dive.html",
-        desc: "Segmentasi konsep outlet, sebaran geografis, analisis jarak antar-outlet, jam operasional." },
       { id: "report-data",  icon: "📋", label: "Report Data",  href: "report-data.html",
         desc: "Log data cleaning, angka lengkap, ranking penuh — untuk verifikasi." }
     ]},
     { group: "Appendix", items: [
       { id: "cara-kerja",    icon: "⚙️", label: "Cara Kerja",    href: "cara-kerja.html",
-        desc: "Metodologi: pipeline data, tools & stack, alur cleaning, reproducibility." },
-      { id: "perihal-loker", icon: "📄", label: "Perihal Loker", href: "perihal-loker.html",
-        desc: "Pemetaan lowongan kerja ke portofolio: requirement, pertanyaan, tanggung jawab." }
+        desc: "Metodologi: pipeline data, tools & stack, alur cleaning, reproducibility." }
     ]}
   ]
 };
