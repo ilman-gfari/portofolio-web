@@ -124,8 +124,8 @@ p.header {color: var(--surface);}
 }
 a.card:hover { border-color: var(--accent); transform: translateY(-2px); transition: .15s; }
 .card h3 { margin: 0 0 6px; }
-.card p { margin: 0; color: var(--muted); font-size: .94rem; }
-.card .num { color: var(--accent); font-weight: 700; font-size: .85rem; }
+.card p { margin: 0; color: var(--muted); }
+.card .num { color: var(--accent); font-weight: 700;}
 
 /* ---------- Hero Banner Gondowangi ---------- */
 .hero {
@@ -347,7 +347,7 @@ td.num, th.num { text-align: left; font-variant-numeric: tabular-nums;}
 .kpi .l { font-size: .88rem; color: var(--text); }
 
 /* ---- Grup kartu: judul grup + garis, kolom menyesuaikan jumlah kartu ---- */
-#cards h2 { display: flex; align-items: center; gap: 14px; font-size: .78rem; letter-spacing: .14em; text-transform: uppercase;
+#cards h2 { display: flex; align-items: center; gap: 14px; letter-spacing: .14em; text-transform: uppercase;
   color: var(--muted); margin: 38px 0 14px; }
 #cards h2::after { content: ""; flex: 1; height: 1px; background: var(--border); }
 .grid.cols-1 { grid-template-columns: 1fr; }
@@ -360,7 +360,7 @@ td.num, th.num { text-align: left; font-variant-numeric: tabular-nums;}
 .card { position: relative; padding: 22px 22px 24px; min-height: 150px; }
 .card .num { display: inline-grid; place-items: center; min-width: 30px; height: 24px; padding: 0 8px; border-radius: 7px;
   background: var(--accent-soft); color: var(--accent); font-weight: 700; font-size: .78rem; margin-bottom: 12px; }
-.card h3 { font-size: 1.08rem; margin: 0 0 6px; }
+.card h3 { margin: 0 0 6px; }
 .card::after { content: "→"; position: absolute; right: 20px; top: 20px; color: var(--accent); opacity: 0; transform: translateX(-6px); transition: .2s; }
 a.card:hover::after { opacity: 1; transform: none; }
 
