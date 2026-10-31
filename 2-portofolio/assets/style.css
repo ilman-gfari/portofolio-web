@@ -325,7 +325,7 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); transit
   font-weight: 600;
 }
 
-table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; font-size: .92rem; }
+table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
 th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--border); }
 th { background: var(--accent-soft); font-weight: 600; }
 td.num, th.num { text-align: left; font-variant-numeric: tabular-nums;}
@@ -350,7 +350,7 @@ td.num, th.num { text-align: left; font-variant-numeric: tabular-nums;}
    ========================================================== */
 
 /* ---- Hero: logo, eyebrow, judul, subjudul, chip ---- */
-.hero-logo { width: 58px; height: 58px; border-radius: 14px; overflow: hidden; display: grid; place-items: center; font-size: 2rem; line-height: 1;
+.hero-logo { width: 58px; height: 58px; border-radius: 14px; overflow: hidden; display: grid; place-items: center; line-height: 1;
  border: 1px solid var(--border); margin-bottom: 18px; }
 .hero-logo img { width: 100%; height: 100%; object-fit: contain; padding: 7px; box-sizing: border-box; }
 .eyebrow { letter-spacing: .14em; font-size: .78rem; }
