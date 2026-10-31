@@ -19,7 +19,7 @@
   --warn: #b7791f;
   --bad: #b83a3a;
   --blue:var(--accent);
-  --sidebar-w: 260px;
+  --sidebar-w: 200px;
   --radius: 12px;
   --font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
