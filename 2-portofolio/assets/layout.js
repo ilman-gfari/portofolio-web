@@ -49,7 +49,7 @@
   document.getElementById("menuBtn").addEventListener("click", () =>
     document.getElementById("sidebar").classList.toggle("open"));
 
-  document.title = (document.querySelector("h1")?.textContent || "Portfolio") + " · " + SITE.company;
+  document.title = (document.querySelector("h3")?.textContent || "Portfolio") + " · " + SITE.company;
 
   // ---------- Komponen otomatis ----------
   const kpiBox = document.getElementById("kpis");

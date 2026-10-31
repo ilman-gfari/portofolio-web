@@ -36,10 +36,9 @@ const SITE = {
   // --- KPI di halaman Index ---
   kpis: [
     { value: "13",       label: "Cabang" },
-    { value: "53.321",    label: "Baris Data Bersih" },
+    { value: "12",    label: "Bulan History Data Penjualan" },
     { value: "Rp 24,99 M",  label: "Revenue" },
-    { value: "04",        label: "Kategori Produk" },
-    { value: "20",        label: "Total Produk" }
+    { value: "333",        label: "Competitors" },
   ],
 
   // --- Menu sidebar + kartu di Index ---
