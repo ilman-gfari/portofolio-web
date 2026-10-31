@@ -372,7 +372,7 @@ a.card:hover::after { opacity: 1; transform: none; }
 
 /* ---- Sidebar sedikit lebih rapi ---- */
 .nav-link { display: flex; align-items: center; gap: 8px; padding: 9px 12px; }
-.brand { font-size: 1.02rem; }
+.brand { font-size: 12px; }
 
 
 /* ---- Keterbacaan di atas warna tema (otomatis dari --on-accent) ---- */
