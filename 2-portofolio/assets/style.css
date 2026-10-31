@@ -163,7 +163,6 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); transit
 
 /* Logo kecil di sisi kiri */
 .hero-logo {
-  flex: 0 0 64px;
   width: 64px;
   height: 64px;
 
