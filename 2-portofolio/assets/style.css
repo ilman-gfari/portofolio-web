@@ -314,7 +314,7 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); transit
   font-weight: 600;
 }
 
-table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden;}
+table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; font-size: 11px;}
 th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--border); }
 th { background: var(--accent-soft); font-weight: 600; }
 td.num, th.num { text-align: left; font-variant-numeric: tabular-nums;}
