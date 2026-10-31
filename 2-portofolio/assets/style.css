@@ -48,7 +48,7 @@ body {
   margin: 0;
   font-family: var(--font);
   color: var(--text);
-  background: var(--bg);line-height: 1.65;font-size: 12px;}
+  background: var(--bg);line-height: 1.65;font-size: 12px !important;}
 
   a {color: var(--accent);}
 
@@ -170,11 +170,6 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); transit
   align-items: center;
   justify-content: center;
 } 
-
-.hero-logo img {
-  width: 100%;
-  height: 100%;}
-
 /* Konten di sisi kanan */
 .hero-content {
   flex: 1;
@@ -344,9 +339,8 @@ td.num, th.num { text-align: left; font-variant-numeric: tabular-nums;}
    ========================================================== */
 
 /* ---- Hero: logo, eyebrow, judul, subjudul, chip ---- */
-.hero-logo { width: 58px; height: 58px; border-radius: 14px; overflow: hidden; display: grid; place-items: center; font-size: 2rem; line-height: 1;
-  background: var(--surface); border: 1px solid var(--border); margin-bottom: 18px; }
-.hero-logo img { width: 100%; height: 100%; object-fit: contain; padding: 7px; box-sizing: border-box; }
+.hero-logo { width: 58px; height: 58px; border-radius: 14px; overflow: hidden; display: grid; place-items: center; font-size: 2rem; line-height: 1; border: 1px solid var(--border); margin-bottom: 18px; }
+.hero-logo img { width: 100%; height: 100%; object-fit: contain; padding: 7px; }
 .eyebrow { letter-spacing: .14em; font-size: .78rem; }
 h1 { font-size: clamp(1.9rem, 4.2vw, 2.7rem); line-height: 1.15; }
 .lead { font-size: 1.1rem; margin-bottom: 20px; }
