@@ -175,9 +175,7 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); transit
 .hero-logo img {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
+  height: 100%;}
 
 /* Konten di sisi kanan */
 .hero-content {
