@@ -365,7 +365,7 @@ td.num, th.num { text-align: left; font-variant-numeric: tabular-nums;}
 a.card:hover::after { opacity: 1; transform: none; }
 
 /* ---- Sidebar sedikit lebih rapi ---- */
-.nav-link { display: flex; align-items: center; gap: 8px; padding: 9px 12px; }
+.nav-link { display: flex; align-items: center; gap:68px; padding: 6px 9px; }
 .brand { font-size: 12px; }
 
 
