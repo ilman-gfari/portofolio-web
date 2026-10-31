@@ -19,7 +19,7 @@
   --warn: #b7791f;
   --bad: #b83a3a;
   --blue:var(--accent);
-  --sidebar-w: 260px;
+  --sidebar-w: 180px;
   --radius: 12px;
   --font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -58,7 +58,7 @@ body {
 .sidebar {
   width: var(--sidebar-w); flex-shrink: 0; position: sticky; top: 0; height: 100vh;
   overflow-y: auto; background: var(--surface); border-right: 1px solid var(--border);
-  padding: 20px 14px;
+  padding: 15px 9px;
 }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; margin: 0 6px 18px; }
 .brand img { width: 34px; height: 34px; border-radius: 8px; object-fit: cover; }
@@ -120,8 +120,8 @@ p.header {color: var(--surface);}
 }
 a.card:hover { border-color: var(--accent); transform: translateY(-2px); transition: .15s; }
 .card h3 { margin: 0 0 6px; }
-.card p { margin: 0; color: var(--muted); font-size: .94rem; }
-.card .num { color: var(--accent); font-weight: 700; font-size: .85rem; }
+.card p { margin: 0; color: var(--muted); }
+.card .num { color: var(--accent); font-weight: 700;}
 
 /* ---------- Hero Banner Gondowangi ---------- */
 .hero {
@@ -350,7 +350,7 @@ td.num, th.num { text-align: left; font-variant-numeric: tabular-nums;}
    ========================================================== */
 
 /* ---- Hero: logo, eyebrow, judul, subjudul, chip ---- */
-.hero-logo { width: 58px; height: 58px; border-radius: 14px; overflow: hidden; display: grid; place-items: center; line-height: 1;
+.hero-logo { width: 58px; height: 58px; border-radius: 14px; overflow: hidden; display: grid; place-items: center;
  border: 1px solid var(--border); margin-bottom: 18px; }
 .hero-logo img { width: 100%; height: 100%; object-fit: contain; padding: 7px; box-sizing: border-box; }
 .eyebrow { letter-spacing: .14em; font-size: .78rem; }
