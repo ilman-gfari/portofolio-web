@@ -328,7 +328,7 @@ td.num, th.num { text-align: left; font-variant-numeric: tabular-nums;}
 .steps li { counter-increment: s; position: relative; padding: 0 0 14px 44px; }
 .steps li::before {
   content: counter(s); position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 50%;
-  background: var(--accent); color: #fff; display: grid; place-items: center; font-weight: 700; font-size: .9rem;
+  background: var(--accent); color: #fff; display: grid; place-items: center; font-weight: 700;
 }
 .placeholder { background: repeating-linear-gradient(45deg, var(--accent-soft), var(--accent-soft) 10px, transparent 10px, transparent 20px);
   border: 2px dashed var(--accent); border-radius: var(--radius); padding: 28px; text-align: center; color: var(--muted); margin: 16px 0; }
