@@ -339,7 +339,7 @@ td.num, th.num { text-align: left; font-variant-numeric: tabular-nums;}
    ========================================================== */
 
 /* ---- Hero: logo, eyebrow, judul, subjudul, chip ---- */
-.hero-logo { width: 58px; height: 58px; border-radius: 14px; overflow: hidden; display: grid; place-items: center; line-height: 1; border: 1px solid var(--border); margin-bottom: 18px; }
+.hero-logo { width: 58px; height: 58px; overflow: hidden; display: grid; place-items: center;}
 .hero-logo img { width: 100%; height: 100%; padding: 7px; height: fit-content;}
 .eyebrow { letter-spacing: .14em; font-size: .78rem; }
 h1 { font-size: clamp(1.9rem, 4.2vw, 2.7rem); line-height: 1.15; }
