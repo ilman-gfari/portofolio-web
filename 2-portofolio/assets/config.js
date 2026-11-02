@@ -36,7 +36,7 @@ const SITE = {
   // --- KPI di halaman Index ---
   kpis: [
     { value: "13",       label: "Cabang" },
-    { value: "12",    label: "Bulan History Data Penjualan" },
+    { value: "96",    label: "Bulan History Data Penjualan" },
     { value: "3",  label: "Paket Varian" },
     { value: "333",        label: "Competitors" },
   ],
@@ -50,7 +50,7 @@ const SITE = {
     { group: "Portfolio", items: [
       { id: "index",              icon: "🏠", label: "Index",              href: "index.html" },
       { id: "konteks-bisnis",     icon: "🏢", label: "Konteks Bisnis",     href: "konteks-bisnis.html",
-        desc: "Profil perusahaan, kondisi keuangan, model bisnis, channel penjualan, dan lanskap kompetitor." },
+        desc: "Profil perusahaan health service, 4 pelayanan, 13 cabang di 5 regional " },
       { id: "pertanyaan-bisnis",  icon: "❓", label: "Pertanyaan Bisnis",  href: "pertanyaan-bisnis.html",
         desc: "Pertanyaan strategis dari stakeholder beserta framework analisis yang dipakai." },
       { id: "temuan",             icon: "💡", label: "Temuan & Rekom",     href: "temuan.html",

@@ -13,6 +13,19 @@ const DATA = {
     { Lensa: "Product Portfolio Optimization",     Metrik: "Kontribusi Revenue per Tier/Package, Completion Rate Sesi",  Catatan: "Menerapkan prinsip Pareto untuk mempertahankan layanan unggulan dan mengeleminasi layanan yang tidak efisien." },
     { Lensa: "Spatial Feasibility & Expansion",     Metrik: "Konsentrasi Domisili Pasien (Domicile Area), Volume Pasien per Wilayah",  Catatan: "Menilai tingkat demand organik secara kuantitatif sebelum memutuskan investasi fisik cabang baru di lokasi target (misal: Muara Karang)." }],
 
+
+  // kompetitor
+  kompetitor : [
+    {Kategori: "Olahraga", Pelayanan:"Cedera otot, tulang, ligamen; pemulihan ACL dan patah tulang",Positioning:"Spesialis Cedera & Performa Atlet",Kompetitor_utama:"First Physio BSD, Movewell Physio, The Bali Physio, Kens Physio" },
+    {Kategori: "Pascaoperasi", Pelayanan:"Rehabilitasi setelah operasi ortopedi",Positioning:"Hospital-Standard Bridge Recovery (Alternatif & Pelengkap RS)",Kompetitor_utama:"Sasana Husada (Cideng), Medifit, Araphysio" },
+    {Kategori: "Geriatri", Pelayanan:"Fisioterapi lansia",Positioning:"Functional Mobility & Independence",Kompetitor_utama:"Klinik Medifit, ACESIO, PhysioHealth" },
+    {Kategori: "Nyeri dan tulang belakang", Pelayanan:"Nyeri leher dan punggung, sendi, saraf",Positioning:"Solusi Akar Penyebab Nyeri & Postur",Kompetitor_utama:"Lentera Physio-Spine, BackFit HWS, PhysioHub, Kineo Clinic" },
+
+
+
+  ], 
+
+
   // Revenue per kategori menu (satuan: juta Rupiah)
   kategori: [
     { nama: "Kopi Susu",     revenue: 420 },
@@ -24,11 +37,14 @@ const DATA = {
 
   // Distribusi channel penjualan (persen)
   channel: [
-    { Channel: "Media Sosial", Share: "37,51%", Deskripsi: "Dominan (B2C) — Corong utama pasien organic / walk-in baru." },
-    { Channel: "Rujukan Dokter", Share: "23,29%", Deskripsi: "High Trust (B2B2C) — Pasien medis/rehabilitasi dengan konversi & ticket size tinggi." },
-    { Channel: "Google Maps", Share: "19,89%", Deskripsi: "Organic Catchment — Menjangkau pasien lokal terdekat (location-based)." },
-    { Channel: "Komunitas GYM", Share: "10,20%", Deskripsi: "Niche/Sports — Segmen cedera olahraga (sports injury & recovery)." },
-    { Channel: "Kantor Korporat", Share: "9,21%", Deskripsi: "B2B Benefit — Kemitraan wellness karyawan perusahaan." },
+  { Channel: "WhatsApp & Instagram", Share: "26,98%", Deskripsi: "Dominan (B2C) — Corong utama akuisisi pasien baru via platform digital." },
+  { Channel: "Teman & Keluarga", Share: "23,22%", Deskripsi: "Word of Mouth — Rekomendasi langsung berbasis kepuasan pasien (High Trust)." },
+  { Channel: "Rujukan Dokter", Share: "17,00%", Deskripsi: "High Trust (B2B2C) — Pasien medis/rehabilitasi pascaoperasi dengan ticket size tinggi." },
+  { Channel: "Google Maps", Share: "13,91%", Deskripsi: "Organic Catchment — Menjangkau pasien lokal terdekat berbasis lokasi (POI)." },
+  { Channel: "Komunitas GYM", Share: "7,19%", Deskripsi: "Niche/Sports — Target segmen aktif dan cedera olahraga (sports recovery)." },
+  { Channel: "Kantor Korporat", Share: "6,71%", Deskripsi: "B2B Benefit — Kemitraan wellness dan penanganan postur karyawan perusahaan." },
+  { Channel: "Tidak Diketahui", Share: "5,00%", Deskripsi: "Data akuisisi transaksi yang belum teridentifikasi sumber channel-nya." }
+
   ],
 
   // Pola transaksi per hari (indeks relatif, rata-rata hari kerja = 100)

@@ -13,13 +13,15 @@
   --bg: #f6f7f9;
   --surface: #ffffff;
   --text: #1c2430;
+  --text-light: #94a3b8;
   --muted: #5c6776;
   --border: #e1e5eb;
   --good: #1b7f5c;
   --warn: #b7791f;
   --bad: #b83a3a;
+  --pink:  #ff00aa;
   --blue:var(--accent);
-  --sidebar-w: 180px;
+  --sidebar-w: 200px;
   --radius: 12px;
   --font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -67,6 +69,8 @@ body {
   margin: 0 8px 6px; letter-spacing: .08em;
   text-transform: uppercase; color: var(--muted); font-weight: 600;
 }
+.brand span {color: #105637;}
+
 .nav-link {
   display: block; padding: 8px 10px; border-radius: 8px; color: var(--text);
   text-decoration: none;
@@ -95,7 +99,7 @@ body {
 /* ---------- Tipografi ---------- */
 .eyebrow { color: var(--accent); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin: 0 0 6px; }
 li { max-width: 74ch; }
-p {color: #64748b;}
+p {color: #64748b; font-size: 13px;}
 p.header {color: var(--surface);}
 
 /* ---------- Komponen ---------- */
@@ -108,7 +112,7 @@ p.header {color: var(--surface);}
 .kpi .v { font-size: 1.5rem; font-weight: 700; color: var(--accent); }
 .kpi .l { color: var(--muted); font-size: .85rem; }
 
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; height: fit-content;}
 .grid-content {
   display: grid;
   grid-template-columns: 1fr;
@@ -124,12 +128,7 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); transit
 .card .num { color: var(--accent); font-weight: 700;}
 
 /* ---------- Hero Banner Gondowangi ---------- */
-.hero {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-
-  width: 100%;
+.hero {display: flex; align-items: center; gap: 30px; width: 100%;
   box-sizing: border-box;
   min-height: fit-content;
   padding: 32px 40px;
@@ -307,12 +306,7 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); transit
 
 
 /* Angka utama pada finding */
-.finding .big {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--accent);
-  line-height: 1.1;
-}
+.finding .big {font-size: 1.8rem;font-weight: 700;color: var(--accent);line-height: 1.1; padding: 10px;   margin: 0 auto;}
 
 /* Label / badge */
 .tag {
@@ -350,9 +344,8 @@ td.num, th.num { text-align: left; font-variant-numeric: tabular-nums;}
    ========================================================== */
 
 /* ---- Hero: logo, eyebrow, judul, subjudul, chip ---- */
-.hero-logo { width: 58px; height: 58px; border-radius: 14px; overflow: hidden; display: grid; place-items: center;
- border: 1px solid var(--border); margin-bottom: 18px; }
-.hero-logo img { width: 100%; height: 100%; object-fit: contain; padding: 7px; box-sizing: border-box; }
+.hero-logo { width: 58px; height: 58px; overflow: hidden; display: grid; place-items: center; }
+.hero-logo img { width: 100%; height: 100%; object-fit: contain; padding: 7px;}
 .eyebrow { letter-spacing: .14em; font-size: .78rem; }
 h1 { font-size: clamp(1.9rem, 4.2vw, 2.7rem); line-height: 1.15; }
 .lead { font-size: 1.1rem; margin-bottom: 20px; }
