@@ -87,15 +87,20 @@ const DATA = {
     { Channel: "WhatsApp & Instagram", Share: 26.98, CAC: 249075.29 }
   ],
 
-  // Pola transaksi per hari (indeks relatif)
-  harian: [
-    { hari: "Sen", indeks: 95 },
-    { hari: "Sel", indeks: 98 },
-    { hari: "Rab", indeks: 100 },
-    { hari: "Kam", indeks: 104 },
-    { hari: "Jum", indeks: 115 },
-    { hari: "Sab", indeks: 130 },
-    { hari: "Min", indeks: 122 }
+  // Pola transaksi per bulan
+  transaksiBulanan: [
+    { bulan: "Januari 2025", transaksi: 1010 },
+    { bulan: "Februari 2025", transaksi: 950 },
+    { bulan: "Maret 2025", transaksi: 1091 },
+    { bulan: "April 2025", transaksi: 1023 },
+    { bulan: "Mei 2025", transaksi: 1211 },
+    { bulan: "Juni 2025", transaksi: 1229 },
+    { bulan: "Juli 2025", transaksi: 1394 },
+    { bulan: "Agustus 2025", transaksi: 1452 },
+    { bulan: "September 2025", transaksi: 1448 },
+    { bulan: "Oktober 2025", transaksi: 1631 },
+    { bulan: "November 2025", transaksi: 1596 },
+    { bulan: "Desember 2025", transaksi: 1690 }
   ],
 
   // Ranking menu (data contoh / dummy)
