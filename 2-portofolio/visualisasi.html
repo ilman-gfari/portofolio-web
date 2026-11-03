@@ -70,9 +70,9 @@
   new Chart(cKategori, { type: "bar", options: { ...opt, plugins: { legend: { display: false } } }, 
     data: { labels: DATA.kategori.map(d => d.nama), datasets: [{ label: "Laba Bersih (juta Rp)", data: DATA.kategori.map(d => d.revenue), backgroundColor: DATA.kategori.map(d => d.revenue < 0 ? "#ef4444" : accent), borderRadius: 6 }] } });
   
-    new Chart(cChannel, { type: "doughnut", options: opt,
-    data: { labels: DATA.channel.map(d => d.nama),
-            datasets: [{ data: DATA.channel.map(d => d.persen), backgroundColor: palette, borderWidth: 0 }] } });
+  new Chart(cChannel, { type: "doughnut", data: { labels: DATA.channel.map(d => d.Channel),
+    datasets: [{ data: DATA.channel.map(d => d.Share), backgroundColor: [accent, "#60a5fa", "#34d399", "#fbbf24", "#a78bfa", "#94a3b8", "#f472b6"], borderWidth: 2, borderColor: "#ffffff", hoverOffset: 6 }] }, 
+    options: { ...opt, cutout: "65%", plugins: { ...opt.plugins, legend: { display: true, position: "bottom" }, tooltip: { callbacks: { label: (ctx) => `${ctx.label}: ${ctx.raw.toLocaleString("id-ID", { minimumFractionDigits: 2 })}%` } } } } });
 
   new Chart(cHarian, { type: "line", options: { ...opt, plugins: { legend: { display: false } } },
     data: { labels: DATA.harian.map(d => d.hari),
