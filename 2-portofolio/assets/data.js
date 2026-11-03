@@ -20,9 +20,7 @@ const DATA = {
     {Kategori: "Pascaoperasi", Pelayanan:"Rehabilitasi setelah operasi ortopedi",Positioning:"Hospital-Standard Bridge Recovery (Alternatif & Pelengkap RS)",Kompetitor_utama:"Sasana Husada (Cideng), Medifit, Araphysio" },
     {Kategori: "Geriatri", Pelayanan:"Fisioterapi lansia",Positioning:"Functional Mobility & Independence",Kompetitor_utama:"Klinik Medifit, ACESIO, PhysioHealth" },
     {Kategori: "Nyeri dan tulang belakang", Pelayanan:"Nyeri leher dan punggung, sendi, saraf",Positioning:"Solusi Akar Penyebab Nyeri & Postur",Kompetitor_utama:"Lentera Physio-Spine, BackFit HWS, PhysioHub, Kineo Clinic" },
-
-
-
+    
   ], 
 
 
