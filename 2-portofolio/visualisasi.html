@@ -67,11 +67,10 @@
   Chart.defaults.font.family = css.getPropertyValue("--font");
   const opt = { responsive: true, maintainAspectRatio: false };
 
-  new Chart(cKategori, { type: "bar", options: { ...opt, plugins: { legend: { display: false } } },
-    data: { labels: DATA.kategori.map(d => d.nama),
-            datasets: [{ label: "Revenue (juta Rp)", data: DATA.kategori.map(d => d.revenue), backgroundColor: accent, borderRadius: 6 }] } });
-
-  new Chart(cChannel, { type: "doughnut", options: opt,
+  new Chart(cKategori, { type: "bar", options: { ...opt, plugins: { legend: { display: false } } }, 
+    data: { labels: DATA.kategori.map(d => d.nama), datasets: [{ label: "Laba Bersih (juta Rp)", data: DATA.kategori.map(d => d.revenue), backgroundColor: DATA.kategori.map(d => d.revenue < 0 ? "#ef4444" : accent), borderRadius: 6 }] } });
+  
+    new Chart(cChannel, { type: "doughnut", options: opt,
     data: { labels: DATA.channel.map(d => d.nama),
             datasets: [{ data: DATA.channel.map(d => d.persen), backgroundColor: palette, borderWidth: 0 }] } });
 
