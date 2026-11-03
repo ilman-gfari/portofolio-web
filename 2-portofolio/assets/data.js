@@ -72,8 +72,6 @@ const DATA = {
     { nama: "Meruya",           revenue: -190.1 },
     { nama: "Bekasi",           revenue: -246.4 },
     { nama: "Surabaya Samator", revenue: -135.2 },
-    { nama: "Medan",            revenue: 0 },
-    { nama: "Muara Karang",     revenue: 0 }
   ],
 
   // Distribusi channel pemasaran dan CAC
