@@ -43,16 +43,15 @@ kategori: [
 ],
 
   // Distribusi channel penjualan (persen)
-  channel: [
-  { Channel: "WhatsApp & Instagram", Share: "26,98%", Deskripsi: "Dominan (B2C) — Corong utama akuisisi pasien baru via platform digital." },
-  { Channel: "Teman & Keluarga", Share: "23,22%", Deskripsi: "Word of Mouth — Rekomendasi langsung berbasis kepuasan pasien (High Trust)." },
-  { Channel: "Rujukan Dokter", Share: "17,00%", Deskripsi: "High Trust (B2B2C) — Pasien medis/rehabilitasi pascaoperasi dengan ticket size tinggi." },
-  { Channel: "Google Maps", Share: "13,91%", Deskripsi: "Organic Catchment — Menjangkau pasien lokal terdekat berbasis lokasi (POI)." },
-  { Channel: "Komunitas GYM", Share: "7,19%", Deskripsi: "Niche/Sports — Target segmen aktif dan cedera olahraga (sports recovery)." },
-  { Channel: "Kantor Korporat", Share: "6,71%", Deskripsi: "B2B Benefit — Kemitraan wellness dan penanganan postur karyawan perusahaan." },
-  { Channel: "Tidak Diketahui", Share: "5,00%", Deskripsi: "Data akuisisi transaksi yang belum teridentifikasi sumber channel-nya." }
-
-  ],
+ channel: [
+  { Channel: "Dokter Rujukan", Share: "17,00%", CAC: "Rp150.533,14" },
+  { Channel: "Google Maps", Share: "13,91%", CAC: "Rp298.156,48" },
+  { Channel: "Komunitas GYM", Share: "7,19%", CAC: "Rp198.765,15" },
+  { Channel: "Kantor Korporat", Share: "6,71%", CAC: "Rp180.763,18" },
+  { Channel: "Teman & Keluarga", Share: "23,22%", CAC: "Rp79.749,45" },
+  { Channel: "Tidak Diketahui", Share: "5,00%", CAC: "Rp0,00" },
+  { Channel: "WhatsApp & Instagram", Share: "26,98%", CAC: "Rp249.075,29" }
+],
 
   // Pola transaksi per hari (indeks relatif, rata-rata hari kerja = 100)
   harian: [
