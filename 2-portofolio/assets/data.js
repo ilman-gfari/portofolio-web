@@ -1,7 +1,6 @@
 
 /* ==========================================================
    DATA — semua angka chart & tabel ada di sini.
-   Angka sudah disesuaikan dengan data analisis.
    Satuan laba cabang: juta Rupiah.
    ========================================================== */
 
@@ -78,17 +77,19 @@ const DATA = {
   ],
 
   // Distribusi channel pemasaran dan CAC
+  // Share = persen dalam angka numerik
+  // CAC = Rupiah dalam angka numerik
   channel: [
-    { Channel: "Dokter Rujukan", Share: "17,00%", CAC: "Rp150.533,14" },
-    { Channel: "Google Maps", Share: "13,91%", CAC: "Rp298.156,48" },
-    { Channel: "Komunitas GYM", Share: "7,19%", CAC: "Rp198.765,15" },
-    { Channel: "Kantor Korporat", Share: "6,71%", CAC: "Rp180.763,18" },
-    { Channel: "Teman & Keluarga", Share: "23,22%", CAC: "Rp79.749,45" },
-    { Channel: "Tidak Diketahui", Share: "5,00%", CAC: "Rp0,00" },
-    { Channel: "WhatsApp & Instagram", Share: "26,98%", CAC: "Rp249.075,29" }
+    { Channel: "Dokter Rujukan", Share: 17.00, CAC: 150533.14 },
+    { Channel: "Google Maps", Share: 13.91, CAC: 298156.48 },
+    { Channel: "Komunitas GYM", Share: 7.19, CAC: 198765.15 },
+    { Channel: "Kantor Korporat", Share: 6.71, CAC: 180763.18 },
+    { Channel: "Teman & Keluarga", Share: 23.22, CAC: 79749.45 },
+    { Channel: "Tidak Diketahui", Share: 5.00, CAC: 0.00 },
+    { Channel: "WhatsApp & Instagram", Share: 26.98, CAC: 249075.29 }
   ],
 
-  // Pola transaksi per hari (indeks relatif, rata-rata hari kerja = 100)
+  // Pola transaksi per hari (indeks relatif)
   harian: [
     { hari: "Sen", indeks: 95 },
     { hari: "Sel", indeks: 98 },
@@ -100,7 +101,6 @@ const DATA = {
   ],
 
   // Ranking menu (data contoh / dummy)
-  // qty = unit terjual, revenue = juta Rupiah
   menu: [
     { nama: "Menu A", kategori: "Kopi Susu", qty: 52000, revenue: 180 },
     { nama: "Menu B", kategori: "Kopi Susu", qty: 41000, revenue: 150 },
@@ -118,7 +118,7 @@ const DATA = {
     { langkah: "Data bersih", baris: 16229, catatan: "Siap dianalisis" }
   ],
 
-  // Segmentasi konsep outlet (halaman Deep Dive, dummy)
+  // Segmentasi konsep outlet (dummy)
   konsep: [
     { nama: "Konsep 1", jumlah: 120 },
     { nama: "Konsep 2", jumlah: 95 },
@@ -126,7 +126,7 @@ const DATA = {
     { nama: "Konsep 4", jumlah: 55 }
   ],
 
-  // Sebaran per kota (data contoh / dummy)
+  // Sebaran per kota (dummy)
   kota: [
     { nama: "Kota A", outlet: 90 },
     { nama: "Kota B", outlet: 60 },
