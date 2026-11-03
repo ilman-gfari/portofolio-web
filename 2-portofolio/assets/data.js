@@ -24,14 +24,23 @@ const DATA = {
   ], 
 
 
-  // Revenue per kategori menu (satuan: juta Rupiah)
-  kategori: [
-    { nama: "Kopi Susu",     revenue: 420 },
-    { nama: "Kopi Hitam",    revenue: 180 },
-    { nama: "Non-Coffee",    revenue: 150 },
-    { nama: "Makanan",       revenue: 90 },
-    { nama: "Lainnya",       revenue: 35 }
-  ],
+  // Laba per Cabang menu (satuan: juta Rupiah)
+kategori: [
+  { nama: "Cideng",           revenue: 610,5 },
+  { nama: "Karawaci",         revenue: 815,7 },
+  { nama: "Gading Serpong",   revenue: 711,4 },
+  { nama: "Simatupang",       revenue: 929,5 },
+  { nama: "PIK 2",            revenue: 671,1 },
+  { nama: "Gandaria",         revenue: 533,5 },
+  { nama: "Alam Sutera",      revenue: 262,2 },
+  { nama: "Surabaya Pakuwon", revenue: -38,5 },
+  { nama: "Kelapa Gading",    revenue: 167,9 },
+  { nama: "Meruya",           revenue: -190,1 },
+  { nama: "Bekasi",           revenue: -246,4 },
+  { nama: "Surabaya Samator", revenue: -135,2 },
+  { nama: "Medan",            revenue: 0 },
+  { nama: "Muara Karang",     revenue: 0 }
+],
 
   // Distribusi channel penjualan (persen)
   channel: [
