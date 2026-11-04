@@ -63,8 +63,8 @@ const SITE = {
       //   desc: "Log data cleaning, angka lengkap, ranking penuh — untuk verifikasi." }
     ]},
     { group: "Appendix", items: [
-      // { id: "cara-kerja",    icon: "⚙️", label: "Cara Kerja",    href: "cara-kerja.html",
-      //   desc: "Metodologi: pipeline data, tools & stack, alur cleaning, reproducibility." }
+      { id: "cara-kerja",    icon: "⚙️", label: "Cara Kerja",    href: "cara-kerja.html",
+        desc: "Metodologi: pipeline data, tools & stack, alur cleaning, reproducibility." }
     ]}
   ]
 };
