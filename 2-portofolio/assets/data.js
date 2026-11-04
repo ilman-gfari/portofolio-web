@@ -88,7 +88,7 @@ const DATA = {
   ],
 
   // Pola transaksi per bulan
-  transaksiBulanan: [
+  transaksiperbulan: [
     { bulan: "Januari 2025", transaksi: 1010 },
     { bulan: "Februari 2025", transaksi: 950 },
     { bulan: "Maret 2025", transaksi: 1091 },
@@ -103,15 +103,14 @@ const DATA = {
     { bulan: "Desember 2025", transaksi: 1690 }
   ],
 
-  // Ranking menu (data contoh / dummy)
-  menu: [
-    { nama: "Menu A", kategori: "Kopi Susu", qty: 52000, revenue: 180 },
-    { nama: "Menu B", kategori: "Kopi Susu", qty: 41000, revenue: 150 },
-    { nama: "Menu C", kategori: "Kopi Hitam", qty: 36000, revenue: 110 },
-    { nama: "Menu D", kategori: "Non-Coffee", qty: 28000, revenue: 95 },
-    { nama: "Menu E", kategori: "Makanan", qty: 19000, revenue: 70 }
-  ],
-
+// Ranking pasien baru berdasarkan area (data terbaru)
+areapasiennew: [
+  { nama: "Kebayoran Baru", kategori: "Pasien Baru", qty: 648, revenue: 1 },
+  { nama: "Cilandak", kategori: "Pasien Baru", qty: 639, revenue: 2 },
+  { nama: "Curug", kategori: "Pasien Baru", qty: 598, revenue: 3 },
+  { nama: "Teluknaga", kategori: "Pasien Baru", qty: 345, revenue: 4 },
+  { nama: "Pesanggrahan", kategori: "Pasien Baru", qty: 339, revenue: 5 }
+],
   // Log data cleaning (data contoh / dummy)
   cleaning: [
     { langkah: "Data mentah", baris: 18000, catatan: "Hasil scraping / export awal" },

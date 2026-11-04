@@ -27,7 +27,18 @@
 
   </div>
 
-  <p class="lead">Chart di bawah membaca data dari <code>assets/data.js</code> — ubah angkanya di sana.</p>
+  <div class="grid"  style="text-align: center;">
+    <div class="card finding" style="border-Top: 4px solid var(--bad);">
+      <div class="big">5</div><p class="hero-description">Regional Klinik</p><p style="color: var(--text-light);">Jakarta · Tangerang · Bekasi · Surabaya</p></div>
+    <div class="card finding" style="border-Top: 4px solid var(--warn);"> 
+      <div class="big">10.626</div><p class="hero-description">Total Pasien Baru</p><p style="color: var(--text-light);">Curug · Tambora · Tanah Abang</p></div>
+    <div class="card finding" style="border-Top: 4px solid var(--accent);">
+      <div class="big">15.725</div><p class="hero-description">Transaksi</p><p style="color: var(--text-light);">Clean data</p></div>
+    <div class="card finding" style="border-Top: 4px solid var(--pink);">
+      <div class="big">13</div><p class="hero-description">Klinik Outlet</p><p style="color: var(--text-light);">Cideng, Karawaci, Gading Serpong</p></div>
+          <div class="card finding" style="border-Top: 4px solid var(--muted);">
+      <div class="big">21,88%</div><p class="hero-description">Laba Bersih 2025 Physiorehab dari tahun 2024</p><p style="color: var(--text-light);">Rp 895,3 Juta</p></div>
+  </div>
 
   <div class="chart-box">
     <h3>Laba Bersih per Cabang</h3>
@@ -44,13 +55,13 @@
   <div class="chart-box">
     <h3>Pola Transaksi Harian</h3>
     <div class="canvas-h"><canvas id="cTransaksi"></canvas></div>
-    <p>Insight: tulis satu kalimat tentang apa arti chart ini.</p>
+    <p class="callout">Mengingat lonjakan besar di Q4 (terutama November-Desember), pastikan infrastruktur (stok barang, server/sistem, dan layanan pelanggan) siap menghadapi lonjakan trafik yang tinggi.</p>
   </div>
 
   <div class="chart-box">
-    <h3>Top Menu (Revenue)</h3>
+    <h3>Top Pasien New (area)</h3>
     <div class="canvas-h"><canvas id="cMenu"></canvas></div>
-    <p>Insight: tulis satu kalimat tentang apa arti chart ini.</p>
+    <p class="callout">Kebayoran Baru ($648$ pasien baru) dan Cilandak ($639$ pasien baru) adalah pusat utama masuknya pasien baru. Ini menunjukkan bahwa penetrasi brand atau efektivitas pemasaran di wilayah Jakarta Selatan sangat mendominasi.</p>
   </div>
 
 </main>
@@ -76,12 +87,12 @@
     fillStyle: data.datasets[0].backgroundColor[i], strokeStyle: data.datasets[0].backgroundColor[i], index: i })); } } }, tooltip: { callbacks: { label: (ctx) => `${ctx.label}: ${ctx.raw.toLocaleString("id-ID", { minimumFractionDigits: 2 })}%` } } } } });
   
   new Chart(cTransaksi, { type: "line", options: { ...opt, plugins: { legend: { display: false } } },
-    data: { labels: DATA.harian.map(d => d.hari),
-            datasets: [{ label: "Indeks", data: DATA.harian.map(d => d.indeks), borderColor: accent, backgroundColor: accent + "33", fill: true, tension: .3 }] } });
+    data: { labels: DATA.transaksiperbulan.map(d => d.bulan),
+            datasets: [{ label: "Indeks", data: DATA.transaksiperbulan.map(d => d.transaksi), borderColor: accent, backgroundColor: accent + "33", fill: true, tension: .3 }] } });
 
   new Chart(cMenu, { type: "bar", options: { ...opt, indexAxis: "y", plugins: { legend: { display: false } } },
-    data: { labels: DATA.menu.map(d => d.nama),
-            datasets: [{ label: "Revenue (juta Rp)", data: DATA.menu.map(d => d.revenue), backgroundColor: accent, borderRadius: 6 }] } });
+    data: { labels: DATA.areapasiennew.map(d => d.nama),
+            datasets: [{ label: "Pasien Baru", data: DATA.areapasiennew.map(d => d.qty), backgroundColor: accent, borderRadius: 6 }] } });
 </script>
 </body>
 </html>
