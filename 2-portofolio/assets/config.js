@@ -59,8 +59,8 @@ const SITE = {
     { group: "Reports", items: [
       { id: "visualisasi",  icon: "📊", label: "Visualisasi",  href: "visualisasi.html",
         desc: "Chart interaktif: revenue per kategori, distribusi channel, pola weekend, ranking menu." },
-      { id: "report-data",  icon: "📋", label: "Report Data",  href: "report-data.html",
-        desc: "Log data cleaning, angka lengkap, ranking penuh — untuk verifikasi." }
+      // { id: "report-data",  icon: "📋", label: "Report Data",  href: "report-data.html",
+      //   desc: "Log data cleaning, angka lengkap, ranking penuh — untuk verifikasi." }
     ]},
     { group: "Appendix", items: [
       { id: "cara-kerja",    icon: "⚙️", label: "Cara Kerja",    href: "cara-kerja.html",
