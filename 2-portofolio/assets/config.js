@@ -26,12 +26,12 @@ const SITE = {
   showSampleBadge: false,
 
   // --- Kontak (kosongkan "" untuk menyembunyikan) ---
-  contact: {
-    website: "",
-    linkedin: "",
-    email: "",
-    github: ""
-  },
+  // contact: {
+  //   website: "",
+  //   linkedin: "",
+  //   email: "",
+  //   github: ""
+  // },
 
   // --- KPI di halaman Index ---
   kpis: [
