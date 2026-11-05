@@ -1,0 +1,31 @@
+defect_id,title,category,severity,found_date,reported_by,owner,status,release_fixed,closed_date
+DEF001,Perangkat baru tidak muncul di Web DS,data_hilang,high,2026-10-03,QA-1,Tim Integrasi,closed,R3,2026-10-23
+DEF002,Perangkat nonaktif masih tampil di Web DS,data_orphan,medium,2026-10-06,QA-1,Tim Integrasi,open,,
+DEF003,Data basi saat sinkron gagal (Sumatera),data_basi,high,2026-10-10,QA-1,Tim Integrasi,closed,R3,2026-10-24
+DEF004,Energi meter_B 1000x lipat,nilai_salah,critical,2026-10-14,QA-1,Tim Integrasi,closed,R3,2026-10-23
+DEF005,Nilai energi kosong pada inverter_C,nilai_kosong,medium,2026-10-08,QA-1,Tim Integrasi,closed,R4,2026-10-29
+DEF006,Status berbeda pada firmware v2.3,status_beda,medium,2026-10-15,QA-1,Tim Integrasi,open,,
+DEF007,Baris ganda setelah retry sinkron,duplikat,low,2026-10-12,QA-1,Tim Integrasi,closed,R3,2026-10-23
+DEF008,Energi dibulatkan 1 desimal di Web DS,pembulatan,info,2026-10-04,QA-1,Tim Integrasi,closed,,2026-10-12
+DEF009,Label kolom laporan ekspor berbeda dengan SUG,ui,low,2026-10-09,QA-1,Tim UI,closed,R3,2026-10-18
+DEF010,Urutan kolom ekspor CSV berubah,ui,medium,2026-10-13,QA-1,Tim UI,closed,R3,2026-10-20
+DEF011,Filter wilayah lambat dimuat,kinerja,low,2026-10-02,QA-1,Tim Integrasi,closed,R3,2026-10-09
+DEF012,Tooltip grafik memotong nilai,ui,medium,2026-10-17,QA-1,Tim UI,closed,R3,2026-10-27
+DEF013,Format tanggal di halaman detail tidak seragam,ui,medium,2026-10-13,QA-1,Tim UI,retest,R3,
+DEF014,Tombol unduh tidak aktif pada layar kecil,ui,info,2026-10-09,QA-1,Tim UI,closed,R3,2026-10-14
+DEF015,Teks status terpotong pada tabel,ui,low,2026-10-24,QA-1,Tim UI,closed,R3,2026-11-03
+DEF016,Pencarian perangkat peka huruf besar-kecil,ui,medium,2026-10-27,QA-1,Tim UI,closed,R3,2026-11-07
+DEF017,Halaman login menampilkan pesan error umum,akses,medium,2026-10-22,QA-1,Tim Integrasi,closed,R3,2026-10-30
+DEF018,Pagination melompat saat filter diubah,ui,low,2026-10-06,QA-1,Tim UI,closed,R3,2026-10-13
+DEF019,Legenda grafik tidak sesuai warna,ui,low,2026-10-02,QA-1,Tim UI,open,,
+DEF020,Waktu muat dashboard lebih dari 8 detik,kinerja,low,2026-10-08,QA-1,Tim Integrasi,closed,R3,2026-10-13
+DEF021,Zona waktu tidak ditampilkan di kolom last seen,dokumentasi,medium,2026-10-08,QA-1,Tim Integrasi,open,,
+DEF022,Ekspor melebihi 10 ribu baris gagal,kinerja,medium,2026-10-11,QA-1,Tim Integrasi,closed,R3,2026-10-22
+DEF023,Catatan rilis tidak mencantumkan perubahan skema,dokumentasi,info,2026-10-23,QA-1,Tim Integrasi,closed,R3,2026-10-30
+DEF024,Peran pembaca bisa melihat tombol ubah,akses,low,2026-10-05,QA-1,Tim Integrasi,closed,R3,2026-10-10
+DEF025,Nama wilayah beda ejaan di dua halaman,ui,medium,2026-10-17,QA-1,Tim UI,closed,R3,2026-10-26
+DEF026,Grafik harian tidak menampilkan hari tanpa data,ui,medium,2026-10-21,QA-1,Tim UI,closed,R3,2026-10-31
+DEF027,Hasil pencarian tidak mempertahankan urutan,ui,medium,2026-10-16,QA-1,Tim UI,closed,R3,2026-10-24
+DEF028,Dokumentasi API tidak mencantumkan kolom baru,dokumentasi,info,2026-10-04,QA-1,Tim Integrasi,closed,R3,2026-10-14
+DEF029,Notifikasi alarm terlambat,kinerja,low,2026-10-24,QA-1,Tim Integrasi,retest,R3,
+DEF030,Ikon status tidak terbaca pada mode gelap,ui,info,2026-10-13,QA-1,Tim UI,open,,

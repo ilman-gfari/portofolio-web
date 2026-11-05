@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report Data</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/page-transition.js"></script>
+</head>
+<body data-page="report-data">
+<main id="content">
+
+  <p class="eyebrow">05 · Reports</p>
+  <h1>Report Data</h1>
+  <p class="lead">Detail angka untuk verifikasi. Tabel diisi otomatis dari <code>assets/data.js</code>.</p>
+
+  <h2>Log Data Cleaning</h2>
+  <div class="table-wrap">
+    <table data-table="cleaning" data-cols="langkah,baris,catatan" data-heads="Langkah,Jumlah baris,Catatan"></table>
+  </div>
+
+  <h2>Ranking Menu</h2>
+  <div class="table-wrap">
+    <table data-table="menu" data-cols="#,nama,kategori,qty,revenue" data-heads="#,Menu,Kategori,Qty terjual,Revenue (juta Rp)"></table>
+  </div>
+
+  <h2>Breakdown Kategori</h2>
+  <div class="table-wrap">
+    <table data-table="kategori" data-cols="nama,revenue" data-heads="Kategori,Revenue (juta Rp)"></table>
+  </div>
+
+  <h2>Breakdown Channel</h2>
+  <div class="table-wrap">
+    <table data-table="channel" data-cols="nama,persen" data-heads="Channel,Persentase (%)"></table>
+  </div>
+
+</main>
+<script src="assets/config.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/layout.js"></script>
+</body>
+</html>

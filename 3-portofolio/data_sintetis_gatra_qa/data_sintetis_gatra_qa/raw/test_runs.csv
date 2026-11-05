@@ -1,0 +1,33 @@
+run_id,release,run_date,test_case,description,result
+RUN-R1-TC01,R1,2026-10-02,TC01,Semua perangkat SUG ada di Web DS,fail
+RUN-R1-TC02,R1,2026-10-02,TC02,Status sama antara SUG dan Web DS,fail
+RUN-R1-TC03,R1,2026-10-02,TC03,Nilai energi sama dalam toleransi,pass
+RUN-R1-TC04,R1,2026-10-02,TC04,Tidak ada nilai kosong yang tidak wajar,fail
+RUN-R1-TC05,R1,2026-10-02,TC05,Tidak ada baris ganda per perangkat per hari,pass
+RUN-R1-TC06,R1,2026-10-02,TC06,Data tepat waktu setelah sinkron,pass
+RUN-R1-TC07,R1,2026-10-02,TC07,Perangkat baru masuk Web DS,fail
+RUN-R1-TC08,R1,2026-10-02,TC08,Perangkat nonaktif hilang dari Web DS,fail
+RUN-R2-TC01,R2,2026-10-13,TC01,Semua perangkat SUG ada di Web DS,fail
+RUN-R2-TC02,R2,2026-10-13,TC02,Status sama antara SUG dan Web DS,fail
+RUN-R2-TC03,R2,2026-10-13,TC03,Nilai energi sama dalam toleransi,fail
+RUN-R2-TC04,R2,2026-10-13,TC04,Tidak ada nilai kosong yang tidak wajar,fail
+RUN-R2-TC05,R2,2026-10-13,TC05,Tidak ada baris ganda per perangkat per hari,fail
+RUN-R2-TC06,R2,2026-10-13,TC06,Data tepat waktu setelah sinkron,fail
+RUN-R2-TC07,R2,2026-10-13,TC07,Perangkat baru masuk Web DS,Failed
+RUN-R2-TC08,R2,2026-10-13,TC08,Perangkat nonaktif hilang dari Web DS,fail
+RUN-R3-TC01,R3,2026-10-23,TC01,Semua perangkat SUG ada di Web DS,pass
+RUN-R3-TC02,R3,2026-10-23,TC02,Status sama antara SUG dan Web DS,fail
+RUN-R3-TC03,R3,23/10/2026,TC03,Nilai energi sama dalam toleransi,pass
+RUN-R3-TC04,R3,2026-10-23,TC04,Tidak ada nilai kosong yang tidak wajar,fail
+RUN-R3-TC05,R3,2026-10-23,TC05,Tidak ada baris ganda per perangkat per hari,pass
+RUN-R3-TC06,R3,2026-10-23,TC06,Data tepat waktu setelah sinkron,pass
+RUN-R3-TC07,R3,2026-10-23,TC07,Perangkat baru masuk Web DS,pass
+RUN-R3-TC08,R3,2026-10-23,TC08,Perangkat nonaktif hilang dari Web DS,fail
+RUN-R4-TC01,R4,2026-10-29,TC01,Semua perangkat SUG ada di Web DS,pass
+RUN-R4-TC02,R4,2026-10-29,TC02,Status sama antara SUG dan Web DS,fail
+RUN-R4-TC03,R4,2026-10-29,TC03,Nilai energi sama dalam toleransi,pass
+RUN-R4-TC04,R4,2026-10-29,TC04,Tidak ada nilai kosong yang tidak wajar,pass
+RUN-R4-TC05,R4,2026-10-29,TC05,Tidak ada baris ganda per perangkat per hari,pass
+RUN-R4-TC06,R4,2026-10-29,TC06,Data tepat waktu setelah sinkron,pass
+RUN-R4-TC07,R4,2026-10-29,TC07,Perangkat baru masuk Web DS,pass
+RUN-R4-TC08,R4,2026-10-29,TC08,Perangkat nonaktif hilang dari Web DS,fail

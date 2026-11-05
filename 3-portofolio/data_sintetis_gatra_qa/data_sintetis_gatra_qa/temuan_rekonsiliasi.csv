@@ -1,0 +1,1055 @@
+device_id,snapshot_date,status_sug,last_seen_sug,energy_kwh_sug,voltage_v_sug,status_web,last_seen_web,energy_kwh_web,voltage_v_web,_merge,region,device_type,firmware,kategori,duplikat_di_webds
+DV0001,2026-10-09,online,2026-10-09 23:43:35,157.01,222.8,online,2026-10-08 23:49:28,123.1,222.1,both,Sumatera,meter_B,v2.2,F_nilai_beda_lain,False
+DV0001,2026-10-10,online,2026-10-10 23:48:20,86.82,223.2,online,2026-10-09 23:43:35,157.0,222.8,both,Sumatera,meter_B,v2.2,F_nilai_beda_lain,False
+DV0001,2026-10-12,online,2026-10-12 23:45:15,117.77,221.8,online,2026-10-12 23:45:15,117770.0,221.8,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0001,2026-10-13,online,2026-10-13 23:50:54,86.46,222.6,online,2026-10-13 23:50:54,86460.0,222.6,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0001,2026-10-14,alarm,2026-10-14 23:44:53,137.67,222.1,alarm,2026-10-14 23:44:53,137670.0,222.1,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0001,2026-10-15,online,2026-10-15 23:48:00,115.73,223.2,online,2026-10-15 23:48:00,115730.0,223.2,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0001,2026-10-16,online,2026-10-16 23:46:50,120.51,224.5,online,2026-10-16 23:46:50,120510.0,224.5,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0001,2026-10-17,online,2026-10-17 23:53:04,130.62,221.6,online,2026-10-17 23:53:04,130620.0,221.6,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0001,2026-10-18,online,2026-10-18 23:53:40,119.26,220.9,online,2026-10-18 23:53:40,119260.0,220.9,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0001,2026-10-19,online,2026-10-19 23:47:20,125.53,222.2,online,2026-10-19 23:47:20,125530.0,222.2,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0001,2026-10-20,online,2026-10-20 23:46:07,165.68,224.2,online,2026-10-20 23:46:07,165680.0,224.2,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0001,2026-10-21,online,2026-10-21 23:49:38,114.89,224.0,online,2026-10-20 23:46:07,165680.0,224.2,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0002,2026-10-03,online,2026-10-03 23:55:31,29.47,233.9,online,2026-10-03 23:55:31,,233.9,both,Jawa,inverter_C,v2.3,C_nilai_kosong,False
+DV0002,2026-10-09,online,2026-10-09 23:47:26,66.44,229.7,online,2026-10-09 23:47:26,,229.7,both,Jawa,inverter_C,v2.3,C_nilai_kosong,False
+DV0002,2026-10-25,online,2026-10-25 23:42:38,39.7,232.6,online,2026-10-25 23:42:38,,232.6,both,Jawa,inverter_C,v2.3,C_nilai_kosong,False
+DV0006,2026-10-11,online,2026-10-11 23:49:44,60.4,222.8,online,2026-10-11 23:49:44,,222.8,both,Kalimantan,inverter_C,v2.2,C_nilai_kosong,True
+DV0008,2026-10-09,online,2026-10-09 23:49:13,14.34,229.5,online,2026-10-08 23:55:15,12.9,226.8,both,Sumatera,inverter_C,v2.1,F_nilai_beda_lain,False
+DV0008,2026-10-10,alarm,2026-10-10 23:47:28,8.68,229.5,online,2026-10-09 23:49:13,14.3,229.5,both,Sumatera,inverter_C,v2.1,D_status_beda,False
+DV0008,2026-10-15,online,2026-10-15 23:42:04,10.94,230.7,online,2026-10-15 23:42:04,,230.7,both,Sumatera,inverter_C,v2.1,C_nilai_kosong,False
+DV0008,2026-10-21,online,2026-10-21 23:57:06,10.96,229.5,online,2026-10-20 23:53:46,,230.9,both,Sumatera,inverter_C,v2.1,C_nilai_kosong,False
+DV0010,2026-10-09,online,2026-10-09 23:46:14,45.53,234.1,offline,2026-10-08 08:30:00,11.0,,both,Sumatera,inverter_A,v2.2,D_status_beda,False
+DV0010,2026-10-10,online,2026-10-10 23:50:38,29.17,229.5,online,2026-10-09 23:46:14,45.5,234.1,both,Sumatera,inverter_A,v2.2,F_nilai_beda_lain,False
+DV0010,2026-10-21,online,2026-10-21 23:44:54,36.5,232.3,online,2026-10-20 23:45:35,57.7,234.5,both,Sumatera,inverter_A,v2.2,F_nilai_beda_lain,False
+DV0012,2026-10-12,online,2026-10-12 23:46:19,108.85,233.8,online,2026-10-12 23:46:19,108850.0,233.8,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0012,2026-10-13,online,2026-10-13 23:51:48,75.26,232.7,online,2026-10-13 23:51:48,75260.0,232.7,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0012,2026-10-14,online,2026-10-14 23:44:43,125.15,235.5,online,2026-10-14 23:44:43,125150.0,235.5,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0012,2026-10-15,online,2026-10-15 23:56:46,93.64,233.9,online,2026-10-15 23:56:46,93640.0,233.9,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0012,2026-10-16,online,2026-10-16 23:46:37,96.9,234.4,online,2026-10-16 23:46:37,96900.0,234.4,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0012,2026-10-17,online,2026-10-17 23:40:02,132.4,232.2,online,2026-10-17 23:40:02,132400.0,232.2,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0012,2026-10-18,online,2026-10-18 23:41:28,105.28,234.8,online,2026-10-18 23:41:28,105280.0,234.8,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0012,2026-10-19,online,2026-10-19 23:48:20,122.7,231.1,online,2026-10-19 23:48:20,122700.0,231.1,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0012,2026-10-20,online,2026-10-20 23:46:46,133.16,232.9,online,2026-10-20 23:46:46,133160.0,232.9,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0012,2026-10-21,offline,2026-10-21 16:12:00,30.65,,offline,2026-10-21 16:12:00,30650.0,,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0013,2026-10-07,online,2026-10-07 23:40:17,79.6,232.4,offline,2026-10-07 23:40:17,79.6,232.4,both,Jawa,meter_A,v2.3,D_status_beda,False
+DV0016,2026-10-01,online,2026-10-01 23:48:31,15.11,223.7,,,,,left_only,Sulawesi,inverter_A,v2.2,A_hilang_di_webds,False
+DV0016,2026-10-02,online,2026-10-02 23:52:21,10.06,221.8,,,,,left_only,Sulawesi,inverter_A,v2.2,A_hilang_di_webds,False
+DV0016,2026-10-03,online,2026-10-03 23:51:59,8.82,222.1,,,,,left_only,Sulawesi,inverter_A,v2.2,A_hilang_di_webds,False
+DV0016,2026-10-04,online,2026-10-04 23:54:16,13.67,223.0,,,,,left_only,Sulawesi,inverter_A,v2.2,A_hilang_di_webds,False
+DV0016,2026-10-05,online,2026-10-05 23:43:38,14.09,221.4,,,,,left_only,Sulawesi,inverter_A,v2.2,A_hilang_di_webds,False
+DV0016,2026-10-06,online,2026-10-06 23:41:24,12.62,222.5,,,,,left_only,Sulawesi,inverter_A,v2.2,A_hilang_di_webds,False
+DV0016,2026-10-07,online,2026-10-07 23:44:35,8.33,222.8,,,,,left_only,Sulawesi,inverter_A,v2.2,A_hilang_di_webds,False
+DV0016,2026-10-08,online,2026-10-08 23:45:38,13.55,220.8,,,,,left_only,Sulawesi,inverter_A,v2.2,A_hilang_di_webds,False
+DV0016,2026-10-09,online,2026-10-09 23:55:20,18.41,221.9,,,,,left_only,Sulawesi,inverter_A,v2.2,A_hilang_di_webds,False
+DV0016,2026-10-10,online,2026-10-10 23:41:52,9.81,222.4,,,,,left_only,Sulawesi,inverter_A,v2.2,A_hilang_di_webds,False
+DV0016,2026-10-11,online,2026-10-11 23:45:40,16.34,222.4,,,,,left_only,Sulawesi,inverter_A,v2.2,A_hilang_di_webds,False
+DV0016,2026-10-12,online,2026-10-12 23:40:12,15.3,223.7,,,,,left_only,Sulawesi,inverter_A,v2.2,A_hilang_di_webds,False
+DV0016,2026-10-13,online,2026-10-13 23:45:52,9.81,220.6,,,,,left_only,Sulawesi,inverter_A,v2.2,A_hilang_di_webds,False
+DV0016,2026-10-14,online,2026-10-14 23:57:07,15.1,220.8,,,,,left_only,Sulawesi,inverter_A,v2.2,A_hilang_di_webds,False
+DV0016,2026-10-15,online,2026-10-15 23:55:04,14.6,223.6,,,,,left_only,Sulawesi,inverter_A,v2.2,A_hilang_di_webds,False
+DV0016,2026-10-16,online,2026-10-16 23:45:20,14.43,221.3,,,,,left_only,Sulawesi,inverter_A,v2.2,A_hilang_di_webds,False
+DV0016,2026-10-17,offline,2026-10-17 13:46:00,4.04,,,,,,left_only,Sulawesi,inverter_A,v2.2,A_hilang_di_webds,False
+DV0016,2026-10-18,online,2026-10-18 23:54:38,14.74,223.5,,,,,left_only,Sulawesi,inverter_A,v2.2,A_hilang_di_webds,False
+DV0016,2026-10-19,online,2026-10-19 23:47:19,16.62,221.3,,,,,left_only,Sulawesi,inverter_A,v2.2,A_hilang_di_webds,False
+DV0016,2026-10-20,online,2026-10-20 23:45:17,19.72,223.0,,,,,left_only,Sulawesi,inverter_A,v2.2,A_hilang_di_webds,False
+DV0016,2026-10-21,online,2026-10-21 23:51:28,12.96,222.2,,,,,left_only,Sulawesi,inverter_A,v2.2,A_hilang_di_webds,False
+DV0017,2026-10-14,alarm,2026-10-14 23:51:16,30.72,227.9,alarm,2026-10-14 23:51:16,,227.9,both,Jawa,inverter_C,v2.2,C_nilai_kosong,False
+DV0019,2026-10-09,online,2026-10-09 23:55:15,21.96,231.4,online,2026-10-08 23:47:47,18.8,232.8,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0019,2026-10-10,online,2026-10-10 23:56:49,13.34,231.7,online,2026-10-09 23:55:15,22.0,231.4,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0019,2026-10-21,online,2026-10-21 23:42:00,20.14,234.1,online,2026-10-20 23:40:01,27.0,233.3,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0020,2026-10-09,online,2026-10-09 23:47:52,21.25,224.1,offline,2026-10-08 13:47:00,8.0,,both,Sumatera,inverter_A,v2.1,D_status_beda,False
+DV0020,2026-10-10,online,2026-10-10 23:47:34,11.26,223.8,online,2026-10-09 23:47:52,21.2,224.1,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0020,2026-10-21,online,2026-10-21 23:50:04,16.67,223.0,online,2026-10-20 23:47:26,20.1,225.0,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0021,2026-10-12,online,2026-10-12 23:47:53,34.1,231.2,online,2026-10-12 23:47:53,34100.0,231.2,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0021,2026-10-13,online,2026-10-13 23:44:12,22.96,230.4,online,2026-10-13 23:44:12,22960.0,230.4,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0021,2026-10-14,online,2026-10-14 23:56:17,40.74,229.0,online,2026-10-14 23:56:17,40740.0,229.0,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0021,2026-10-15,online,2026-10-15 23:43:50,36.14,227.4,online,2026-10-15 23:43:50,36140.0,227.4,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0021,2026-10-16,online,2026-10-16 23:57:15,37.14,229.8,online,2026-10-16 23:57:15,37140.0,229.8,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0021,2026-10-17,online,2026-10-17 23:51:11,45.47,232.5,online,2026-10-17 23:51:11,45470.0,232.5,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0021,2026-10-18,online,2026-10-18 23:48:10,34.21,229.6,online,2026-10-18 23:48:10,34210.0,229.6,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0021,2026-10-19,online,2026-10-19 23:56:19,39.47,230.1,online,2026-10-19 23:56:19,39470.0,230.1,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0021,2026-10-20,online,2026-10-20 23:46:34,46.41,229.7,online,2026-10-20 23:46:34,46410.0,229.7,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0021,2026-10-21,online,2026-10-21 23:46:14,37.77,229.2,online,2026-10-21 23:46:14,37770.0,229.2,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0022,2026-10-12,online,2026-10-12 23:40:30,131.71,227.6,online,2026-10-12 23:40:30,131710.0,227.6,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0022,2026-10-13,online,2026-10-13 23:48:08,97.73,229.0,online,2026-10-13 23:48:08,97730.0,229.0,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0022,2026-10-14,online,2026-10-14 23:40:06,144.42,228.1,online,2026-10-14 23:40:06,144420.0,228.1,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0022,2026-10-15,online,2026-10-15 23:44:45,128.57,230.8,online,2026-10-15 23:44:45,128570.0,230.8,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0022,2026-10-16,online,2026-10-16 23:56:52,132.67,227.7,online,2026-10-16 23:56:52,132670.0,227.7,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0022,2026-10-17,online,2026-10-17 23:41:21,177.1,226.7,online,2026-10-17 23:41:21,177100.0,226.7,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0022,2026-10-18,online,2026-10-18 23:45:10,126.47,229.0,online,2026-10-18 23:45:10,126470.0,229.0,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0022,2026-10-19,offline,2026-10-19 19:09:00,35.51,,offline,2026-10-19 19:09:00,35510.0,,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0022,2026-10-20,online,2026-10-20 23:54:03,208.83,228.3,online,2026-10-20 23:54:03,208830.0,228.3,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0022,2026-10-21,online,2026-10-21 23:56:41,140.86,225.5,online,2026-10-21 23:56:41,140860.0,225.5,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0023,2026-10-02,online,2026-10-02 23:46:50,26.61,233.5,offline,2026-10-02 23:46:50,26.6,233.5,both,Kalimantan,inverter_C,v2.3,D_status_beda,False
+DV0023,2026-10-03,online,2026-10-03 23:55:39,23.36,233.5,online,2026-10-03 23:55:39,,233.5,both,Kalimantan,inverter_C,v2.3,C_nilai_kosong,False
+DV0023,2026-10-09,online,2026-10-09 23:50:00,44.43,233.6,offline,2026-10-09 23:50:00,44.4,233.6,both,Kalimantan,inverter_C,v2.3,D_status_beda,False
+DV0023,2026-10-18,online,2026-10-18 23:43:38,34.33,234.5,offline,2026-10-18 23:43:38,34.3,234.5,both,Kalimantan,inverter_C,v2.3,D_status_beda,False
+DV0023,2026-10-26,online,2026-10-26 23:47:41,35.43,232.5,online,2026-10-26 23:47:41,,232.5,both,Kalimantan,inverter_C,v2.3,C_nilai_kosong,False
+DV0024,2026-10-09,online,2026-10-09 23:47:34,73.58,233.1,online,2026-10-08 23:45:53,62.6,233.1,both,Sumatera,meter_B,v2.2,F_nilai_beda_lain,False
+DV0024,2026-10-10,offline,2026-10-10 12:29:00,18.92,,online,2026-10-09 23:47:34,73.6,233.1,both,Sumatera,meter_B,v2.2,D_status_beda,False
+DV0024,2026-10-12,online,2026-10-12 23:55:10,61.7,234.6,online,2026-10-12 23:55:10,61700.0,234.6,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0024,2026-10-13,online,2026-10-13 23:42:05,43.09,231.4,online,2026-10-13 23:42:05,43090.0,231.4,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0024,2026-10-14,online,2026-10-14 23:54:54,76.05,233.5,online,2026-10-14 23:54:54,76050.0,233.5,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0024,2026-10-15,online,2026-10-15 23:54:04,63.83,235.7,online,2026-10-15 23:54:04,63830.0,235.7,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0024,2026-10-16,online,2026-10-16 23:53:45,56.81,234.6,online,2026-10-16 23:53:45,56810.0,234.6,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0024,2026-10-17,online,2026-10-17 23:42:37,71.73,232.6,online,2026-10-17 23:42:37,71730.0,232.6,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0024,2026-10-18,online,2026-10-18 23:43:24,67.04,234.3,online,2026-10-18 23:43:24,67040.0,234.3,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0024,2026-10-19,online,2026-10-19 23:56:33,76.8,234.3,online,2026-10-19 23:56:33,76800.0,234.3,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0024,2026-10-20,online,2026-10-20 23:47:11,81.63,233.1,online,2026-10-20 23:47:11,81630.0,233.1,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0024,2026-10-21,online,2026-10-21 23:51:12,60.05,234.0,online,2026-10-20 23:47:11,81630.0,233.1,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0026,2026-10-12,online,2026-10-12 23:44:53,123.66,231.4,online,2026-10-12 23:44:53,123660.0,231.4,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0026,2026-10-13,online,2026-10-13 23:42:50,78.31,233.2,online,2026-10-13 23:42:50,78310.0,233.2,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0026,2026-10-14,online,2026-10-14 23:55:52,142.12,233.0,online,2026-10-14 23:55:52,142120.0,233.0,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0026,2026-10-15,online,2026-10-15 23:51:58,119.03,233.3,online,2026-10-15 23:51:58,119030.0,233.3,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0026,2026-10-16,online,2026-10-16 23:41:16,108.83,233.7,online,2026-10-16 23:41:16,108830.0,233.7,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0026,2026-10-17,online,2026-10-17 23:42:30,141.65,232.9,online,2026-10-17 23:42:30,141650.0,232.9,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0026,2026-10-18,online,2026-10-18 23:50:06,107.54,233.2,online,2026-10-18 23:50:06,107540.0,233.2,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0026,2026-10-19,online,2026-10-19 23:44:31,143.54,235.0,online,2026-10-19 23:44:31,143540.0,235.0,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0026,2026-10-20,online,2026-10-20 23:44:01,177.55,231.9,online,2026-10-20 23:44:01,177550.0,231.9,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0026,2026-10-21,online,2026-10-21 23:42:04,129.48,232.7,online,2026-10-21 23:42:04,129480.0,232.7,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0027,2026-10-04,online,2026-10-04 23:48:29,27.56,223.1,online,2026-10-04 23:48:29,,223.1,both,Sumatera,inverter_C,v2.1,C_nilai_kosong,False
+DV0027,2026-10-09,online,2026-10-09 23:56:56,30.21,224.5,online,2026-10-08 23:49:36,27.7,224.5,both,Sumatera,inverter_C,v2.1,F_nilai_beda_lain,False
+DV0027,2026-10-10,online,2026-10-10 23:51:56,19.9,223.7,online,2026-10-09 23:56:56,30.2,224.5,both,Sumatera,inverter_C,v2.1,F_nilai_beda_lain,False
+DV0027,2026-10-21,online,2026-10-21 23:49:41,25.35,222.9,online,2026-10-20 23:43:42,32.5,224.1,both,Sumatera,inverter_C,v2.1,F_nilai_beda_lain,False
+DV0028,2026-10-07,online,2026-10-07 23:57:34,31.25,231.9,offline,2026-10-07 23:57:34,31.2,231.9,both,Jawa,meter_A,v2.3,D_status_beda,False
+DV0029,2026-10-06,online,2026-10-06 23:49:06,,224.4,offline,2026-10-06 23:49:06,,224.4,both,Jawa,gateway_G,v2.3,D_status_beda,False
+DV0029,2026-10-30,online,2026-10-30 23:42:05,,222.7,offline,2026-10-30 23:42:05,,222.7,both,Jawa,gateway_G,v2.3,D_status_beda,False
+DV0030,2026-10-09,alarm,2026-10-09 23:51:21,123.32,223.1,offline,2026-10-08 17:41:00,16.3,,both,Sumatera,meter_B,v2.2,D_status_beda,False
+DV0030,2026-10-10,online,2026-10-10 23:48:25,77.45,225.1,alarm,2026-10-09 23:51:21,123.3,223.1,both,Sumatera,meter_B,v2.2,D_status_beda,True
+DV0030,2026-10-12,online,2026-10-12 23:57:29,105.48,224.5,online,2026-10-12 23:57:29,105480.0,224.5,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0030,2026-10-13,online,2026-10-13 23:46:11,78.76,223.2,online,2026-10-13 23:46:11,78760.0,223.2,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0030,2026-10-14,online,2026-10-14 23:48:29,121.8,222.4,online,2026-10-14 23:48:29,121800.0,222.4,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0030,2026-10-15,online,2026-10-15 23:51:37,109.23,223.6,online,2026-10-15 23:51:37,109230.0,223.6,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0030,2026-10-16,online,2026-10-16 23:43:50,100.99,224.0,online,2026-10-16 23:43:50,100990.0,224.0,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0030,2026-10-17,online,2026-10-17 23:41:50,128.07,223.1,online,2026-10-17 23:41:50,128070.0,223.1,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0030,2026-10-18,online,2026-10-18 23:46:45,104.8,221.9,online,2026-10-18 23:46:45,104800.0,221.9,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0030,2026-10-19,online,2026-10-19 23:54:49,132.47,221.9,online,2026-10-19 23:54:49,132470.0,221.9,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0030,2026-10-20,online,2026-10-20 23:50:32,140.33,224.3,online,2026-10-20 23:50:32,140330.0,224.3,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0030,2026-10-21,online,2026-10-21 23:50:48,110.34,223.3,online,2026-10-20 23:50:32,140330.0,224.3,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0031,2026-10-09,online,2026-10-09 23:43:03,67.79,233.8,online,2026-10-08 23:51:02,60.2,234.8,both,Sumatera,inverter_C,v2.1,F_nilai_beda_lain,False
+DV0031,2026-10-10,online,2026-10-10 23:42:54,38.34,237.3,online,2026-10-09 23:43:03,67.8,233.8,both,Sumatera,inverter_C,v2.1,F_nilai_beda_lain,False
+DV0031,2026-10-21,online,2026-10-21 23:44:04,53.1,234.3,online,2026-10-20 23:53:03,81.7,234.4,both,Sumatera,inverter_C,v2.1,F_nilai_beda_lain,False
+DV0033,2026-10-12,online,2026-10-12 23:55:57,26.59,229.4,online,2026-10-12 23:55:57,,229.4,both,Kalimantan,inverter_C,v2.3,C_nilai_kosong,False
+DV0034,2026-10-12,online,2026-10-12 23:54:17,63.02,225.2,online,2026-10-12 23:54:17,63020.0,225.2,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0034,2026-10-13,online,2026-10-13 23:57:30,49.21,226.5,online,2026-10-13 23:57:30,49210.0,226.5,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0034,2026-10-14,online,2026-10-14 23:56:03,78.04,225.8,online,2026-10-14 23:56:03,78040.0,225.8,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0034,2026-10-15,online,2026-10-15 23:43:58,71.32,225.8,online,2026-10-15 23:43:58,71320.0,225.8,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0034,2026-10-16,online,2026-10-16 23:50:02,63.25,224.2,online,2026-10-16 23:50:02,63250.0,224.2,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0034,2026-10-17,online,2026-10-17 23:42:11,77.98,225.2,online,2026-10-17 23:42:11,77980.0,225.2,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0034,2026-10-18,offline,2026-10-18 09:15:00,23.55,,offline,2026-10-18 09:15:00,23550.0,,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0034,2026-10-19,online,2026-10-19 23:50:09,74.55,225.3,online,2026-10-19 23:50:09,74550.0,225.3,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0034,2026-10-20,online,2026-10-20 23:52:53,90.46,228.3,online,2026-10-20 23:52:53,90460.0,228.3,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0034,2026-10-21,online,2026-10-21 23:41:33,60.42,223.9,online,2026-10-21 23:41:33,60420.0,223.9,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0035,2026-10-01,online,2026-10-01 23:48:54,139.81,225.5,offline,2026-10-01 23:48:54,139.8,225.5,both,Jawa,meter_B,v2.3,D_status_beda,False
+DV0035,2026-10-12,online,2026-10-12 23:43:11,137.85,224.5,online,2026-10-12 23:43:11,137850.0,224.5,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0035,2026-10-13,online,2026-10-13 23:41:31,84.01,224.2,online,2026-10-13 23:41:31,84010.0,224.2,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0035,2026-10-14,online,2026-10-14 23:42:07,158.65,225.4,online,2026-10-14 23:42:07,158650.0,225.4,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0035,2026-10-15,online,2026-10-15 23:42:52,121.44,224.1,online,2026-10-15 23:42:52,121440.0,224.1,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0035,2026-10-16,online,2026-10-16 23:48:45,123.8,226.5,online,2026-10-16 23:48:45,123800.0,226.5,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0035,2026-10-17,online,2026-10-17 23:42:10,160.52,223.9,online,2026-10-17 23:42:10,160520.0,223.9,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0035,2026-10-18,online,2026-10-18 23:54:57,123.34,223.6,online,2026-10-18 23:54:57,123340.0,223.6,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0035,2026-10-19,offline,2026-10-19 17:43:00,67.87,,offline,2026-10-19 17:43:00,67870.0,,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0035,2026-10-20,online,2026-10-20 23:56:03,166.33,227.3,online,2026-10-20 23:56:03,166330.0,227.3,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0035,2026-10-21,online,2026-10-21 23:42:44,122.53,224.0,online,2026-10-21 23:42:44,122530.0,224.0,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0036,2026-10-16,online,2026-10-16 23:57:57,25.24,225.0,online,2026-10-16 23:57:57,,225.0,both,Bali-Nusra,inverter_C,v2.3,C_nilai_kosong,False
+DV0036,2026-10-25,online,2026-10-25 23:43:21,21.66,225.2,online,2026-10-25 23:43:21,,225.2,both,Bali-Nusra,inverter_C,v2.3,C_nilai_kosong,False
+DV0036,2026-10-28,online,2026-10-28 23:40:00,22.8,227.0,offline,2026-10-28 23:40:00,22.8,227.0,both,Bali-Nusra,inverter_C,v2.3,D_status_beda,False
+DV0037,2026-10-12,online,2026-10-12 23:52:04,106.19,225.7,online,2026-10-12 23:52:04,106190.0,225.7,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0037,2026-10-13,online,2026-10-13 23:52:59,80.63,225.1,online,2026-10-13 23:52:59,80630.0,225.1,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0037,2026-10-14,online,2026-10-14 23:55:43,121.27,225.9,online,2026-10-14 23:55:43,121270.0,225.9,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0037,2026-10-15,online,2026-10-15 23:45:02,115.68,230.6,online,2026-10-15 23:45:02,115680.0,230.6,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0037,2026-10-16,offline,2026-10-16 13:13:00,18.76,,offline,2026-10-16 13:13:00,18760.0,,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0037,2026-10-17,online,2026-10-17 23:52:44,129.93,224.9,online,2026-10-17 23:52:44,129930.0,224.9,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0037,2026-10-18,online,2026-10-18 23:57:15,102.35,227.9,online,2026-10-18 23:57:15,102350.0,227.9,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0037,2026-10-19,online,2026-10-19 23:41:41,130.58,227.7,online,2026-10-19 23:41:41,130580.0,227.7,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0037,2026-10-20,online,2026-10-20 23:46:59,138.11,225.5,online,2026-10-20 23:46:59,138110.0,225.5,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0037,2026-10-21,online,2026-10-21 23:52:24,101.44,227.0,online,2026-10-21 23:52:24,101440.0,227.0,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0043,2026-10-09,online,2026-10-09 23:55:33,29.96,232.6,online,2026-10-08 23:55:28,29.0,231.1,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0043,2026-10-10,online,2026-10-10 23:45:36,19.13,230.3,online,2026-10-09 23:55:33,30.0,232.6,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0043,2026-10-21,offline,2026-10-21 08:38:00,6.69,,online,2026-10-20 23:45:27,38.0,231.0,both,Sumatera,inverter_A,v2.1,D_status_beda,False
+DV0045,2026-10-09,online,2026-10-09 23:54:16,30.74,231.0,online,2026-10-08 23:55:46,23.8,232.7,both,Sumatera,meter_B,v2.1,F_nilai_beda_lain,False
+DV0045,2026-10-10,online,2026-10-10 23:54:15,16.1,230.4,online,2026-10-09 23:54:16,30.7,231.0,both,Sumatera,meter_B,v2.1,F_nilai_beda_lain,False
+DV0045,2026-10-12,online,2026-10-12 23:53:25,22.29,232.3,online,2026-10-12 23:53:25,22290.0,232.3,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0045,2026-10-13,online,2026-10-13 23:56:51,15.3,233.9,online,2026-10-13 23:56:51,15300.0,233.9,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0045,2026-10-14,online,2026-10-14 23:56:19,28.65,231.0,online,2026-10-14 23:56:19,28650.0,231.0,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0045,2026-10-15,online,2026-10-15 23:46:23,24.98,231.7,online,2026-10-15 23:46:23,24980.0,231.7,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0045,2026-10-16,online,2026-10-16 23:53:00,20.13,231.2,online,2026-10-16 23:53:00,20130.0,231.2,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0045,2026-10-17,online,2026-10-17 23:41:17,28.32,232.0,online,2026-10-17 23:41:17,28320.0,232.0,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0045,2026-10-18,online,2026-10-18 23:54:19,22.94,232.4,online,2026-10-18 23:54:19,22940.0,232.4,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0045,2026-10-19,online,2026-10-19 23:49:37,27.42,231.1,online,2026-10-19 23:49:37,27420.0,231.1,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0045,2026-10-20,offline,2026-10-20 07:54:00,10.15,,offline,2026-10-20 07:54:00,10150.0,,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0045,2026-10-21,online,2026-10-21 23:43:46,22.19,232.2,offline,2026-10-20 07:54:00,10150.0,,both,Sumatera,meter_B,v2.1,D_status_beda,False
+DV0047,2026-10-05,online,2026-10-05 23:52:29,122.54,230.0,offline,2026-10-05 23:52:29,122.5,230.0,both,Jawa,meter_A,v2.3,D_status_beda,False
+DV0048,2026-10-09,online,2026-10-09 23:53:18,19.42,234.3,online,2026-10-08 23:57:51,14.4,234.3,both,Sumatera,inverter_A,v2.2,F_nilai_beda_lain,False
+DV0048,2026-10-10,offline,2026-10-10 14:14:00,2.32,,online,2026-10-09 23:53:18,19.4,234.3,both,Sumatera,inverter_A,v2.2,D_status_beda,False
+DV0048,2026-10-21,online,2026-10-21 23:56:53,17.07,233.2,online,2026-10-20 23:46:17,22.0,233.1,both,Sumatera,inverter_A,v2.2,F_nilai_beda_lain,False
+DV0049,2026-10-07,online,2026-10-07 23:49:12,23.28,234.2,offline,2026-10-07 23:49:12,23.3,234.2,both,Kalimantan,inverter_A,v2.3,D_status_beda,False
+DV0049,2026-10-12,online,2026-10-12 23:48:32,43.84,232.9,offline,2026-10-12 23:48:32,43.8,232.9,both,Kalimantan,inverter_A,v2.3,D_status_beda,False
+DV0050,2026-10-12,online,2026-10-12 23:51:11,142.06,229.2,online,2026-10-12 23:51:11,142060.0,229.2,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0050,2026-10-13,online,2026-10-13 23:47:37,93.12,228.1,online,2026-10-13 23:47:37,93120.0,228.1,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0050,2026-10-14,offline,2026-10-14 19:33:00,63.39,,offline,2026-10-14 19:33:00,63390.0,,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0050,2026-10-15,online,2026-10-15 23:50:15,130.01,226.1,online,2026-10-15 23:50:15,130010.0,226.1,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0050,2026-10-16,online,2026-10-16 23:40:59,141.18,228.3,online,2026-10-16 23:40:59,141180.0,228.3,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0050,2026-10-17,online,2026-10-17 23:40:29,153.86,228.5,online,2026-10-17 23:40:29,153860.0,228.5,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0050,2026-10-18,online,2026-10-18 23:43:47,150.93,226.6,online,2026-10-18 23:43:47,150930.0,226.6,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0050,2026-10-19,online,2026-10-19 23:46:57,160.05,227.3,online,2026-10-19 23:46:57,160050.0,227.3,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0050,2026-10-20,online,2026-10-20 23:54:45,208.99,227.5,online,2026-10-20 23:54:45,208990.0,227.5,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0050,2026-10-21,online,2026-10-21 23:46:03,134.87,229.6,online,2026-10-21 23:46:03,134870.0,229.6,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0051,2026-10-29,online,2026-10-29 23:47:59,48.42,233.2,offline,2026-10-29 23:47:59,48.4,233.2,both,Jawa,inverter_A,v2.3,D_status_beda,False
+DV0052,2026-10-01,online,2026-10-01 23:43:35,67.37,231.3,offline,2026-10-01 23:43:35,67.4,231.3,both,Jawa,meter_B,v2.3,D_status_beda,False
+DV0052,2026-10-12,online,2026-10-12 23:45:38,64.55,230.5,online,2026-10-12 23:45:38,64550.0,230.5,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0052,2026-10-13,online,2026-10-13 23:51:00,40.62,234.9,online,2026-10-13 23:51:00,40620.0,234.9,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0052,2026-10-14,offline,2026-10-14 20:59:00,23.02,,offline,2026-10-14 20:59:00,23020.0,,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0052,2026-10-15,online,2026-10-15 23:54:13,66.37,232.8,online,2026-10-15 23:54:13,66370.0,232.8,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0052,2026-10-16,online,2026-10-16 23:47:01,63.63,232.2,online,2026-10-16 23:47:01,63630.0,232.2,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0052,2026-10-17,online,2026-10-17 23:46:33,78.43,234.7,online,2026-10-17 23:46:33,78430.0,234.7,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0052,2026-10-18,online,2026-10-18 23:51:41,57.94,231.0,online,2026-10-18 23:51:41,57940.0,231.0,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0052,2026-10-19,online,2026-10-19 23:53:03,64.95,231.6,online,2026-10-19 23:53:03,64950.0,231.6,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0052,2026-10-20,offline,2026-10-20 17:06:00,13.4,,offline,2026-10-20 17:06:00,13400.0,,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0052,2026-10-21,online,2026-10-21 23:54:24,59.64,230.5,online,2026-10-21 23:54:24,59640.0,230.5,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0052,2026-10-26,online,2026-10-26 23:46:39,57.82,232.0,offline,2026-10-26 23:46:39,57.8,232.0,both,Jawa,meter_B,v2.3,D_status_beda,False
+DV0052,2026-10-28,online,2026-10-28 23:56:37,52.79,233.3,offline,2026-10-28 23:56:37,52.8,233.3,both,Jawa,meter_B,v2.3,D_status_beda,False
+DV0058,2026-10-07,online,2026-10-07 23:52:03,75.17,229.7,offline,2026-10-07 23:52:03,75.2,229.7,both,Jawa,meter_A,v2.3,D_status_beda,False
+DV0059,2026-10-02,online,2026-10-02 23:50:18,27.27,222.9,online,2026-10-02 23:50:18,,222.9,both,Sumatera,inverter_C,v2.3,C_nilai_kosong,False
+DV0059,2026-10-09,online,2026-10-09 23:57:46,39.71,223.4,online,2026-10-08 23:54:56,38.4,222.3,both,Sumatera,inverter_C,v2.3,F_nilai_beda_lain,False
+DV0059,2026-10-10,online,2026-10-10 23:45:04,25.87,221.3,online,2026-10-09 23:57:46,39.7,223.4,both,Sumatera,inverter_C,v2.3,F_nilai_beda_lain,False
+DV0059,2026-10-21,alarm,2026-10-21 23:44:42,33.8,222.9,online,2026-10-20 23:51:26,51.2,222.6,both,Sumatera,inverter_C,v2.3,D_status_beda,False
+DV0063,2026-10-12,online,2026-10-12 23:42:17,141.24,229.7,online,2026-10-12 23:42:17,141240.0,229.7,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0063,2026-10-13,online,2026-10-13 23:44:47,105.14,230.0,online,2026-10-13 23:44:47,105140.0,230.0,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0063,2026-10-14,online,2026-10-14 23:44:29,151.36,233.3,online,2026-10-14 23:44:29,151360.0,233.3,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0063,2026-10-15,online,2026-10-15 23:40:42,133.47,230.4,online,2026-10-15 23:40:42,133470.0,230.4,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0063,2026-10-16,online,2026-10-16 23:43:27,143.09,232.4,online,2026-10-16 23:43:27,143090.0,232.4,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0063,2026-10-17,online,2026-10-17 23:50:50,162.36,230.9,online,2026-10-17 23:50:50,162360.0,230.9,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0063,2026-10-18,online,2026-10-18 23:45:27,128.84,230.6,online,2026-10-18 23:45:27,128840.0,230.6,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0063,2026-10-19,online,2026-10-19 23:43:05,160.55,231.9,online,2026-10-19 23:43:05,160550.0,231.9,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0063,2026-10-20,online,2026-10-20 23:47:32,203.15,229.8,online,2026-10-20 23:47:32,203150.0,229.8,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0063,2026-10-21,online,2026-10-21 23:45:21,126.41,233.0,online,2026-10-21 23:45:21,126410.0,233.0,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0064,2026-10-09,online,2026-10-09 23:55:06,120.62,225.8,online,2026-10-08 23:53:26,105.5,225.5,both,Sumatera,meter_B,v2.1,F_nilai_beda_lain,False
+DV0064,2026-10-10,online,2026-10-10 23:40:31,82.3,224.5,online,2026-10-09 23:55:06,120.6,225.8,both,Sumatera,meter_B,v2.1,F_nilai_beda_lain,False
+DV0064,2026-10-12,online,2026-10-12 23:46:18,99.19,224.8,online,2026-10-12 23:46:18,99190.0,224.8,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0064,2026-10-13,online,2026-10-13 23:50:30,80.2,225.3,online,2026-10-13 23:50:30,80200.0,225.3,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0064,2026-10-14,online,2026-10-14 23:43:29,128.46,224.4,online,2026-10-14 23:43:29,128460.0,224.4,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0064,2026-10-15,online,2026-10-15 23:52:35,107.24,224.2,online,2026-10-15 23:52:35,107240.0,224.2,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0064,2026-10-16,online,2026-10-16 23:48:58,91.92,225.2,online,2026-10-16 23:48:58,91920.0,225.2,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0064,2026-10-17,online,2026-10-17 23:41:27,126.19,225.5,online,2026-10-17 23:41:27,126190.0,225.5,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0064,2026-10-18,online,2026-10-18 23:46:00,94.77,227.0,online,2026-10-18 23:46:00,94770.0,227.0,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0064,2026-10-19,online,2026-10-19 23:44:41,117.5,227.2,online,2026-10-19 23:44:41,117500.0,227.2,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0064,2026-10-20,online,2026-10-20 23:56:06,135.15,223.0,online,2026-10-20 23:56:06,135150.0,223.0,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0064,2026-10-21,online,2026-10-21 23:48:38,95.83,226.5,online,2026-10-20 23:56:06,135150.0,223.0,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0065,2026-10-02,online,2026-10-02 23:46:23,,230.8,offline,2026-10-02 23:46:23,,230.8,both,Sulawesi,gateway_G,v2.3,D_status_beda,False
+DV0066,2026-10-08,online,2026-10-08 23:50:49,13.59,233.4,online,2026-10-08 23:50:49,,233.4,both,Bali-Nusra,inverter_C,v2.1,C_nilai_kosong,False
+DV0066,2026-10-24,online,2026-10-24 23:51:40,14.89,236.0,online,2026-10-24 23:51:40,,236.0,both,Bali-Nusra,inverter_C,v2.1,C_nilai_kosong,False
+DV0069,2026-10-18,online,2026-10-18 23:50:04,,223.5,offline,2026-10-18 23:50:04,,223.5,both,Kalimantan,gateway_G,v2.3,D_status_beda,False
+DV0071,2026-10-03,online,2026-10-03 23:53:50,34.45,227.9,offline,2026-10-03 23:53:50,34.4,227.9,both,Jawa,inverter_C,v2.3,D_status_beda,False
+DV0071,2026-10-16,online,2026-10-16 23:49:49,51.91,228.0,online,2026-10-16 23:49:49,,228.0,both,Jawa,inverter_C,v2.3,C_nilai_kosong,False
+DV0072,2026-10-01,online,2026-10-01 23:47:05,55.11,227.1,,,,,left_only,Jawa,inverter_A,v2.3,A_hilang_di_webds,False
+DV0072,2026-10-02,online,2026-10-02 23:53:11,46.93,226.1,,,,,left_only,Jawa,inverter_A,v2.3,A_hilang_di_webds,False
+DV0072,2026-10-03,online,2026-10-03 23:56:40,31.76,225.5,,,,,left_only,Jawa,inverter_A,v2.3,A_hilang_di_webds,False
+DV0072,2026-10-04,online,2026-10-04 23:51:52,51.79,227.5,,,,,left_only,Jawa,inverter_A,v2.3,A_hilang_di_webds,False
+DV0072,2026-10-05,online,2026-10-05 23:41:46,66.73,225.0,,,,,left_only,Jawa,inverter_A,v2.3,A_hilang_di_webds,False
+DV0072,2026-10-06,online,2026-10-06 23:45:27,48.37,224.9,,,,,left_only,Jawa,inverter_A,v2.3,A_hilang_di_webds,False
+DV0072,2026-10-07,online,2026-10-07 23:42:47,32.64,224.2,,,,,left_only,Jawa,inverter_A,v2.3,A_hilang_di_webds,False
+DV0072,2026-10-08,online,2026-10-08 23:46:01,56.83,226.2,,,,,left_only,Jawa,inverter_A,v2.3,A_hilang_di_webds,False
+DV0072,2026-10-09,online,2026-10-09 23:42:29,71.69,226.0,,,,,left_only,Jawa,inverter_A,v2.3,A_hilang_di_webds,False
+DV0072,2026-10-10,online,2026-10-10 23:42:35,46.3,227.7,,,,,left_only,Jawa,inverter_A,v2.3,A_hilang_di_webds,False
+DV0072,2026-10-11,online,2026-10-11 23:49:21,61.74,224.0,,,,,left_only,Jawa,inverter_A,v2.3,A_hilang_di_webds,False
+DV0072,2026-10-12,online,2026-10-12 23:45:40,56.53,226.2,,,,,left_only,Jawa,inverter_A,v2.3,A_hilang_di_webds,False
+DV0072,2026-10-13,online,2026-10-13 23:42:51,41.1,223.9,,,,,left_only,Jawa,inverter_A,v2.3,A_hilang_di_webds,False
+DV0072,2026-10-14,online,2026-10-14 23:54:23,68.81,226.9,,,,,left_only,Jawa,inverter_A,v2.3,A_hilang_di_webds,False
+DV0072,2026-10-15,online,2026-10-15 23:47:01,53.81,223.5,,,,,left_only,Jawa,inverter_A,v2.3,A_hilang_di_webds,False
+DV0072,2026-10-16,online,2026-10-16 23:41:03,51.44,227.4,,,,,left_only,Jawa,inverter_A,v2.3,A_hilang_di_webds,False
+DV0072,2026-10-17,online,2026-10-17 23:43:05,71.53,224.9,,,,,left_only,Jawa,inverter_A,v2.3,A_hilang_di_webds,False
+DV0072,2026-10-18,online,2026-10-18 23:52:53,55.77,227.9,,,,,left_only,Jawa,inverter_A,v2.3,A_hilang_di_webds,False
+DV0072,2026-10-19,online,2026-10-19 23:40:16,68.16,226.8,,,,,left_only,Jawa,inverter_A,v2.3,A_hilang_di_webds,False
+DV0072,2026-10-20,online,2026-10-20 23:42:02,83.53,225.8,,,,,left_only,Jawa,inverter_A,v2.3,A_hilang_di_webds,False
+DV0072,2026-10-21,online,2026-10-21 23:48:12,59.66,226.9,,,,,left_only,Jawa,inverter_A,v2.3,A_hilang_di_webds,False
+DV0073,2026-10-11,online,2026-10-11 23:41:14,38.09,233.2,offline,2026-10-11 23:41:14,38.1,233.2,both,Kalimantan,meter_B,v2.3,D_status_beda,False
+DV0073,2026-10-12,online,2026-10-12 23:42:29,37.02,233.0,online,2026-10-12 23:42:29,37020.0,233.0,both,Kalimantan,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0073,2026-10-13,online,2026-10-13 23:56:41,23.04,230.9,online,2026-10-13 23:56:41,23040.0,230.9,both,Kalimantan,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0073,2026-10-14,online,2026-10-14 23:45:38,42.83,232.8,online,2026-10-14 23:45:38,42830.0,232.8,both,Kalimantan,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0073,2026-10-15,online,2026-10-15 23:48:12,32.72,233.0,online,2026-10-15 23:48:12,32720.0,233.0,both,Kalimantan,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0073,2026-10-16,online,2026-10-16 23:44:28,32.75,230.8,online,2026-10-16 23:44:28,32750.0,230.8,both,Kalimantan,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0073,2026-10-17,online,2026-10-17 23:50:05,38.97,231.8,online,2026-10-17 23:50:05,38970.0,231.8,both,Kalimantan,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0073,2026-10-18,alarm,2026-10-18 23:47:13,36.12,230.7,alarm,2026-10-18 23:47:13,36120.0,230.7,both,Kalimantan,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0073,2026-10-19,online,2026-10-19 23:56:41,41.41,232.3,online,2026-10-19 23:56:41,41410.0,232.3,both,Kalimantan,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0073,2026-10-20,online,2026-10-20 23:55:22,52.08,233.5,online,2026-10-20 23:55:22,52080.0,233.5,both,Kalimantan,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0073,2026-10-21,online,2026-10-21 23:41:50,33.82,230.9,online,2026-10-21 23:41:50,33820.0,230.9,both,Kalimantan,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0079,2026-10-09,online,2026-10-09 23:40:13,45.99,224.4,online,2026-10-08 23:53:47,36.6,224.1,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0079,2026-10-10,online,2026-10-10 23:54:46,26.34,223.6,online,2026-10-09 23:40:13,46.0,224.4,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0079,2026-10-21,online,2026-10-21 23:43:57,36.92,223.9,online,2026-10-20 23:49:34,46.5,224.5,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0080,2026-10-09,online,2026-10-09 23:51:50,31.54,222.1,online,2026-10-08 23:48:41,25.7,224.9,both,Sumatera,meter_A,v2.1,F_nilai_beda_lain,False
+DV0080,2026-10-10,online,2026-10-10 23:51:29,17.52,224.9,online,2026-10-09 23:51:50,31.5,222.1,both,Sumatera,meter_A,v2.1,F_nilai_beda_lain,False
+DV0080,2026-10-21,offline,2026-10-21 06:27:00,7.33,,online,2026-10-20 23:41:24,32.1,223.0,both,Sumatera,meter_A,v2.1,D_status_beda,False
+DV0081,2026-10-09,online,2026-10-09 23:44:52,26.31,232.0,online,2026-10-08 23:43:46,23.1,230.9,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0081,2026-10-10,online,2026-10-10 23:44:06,16.95,230.0,online,2026-10-09 23:44:52,26.3,232.0,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0081,2026-10-21,online,2026-10-21 23:49:45,22.93,229.1,online,2026-10-20 23:54:12,28.9,229.6,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0084,2026-10-09,online,2026-10-09 23:56:08,19.69,226.6,offline,2026-10-08 16:52:00,6.6,,both,Sumatera,inverter_A,v2.2,D_status_beda,False
+DV0084,2026-10-10,online,2026-10-10 23:41:47,11.22,225.1,online,2026-10-09 23:56:08,19.7,226.6,both,Sumatera,inverter_A,v2.2,F_nilai_beda_lain,False
+DV0084,2026-10-21,online,2026-10-21 23:43:02,14.62,225.1,online,2026-10-20 23:42:31,20.0,224.2,both,Sumatera,inverter_A,v2.2,F_nilai_beda_lain,False
+DV0085,2026-10-01,alarm,2026-10-01 23:41:56,49.08,233.5,alarm,2026-10-01 23:41:56,,233.5,both,Sumatera,inverter_C,v2.2,C_nilai_kosong,False
+DV0085,2026-10-09,online,2026-10-09 23:54:32,65.73,231.4,online,2026-10-08 23:48:49,50.1,231.6,both,Sumatera,inverter_C,v2.2,F_nilai_beda_lain,False
+DV0085,2026-10-10,online,2026-10-10 23:55:44,35.58,229.9,online,2026-10-09 23:54:32,65.7,231.4,both,Sumatera,inverter_C,v2.2,F_nilai_beda_lain,False
+DV0085,2026-10-21,online,2026-10-21 23:40:26,51.09,231.5,online,2026-10-20 23:48:22,60.4,229.6,both,Sumatera,inverter_C,v2.2,F_nilai_beda_lain,False
+DV0086,2026-10-05,online,2026-10-05 23:54:13,52.02,227.0,online,2026-10-05 23:54:13,,227.0,both,Jawa,inverter_C,v2.3,C_nilai_kosong,False
+DV0086,2026-10-19,online,2026-10-19 23:53:39,48.17,226.0,online,2026-10-19 23:53:39,,226.0,both,Jawa,inverter_C,v2.3,C_nilai_kosong,False
+DV0087,2026-10-05,online,2026-10-05 23:48:44,33.5,221.9,offline,2026-10-05 23:48:44,33.5,221.9,both,Jawa,inverter_A,v2.3,D_status_beda,False
+DV0091,2026-10-12,online,2026-10-12 23:51:33,52.28,234.9,online,2026-10-12 23:51:33,52280.0,234.9,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0091,2026-10-13,online,2026-10-13 23:53:11,35.73,234.8,online,2026-10-13 23:53:11,35730.0,234.8,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0091,2026-10-14,online,2026-10-14 23:45:55,55.72,234.5,online,2026-10-14 23:45:55,55720.0,234.5,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0091,2026-10-15,online,2026-10-15 23:42:19,51.16,234.3,online,2026-10-15 23:42:19,51160.0,234.3,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0091,2026-10-16,online,2026-10-16 23:45:53,51.05,234.5,online,2026-10-16 23:45:53,51050.0,234.5,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0091,2026-10-17,online,2026-10-17 23:47:36,52.91,233.9,online,2026-10-17 23:47:36,52910.0,233.9,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0091,2026-10-18,online,2026-10-18 23:54:38,44.62,236.3,online,2026-10-18 23:54:38,44620.0,236.3,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0091,2026-10-19,online,2026-10-19 23:53:03,54.67,233.0,online,2026-10-19 23:53:03,54670.0,233.0,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0091,2026-10-20,online,2026-10-20 23:54:04,64.43,233.9,online,2026-10-20 23:54:04,64430.0,233.9,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0091,2026-10-21,online,2026-10-21 23:43:30,47.22,232.1,online,2026-10-21 23:43:30,47220.0,232.1,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0092,2026-10-09,online,2026-10-09 23:46:26,59.74,224.8,online,2026-10-08 23:43:24,40.9,224.6,both,Sumatera,inverter_C,v2.2,F_nilai_beda_lain,False
+DV0092,2026-10-10,online,2026-10-10 23:44:15,33.29,223.9,online,2026-10-09 23:46:26,59.7,224.8,both,Sumatera,inverter_C,v2.2,F_nilai_beda_lain,False
+DV0092,2026-10-21,online,2026-10-21 23:56:45,47.27,222.1,online,2026-10-20 23:44:32,,225.2,both,Sumatera,inverter_C,v2.2,C_nilai_kosong,False
+DV0095,2026-10-25,online,2026-10-25 23:41:02,83.84,225.4,offline,2026-10-25 23:41:02,83.8,225.4,both,Jawa,meter_A,v2.2,D_status_beda,False
+DV0096,2026-10-05,online,2026-10-05 23:55:37,127.01,230.1,offline,2026-10-05 23:55:37,127.0,230.1,both,Kalimantan,meter_B,v2.3,D_status_beda,False
+DV0096,2026-10-12,online,2026-10-12 23:50:55,127.92,231.5,online,2026-10-12 23:50:55,127920.0,231.5,both,Kalimantan,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0096,2026-10-13,online,2026-10-13 23:43:46,84.74,227.3,online,2026-10-13 23:43:46,84740.0,227.3,both,Kalimantan,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0096,2026-10-14,offline,2026-10-14 09:18:00,53.47,,offline,2026-10-14 09:18:00,53470.0,,both,Kalimantan,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0096,2026-10-15,online,2026-10-15 23:52:29,116.16,231.2,online,2026-10-15 23:52:29,116160.0,231.2,both,Kalimantan,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0096,2026-10-16,online,2026-10-16 23:50:32,117.3,231.0,online,2026-10-16 23:50:32,117300.0,231.0,both,Kalimantan,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0096,2026-10-17,online,2026-10-17 23:44:50,142.28,228.6,online,2026-10-17 23:44:50,142280.0,228.6,both,Kalimantan,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0096,2026-10-18,online,2026-10-18 23:56:43,115.15,230.6,online,2026-10-18 23:56:43,115150.0,230.6,both,Kalimantan,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0096,2026-10-19,online,2026-10-19 23:54:16,154.16,231.5,online,2026-10-19 23:54:16,154160.0,231.5,both,Kalimantan,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0096,2026-10-20,online,2026-10-20 23:56:35,165.42,231.1,online,2026-10-20 23:56:35,165420.0,231.1,both,Kalimantan,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0096,2026-10-21,online,2026-10-21 23:56:52,122.37,229.6,online,2026-10-21 23:56:52,122370.0,229.6,both,Kalimantan,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0097,2026-10-28,online,2026-10-28 23:51:06,20.55,221.5,offline,2026-10-28 23:51:06,20.6,221.5,both,Jawa,inverter_C,v2.3,D_status_beda,False
+DV0098,2026-10-12,online,2026-10-12 23:42:02,108.19,226.4,online,2026-10-12 23:42:02,108190.0,226.4,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0098,2026-10-13,online,2026-10-13 23:52:54,82.38,226.6,online,2026-10-13 23:52:54,82380.0,226.6,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0098,2026-10-14,online,2026-10-14 23:40:48,122.45,228.1,online,2026-10-14 23:40:48,122450.0,228.1,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0098,2026-10-15,online,2026-10-15 23:41:42,118.02,225.1,online,2026-10-15 23:41:42,118020.0,225.1,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0098,2026-10-16,online,2026-10-16 23:52:38,97.49,225.7,online,2026-10-16 23:52:38,97490.0,225.7,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0098,2026-10-17,online,2026-10-17 23:49:26,129.91,224.0,online,2026-10-17 23:49:26,129910.0,224.0,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0098,2026-10-18,online,2026-10-18 23:42:48,112.88,226.5,online,2026-10-18 23:42:48,112880.0,226.5,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0098,2026-10-19,online,2026-10-19 23:42:34,117.72,227.4,online,2026-10-19 23:42:34,117720.0,227.4,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0098,2026-10-20,online,2026-10-20 23:41:14,151.96,227.4,online,2026-10-20 23:41:14,151960.0,227.4,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0098,2026-10-21,online,2026-10-21 23:52:18,118.25,227.6,online,2026-10-21 23:52:18,118250.0,227.6,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0099,2026-10-09,online,2026-10-09 23:42:16,151.06,225.2,online,2026-10-08 23:45:10,145.0,226.5,both,Sumatera,meter_A,v2.2,F_nilai_beda_lain,False
+DV0099,2026-10-10,online,2026-10-10 23:57:49,93.14,226.9,online,2026-10-09 23:42:16,151.1,225.2,both,Sumatera,meter_A,v2.2,F_nilai_beda_lain,False
+DV0099,2026-10-21,online,2026-10-21 23:52:38,129.32,227.0,online,2026-10-20 23:57:30,170.8,226.9,both,Sumatera,meter_A,v2.2,F_nilai_beda_lain,False
+DV0102,2026-10-09,online,2026-10-09 23:55:23,23.3,230.2,online,2026-10-08 23:57:15,17.0,232.0,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0102,2026-10-10,online,2026-10-10 23:46:28,12.63,230.7,online,2026-10-09 23:55:23,23.3,230.2,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0102,2026-10-21,online,2026-10-21 23:54:38,19.09,230.1,online,2026-10-20 23:51:51,24.5,231.1,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0103,2026-10-01,online,2026-10-01 23:40:07,10.82,235.6,,,,,left_only,Jawa,inverter_C,v2.3,A_hilang_di_webds,False
+DV0103,2026-10-02,online,2026-10-02 23:44:23,8.37,232.7,,,,,left_only,Jawa,inverter_C,v2.3,A_hilang_di_webds,False
+DV0103,2026-10-03,online,2026-10-03 23:40:16,6.17,235.4,,,,,left_only,Jawa,inverter_C,v2.3,A_hilang_di_webds,False
+DV0103,2026-10-04,online,2026-10-04 23:51:34,9.48,234.2,,,,,left_only,Jawa,inverter_C,v2.3,A_hilang_di_webds,False
+DV0103,2026-10-05,online,2026-10-05 23:52:27,11.21,233.2,,,,,left_only,Jawa,inverter_C,v2.3,A_hilang_di_webds,False
+DV0103,2026-10-06,offline,2026-10-06 12:48:00,2.0,,,,,,left_only,Jawa,inverter_C,v2.3,A_hilang_di_webds,False
+DV0103,2026-10-07,online,2026-10-07 23:54:51,5.85,233.8,,,,,left_only,Jawa,inverter_C,v2.3,A_hilang_di_webds,False
+DV0103,2026-10-08,online,2026-10-08 23:51:46,10.35,234.9,,,,,left_only,Jawa,inverter_C,v2.3,A_hilang_di_webds,False
+DV0103,2026-10-09,online,2026-10-09 23:45:24,12.57,232.2,,,,,left_only,Jawa,inverter_C,v2.3,A_hilang_di_webds,False
+DV0103,2026-10-10,online,2026-10-10 23:53:55,7.34,233.3,,,,,left_only,Jawa,inverter_C,v2.3,A_hilang_di_webds,False
+DV0103,2026-10-11,alarm,2026-10-11 23:47:33,10.4,233.2,,,,,left_only,Jawa,inverter_C,v2.3,A_hilang_di_webds,False
+DV0103,2026-10-12,alarm,2026-10-12 23:51:43,11.07,232.6,,,,,left_only,Jawa,inverter_C,v2.3,A_hilang_di_webds,False
+DV0103,2026-10-13,online,2026-10-13 23:49:18,7.51,233.2,,,,,left_only,Jawa,inverter_C,v2.3,A_hilang_di_webds,False
+DV0103,2026-10-14,online,2026-10-14 23:53:02,11.24,233.3,,,,,left_only,Jawa,inverter_C,v2.3,A_hilang_di_webds,False
+DV0103,2026-10-15,online,2026-10-15 23:52:09,9.56,233.2,,,,,left_only,Jawa,inverter_C,v2.3,A_hilang_di_webds,False
+DV0103,2026-10-16,online,2026-10-16 23:56:34,11.11,232.9,,,,,left_only,Jawa,inverter_C,v2.3,A_hilang_di_webds,False
+DV0103,2026-10-17,online,2026-10-17 23:45:38,12.71,234.8,,,,,left_only,Jawa,inverter_C,v2.3,A_hilang_di_webds,False
+DV0103,2026-10-18,online,2026-10-18 23:47:33,9.54,234.5,,,,,left_only,Jawa,inverter_C,v2.3,A_hilang_di_webds,False
+DV0103,2026-10-19,online,2026-10-19 23:48:43,12.0,233.3,,,,,left_only,Jawa,inverter_C,v2.3,A_hilang_di_webds,False
+DV0103,2026-10-20,online,2026-10-20 23:47:59,15.17,233.9,,,,,left_only,Jawa,inverter_C,v2.3,A_hilang_di_webds,False
+DV0103,2026-10-21,online,2026-10-21 23:54:13,9.85,232.9,,,,,left_only,Jawa,inverter_C,v2.3,A_hilang_di_webds,False
+DV0106,2026-10-09,offline,2026-10-09 09:55:00,16.81,,online,2026-10-08 23:55:27,31.8,230.1,both,Sumatera,meter_A,v2.1,D_status_beda,False
+DV0106,2026-10-10,online,2026-10-10 23:45:08,24.62,232.4,offline,2026-10-09 09:55:00,16.8,,both,Sumatera,meter_A,v2.1,D_status_beda,False
+DV0106,2026-10-21,online,2026-10-21 23:41:25,30.2,231.0,online,2026-10-20 23:56:49,40.3,231.7,both,Sumatera,meter_A,v2.1,F_nilai_beda_lain,False
+DV0107,2026-10-09,online,2026-10-09 23:55:38,34.7,228.5,online,2026-10-09 23:55:38,,228.5,both,Jawa,inverter_C,v2.2,C_nilai_kosong,False
+DV0107,2026-10-18,online,2026-10-18 23:45:22,24.73,228.2,online,2026-10-18 23:45:22,,228.2,both,Jawa,inverter_C,v2.2,C_nilai_kosong,False
+DV0108,2026-10-12,online,2026-10-12 23:57:38,77.23,224.8,online,2026-10-12 23:57:38,77230.0,224.8,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0108,2026-10-13,online,2026-10-13 23:44:07,56.34,226.6,online,2026-10-13 23:44:07,56340.0,226.6,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0108,2026-10-14,online,2026-10-14 23:44:34,97.73,225.9,online,2026-10-14 23:44:34,97730.0,225.9,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0108,2026-10-15,online,2026-10-15 23:47:06,85.52,226.3,online,2026-10-15 23:47:06,85520.0,226.3,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0108,2026-10-16,online,2026-10-16 23:50:11,79.51,227.4,online,2026-10-16 23:50:11,79510.0,227.4,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0108,2026-10-17,online,2026-10-17 23:56:34,93.64,228.6,online,2026-10-17 23:56:34,93640.0,228.6,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0108,2026-10-18,online,2026-10-18 23:44:22,74.67,226.0,online,2026-10-18 23:44:22,74670.0,226.0,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0108,2026-10-19,online,2026-10-19 23:56:43,100.23,224.5,online,2026-10-19 23:56:43,100230.0,224.5,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0108,2026-10-20,online,2026-10-20 23:50:07,112.07,224.0,online,2026-10-20 23:50:07,112070.0,224.0,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0108,2026-10-21,online,2026-10-21 23:42:46,77.7,227.3,online,2026-10-21 23:42:46,77700.0,227.3,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0110,2026-10-12,online,2026-10-12 23:42:43,28.38,230.1,online,2026-10-12 23:42:43,28380.0,230.1,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0110,2026-10-13,online,2026-10-13 23:55:13,19.56,228.7,online,2026-10-13 23:55:13,19560.0,228.7,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0110,2026-10-14,online,2026-10-14 23:56:28,31.2,230.8,online,2026-10-14 23:56:28,31200.0,230.8,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0110,2026-10-15,online,2026-10-15 23:51:17,27.74,228.5,online,2026-10-15 23:51:17,27740.0,228.5,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0110,2026-10-16,online,2026-10-16 23:57:44,27.96,226.6,online,2026-10-16 23:57:44,27960.0,226.6,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0110,2026-10-17,offline,2026-10-17 08:23:00,13.95,,offline,2026-10-17 08:23:00,13950.0,,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0110,2026-10-18,online,2026-10-18 23:48:00,30.74,228.7,online,2026-10-18 23:48:00,30740.0,228.7,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0110,2026-10-19,online,2026-10-19 23:57:08,36.12,230.9,online,2026-10-19 23:57:08,36120.0,230.9,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0110,2026-10-20,offline,2026-10-20 09:02:00,9.57,,offline,2026-10-20 09:02:00,9570.0,,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0110,2026-10-21,online,2026-10-21 23:45:48,28.64,228.4,online,2026-10-21 23:45:48,28640.0,228.4,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0114,2026-10-09,online,2026-10-09 23:48:09,68.98,237.2,online,2026-10-08 23:40:42,60.1,233.2,both,Sumatera,meter_B,v2.3,F_nilai_beda_lain,False
+DV0114,2026-10-10,online,2026-10-10 23:42:18,45.88,235.5,online,2026-10-09 23:48:09,69.0,237.2,both,Sumatera,meter_B,v2.3,F_nilai_beda_lain,False
+DV0114,2026-10-11,online,2026-10-11 23:40:18,60.86,236.4,offline,2026-10-11 23:40:18,60.9,236.4,both,Sumatera,meter_B,v2.3,D_status_beda,False
+DV0114,2026-10-12,online,2026-10-12 23:45:47,60.7,233.3,online,2026-10-12 23:45:47,60700.0,233.3,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0114,2026-10-13,online,2026-10-13 23:44:26,44.64,233.5,online,2026-10-13 23:44:26,44640.0,233.5,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0114,2026-10-14,online,2026-10-14 23:57:24,70.78,234.9,online,2026-10-14 23:57:24,70780.0,234.9,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0114,2026-10-15,online,2026-10-15 23:55:19,55.81,232.5,online,2026-10-15 23:55:19,55810.0,232.5,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0114,2026-10-16,online,2026-10-16 23:53:31,52.25,232.8,online,2026-10-16 23:53:31,52250.0,232.8,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0114,2026-10-17,online,2026-10-17 23:48:44,71.52,234.6,online,2026-10-17 23:48:44,71520.0,234.6,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0114,2026-10-18,online,2026-10-18 23:54:04,54.67,235.0,online,2026-10-18 23:54:04,54670.0,235.0,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0114,2026-10-19,online,2026-10-19 23:52:24,61.4,234.3,online,2026-10-19 23:52:24,61400.0,234.3,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0114,2026-10-20,online,2026-10-20 23:46:04,84.1,234.4,online,2026-10-20 23:46:04,84100.0,234.4,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0114,2026-10-21,online,2026-10-21 23:53:57,62.47,234.0,online,2026-10-20 23:46:04,84100.0,234.4,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0115,2026-10-07,online,2026-10-07 23:43:28,26.66,230.5,online,2026-10-07 23:43:28,,230.5,both,Sumatera,inverter_C,v2.1,C_nilai_kosong,False
+DV0115,2026-10-09,online,2026-10-09 23:43:24,54.03,230.2,online,2026-10-08 23:48:54,,230.4,both,Sumatera,inverter_C,v2.1,C_nilai_kosong,False
+DV0115,2026-10-10,online,2026-10-10 23:41:06,32.19,231.7,online,2026-10-09 23:43:24,54.0,230.2,both,Sumatera,inverter_C,v2.1,F_nilai_beda_lain,True
+DV0115,2026-10-21,online,2026-10-21 23:48:42,40.48,230.8,online,2026-10-20 23:42:39,57.6,233.8,both,Sumatera,inverter_C,v2.1,F_nilai_beda_lain,False
+DV0116,2026-10-09,online,2026-10-09 23:42:22,22.56,231.4,online,2026-10-08 23:50:44,21.3,230.6,both,Sumatera,inverter_A,v2.2,F_nilai_beda_lain,False
+DV0116,2026-10-10,online,2026-10-10 23:55:43,14.46,232.0,online,2026-10-09 23:42:22,22.6,231.4,both,Sumatera,inverter_A,v2.2,F_nilai_beda_lain,False
+DV0116,2026-10-21,online,2026-10-21 23:50:13,17.92,229.5,online,2026-10-20 23:46:40,24.1,231.6,both,Sumatera,inverter_A,v2.2,F_nilai_beda_lain,False
+DV0117,2026-10-09,online,2026-10-09 23:53:54,71.43,223.8,online,2026-10-08 23:57:55,58.5,224.1,both,Sumatera,meter_B,v2.3,F_nilai_beda_lain,False
+DV0117,2026-10-10,online,2026-10-10 23:52:54,39.85,223.5,online,2026-10-09 23:53:54,71.4,223.8,both,Sumatera,meter_B,v2.3,F_nilai_beda_lain,False
+DV0117,2026-10-12,online,2026-10-12 23:50:51,55.27,223.0,online,2026-10-12 23:50:51,55270.0,223.0,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0117,2026-10-13,online,2026-10-13 23:56:23,43.85,225.2,online,2026-10-13 23:56:23,43850.0,225.2,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0117,2026-10-14,online,2026-10-14 23:45:28,65.9,222.8,online,2026-10-14 23:45:28,65900.0,222.8,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0117,2026-10-15,online,2026-10-15 23:56:33,53.98,225.2,online,2026-10-15 23:56:33,53980.0,225.2,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0117,2026-10-16,online,2026-10-16 23:51:18,56.18,222.1,online,2026-10-16 23:51:18,56180.0,222.1,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0117,2026-10-17,online,2026-10-17 23:56:22,67.14,223.4,online,2026-10-17 23:56:22,67140.0,223.4,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0117,2026-10-18,online,2026-10-18 23:41:50,58.72,223.8,online,2026-10-18 23:41:50,58720.0,223.8,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0117,2026-10-19,online,2026-10-19 23:57:21,71.17,223.7,online,2026-10-19 23:57:21,71170.0,223.7,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0117,2026-10-20,online,2026-10-20 23:40:56,72.62,224.5,online,2026-10-20 23:40:56,72620.0,224.5,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0117,2026-10-21,online,2026-10-21 23:45:19,54.17,224.1,online,2026-10-20 23:40:56,72620.0,224.5,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0117,2026-10-29,online,2026-10-29 23:54:15,53.29,225.0,offline,2026-10-29 23:54:15,53.3,225.0,both,Sumatera,meter_B,v2.3,D_status_beda,False
+DV0117,2026-10-30,online,2026-10-30 23:53:21,63.51,223.7,offline,2026-10-30 23:53:21,63.5,223.7,both,Sumatera,meter_B,v2.3,D_status_beda,False
+DV0119,2026-10-09,online,2026-10-09 23:53:04,15.78,228.1,online,2026-10-08 23:50:30,13.5,228.0,both,Sumatera,inverter_A,v2.2,F_nilai_beda_lain,False
+DV0119,2026-10-10,online,2026-10-10 23:52:08,8.21,227.9,online,2026-10-09 23:53:04,15.8,228.1,both,Sumatera,inverter_A,v2.2,F_nilai_beda_lain,False
+DV0119,2026-10-21,online,2026-10-21 23:55:14,12.06,229.5,online,2026-10-20 23:57:33,17.0,228.5,both,Sumatera,inverter_A,v2.2,F_nilai_beda_lain,False
+DV0121,2026-10-18,online,2026-10-18 23:52:53,14.04,222.1,offline,2026-10-18 23:52:53,14.0,222.1,both,Kalimantan,inverter_A,v2.3,D_status_beda,False
+DV0121,2026-10-19,online,2026-10-19 23:40:57,18.03,220.9,offline,2026-10-19 23:40:57,18.0,220.9,both,Kalimantan,inverter_A,v2.3,D_status_beda,False
+DV0121,2026-10-30,online,2026-10-30 23:51:03,17.99,222.2,offline,2026-10-30 23:51:03,18.0,222.2,both,Kalimantan,inverter_A,v2.3,D_status_beda,False
+DV0124,2026-10-08,online,2026-10-08 23:45:05,25.65,225.8,offline,2026-10-08 23:45:05,25.6,225.8,both,Jawa,meter_B,v2.3,D_status_beda,False
+DV0124,2026-10-12,online,2026-10-12 23:54:45,28.08,225.2,online,2026-10-12 23:54:45,28080.0,225.2,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0124,2026-10-13,online,2026-10-13 23:51:27,21.11,224.9,online,2026-10-13 23:51:27,21110.0,224.9,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0124,2026-10-14,online,2026-10-14 23:57:47,32.5,223.1,online,2026-10-14 23:57:47,32500.0,223.1,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0124,2026-10-15,online,2026-10-15 23:55:49,28.13,224.9,online,2026-10-15 23:55:49,28130.0,224.9,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0124,2026-10-16,online,2026-10-16 23:41:23,28.01,225.5,online,2026-10-16 23:41:23,28010.0,225.5,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0124,2026-10-17,online,2026-10-17 23:48:47,33.08,225.5,online,2026-10-17 23:48:47,33080.0,225.5,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0124,2026-10-18,online,2026-10-18 23:52:42,28.28,224.6,online,2026-10-18 23:52:42,28280.0,224.6,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0124,2026-10-19,alarm,2026-10-19 23:55:13,34.2,225.0,alarm,2026-10-19 23:55:13,34200.0,225.0,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0124,2026-10-20,online,2026-10-20 23:47:33,36.98,224.3,online,2026-10-20 23:47:33,36980.0,224.3,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0124,2026-10-21,offline,2026-10-21 14:39:00,13.61,,offline,2026-10-21 14:39:00,13610.0,,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0124,2026-10-26,online,2026-10-26 23:44:26,23.01,224.1,offline,2026-10-26 23:44:26,23.0,224.1,both,Jawa,meter_B,v2.3,D_status_beda,False
+DV0124,2026-10-29,online,2026-10-29 23:52:31,25.09,223.8,offline,2026-10-29 23:52:31,25.1,223.8,both,Jawa,meter_B,v2.3,D_status_beda,False
+DV0125,2026-10-06,online,2026-10-06 23:46:11,32.27,233.0,offline,2026-10-06 23:46:11,32.3,233.0,both,Jawa,inverter_C,v2.3,D_status_beda,False
+DV0125,2026-10-13,online,2026-10-13 23:41:13,29.65,231.6,online,2026-10-13 23:41:13,,231.6,both,Jawa,inverter_C,v2.3,C_nilai_kosong,False
+DV0125,2026-10-23,online,2026-10-23 23:42:23,38.72,231.4,online,2026-10-23 23:42:23,,231.4,both,Jawa,inverter_C,v2.3,C_nilai_kosong,False
+DV0126,2026-10-09,online,2026-10-09 23:45:20,35.65,229.4,online,2026-10-08 23:44:41,30.7,226.9,both,Sumatera,inverter_A,v2.3,F_nilai_beda_lain,False
+DV0126,2026-10-10,online,2026-10-10 23:53:43,20.78,226.0,online,2026-10-09 23:45:20,35.6,229.4,both,Sumatera,inverter_A,v2.3,F_nilai_beda_lain,False
+DV0126,2026-10-21,online,2026-10-21 23:40:05,29.08,227.7,offline,2026-10-20 17:11:00,7.0,,both,Sumatera,inverter_A,v2.3,D_status_beda,False
+DV0127,2026-10-06,online,2026-10-06 23:51:54,48.04,232.6,online,2026-10-06 23:51:54,,232.6,both,Kalimantan,inverter_C,v2.3,C_nilai_kosong,False
+DV0135,2026-10-09,online,2026-10-09 23:48:08,17.99,233.3,offline,2026-10-08 09:23:00,6.2,,both,Sumatera,inverter_A,v2.1,D_status_beda,False
+DV0135,2026-10-10,online,2026-10-10 23:43:01,10.92,232.4,online,2026-10-09 23:48:08,18.0,233.3,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0135,2026-10-21,online,2026-10-21 23:49:56,15.18,229.8,online,2026-10-20 23:40:35,21.6,233.0,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0137,2026-10-12,online,2026-10-12 23:57:10,105.69,233.4,online,2026-10-12 23:57:10,105690.0,233.4,both,Kalimantan,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0137,2026-10-13,online,2026-10-13 23:51:45,76.18,233.2,online,2026-10-13 23:51:45,76180.0,233.2,both,Kalimantan,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0137,2026-10-14,online,2026-10-14 23:40:24,115.8,231.8,online,2026-10-14 23:40:24,115800.0,231.8,both,Kalimantan,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0137,2026-10-15,online,2026-10-15 23:55:24,114.99,233.4,online,2026-10-15 23:55:24,114990.0,233.4,both,Kalimantan,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0137,2026-10-16,online,2026-10-16 23:44:22,98.42,233.4,online,2026-10-16 23:44:22,98420.0,233.4,both,Kalimantan,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0137,2026-10-17,online,2026-10-17 23:54:20,124.22,232.6,online,2026-10-17 23:54:20,124220.0,232.6,both,Kalimantan,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0137,2026-10-18,online,2026-10-18 23:56:40,101.37,230.9,online,2026-10-18 23:56:40,101370.0,230.9,both,Kalimantan,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0137,2026-10-19,online,2026-10-19 23:41:40,118.07,231.6,online,2026-10-19 23:41:40,118070.0,231.6,both,Kalimantan,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0137,2026-10-20,online,2026-10-20 23:44:42,139.71,232.7,online,2026-10-20 23:44:42,139710.0,232.7,both,Kalimantan,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0137,2026-10-21,online,2026-10-21 23:48:50,113.14,230.1,online,2026-10-21 23:48:50,113140.0,230.1,both,Kalimantan,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0138,2026-10-01,online,2026-10-01 23:50:54,22.83,235.9,online,2026-10-01 23:50:54,,235.9,both,Sulawesi,inverter_C,v2.2,C_nilai_kosong,False
+DV0138,2026-10-18,online,2026-10-18 23:49:11,25.24,232.7,offline,2026-10-18 23:49:11,25.2,232.7,both,Sulawesi,inverter_C,v2.2,D_status_beda,False
+DV0138,2026-10-27,online,2026-10-27 23:41:36,23.48,235.4,offline,2026-10-27 23:41:36,23.5,235.4,both,Sulawesi,inverter_C,v2.2,D_status_beda,False
+DV0139,2026-10-09,online,2026-10-09 23:45:17,18.58,230.7,offline,2026-10-09 23:45:17,18.6,230.7,both,Jawa,inverter_C,v2.3,D_status_beda,False
+DV0140,2026-10-17,online,2026-10-17 23:46:02,13.97,227.8,online,2026-10-17 23:46:02,,227.8,both,Kalimantan,inverter_C,v2.1,C_nilai_kosong,False
+DV0141,2026-10-03,online,2026-10-03 23:40:44,29.3,236.5,offline,2026-10-03 23:40:44,29.3,236.5,both,Jawa,meter_B,v2.3,D_status_beda,False
+DV0141,2026-10-11,online,2026-10-11 23:51:41,47.52,237.6,offline,2026-10-11 23:51:41,47.5,237.6,both,Jawa,meter_B,v2.3,D_status_beda,False
+DV0141,2026-10-12,online,2026-10-12 23:45:56,45.54,236.0,online,2026-10-12 23:45:56,45540.0,236.0,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0141,2026-10-13,online,2026-10-13 23:41:23,29.87,237.7,online,2026-10-13 23:41:23,29870.0,237.7,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0141,2026-10-14,online,2026-10-14 23:45:16,55.93,235.7,online,2026-10-14 23:45:16,55930.0,235.7,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0141,2026-10-15,online,2026-10-15 23:53:23,48.52,235.7,online,2026-10-15 23:53:23,48520.0,235.7,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0141,2026-10-16,online,2026-10-16 23:54:00,45.06,234.4,online,2026-10-16 23:54:00,45060.0,234.4,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0141,2026-10-17,online,2026-10-17 23:52:27,56.74,235.3,online,2026-10-17 23:52:27,56740.0,235.3,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0141,2026-10-18,online,2026-10-18 23:48:30,45.99,235.6,online,2026-10-18 23:48:30,45990.0,235.6,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0141,2026-10-19,online,2026-10-19 23:42:44,52.43,234.8,online,2026-10-19 23:42:44,52430.0,234.8,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0141,2026-10-20,online,2026-10-20 23:52:58,59.66,235.1,online,2026-10-20 23:52:58,59660.0,235.1,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0141,2026-10-21,online,2026-10-21 23:46:56,42.49,235.0,online,2026-10-21 23:46:56,42490.0,235.0,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0143,2026-10-09,online,2026-10-09 23:57:08,84.32,226.7,online,2026-10-08 23:47:13,70.8,225.7,both,Sumatera,meter_B,v2.2,F_nilai_beda_lain,False
+DV0143,2026-10-10,online,2026-10-10 23:40:29,44.89,226.1,online,2026-10-09 23:57:08,84.3,226.7,both,Sumatera,meter_B,v2.2,F_nilai_beda_lain,False
+DV0143,2026-10-12,online,2026-10-12 23:46:43,70.28,225.5,online,2026-10-12 23:46:43,70280.0,225.5,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0143,2026-10-13,online,2026-10-13 23:43:33,48.25,227.7,online,2026-10-13 23:43:33,48250.0,227.7,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0143,2026-10-14,online,2026-10-14 23:50:08,67.32,227.9,online,2026-10-14 23:50:08,67320.0,227.9,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0143,2026-10-15,online,2026-10-15 23:46:52,65.75,224.9,online,2026-10-15 23:46:52,65750.0,224.9,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0143,2026-10-16,online,2026-10-16 23:50:33,59.91,226.3,online,2026-10-16 23:50:33,59910.0,226.3,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0143,2026-10-17,online,2026-10-17 23:50:20,81.38,226.6,online,2026-10-17 23:50:20,81380.0,226.6,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0143,2026-10-18,online,2026-10-18 23:52:00,70.51,225.5,online,2026-10-18 23:52:00,70510.0,225.5,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0143,2026-10-19,offline,2026-10-19 17:04:00,26.56,,offline,2026-10-19 17:04:00,26560.0,,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0143,2026-10-20,online,2026-10-20 23:57:13,98.23,226.6,online,2026-10-20 23:57:13,98230.0,226.6,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0143,2026-10-21,online,2026-10-21 23:42:52,62.64,225.6,online,2026-10-20 23:57:13,98230.0,226.6,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0145,2026-10-15,online,2026-10-15 23:52:58,21.95,232.1,online,2026-10-15 23:52:58,,232.1,both,Bali-Nusra,inverter_C,v2.2,C_nilai_kosong,False
+DV0145,2026-10-25,online,2026-10-25 23:42:30,17.16,229.4,online,2026-10-25 23:42:30,,229.4,both,Bali-Nusra,inverter_C,v2.2,C_nilai_kosong,False
+DV0146,2026-10-09,online,2026-10-09 23:45:10,54.36,223.8,online,2026-10-08 23:53:44,49.6,223.7,both,Sumatera,inverter_A,v2.2,F_nilai_beda_lain,False
+DV0146,2026-10-10,online,2026-10-10 23:41:24,29.4,223.7,online,2026-10-09 23:45:10,54.4,223.8,both,Sumatera,inverter_A,v2.2,F_nilai_beda_lain,False
+DV0146,2026-10-21,online,2026-10-21 23:48:31,49.03,223.3,online,2026-10-20 23:57:53,62.1,222.4,both,Sumatera,inverter_A,v2.2,F_nilai_beda_lain,False
+DV0147,2026-10-09,online,2026-10-09 23:40:40,31.53,229.8,online,2026-10-08 23:43:34,26.9,231.1,both,Sumatera,meter_B,v2.3,F_nilai_beda_lain,False
+DV0147,2026-10-10,online,2026-10-10 23:46:40,18.57,229.4,online,2026-10-09 23:40:40,31.5,229.8,both,Sumatera,meter_B,v2.3,F_nilai_beda_lain,False
+DV0147,2026-10-12,online,2026-10-12 23:48:36,25.41,231.7,online,2026-10-12 23:48:36,25410.0,231.7,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0147,2026-10-13,online,2026-10-13 23:49:58,17.59,229.5,online,2026-10-13 23:49:58,17590.0,229.5,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0147,2026-10-14,online,2026-10-14 23:42:44,27.87,230.5,online,2026-10-14 23:42:44,27870.0,230.5,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0147,2026-10-15,online,2026-10-15 23:41:08,27.58,230.5,online,2026-10-15 23:41:08,27580.0,230.5,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0147,2026-10-16,online,2026-10-16 23:45:01,28.47,230.2,online,2026-10-16 23:45:01,28470.0,230.2,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0147,2026-10-17,online,2026-10-17 23:53:22,29.21,228.3,online,2026-10-17 23:53:22,29210.0,228.3,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0147,2026-10-18,online,2026-10-18 23:53:56,29.11,229.2,online,2026-10-18 23:53:56,29110.0,229.2,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0147,2026-10-19,online,2026-10-19 23:56:29,29.13,228.5,online,2026-10-19 23:56:29,29130.0,228.5,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0147,2026-10-20,online,2026-10-20 23:54:54,35.38,230.6,online,2026-10-20 23:54:54,35380.0,230.6,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0147,2026-10-21,offline,2026-10-21 17:02:00,3.27,,online,2026-10-20 23:54:54,35380.0,230.6,both,Sumatera,meter_B,v2.3,D_status_beda,False
+DV0149,2026-10-09,offline,2026-10-09 17:25:00,4.26,,online,2026-10-08 23:54:09,31.8,235.9,both,Sumatera,meter_A,v2.2,D_status_beda,False
+DV0149,2026-10-10,online,2026-10-10 23:40:11,18.97,235.8,offline,2026-10-09 17:25:00,4.3,,both,Sumatera,meter_A,v2.2,D_status_beda,False
+DV0149,2026-10-21,online,2026-10-21 23:46:23,26.97,235.1,online,2026-10-20 23:56:11,35.8,235.9,both,Sumatera,meter_A,v2.2,F_nilai_beda_lain,False
+DV0150,2026-10-09,online,2026-10-09 23:45:50,100.85,225.8,offline,2026-10-08 23:57:25,84.4,228.0,both,Sumatera,meter_A,v2.3,D_status_beda,False
+DV0150,2026-10-10,offline,2026-10-10 17:46:00,22.8,,online,2026-10-09 23:45:50,100.8,225.8,both,Sumatera,meter_A,v2.3,D_status_beda,False
+DV0150,2026-10-21,online,2026-10-21 23:53:49,85.51,225.6,online,2026-10-20 23:54:21,103.0,228.1,both,Sumatera,meter_A,v2.3,F_nilai_beda_lain,False
+DV0153,2026-10-05,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-06,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-07,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-08,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-09,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-10,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-11,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-12,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-13,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-14,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-15,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-16,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-17,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-18,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-19,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-20,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-21,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-22,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-23,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-24,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-25,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-26,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-27,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-28,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-29,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0153,2026-10-30,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.3,B_ekstra_di_webds,False
+DV0154,2026-10-09,online,2026-10-09 23:49:25,135.17,225.6,online,2026-10-08 23:50:23,105.4,223.7,both,Sumatera,meter_A,v2.1,F_nilai_beda_lain,False
+DV0154,2026-10-10,online,2026-10-10 23:40:01,74.53,223.1,online,2026-10-09 23:49:25,135.2,225.6,both,Sumatera,meter_A,v2.1,F_nilai_beda_lain,False
+DV0154,2026-10-21,online,2026-10-21 23:53:35,121.3,223.7,online,2026-10-20 23:47:46,161.2,224.1,both,Sumatera,meter_A,v2.1,F_nilai_beda_lain,False
+DV0155,2026-10-21,online,2026-10-21 23:49:32,11.35,223.8,online,2026-10-21 23:49:32,,223.8,both,Kalimantan,inverter_C,v2.1,C_nilai_kosong,False
+DV0156,2026-10-09,online,2026-10-09 23:54:17,30.28,232.3,online,2026-10-08 23:50:46,23.0,230.9,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0156,2026-10-10,online,2026-10-10 23:40:12,15.05,234.0,online,2026-10-09 23:54:17,30.3,232.3,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0156,2026-10-21,online,2026-10-21 23:44:12,23.65,234.1,online,2026-10-20 23:46:52,32.9,234.4,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0158,2026-10-12,online,2026-10-12 23:42:26,130.91,225.0,online,2026-10-12 23:42:26,130910.0,225.0,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0158,2026-10-13,online,2026-10-13 23:46:41,94.33,225.0,online,2026-10-13 23:46:41,94330.0,225.0,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0158,2026-10-14,online,2026-10-14 23:50:43,160.31,225.0,online,2026-10-14 23:50:43,160310.0,225.0,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0158,2026-10-15,online,2026-10-15 23:57:36,125.94,227.3,online,2026-10-15 23:57:36,125940.0,227.3,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0158,2026-10-16,offline,2026-10-16 18:10:00,59.53,,offline,2026-10-16 18:10:00,59530.0,,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0158,2026-10-17,online,2026-10-17 23:52:05,174.34,225.5,online,2026-10-17 23:52:05,174340.0,225.5,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0158,2026-10-18,online,2026-10-18 23:54:27,132.47,224.3,online,2026-10-18 23:54:27,132470.0,224.3,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0158,2026-10-19,online,2026-10-19 23:45:22,149.8,225.2,online,2026-10-19 23:45:22,149800.0,225.2,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0158,2026-10-20,online,2026-10-20 23:52:24,167.21,225.7,online,2026-10-20 23:52:24,167210.0,225.7,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0158,2026-10-21,online,2026-10-21 23:51:41,143.45,224.5,online,2026-10-21 23:51:41,143450.0,224.5,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0159,2026-10-09,online,2026-10-09 23:47:12,74.74,233.9,online,2026-10-08 23:42:36,56.0,232.2,both,Sumatera,inverter_A,v2.3,F_nilai_beda_lain,False
+DV0159,2026-10-10,offline,2026-10-10 13:47:00,4.56,,online,2026-10-09 23:47:12,74.7,233.9,both,Sumatera,inverter_A,v2.3,D_status_beda,False
+DV0159,2026-10-21,online,2026-10-21 23:48:11,58.06,236.4,online,2026-10-20 23:48:36,70.4,233.7,both,Sumatera,inverter_A,v2.3,F_nilai_beda_lain,False
+DV0160,2026-10-01,online,2026-10-01 23:45:19,23.63,229.4,,,,,left_only,Kalimantan,inverter_A,v2.3,A_hilang_di_webds,False
+DV0160,2026-10-02,online,2026-10-02 23:46:52,18.86,229.3,,,,,left_only,Kalimantan,inverter_A,v2.3,A_hilang_di_webds,False
+DV0160,2026-10-03,online,2026-10-03 23:43:48,16.16,229.5,,,,,left_only,Kalimantan,inverter_A,v2.3,A_hilang_di_webds,False
+DV0160,2026-10-04,online,2026-10-04 23:48:00,22.33,227.6,,,,,left_only,Kalimantan,inverter_A,v2.3,A_hilang_di_webds,False
+DV0160,2026-10-05,online,2026-10-05 23:53:40,27.46,227.2,,,,,left_only,Kalimantan,inverter_A,v2.3,A_hilang_di_webds,False
+DV0160,2026-10-06,online,2026-10-06 23:50:36,19.22,226.4,,,,,left_only,Kalimantan,inverter_A,v2.3,A_hilang_di_webds,False
+DV0160,2026-10-07,online,2026-10-07 23:51:00,16.22,227.0,,,,,left_only,Kalimantan,inverter_A,v2.3,A_hilang_di_webds,False
+DV0160,2026-10-08,online,2026-10-08 23:40:40,27.28,228.5,,,,,left_only,Kalimantan,inverter_A,v2.3,A_hilang_di_webds,False
+DV0160,2026-10-09,online,2026-10-09 23:47:36,33.13,228.4,,,,,left_only,Kalimantan,inverter_A,v2.3,A_hilang_di_webds,False
+DV0160,2026-10-10,online,2026-10-10 23:53:33,18.43,226.7,,,,,left_only,Kalimantan,inverter_A,v2.3,A_hilang_di_webds,False
+DV0160,2026-10-11,offline,2026-10-11 11:13:00,3.57,,,,,,left_only,Kalimantan,inverter_A,v2.3,A_hilang_di_webds,False
+DV0160,2026-10-12,online,2026-10-12 23:50:57,24.88,227.0,,,,,left_only,Kalimantan,inverter_A,v2.3,A_hilang_di_webds,False
+DV0160,2026-10-13,offline,2026-10-13 10:39:00,1.9,,,,,,left_only,Kalimantan,inverter_A,v2.3,A_hilang_di_webds,False
+DV0160,2026-10-14,online,2026-10-14 23:44:25,26.33,227.5,,,,,left_only,Kalimantan,inverter_A,v2.3,A_hilang_di_webds,False
+DV0160,2026-10-15,online,2026-10-15 23:50:40,25.36,231.5,,,,,left_only,Kalimantan,inverter_A,v2.3,A_hilang_di_webds,False
+DV0160,2026-10-16,online,2026-10-16 23:50:20,23.79,230.7,,,,,left_only,Kalimantan,inverter_A,v2.3,A_hilang_di_webds,False
+DV0160,2026-10-17,online,2026-10-17 23:46:05,25.97,226.3,,,,,left_only,Kalimantan,inverter_A,v2.3,A_hilang_di_webds,False
+DV0160,2026-10-18,online,2026-10-18 23:52:12,22.66,227.6,,,,,left_only,Kalimantan,inverter_A,v2.3,A_hilang_di_webds,False
+DV0160,2026-10-19,online,2026-10-19 23:56:27,26.68,226.1,,,,,left_only,Kalimantan,inverter_A,v2.3,A_hilang_di_webds,False
+DV0160,2026-10-20,online,2026-10-20 23:52:58,35.4,227.4,,,,,left_only,Kalimantan,inverter_A,v2.3,A_hilang_di_webds,False
+DV0160,2026-10-21,online,2026-10-21 23:45:15,23.97,228.9,,,,,left_only,Kalimantan,inverter_A,v2.3,A_hilang_di_webds,False
+DV0161,2026-10-04,online,2026-10-04 23:44:12,92.89,225.1,offline,2026-10-04 23:44:12,92.9,225.1,both,Jawa,meter_B,v2.3,D_status_beda,False
+DV0161,2026-10-12,online,2026-10-12 23:55:08,93.27,223.4,online,2026-10-12 23:55:08,93270.0,223.4,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0161,2026-10-13,online,2026-10-13 23:52:59,59.52,225.5,online,2026-10-13 23:52:59,59520.0,225.5,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0161,2026-10-14,online,2026-10-14 23:46:06,107.95,223.7,online,2026-10-14 23:46:06,107950.0,223.7,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0161,2026-10-15,online,2026-10-15 23:57:54,93.67,222.1,online,2026-10-15 23:57:54,93670.0,222.1,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0161,2026-10-16,online,2026-10-16 23:41:08,85.37,227.0,online,2026-10-16 23:41:08,85370.0,227.0,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0161,2026-10-17,online,2026-10-17 23:57:19,103.15,225.4,online,2026-10-17 23:57:19,103150.0,225.4,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0161,2026-10-18,offline,2026-10-18 12:18:00,17.85,,offline,2026-10-18 12:18:00,17850.0,,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0161,2026-10-19,online,2026-10-19 23:47:08,102.02,224.1,online,2026-10-19 23:47:08,102020.0,224.1,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0161,2026-10-20,online,2026-10-20 23:43:10,120.81,222.4,online,2026-10-20 23:43:10,120810.0,222.4,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0161,2026-10-21,online,2026-10-21 23:54:15,85.12,224.8,online,2026-10-21 23:54:15,85120.0,224.8,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0163,2026-10-09,online,2026-10-09 23:41:14,,221.2,offline,2026-10-08 10:36:00,,,both,Sumatera,gateway_G,v2.2,D_status_beda,False
+DV0165,2026-10-01,online,2026-10-01 23:41:11,36.09,232.7,offline,2026-10-01 23:41:11,36.1,232.7,both,Jawa,inverter_A,v2.3,D_status_beda,False
+DV0166,2026-10-09,online,2026-10-09 23:52:22,51.71,226.6,online,2026-10-08 23:57:48,36.2,226.8,both,Sumatera,inverter_A,v2.2,F_nilai_beda_lain,False
+DV0166,2026-10-10,online,2026-10-10 23:50:14,26.33,225.6,online,2026-10-09 23:52:22,51.7,226.6,both,Sumatera,inverter_A,v2.2,F_nilai_beda_lain,False
+DV0166,2026-10-21,online,2026-10-21 23:56:00,36.91,227.7,online,2026-10-20 23:45:07,50.0,226.4,both,Sumatera,inverter_A,v2.2,F_nilai_beda_lain,False
+DV0167,2026-10-02,online,2026-10-02 23:54:27,33.73,229.8,offline,2026-10-02 23:54:27,,229.8,both,Bali-Nusra,inverter_C,v2.1,D_status_beda,False
+DV0167,2026-10-11,online,2026-10-11 23:41:21,53.75,231.0,online,2026-10-11 23:41:21,,231.0,both,Bali-Nusra,inverter_C,v2.1,C_nilai_kosong,False
+DV0168,2026-10-09,online,2026-10-09 23:51:37,200.53,229.1,offline,2026-10-08 16:34:00,32.1,,both,Sumatera,meter_B,v2.3,D_status_beda,False
+DV0168,2026-10-10,online,2026-10-10 23:55:09,104.8,231.0,online,2026-10-09 23:51:37,200.5,229.1,both,Sumatera,meter_B,v2.3,F_nilai_beda_lain,False
+DV0168,2026-10-12,online,2026-10-12 23:56:52,143.04,228.7,online,2026-10-12 23:56:52,143040.0,228.7,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0168,2026-10-13,online,2026-10-13 23:47:26,101.03,226.6,online,2026-10-13 23:47:26,101030.0,226.6,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0168,2026-10-14,alarm,2026-10-14 23:52:55,161.84,226.1,alarm,2026-10-14 23:52:55,161840.0,226.1,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0168,2026-10-15,online,2026-10-15 23:41:59,154.29,226.1,online,2026-10-15 23:41:59,154290.0,226.1,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0168,2026-10-16,online,2026-10-16 23:44:07,130.88,226.7,online,2026-10-16 23:44:07,130880.0,226.7,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0168,2026-10-17,offline,2026-10-17 13:12:00,61.99,,offline,2026-10-17 13:12:00,61990.0,,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0168,2026-10-18,alarm,2026-10-18 23:47:53,153.97,228.3,alarm,2026-10-18 23:47:53,153970.0,228.3,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0168,2026-10-19,alarm,2026-10-19 23:51:53,165.08,228.4,alarm,2026-10-19 23:51:53,165080.0,228.4,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0168,2026-10-20,online,2026-10-20 23:57:08,206.43,227.6,online,2026-10-20 23:57:08,206430.0,227.6,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0168,2026-10-21,online,2026-10-21 23:48:15,161.65,230.7,online,2026-10-20 23:57:08,206430.0,227.6,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0169,2026-10-09,online,2026-10-09 23:48:33,63.65,235.4,online,2026-10-08 23:55:53,48.1,235.8,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0169,2026-10-10,online,2026-10-10 23:44:00,37.8,234.2,online,2026-10-09 23:48:33,63.6,235.4,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0169,2026-10-21,online,2026-10-21 23:47:43,48.19,235.4,offline,2026-10-20 15:53:00,18.3,,both,Sumatera,inverter_A,v2.1,D_status_beda,False
+DV0171,2026-10-02,online,2026-10-02 23:42:02,26.34,236.5,offline,2026-10-02 23:42:02,26.3,236.5,both,Sumatera,inverter_C,v2.3,D_status_beda,False
+DV0171,2026-10-07,online,2026-10-07 23:46:27,26.04,233.6,offline,2026-10-07 23:46:27,26.0,233.6,both,Sumatera,inverter_C,v2.3,D_status_beda,False
+DV0171,2026-10-09,online,2026-10-09 23:40:12,53.08,235.8,online,2026-10-08 23:43:05,43.1,235.2,both,Sumatera,inverter_C,v2.3,F_nilai_beda_lain,False
+DV0171,2026-10-10,online,2026-10-10 23:56:05,25.56,233.6,online,2026-10-09 23:40:12,53.1,235.8,both,Sumatera,inverter_C,v2.3,F_nilai_beda_lain,False
+DV0171,2026-10-21,online,2026-10-21 23:45:20,43.43,234.9,online,2026-10-20 23:52:43,52.7,237.4,both,Sumatera,inverter_C,v2.3,F_nilai_beda_lain,False
+DV0172,2026-10-12,online,2026-10-12 23:43:18,130.95,233.0,online,2026-10-12 23:43:18,130950.0,233.0,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0172,2026-10-13,online,2026-10-13 23:41:59,94.73,230.8,online,2026-10-13 23:41:59,94730.0,230.8,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0172,2026-10-14,online,2026-10-14 23:46:10,150.2,230.8,online,2026-10-14 23:46:10,150200.0,230.8,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0172,2026-10-15,online,2026-10-15 23:48:54,123.05,231.4,online,2026-10-15 23:48:54,123050.0,231.4,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0172,2026-10-16,online,2026-10-16 23:42:05,127.19,232.5,online,2026-10-16 23:42:05,127190.0,232.5,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0172,2026-10-17,online,2026-10-17 23:46:00,168.17,231.1,online,2026-10-17 23:46:00,168170.0,231.1,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0172,2026-10-18,online,2026-10-18 23:43:30,131.91,231.4,online,2026-10-18 23:43:30,131910.0,231.4,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0172,2026-10-19,online,2026-10-19 23:46:56,145.43,231.4,online,2026-10-19 23:46:56,145430.0,231.4,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0172,2026-10-20,online,2026-10-20 23:51:17,183.99,233.6,online,2026-10-20 23:51:17,183990.0,233.6,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0172,2026-10-21,online,2026-10-21 23:50:16,138.57,230.5,online,2026-10-21 23:50:16,138570.0,230.5,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0175,2026-10-09,online,2026-10-09 23:41:58,39.89,226.7,online,2026-10-09 23:41:58,,226.7,both,Bali-Nusra,inverter_C,v2.1,C_nilai_kosong,False
+DV0176,2026-10-09,offline,2026-10-09 19:58:00,47.93,,online,2026-10-08 23:53:38,143.0,224.0,both,Sumatera,meter_B,v2.2,D_status_beda,False
+DV0176,2026-10-10,online,2026-10-10 23:40:47,110.03,221.8,offline,2026-10-09 19:58:00,47.9,,both,Sumatera,meter_B,v2.2,D_status_beda,False
+DV0176,2026-10-12,online,2026-10-12 23:54:32,142.52,224.6,online,2026-10-12 23:54:32,142520.0,224.6,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0176,2026-10-13,online,2026-10-13 23:57:30,97.38,224.9,online,2026-10-13 23:57:30,97380.0,224.9,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0176,2026-10-14,online,2026-10-14 23:55:14,170.07,225.6,online,2026-10-14 23:55:14,170070.0,225.6,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0176,2026-10-15,online,2026-10-15 23:55:49,153.04,224.1,online,2026-10-15 23:55:49,153040.0,224.1,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0176,2026-10-16,online,2026-10-16 23:56:37,144.21,224.6,online,2026-10-16 23:56:37,144210.0,224.6,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0176,2026-10-17,online,2026-10-17 23:40:23,147.67,225.6,online,2026-10-17 23:40:23,147670.0,225.6,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0176,2026-10-18,online,2026-10-18 23:49:42,143.26,224.8,online,2026-10-18 23:49:42,143260.0,224.8,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0176,2026-10-19,online,2026-10-19 23:43:28,148.34,222.7,online,2026-10-19 23:43:28,148340.0,222.7,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0176,2026-10-20,online,2026-10-20 23:47:09,198.53,223.7,online,2026-10-20 23:47:09,198530.0,223.7,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0176,2026-10-21,online,2026-10-21 23:53:26,132.58,222.9,online,2026-10-20 23:47:09,198530.0,223.7,both,Sumatera,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0177,2026-10-12,online,2026-10-12 23:45:26,27.13,235.7,online,2026-10-12 23:45:26,27130.0,235.7,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0177,2026-10-13,online,2026-10-13 23:56:46,16.13,238.4,online,2026-10-13 23:56:46,16130.0,238.4,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0177,2026-10-14,online,2026-10-14 23:47:30,26.31,235.1,online,2026-10-14 23:47:30,26310.0,235.1,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0177,2026-10-15,online,2026-10-15 23:56:15,25.94,237.5,online,2026-10-15 23:56:15,25940.0,237.5,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0177,2026-10-16,online,2026-10-16 23:55:00,23.23,234.4,online,2026-10-16 23:55:00,23230.0,234.4,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0177,2026-10-17,online,2026-10-17 23:56:08,30.22,236.4,online,2026-10-17 23:56:08,30220.0,236.4,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0177,2026-10-18,online,2026-10-18 23:51:27,22.08,236.8,online,2026-10-18 23:51:27,22080.0,236.8,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0177,2026-10-19,online,2026-10-19 23:42:04,26.98,236.2,online,2026-10-19 23:42:04,26980.0,236.2,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0177,2026-10-20,online,2026-10-20 23:56:27,34.01,235.5,online,2026-10-20 23:56:27,34010.0,235.5,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0177,2026-10-21,online,2026-10-21 23:41:15,23.64,234.1,online,2026-10-21 23:41:15,23640.0,234.1,both,Sulawesi,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0180,2026-10-09,online,2026-10-09 23:42:59,184.47,231.3,online,2026-10-08 23:41:20,142.6,228.3,both,Sumatera,meter_B,v2.3,F_nilai_beda_lain,False
+DV0180,2026-10-10,online,2026-10-10 23:51:21,98.65,230.1,online,2026-10-09 23:42:59,184.5,231.3,both,Sumatera,meter_B,v2.3,F_nilai_beda_lain,False
+DV0180,2026-10-11,online,2026-10-11 23:45:26,146.41,228.3,offline,2026-10-11 23:45:26,146.4,228.3,both,Sumatera,meter_B,v2.3,D_status_beda,False
+DV0180,2026-10-12,online,2026-10-12 23:42:03,145.44,230.3,online,2026-10-12 23:42:03,145440.0,230.3,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0180,2026-10-13,online,2026-10-13 23:43:54,90.51,228.3,online,2026-10-13 23:43:54,90510.0,228.3,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0180,2026-10-14,online,2026-10-14 23:46:40,155.4,228.3,online,2026-10-14 23:46:40,155400.0,228.3,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0180,2026-10-15,online,2026-10-15 23:49:07,138.52,230.6,online,2026-10-15 23:49:07,138520.0,230.6,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0180,2026-10-16,online,2026-10-16 23:47:49,131.22,229.7,online,2026-10-16 23:47:49,131220.0,229.7,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0180,2026-10-17,online,2026-10-17 23:50:50,169.2,229.8,online,2026-10-17 23:50:50,169200.0,229.8,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0180,2026-10-18,online,2026-10-18 23:45:58,145.98,231.9,online,2026-10-18 23:45:58,145980.0,231.9,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0180,2026-10-19,online,2026-10-19 23:52:38,152.45,228.2,online,2026-10-19 23:52:38,152450.0,228.2,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0180,2026-10-20,online,2026-10-20 23:41:53,195.13,229.0,online,2026-10-20 23:41:53,195130.0,229.0,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0180,2026-10-21,online,2026-10-21 23:45:02,129.7,230.0,online,2026-10-20 23:41:53,195130.0,229.0,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0183,2026-10-24,online,2026-10-24 23:41:34,69.8,222.6,offline,2026-10-24 23:41:34,69.8,222.6,both,Sulawesi,inverter_A,v2.3,D_status_beda,False
+DV0185,2026-10-09,online,2026-10-09 23:49:21,72.35,232.7,online,2026-10-08 23:54:45,61.0,230.0,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0185,2026-10-10,online,2026-10-10 23:51:57,37.63,232.6,online,2026-10-09 23:49:21,72.4,232.7,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0185,2026-10-21,online,2026-10-21 23:54:01,60.72,231.3,online,2026-10-20 23:46:17,78.4,231.0,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0186,2026-10-27,online,2026-10-27 23:49:30,,229.8,offline,2026-10-27 23:49:30,,229.8,both,Jawa,gateway_G,v2.3,D_status_beda,False
+DV0187,2026-10-11,online,2026-10-11 23:52:25,35.43,224.1,offline,2026-10-11 23:52:25,35.4,224.1,both,Kalimantan,inverter_A,v2.3,D_status_beda,False
+DV0187,2026-10-19,online,2026-10-19 23:46:08,41.62,225.0,offline,2026-10-19 23:46:08,41.6,225.0,both,Kalimantan,inverter_A,v2.3,D_status_beda,False
+DV0188,2026-10-09,online,2026-10-09 23:50:10,50.23,227.0,offline,2026-10-08 23:42:10,43.2,227.6,both,Sumatera,meter_A,v2.3,D_status_beda,False
+DV0188,2026-10-10,online,2026-10-10 23:52:27,29.31,228.8,online,2026-10-09 23:50:10,50.2,227.0,both,Sumatera,meter_A,v2.3,F_nilai_beda_lain,False
+DV0188,2026-10-21,online,2026-10-21 23:56:11,42.98,227.8,online,2026-10-20 23:47:15,51.8,228.4,both,Sumatera,meter_A,v2.3,F_nilai_beda_lain,False
+DV0189,2026-10-12,online,2026-10-12 23:43:34,32.87,228.2,online,2026-10-12 23:43:34,32870.0,228.2,both,Kalimantan,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0189,2026-10-13,online,2026-10-13 23:44:51,22.63,228.0,online,2026-10-13 23:44:51,22630.0,228.0,both,Kalimantan,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0189,2026-10-14,online,2026-10-14 23:43:06,37.04,226.2,online,2026-10-14 23:43:06,37040.0,226.2,both,Kalimantan,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0189,2026-10-15,online,2026-10-15 23:56:00,34.5,228.3,online,2026-10-15 23:56:00,34500.0,228.3,both,Kalimantan,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0189,2026-10-16,online,2026-10-16 23:49:19,32.25,228.0,online,2026-10-16 23:49:19,32250.0,228.0,both,Kalimantan,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0189,2026-10-17,offline,2026-10-17 10:39:00,4.02,,offline,2026-10-17 10:39:00,4020.0,,both,Kalimantan,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0189,2026-10-18,online,2026-10-18 23:48:58,33.07,230.4,online,2026-10-18 23:48:58,33070.0,230.4,both,Kalimantan,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0189,2026-10-19,online,2026-10-19 23:44:18,35.29,227.1,online,2026-10-19 23:44:18,35290.0,227.1,both,Kalimantan,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0189,2026-10-20,online,2026-10-20 23:40:06,46.12,226.4,online,2026-10-20 23:40:06,46120.0,226.4,both,Kalimantan,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0189,2026-10-21,online,2026-10-21 23:50:42,31.2,229.4,online,2026-10-21 23:50:42,31200.0,229.4,both,Kalimantan,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0191,2026-10-09,offline,2026-10-09 18:02:00,15.28,,offline,2026-10-08 06:55:00,11.8,,both,Sumatera,meter_A,v2.1,F_nilai_beda_lain,False
+DV0191,2026-10-10,online,2026-10-10 23:53:58,28.58,230.1,offline,2026-10-09 18:02:00,15.3,,both,Sumatera,meter_A,v2.1,D_status_beda,False
+DV0191,2026-10-21,online,2026-10-21 23:43:58,38.87,231.4,online,2026-10-20 23:43:31,51.1,232.2,both,Sumatera,meter_A,v2.1,F_nilai_beda_lain,False
+DV0193,2026-10-12,online,2026-10-12 23:53:40,28.7,222.6,online,2026-10-12 23:53:40,28700.0,222.6,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0193,2026-10-13,online,2026-10-13 23:44:41,21.58,223.7,online,2026-10-13 23:44:41,21580.0,223.7,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0193,2026-10-14,online,2026-10-14 23:56:33,35.2,224.6,online,2026-10-14 23:56:33,35200.0,224.6,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0193,2026-10-15,online,2026-10-15 23:46:11,30.29,224.7,online,2026-10-15 23:46:11,30290.0,224.7,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0193,2026-10-16,online,2026-10-16 23:41:21,28.46,223.1,online,2026-10-16 23:41:21,28460.0,223.1,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0193,2026-10-17,online,2026-10-17 23:44:42,31.43,226.2,online,2026-10-17 23:44:42,31430.0,226.2,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0193,2026-10-18,online,2026-10-18 23:46:45,30.79,222.7,online,2026-10-18 23:46:45,30790.0,222.7,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0193,2026-10-19,online,2026-10-19 23:48:51,31.29,225.0,online,2026-10-19 23:48:51,31290.0,225.0,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0193,2026-10-20,online,2026-10-20 23:41:49,40.61,224.9,online,2026-10-20 23:41:49,40610.0,224.9,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0193,2026-10-21,online,2026-10-21 23:47:36,29.62,225.3,online,2026-10-21 23:47:36,29620.0,225.3,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0194,2026-10-12,online,2026-10-12 23:46:20,83.08,232.0,online,2026-10-12 23:46:20,83080.0,232.0,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0194,2026-10-13,online,2026-10-13 23:49:31,55.44,234.6,online,2026-10-13 23:49:31,55440.0,234.6,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0194,2026-10-14,online,2026-10-14 23:57:47,90.06,233.6,online,2026-10-14 23:57:47,90060.0,233.6,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0194,2026-10-15,online,2026-10-15 23:44:18,80.03,234.2,online,2026-10-15 23:44:18,80030.0,234.2,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0194,2026-10-16,online,2026-10-16 23:46:08,77.99,233.4,online,2026-10-16 23:46:08,77990.0,233.4,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0194,2026-10-17,online,2026-10-17 23:54:45,82.75,232.7,online,2026-10-17 23:54:45,82750.0,232.7,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0194,2026-10-18,online,2026-10-18 23:51:22,67.37,232.2,online,2026-10-18 23:51:22,67370.0,232.2,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0194,2026-10-19,online,2026-10-19 23:41:10,91.02,232.4,online,2026-10-19 23:41:10,91020.0,232.4,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0194,2026-10-20,online,2026-10-20 23:55:26,105.57,233.8,online,2026-10-20 23:55:26,105570.0,233.8,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0194,2026-10-21,online,2026-10-21 23:55:07,83.64,234.4,online,2026-10-21 23:55:07,83640.0,234.4,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0195,2026-10-12,online,2026-10-12 23:45:27,39.14,230.3,online,2026-10-12 23:45:27,39140.0,230.3,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0195,2026-10-13,online,2026-10-13 23:53:29,30.95,227.0,online,2026-10-13 23:53:29,30950.0,227.0,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0195,2026-10-14,online,2026-10-14 23:48:40,48.57,225.4,online,2026-10-14 23:48:40,48570.0,225.4,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0195,2026-10-15,online,2026-10-15 23:43:16,43.57,228.6,online,2026-10-15 23:43:16,43570.0,228.6,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0195,2026-10-16,online,2026-10-16 23:44:39,40.84,229.7,online,2026-10-16 23:44:39,40840.0,229.7,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0195,2026-10-17,online,2026-10-17 23:45:10,48.11,227.3,online,2026-10-17 23:45:10,48110.0,227.3,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0195,2026-10-18,online,2026-10-18 23:40:20,37.52,228.6,online,2026-10-18 23:40:20,37520.0,228.6,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0195,2026-10-19,online,2026-10-19 23:44:27,49.91,228.0,online,2026-10-19 23:44:27,49910.0,228.0,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0195,2026-10-20,online,2026-10-20 23:54:19,51.44,226.3,online,2026-10-20 23:54:19,51440.0,226.3,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0195,2026-10-21,online,2026-10-21 23:55:57,40.62,225.2,online,2026-10-21 23:55:57,40620.0,225.2,both,Jawa,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0195,2026-10-25,online,2026-10-25 23:57:36,35.54,227.0,offline,2026-10-25 23:57:36,35.5,227.0,both,Jawa,meter_B,v2.3,D_status_beda,False
+DV0196,2026-10-12,online,2026-10-12 23:55:40,28.2,225.1,online,2026-10-12 23:55:40,28200.0,225.1,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0196,2026-10-13,online,2026-10-13 23:40:25,19.19,228.7,online,2026-10-13 23:40:25,19190.0,228.7,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0196,2026-10-14,online,2026-10-14 23:44:10,30.47,224.3,online,2026-10-14 23:44:10,30470.0,224.3,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0196,2026-10-15,online,2026-10-15 23:51:32,27.99,226.3,online,2026-10-15 23:51:32,27990.0,226.3,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0196,2026-10-16,online,2026-10-16 23:55:59,26.08,226.2,online,2026-10-16 23:55:59,26080.0,226.2,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0196,2026-10-17,online,2026-10-17 23:43:22,31.38,226.4,online,2026-10-17 23:43:22,31380.0,226.4,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0196,2026-10-18,online,2026-10-18 23:54:26,23.97,227.1,online,2026-10-18 23:54:26,23970.0,227.1,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0196,2026-10-19,online,2026-10-19 23:42:28,32.73,227.9,online,2026-10-19 23:42:28,32730.0,227.9,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0196,2026-10-20,online,2026-10-20 23:47:04,34.16,225.4,online,2026-10-20 23:47:04,34160.0,225.4,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0196,2026-10-21,online,2026-10-21 23:42:26,25.98,226.7,online,2026-10-21 23:42:26,25980.0,226.7,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0198,2026-10-05,online,2026-10-05 23:46:34,27.31,227.0,offline,2026-10-05 23:46:34,27.3,227.0,both,Sumatera,inverter_C,v2.3,D_status_beda,False
+DV0198,2026-10-09,online,2026-10-09 23:42:30,35.12,226.2,offline,2026-10-08 09:15:00,8.0,,both,Sumatera,inverter_C,v2.3,D_status_beda,False
+DV0198,2026-10-10,online,2026-10-10 23:44:51,18.6,224.9,online,2026-10-09 23:42:30,35.1,226.2,both,Sumatera,inverter_C,v2.3,F_nilai_beda_lain,False
+DV0198,2026-10-15,online,2026-10-15 23:46:09,28.08,225.1,offline,2026-10-15 23:46:09,28.1,225.1,both,Sumatera,inverter_C,v2.3,D_status_beda,False
+DV0198,2026-10-21,online,2026-10-21 23:52:46,29.93,225.3,online,2026-10-20 23:46:03,38.8,225.9,both,Sumatera,inverter_C,v2.3,F_nilai_beda_lain,False
+DV0199,2026-10-09,online,2026-10-09 23:55:54,43.95,226.1,online,2026-10-08 23:47:49,34.4,226.5,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0199,2026-10-10,online,2026-10-10 23:52:56,24.42,225.3,online,2026-10-09 23:55:54,44.0,226.1,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0199,2026-10-21,online,2026-10-21 23:42:55,33.99,224.2,online,2026-10-20 23:43:02,44.4,225.3,both,Sumatera,inverter_A,v2.1,F_nilai_beda_lain,False
+DV0200,2026-10-05,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-06,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-07,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-08,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-09,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-10,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-11,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-12,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-13,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-14,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-15,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-16,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-17,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-18,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-19,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-20,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-21,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-22,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-23,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-24,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-25,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-26,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-27,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-28,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-29,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0200,2026-10-30,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Jawa,inverter_A,v2.1,B_ekstra_di_webds,False
+DV0203,2026-10-10,offline,2026-10-10 13:37:00,,,online,2026-10-09 23:49:17,,228.4,both,Sumatera,gateway_G,v2.3,D_status_beda,False
+DV0204,2026-10-04,online,2026-10-04 23:49:02,28.67,225.5,online,2026-10-04 23:49:02,,225.5,both,Kalimantan,inverter_C,v2.2,C_nilai_kosong,False
+DV0204,2026-10-23,online,2026-10-23 23:44:54,25.61,224.5,online,2026-10-23 23:44:54,,224.5,both,Kalimantan,inverter_C,v2.2,C_nilai_kosong,False
+DV0207,2026-10-03,online,2026-10-03 23:44:08,30.81,233.8,online,2026-10-03 23:44:08,,233.8,both,Sumatera,inverter_C,v2.2,C_nilai_kosong,False
+DV0207,2026-10-05,online,2026-10-05 23:44:02,56.96,233.3,offline,2026-10-05 23:44:02,57.0,233.3,both,Sumatera,inverter_C,v2.2,D_status_beda,False
+DV0207,2026-10-09,online,2026-10-09 23:54:17,58.21,231.9,online,2026-10-08 23:57:52,53.9,232.4,both,Sumatera,inverter_C,v2.2,F_nilai_beda_lain,False
+DV0207,2026-10-10,online,2026-10-10 23:46:26,35.28,235.6,online,2026-10-09 23:54:17,58.2,231.9,both,Sumatera,inverter_C,v2.2,F_nilai_beda_lain,False
+DV0207,2026-10-21,online,2026-10-21 23:57:50,51.77,234.0,online,2026-10-20 23:43:28,62.7,233.0,both,Sumatera,inverter_C,v2.2,F_nilai_beda_lain,False
+DV0208,2026-10-09,online,2026-10-09 23:55:49,38.58,225.6,online,2026-10-08 23:53:10,27.4,224.9,both,Sumatera,inverter_A,v2.3,F_nilai_beda_lain,False
+DV0208,2026-10-10,online,2026-10-10 23:54:33,21.43,226.7,offline,2026-10-09 23:55:49,38.6,225.6,both,Sumatera,inverter_A,v2.3,D_status_beda,False
+DV0208,2026-10-21,offline,2026-10-21 09:19:00,5.18,,offline,2026-10-20 17:42:00,15.2,,both,Sumatera,inverter_A,v2.3,F_nilai_beda_lain,False
+DV0209,2026-10-11,online,2026-10-11 23:52:56,60.56,226.3,online,2026-10-11 23:52:56,,226.3,both,Sulawesi,inverter_C,v2.3,C_nilai_kosong,False
+DV0209,2026-10-22,online,2026-10-22 23:54:40,53.51,221.6,online,2026-10-22 23:54:40,,221.6,both,Sulawesi,inverter_C,v2.3,C_nilai_kosong,False
+DV0209,2026-10-25,online,2026-10-25 23:41:06,38.18,225.7,offline,2026-10-25 23:41:06,38.2,225.7,both,Sulawesi,inverter_C,v2.3,D_status_beda,False
+DV0210,2026-10-01,online,2026-10-01 23:57:49,33.44,227.8,,,,,left_only,Sulawesi,meter_B,v2.3,A_hilang_di_webds,False
+DV0210,2026-10-02,online,2026-10-02 23:48:43,25.35,226.9,,,,,left_only,Sulawesi,meter_B,v2.3,A_hilang_di_webds,False
+DV0210,2026-10-03,online,2026-10-03 23:41:22,20.04,226.4,,,,,left_only,Sulawesi,meter_B,v2.3,A_hilang_di_webds,False
+DV0210,2026-10-04,online,2026-10-04 23:57:23,27.92,224.4,,,,,left_only,Sulawesi,meter_B,v2.3,A_hilang_di_webds,False
+DV0210,2026-10-05,online,2026-10-05 23:56:12,36.32,228.8,,,,,left_only,Sulawesi,meter_B,v2.3,A_hilang_di_webds,False
+DV0210,2026-10-06,online,2026-10-06 23:41:26,25.14,227.4,,,,,left_only,Sulawesi,meter_B,v2.3,A_hilang_di_webds,False
+DV0210,2026-10-07,online,2026-10-07 23:53:52,20.36,226.9,,,,,left_only,Sulawesi,meter_B,v2.3,A_hilang_di_webds,False
+DV0210,2026-10-08,online,2026-10-08 23:57:03,31.17,227.4,,,,,left_only,Sulawesi,meter_B,v2.3,A_hilang_di_webds,False
+DV0210,2026-10-09,offline,2026-10-09 06:28:00,5.89,,,,,,left_only,Sulawesi,meter_B,v2.3,A_hilang_di_webds,False
+DV0210,2026-10-10,online,2026-10-10 23:53:57,24.38,226.1,,,,,left_only,Sulawesi,meter_B,v2.3,A_hilang_di_webds,False
+DV0210,2026-10-11,online,2026-10-11 23:51:55,35.9,226.6,,,,,left_only,Sulawesi,meter_B,v2.3,A_hilang_di_webds,False
+DV0210,2026-10-12,online,2026-10-12 23:47:25,29.4,226.9,,,,,left_only,Sulawesi,meter_B,v2.3,A_hilang_di_webds,False
+DV0210,2026-10-13,online,2026-10-13 23:44:47,21.36,227.4,,,,,left_only,Sulawesi,meter_B,v2.3,A_hilang_di_webds,False
+DV0210,2026-10-14,online,2026-10-14 23:43:31,35.1,224.9,,,,,left_only,Sulawesi,meter_B,v2.3,A_hilang_di_webds,False
+DV0210,2026-10-15,online,2026-10-15 23:50:53,33.11,226.3,,,,,left_only,Sulawesi,meter_B,v2.3,A_hilang_di_webds,False
+DV0210,2026-10-16,online,2026-10-16 23:54:28,33.07,226.8,,,,,left_only,Sulawesi,meter_B,v2.3,A_hilang_di_webds,False
+DV0210,2026-10-17,online,2026-10-17 23:41:13,35.26,225.7,,,,,left_only,Sulawesi,meter_B,v2.3,A_hilang_di_webds,False
+DV0210,2026-10-18,online,2026-10-18 23:42:41,32.06,227.0,,,,,left_only,Sulawesi,meter_B,v2.3,A_hilang_di_webds,False
+DV0210,2026-10-19,online,2026-10-19 23:50:44,36.39,227.7,,,,,left_only,Sulawesi,meter_B,v2.3,A_hilang_di_webds,False
+DV0210,2026-10-20,online,2026-10-20 23:45:21,44.4,228.5,,,,,left_only,Sulawesi,meter_B,v2.3,A_hilang_di_webds,False
+DV0210,2026-10-21,online,2026-10-21 23:50:57,32.83,225.6,,,,,left_only,Sulawesi,meter_B,v2.3,A_hilang_di_webds,False
+DV0210,2026-10-25,online,2026-10-25 23:43:59,23.11,227.3,offline,2026-10-25 23:43:59,23.1,227.3,both,Sulawesi,meter_B,v2.3,D_status_beda,False
+DV0211,2026-10-07,online,2026-10-07 23:47:50,26.93,226.6,online,2026-10-07 23:47:50,,226.6,both,Sumatera,inverter_C,v2.1,C_nilai_kosong,False
+DV0211,2026-10-09,online,2026-10-09 23:55:17,53.22,226.3,online,2026-10-08 23:44:19,44.3,228.7,both,Sumatera,inverter_C,v2.1,F_nilai_beda_lain,False
+DV0211,2026-10-10,online,2026-10-10 23:48:45,30.34,228.4,online,2026-10-09 23:55:17,53.2,226.3,both,Sumatera,inverter_C,v2.1,F_nilai_beda_lain,True
+DV0211,2026-10-11,online,2026-10-11 23:57:56,42.72,227.6,online,2026-10-11 23:57:56,,227.6,both,Sumatera,inverter_C,v2.1,C_nilai_kosong,False
+DV0211,2026-10-21,online,2026-10-21 23:47:37,41.54,228.2,online,2026-10-20 23:48:28,59.6,227.3,both,Sumatera,inverter_C,v2.1,F_nilai_beda_lain,False
+DV0212,2026-10-29,online,2026-10-29 23:50:20,120.13,222.8,offline,2026-10-29 23:50:20,120.1,222.8,both,Jawa,meter_A,v2.3,D_status_beda,False
+DV0213,2026-10-07,online,2026-10-07 23:54:51,,223.8,offline,2026-10-07 23:54:51,,223.8,both,Sumatera,gateway_G,v2.3,D_status_beda,False
+DV0213,2026-10-10,online,2026-10-10 23:48:39,,225.8,offline,2026-10-09 23:57:15,,226.7,both,Sumatera,gateway_G,v2.3,D_status_beda,False
+DV0213,2026-10-30,online,2026-10-30 23:40:01,,224.0,offline,2026-10-30 23:40:01,,224.0,both,Sumatera,gateway_G,v2.3,D_status_beda,False
+DV0215,2026-10-09,online,2026-10-09 23:48:05,141.33,226.3,online,2026-10-08 23:50:25,107.0,226.4,both,Sumatera,meter_A,v2.1,F_nilai_beda_lain,False
+DV0215,2026-10-10,online,2026-10-10 23:49:01,79.34,225.8,online,2026-10-09 23:48:05,141.3,226.3,both,Sumatera,meter_A,v2.1,F_nilai_beda_lain,False
+DV0215,2026-10-21,online,2026-10-21 23:45:20,108.82,226.3,online,2026-10-20 23:56:35,150.7,225.8,both,Sumatera,meter_A,v2.1,F_nilai_beda_lain,False
+DV0217,2026-10-03,online,2026-10-03 23:53:25,59.77,231.0,offline,2026-10-03 23:53:25,59.8,231.0,both,Sumatera,meter_A,v2.3,D_status_beda,False
+DV0217,2026-10-09,online,2026-10-09 23:51:06,143.98,230.8,online,2026-10-08 23:42:42,99.7,231.6,both,Sumatera,meter_A,v2.3,F_nilai_beda_lain,False
+DV0217,2026-10-10,online,2026-10-10 23:43:55,81.11,227.7,online,2026-10-09 23:51:06,144.0,230.8,both,Sumatera,meter_A,v2.3,F_nilai_beda_lain,False
+DV0217,2026-10-21,online,2026-10-21 23:40:42,101.09,229.9,online,2026-10-20 23:40:51,156.7,230.5,both,Sumatera,meter_A,v2.3,F_nilai_beda_lain,False
+DV0217,2026-10-22,online,2026-10-22 23:55:00,111.19,228.8,offline,2026-10-22 23:55:00,111.2,228.8,both,Sumatera,meter_A,v2.3,D_status_beda,False
+DV0220,2026-10-09,online,2026-10-09 23:49:24,55.65,224.8,online,2026-10-08 23:42:28,45.2,227.0,both,Sumatera,inverter_A,v2.3,F_nilai_beda_lain,False
+DV0220,2026-10-10,online,2026-10-10 23:57:42,28.06,225.5,online,2026-10-09 23:49:24,55.6,224.8,both,Sumatera,inverter_A,v2.3,F_nilai_beda_lain,False
+DV0220,2026-10-21,online,2026-10-21 23:53:52,45.05,224.7,online,2026-10-20 23:48:53,55.6,221.9,both,Sumatera,inverter_A,v2.3,F_nilai_beda_lain,False
+DV0221,2026-10-12,online,2026-10-12 23:45:42,148.26,226.9,online,2026-10-12 23:45:42,148260.0,226.9,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0221,2026-10-13,online,2026-10-13 23:52:38,110.58,227.1,online,2026-10-13 23:52:38,110580.0,227.1,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0221,2026-10-14,online,2026-10-14 23:57:49,147.12,225.8,online,2026-10-14 23:57:49,147120.0,225.8,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0221,2026-10-15,online,2026-10-15 23:52:28,132.34,229.3,online,2026-10-15 23:52:28,132340.0,229.3,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0221,2026-10-16,online,2026-10-16 23:50:26,138.31,227.7,online,2026-10-16 23:50:26,138310.0,227.7,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0221,2026-10-17,online,2026-10-17 23:50:15,163.24,227.1,online,2026-10-17 23:50:15,163240.0,227.1,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0221,2026-10-18,online,2026-10-18 23:48:42,131.56,227.8,online,2026-10-18 23:48:42,131560.0,227.8,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0221,2026-10-19,online,2026-10-19 23:56:57,160.48,225.7,online,2026-10-19 23:56:57,160480.0,225.7,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0221,2026-10-20,online,2026-10-20 23:42:20,197.63,228.0,online,2026-10-20 23:42:20,197630.0,228.0,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0221,2026-10-21,online,2026-10-21 23:51:10,139.34,230.5,online,2026-10-21 23:51:10,139340.0,230.5,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0224,2026-10-12,online,2026-10-12 23:45:53,115.17,235.0,offline,2026-10-12 23:45:53,115.2,235.0,both,Jawa,meter_A,v2.3,D_status_beda,False
+DV0226,2026-10-12,offline,2026-10-12 15:57:00,20.41,,offline,2026-10-12 15:57:00,20410.0,,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0226,2026-10-13,online,2026-10-13 23:52:17,58.6,230.8,online,2026-10-13 23:52:17,58600.0,230.8,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0226,2026-10-14,online,2026-10-14 23:52:28,95.55,230.6,online,2026-10-14 23:52:28,95550.0,230.6,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0226,2026-10-15,online,2026-10-15 23:55:10,78.28,230.3,online,2026-10-15 23:55:10,78280.0,230.3,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0226,2026-10-16,online,2026-10-16 23:54:37,81.48,231.7,online,2026-10-16 23:54:37,81480.0,231.7,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0226,2026-10-17,online,2026-10-17 23:43:05,100.18,230.9,online,2026-10-17 23:43:05,100180.0,230.9,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0226,2026-10-18,online,2026-10-18 23:40:33,80.46,230.1,online,2026-10-18 23:40:33,80460.0,230.1,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0226,2026-10-19,online,2026-10-19 23:46:58,95.92,228.7,online,2026-10-19 23:46:58,95920.0,228.7,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0226,2026-10-20,online,2026-10-20 23:50:49,115.57,229.7,online,2026-10-20 23:50:49,115570.0,229.7,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0226,2026-10-21,online,2026-10-21 23:46:02,88.2,231.4,online,2026-10-21 23:46:02,88200.0,231.4,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0229,2026-10-07,online,2026-10-07 23:53:16,28.72,233.3,offline,2026-10-07 23:53:16,28.7,233.3,both,Jawa,inverter_C,v2.3,D_status_beda,False
+DV0229,2026-10-09,online,2026-10-09 23:53:03,55.77,235.5,online,2026-10-09 23:53:03,,235.5,both,Jawa,inverter_C,v2.3,C_nilai_kosong,False
+DV0229,2026-10-12,online,2026-10-12 23:46:00,43.6,232.7,offline,2026-10-12 23:46:00,43.6,232.7,both,Jawa,inverter_C,v2.3,D_status_beda,False
+DV0231,2026-10-09,online,2026-10-09 23:56:03,143.41,229.4,online,2026-10-08 23:45:43,115.8,228.8,both,Sumatera,meter_B,v2.3,F_nilai_beda_lain,False
+DV0231,2026-10-10,online,2026-10-10 23:42:37,89.38,228.0,online,2026-10-09 23:56:03,143.4,229.4,both,Sumatera,meter_B,v2.3,F_nilai_beda_lain,False
+DV0231,2026-10-12,offline,2026-10-12 20:00:00,15.77,,offline,2026-10-12 20:00:00,15770.0,,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0231,2026-10-13,online,2026-10-13 23:50:22,76.02,226.3,online,2026-10-13 23:50:22,76020.0,226.3,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0231,2026-10-14,online,2026-10-14 23:40:13,134.12,228.2,online,2026-10-14 23:40:13,134120.0,228.2,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0231,2026-10-15,online,2026-10-15 23:52:36,111.05,227.8,online,2026-10-15 23:52:36,111050.0,227.8,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0231,2026-10-16,online,2026-10-16 23:44:14,114.41,228.9,online,2026-10-16 23:44:14,114410.0,228.9,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0231,2026-10-17,online,2026-10-17 23:48:44,125.12,226.5,online,2026-10-17 23:48:44,125120.0,226.5,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0231,2026-10-18,online,2026-10-18 23:45:47,119.34,229.0,online,2026-10-18 23:45:47,119340.0,229.0,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0231,2026-10-19,online,2026-10-19 23:56:18,142.91,228.4,online,2026-10-19 23:56:18,142910.0,228.4,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0231,2026-10-20,online,2026-10-20 23:42:57,161.5,228.1,online,2026-10-20 23:42:57,161500.0,228.1,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0231,2026-10-21,online,2026-10-21 23:44:21,120.08,229.7,online,2026-10-20 23:42:57,161500.0,228.1,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0235,2026-10-12,online,2026-10-12 23:44:12,76.26,236.7,online,2026-10-12 23:44:12,76260.0,236.7,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0235,2026-10-13,online,2026-10-13 23:44:22,53.96,235.8,online,2026-10-13 23:44:22,53960.0,235.8,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0235,2026-10-14,online,2026-10-14 23:49:15,87.55,239.0,online,2026-10-14 23:49:15,87550.0,239.0,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0235,2026-10-15,online,2026-10-15 23:52:00,70.45,235.0,online,2026-10-15 23:52:00,70450.0,235.0,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0235,2026-10-16,online,2026-10-16 23:50:28,79.19,236.2,online,2026-10-16 23:50:28,79190.0,236.2,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0235,2026-10-17,online,2026-10-17 23:46:51,96.23,235.9,online,2026-10-17 23:46:51,96230.0,235.9,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0235,2026-10-18,online,2026-10-18 23:52:22,69.42,235.3,online,2026-10-18 23:52:22,69420.0,235.3,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0235,2026-10-19,online,2026-10-19 23:57:58,96.55,237.2,online,2026-10-19 23:57:58,96550.0,237.2,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0235,2026-10-20,online,2026-10-20 23:41:44,101.95,234.5,online,2026-10-20 23:41:44,101950.0,234.5,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0235,2026-10-21,online,2026-10-21 23:45:55,78.71,236.6,online,2026-10-21 23:45:55,78710.0,236.6,both,Jawa,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0237,2026-10-09,online,2026-10-09 23:51:06,56.8,228.6,online,2026-10-08 23:56:57,51.4,228.2,both,Sumatera,meter_A,v2.3,F_nilai_beda_lain,False
+DV0237,2026-10-10,online,2026-10-10 23:57:47,33.79,228.9,online,2026-10-09 23:51:06,56.8,228.6,both,Sumatera,meter_A,v2.3,F_nilai_beda_lain,False
+DV0237,2026-10-21,online,2026-10-21 23:49:18,44.52,229.0,online,2026-10-20 23:53:31,63.8,229.9,both,Sumatera,meter_A,v2.3,F_nilai_beda_lain,False
+DV0239,2026-10-12,online,2026-10-12 23:48:39,29.27,223.8,online,2026-10-12 23:48:39,29270.0,223.8,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0239,2026-10-13,online,2026-10-13 23:56:26,17.63,223.6,online,2026-10-13 23:56:26,17630.0,223.6,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0239,2026-10-14,online,2026-10-14 23:42:49,29.84,222.5,online,2026-10-14 23:42:49,29840.0,222.5,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0239,2026-10-15,online,2026-10-15 23:49:07,28.28,222.2,online,2026-10-15 23:49:07,28280.0,222.2,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0239,2026-10-16,online,2026-10-16 23:44:38,27.47,223.4,online,2026-10-16 23:44:38,27470.0,223.4,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0239,2026-10-17,offline,2026-10-17 06:57:00,7.79,,offline,2026-10-17 06:57:00,7790.0,,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0239,2026-10-18,offline,2026-10-18 18:54:00,9.16,,offline,2026-10-18 18:54:00,9160.0,,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0239,2026-10-19,online,2026-10-19 23:40:11,34.64,223.1,online,2026-10-19 23:40:11,34640.0,223.1,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0239,2026-10-20,alarm,2026-10-20 23:56:34,37.94,224.4,alarm,2026-10-20 23:56:34,37940.0,224.4,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0239,2026-10-21,online,2026-10-21 23:43:18,28.26,224.0,online,2026-10-21 23:43:18,28260.0,224.0,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0242,2026-10-12,online,2026-10-12 23:54:39,143.82,233.1,online,2026-10-12 23:54:39,143820.0,233.1,both,Bali-Nusra,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0242,2026-10-13,online,2026-10-13 23:56:56,87.18,232.4,online,2026-10-13 23:56:56,87180.0,232.4,both,Bali-Nusra,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0242,2026-10-14,online,2026-10-14 23:40:33,140.11,233.7,online,2026-10-14 23:40:33,140110.0,233.7,both,Bali-Nusra,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0242,2026-10-15,offline,2026-10-15 20:44:00,45.38,,offline,2026-10-15 20:44:00,45380.0,,both,Bali-Nusra,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0242,2026-10-16,online,2026-10-16 23:44:14,127.09,232.0,online,2026-10-16 23:44:14,127090.0,232.0,both,Bali-Nusra,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0242,2026-10-17,online,2026-10-17 23:54:17,147.04,233.3,online,2026-10-17 23:54:17,147040.0,233.3,both,Bali-Nusra,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0242,2026-10-18,online,2026-10-18 23:57:08,121.42,234.6,online,2026-10-18 23:57:08,121420.0,234.6,both,Bali-Nusra,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0242,2026-10-19,online,2026-10-19 23:48:07,147.75,237.4,online,2026-10-19 23:48:07,147750.0,237.4,both,Bali-Nusra,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0242,2026-10-20,online,2026-10-20 23:49:23,179.0,234.4,online,2026-10-20 23:49:23,179000.0,234.4,both,Bali-Nusra,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0242,2026-10-21,online,2026-10-21 23:43:18,145.07,230.7,online,2026-10-21 23:43:18,145070.0,230.7,both,Bali-Nusra,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0243,2026-10-12,online,2026-10-12 23:43:41,72.51,228.8,online,2026-10-12 23:43:41,72510.0,228.8,both,Bali-Nusra,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0243,2026-10-13,online,2026-10-13 23:48:24,50.08,228.2,online,2026-10-13 23:48:24,50080.0,228.2,both,Bali-Nusra,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0243,2026-10-14,online,2026-10-14 23:44:58,95.5,227.5,online,2026-10-14 23:44:58,95500.0,227.5,both,Bali-Nusra,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0243,2026-10-15,online,2026-10-15 23:57:30,79.15,229.8,online,2026-10-15 23:57:30,79150.0,229.8,both,Bali-Nusra,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0243,2026-10-16,online,2026-10-16 23:45:15,68.38,228.5,online,2026-10-16 23:45:15,68380.0,228.5,both,Bali-Nusra,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0243,2026-10-17,online,2026-10-17 23:54:40,95.8,228.9,online,2026-10-17 23:54:40,95800.0,228.9,both,Bali-Nusra,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0243,2026-10-18,online,2026-10-18 23:46:58,83.09,226.6,online,2026-10-18 23:46:58,83090.0,226.6,both,Bali-Nusra,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0243,2026-10-19,online,2026-10-19 23:44:08,84.77,229.1,online,2026-10-19 23:44:08,84770.0,229.1,both,Bali-Nusra,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0243,2026-10-20,online,2026-10-20 23:51:33,108.49,228.3,online,2026-10-20 23:51:33,108490.0,228.3,both,Bali-Nusra,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0243,2026-10-21,offline,2026-10-21 17:00:00,26.07,,offline,2026-10-21 17:00:00,26070.0,,both,Bali-Nusra,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0245,2026-10-05,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-06,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-07,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-08,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-09,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-10,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-11,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-12,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-13,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-14,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-15,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-16,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-17,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-18,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-19,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-20,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-21,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-22,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-23,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-24,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-25,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-26,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-27,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-28,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-29,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0245,2026-10-30,,,,,offline,2026-10-04 23:50:00,0.0,,right_only,Sumatera,meter_B,v2.2,B_ekstra_di_webds,False
+DV0246,2026-10-09,online,2026-10-09 23:53:28,111.18,229.2,online,2026-10-08 23:50:20,96.8,230.9,both,Sumatera,meter_A,v2.3,F_nilai_beda_lain,False
+DV0246,2026-10-10,online,2026-10-10 23:50:53,70.34,229.8,online,2026-10-09 23:53:28,111.2,229.2,both,Sumatera,meter_A,v2.3,F_nilai_beda_lain,False
+DV0246,2026-10-21,online,2026-10-21 23:57:56,104.2,227.4,online,2026-10-20 23:42:33,140.6,228.6,both,Sumatera,meter_A,v2.3,F_nilai_beda_lain,False
+DV0246,2026-10-30,online,2026-10-30 23:48:17,103.44,228.9,offline,2026-10-30 23:48:17,103.4,228.9,both,Sumatera,meter_A,v2.3,D_status_beda,False
+DV0248,2026-10-09,online,2026-10-09 23:44:21,18.27,228.1,online,2026-10-08 23:40:49,14.6,227.1,both,Sumatera,inverter_C,v2.2,F_nilai_beda_lain,False
+DV0248,2026-10-10,online,2026-10-10 23:51:39,10.21,227.6,online,2026-10-09 23:44:21,18.3,228.1,both,Sumatera,inverter_C,v2.2,F_nilai_beda_lain,False
+DV0248,2026-10-21,online,2026-10-21 23:45:57,14.64,228.7,online,2026-10-20 23:43:01,22.2,229.1,both,Sumatera,inverter_C,v2.2,F_nilai_beda_lain,False
+DV0249,2026-10-09,online,2026-10-09 23:43:14,37.97,231.4,online,2026-10-08 23:50:39,35.0,232.7,both,Sumatera,meter_A,v2.3,F_nilai_beda_lain,False
+DV0249,2026-10-10,online,2026-10-10 23:46:10,21.92,231.9,online,2026-10-09 23:43:14,38.0,231.4,both,Sumatera,meter_A,v2.3,F_nilai_beda_lain,False
+DV0249,2026-10-11,online,2026-10-11 23:51:00,38.26,232.4,offline,2026-10-11 23:51:00,38.3,232.4,both,Sumatera,meter_A,v2.3,D_status_beda,False
+DV0249,2026-10-21,online,2026-10-21 23:48:35,34.37,231.4,online,2026-10-20 23:45:07,47.7,230.2,both,Sumatera,meter_A,v2.3,F_nilai_beda_lain,False
+DV0249,2026-10-22,online,2026-10-22 23:44:59,34.06,230.2,offline,2026-10-22 23:44:59,34.1,230.2,both,Sumatera,meter_A,v2.3,D_status_beda,False
+DV0252,2026-10-09,online,2026-10-09 23:57:20,72.0,224.2,offline,2026-10-08 11:10:00,17.8,,both,Sumatera,inverter_A,v2.3,D_status_beda,False
+DV0252,2026-10-10,online,2026-10-10 23:43:08,47.24,222.9,online,2026-10-09 23:57:20,72.0,224.2,both,Sumatera,inverter_A,v2.3,F_nilai_beda_lain,False
+DV0252,2026-10-21,online,2026-10-21 23:56:25,61.46,224.5,online,2026-10-20 23:42:52,84.5,227.1,both,Sumatera,inverter_A,v2.3,F_nilai_beda_lain,False
+DV0253,2026-10-09,online,2026-10-09 23:40:47,47.84,231.6,online,2026-10-08 23:51:33,45.7,230.5,both,Sumatera,inverter_C,v2.2,F_nilai_beda_lain,False
+DV0253,2026-10-10,online,2026-10-10 23:49:14,29.19,232.2,online,2026-10-09 23:40:47,47.8,231.6,both,Sumatera,inverter_C,v2.2,F_nilai_beda_lain,False
+DV0253,2026-10-21,online,2026-10-21 23:53:39,39.27,231.9,online,2026-10-20 23:47:28,50.9,231.5,both,Sumatera,inverter_C,v2.2,F_nilai_beda_lain,False
+DV0254,2026-10-12,online,2026-10-12 23:45:28,117.67,225.8,online,2026-10-12 23:45:28,117670.0,225.8,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0254,2026-10-13,online,2026-10-13 23:43:55,84.76,227.2,online,2026-10-13 23:43:55,84760.0,227.2,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0254,2026-10-14,alarm,2026-10-14 23:46:19,141.55,228.2,alarm,2026-10-14 23:46:19,141550.0,228.2,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0254,2026-10-15,online,2026-10-15 23:41:03,124.05,225.5,online,2026-10-15 23:41:03,124050.0,225.5,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0254,2026-10-16,online,2026-10-16 23:54:39,107.91,229.6,online,2026-10-16 23:54:39,107910.0,229.6,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0254,2026-10-17,online,2026-10-17 23:42:25,132.47,227.2,online,2026-10-17 23:42:25,132470.0,227.2,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0254,2026-10-18,online,2026-10-18 23:57:07,106.03,225.8,online,2026-10-18 23:57:07,106030.0,225.8,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0254,2026-10-19,online,2026-10-19 23:51:20,131.11,228.7,online,2026-10-19 23:51:20,131110.0,228.7,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0254,2026-10-20,online,2026-10-20 23:43:02,173.31,226.8,online,2026-10-20 23:43:02,173310.0,226.8,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0254,2026-10-21,online,2026-10-21 23:41:14,121.23,225.5,online,2026-10-21 23:41:14,121230.0,225.5,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0257,2026-10-05,online,2026-10-05 23:46:26,120.97,229.1,offline,2026-10-05 23:46:26,121.0,229.1,both,Jawa,meter_A,v2.3,D_status_beda,False
+DV0264,2026-10-12,online,2026-10-12 23:40:15,34.93,224.2,online,2026-10-12 23:40:15,34930.0,224.2,both,Kalimantan,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0264,2026-10-13,online,2026-10-13 23:53:14,25.17,223.7,online,2026-10-13 23:53:14,25170.0,223.7,both,Kalimantan,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0264,2026-10-14,online,2026-10-14 23:40:20,39.31,224.4,online,2026-10-14 23:40:20,39310.0,224.4,both,Kalimantan,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0264,2026-10-15,online,2026-10-15 23:52:02,40.38,221.9,online,2026-10-15 23:52:02,40380.0,221.9,both,Kalimantan,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0264,2026-10-16,online,2026-10-16 23:44:06,35.61,220.8,online,2026-10-16 23:44:06,35610.0,220.8,both,Kalimantan,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0264,2026-10-17,online,2026-10-17 23:40:41,46.54,223.7,online,2026-10-17 23:40:41,46540.0,223.7,both,Kalimantan,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0264,2026-10-18,online,2026-10-18 23:50:03,38.7,223.0,online,2026-10-18 23:50:03,38700.0,223.0,both,Kalimantan,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0264,2026-10-19,online,2026-10-19 23:49:05,39.48,222.8,online,2026-10-19 23:49:05,39480.0,222.8,both,Kalimantan,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0264,2026-10-20,online,2026-10-20 23:51:22,49.27,224.6,online,2026-10-20 23:51:22,49270.0,224.6,both,Kalimantan,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0264,2026-10-21,online,2026-10-21 23:54:01,38.02,222.2,online,2026-10-21 23:54:01,38020.0,222.2,both,Kalimantan,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0265,2026-10-10,online,2026-10-10 23:50:37,39.82,230.3,offline,2026-10-10 23:50:37,39.8,230.3,both,Jawa,inverter_C,v2.2,D_status_beda,False
+DV0266,2026-10-09,online,2026-10-09 23:48:18,168.57,233.2,online,2026-10-08 23:47:31,144.2,233.0,both,Sumatera,meter_A,v2.1,F_nilai_beda_lain,False
+DV0266,2026-10-10,online,2026-10-10 23:50:37,103.55,233.0,online,2026-10-09 23:48:18,168.6,233.2,both,Sumatera,meter_A,v2.1,F_nilai_beda_lain,False
+DV0266,2026-10-21,online,2026-10-21 23:57:17,160.77,232.6,online,2026-10-20 23:40:01,211.6,230.4,both,Sumatera,meter_A,v2.1,F_nilai_beda_lain,False
+DV0267,2026-10-18,online,2026-10-18 23:50:48,,230.0,offline,2026-10-18 23:50:48,,230.0,both,Jawa,gateway_G,v2.3,D_status_beda,False
+DV0268,2026-10-09,online,2026-10-09 23:49:19,68.35,235.6,online,2026-10-08 23:52:14,60.9,232.4,both,Sumatera,meter_B,v2.1,F_nilai_beda_lain,False
+DV0268,2026-10-10,online,2026-10-10 23:42:58,44.67,235.0,online,2026-10-09 23:49:19,68.4,235.6,both,Sumatera,meter_B,v2.1,F_nilai_beda_lain,False
+DV0268,2026-10-12,online,2026-10-12 23:57:08,61.87,237.0,online,2026-10-12 23:57:08,61870.0,237.0,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0268,2026-10-13,alarm,2026-10-13 23:48:20,40.94,236.2,alarm,2026-10-13 23:48:20,40940.0,236.2,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0268,2026-10-14,online,2026-10-14 23:44:52,70.02,235.5,online,2026-10-14 23:44:52,70020.0,235.5,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0268,2026-10-15,online,2026-10-15 23:47:30,60.93,234.7,online,2026-10-15 23:47:30,60930.0,234.7,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0268,2026-10-16,online,2026-10-16 23:44:02,57.6,236.7,online,2026-10-16 23:44:02,57600.0,236.7,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0268,2026-10-17,offline,2026-10-17 20:28:00,18.77,,offline,2026-10-17 20:28:00,18770.0,,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0268,2026-10-18,online,2026-10-18 23:44:03,58.23,234.8,online,2026-10-18 23:44:03,58230.0,234.8,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0268,2026-10-19,online,2026-10-19 23:47:16,69.05,236.9,online,2026-10-19 23:47:16,69050.0,236.9,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0268,2026-10-20,online,2026-10-20 23:46:08,73.68,233.3,online,2026-10-20 23:46:08,73680.0,233.3,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0268,2026-10-21,online,2026-10-21 23:49:18,59.64,232.5,online,2026-10-20 23:46:08,73680.0,233.3,both,Sumatera,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0269,2026-10-12,online,2026-10-12 23:53:00,99.81,222.6,online,2026-10-12 23:53:00,99810.0,222.6,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0269,2026-10-13,offline,2026-10-13 06:47:00,20.34,,offline,2026-10-13 06:47:00,20340.0,,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0269,2026-10-14,online,2026-10-14 23:49:49,115.12,223.7,online,2026-10-14 23:49:49,115120.0,223.7,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0269,2026-10-15,online,2026-10-15 23:46:00,107.41,223.4,online,2026-10-15 23:46:00,107410.0,223.4,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0269,2026-10-16,online,2026-10-16 23:44:36,98.9,222.0,online,2026-10-16 23:44:36,98900.0,222.0,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0269,2026-10-17,online,2026-10-17 23:40:11,119.98,223.1,online,2026-10-17 23:40:11,119980.0,223.1,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0269,2026-10-18,online,2026-10-18 23:50:09,104.73,223.2,online,2026-10-18 23:50:09,104730.0,223.2,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0269,2026-10-19,online,2026-10-19 23:40:49,108.46,222.7,online,2026-10-19 23:40:49,108460.0,222.7,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0269,2026-10-20,online,2026-10-20 23:41:13,136.37,224.0,online,2026-10-20 23:41:13,136370.0,224.0,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0269,2026-10-21,online,2026-10-21 23:48:34,100.24,222.3,online,2026-10-21 23:48:34,100240.0,222.3,both,Sulawesi,meter_B,v2.1,E_nilai_beda_x1000,False
+DV0271,2026-10-09,online,2026-10-09 23:51:57,96.8,235.4,online,2026-10-08 23:45:42,71.9,235.8,both,Sumatera,meter_B,v2.3,F_nilai_beda_lain,False
+DV0271,2026-10-10,online,2026-10-10 23:46:26,49.08,236.4,online,2026-10-09 23:51:57,96.8,235.4,both,Sumatera,meter_B,v2.3,F_nilai_beda_lain,False
+DV0271,2026-10-12,online,2026-10-12 23:51:31,79.52,233.7,online,2026-10-12 23:51:31,79520.0,233.7,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0271,2026-10-13,online,2026-10-13 23:43:38,47.67,236.1,online,2026-10-13 23:43:38,47670.0,236.1,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0271,2026-10-14,online,2026-10-14 23:51:52,78.94,236.5,online,2026-10-14 23:51:52,78940.0,236.5,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0271,2026-10-15,online,2026-10-15 23:42:42,73.74,233.9,online,2026-10-15 23:42:42,73740.0,233.9,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0271,2026-10-16,online,2026-10-16 23:42:13,65.09,235.9,online,2026-10-16 23:42:13,65090.0,235.9,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0271,2026-10-17,online,2026-10-17 23:43:57,86.17,235.1,online,2026-10-17 23:43:57,86170.0,235.1,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0271,2026-10-18,online,2026-10-18 23:49:06,70.08,235.8,online,2026-10-18 23:49:06,70080.0,235.8,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0271,2026-10-19,online,2026-10-19 23:45:22,86.95,233.1,online,2026-10-19 23:45:22,86950.0,233.1,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0271,2026-10-20,online,2026-10-20 23:53:50,105.38,235.0,online,2026-10-20 23:53:50,105380.0,235.0,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0271,2026-10-21,offline,2026-10-21 14:21:00,13.91,,online,2026-10-20 23:53:50,105380.0,235.0,both,Sumatera,meter_B,v2.3,D_status_beda,False
+DV0277,2026-10-09,online,2026-10-09 23:48:13,123.41,227.9,online,2026-10-08 23:53:56,91.5,228.9,both,Sumatera,meter_A,v2.1,F_nilai_beda_lain,False
+DV0277,2026-10-10,online,2026-10-10 23:43:50,70.86,227.0,online,2026-10-09 23:48:13,123.4,227.9,both,Sumatera,meter_A,v2.1,F_nilai_beda_lain,False
+DV0277,2026-10-21,online,2026-10-21 23:52:39,100.44,227.4,online,2026-10-20 23:44:14,134.4,229.0,both,Sumatera,meter_A,v2.1,F_nilai_beda_lain,False
+DV0278,2026-10-09,online,2026-10-09 23:45:37,44.74,220.8,online,2026-10-08 23:47:30,33.6,223.2,both,Sumatera,inverter_A,v2.3,F_nilai_beda_lain,False
+DV0278,2026-10-10,online,2026-10-10 23:56:55,25.07,226.1,online,2026-10-09 23:45:37,44.7,220.8,both,Sumatera,inverter_A,v2.3,F_nilai_beda_lain,False
+DV0278,2026-10-21,online,2026-10-21 23:54:42,34.2,223.8,online,2026-10-20 23:47:11,52.5,224.2,both,Sumatera,inverter_A,v2.3,F_nilai_beda_lain,False
+DV0280,2026-10-12,online,2026-10-12 23:47:43,79.99,224.9,online,2026-10-12 23:47:43,79990.0,224.9,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0280,2026-10-13,online,2026-10-13 23:40:40,56.14,226.2,online,2026-10-13 23:40:40,56140.0,226.2,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0280,2026-10-14,online,2026-10-14 23:54:36,87.19,226.3,online,2026-10-14 23:54:36,87190.0,226.3,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0280,2026-10-15,online,2026-10-15 23:49:55,83.97,224.4,online,2026-10-15 23:49:55,83970.0,224.4,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0280,2026-10-16,online,2026-10-16 23:57:39,84.51,223.5,online,2026-10-16 23:57:39,84510.0,223.5,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0280,2026-10-17,online,2026-10-17 23:47:09,90.35,227.4,online,2026-10-17 23:47:09,90350.0,227.4,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0280,2026-10-18,online,2026-10-18 23:48:47,77.94,225.1,online,2026-10-18 23:48:47,77940.0,225.1,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0280,2026-10-19,online,2026-10-19 23:57:11,89.87,225.5,online,2026-10-19 23:57:11,89870.0,225.5,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0280,2026-10-20,online,2026-10-20 23:51:20,120.41,225.3,online,2026-10-20 23:51:20,120410.0,225.3,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0280,2026-10-21,online,2026-10-21 23:54:29,84.14,225.4,online,2026-10-21 23:54:29,84140.0,225.4,both,Jawa,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0281,2026-10-12,online,2026-10-12 23:52:35,141.65,233.5,online,2026-10-12 23:52:35,141650.0,233.5,both,Kalimantan,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0281,2026-10-13,online,2026-10-13 23:41:17,104.38,234.6,online,2026-10-13 23:41:17,104380.0,234.6,both,Kalimantan,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0281,2026-10-14,online,2026-10-14 23:50:26,173.08,233.6,online,2026-10-14 23:50:26,173080.0,233.6,both,Kalimantan,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0281,2026-10-15,online,2026-10-15 23:57:58,147.14,234.9,online,2026-10-15 23:57:58,147140.0,234.9,both,Kalimantan,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0281,2026-10-16,online,2026-10-16 23:44:59,153.0,234.0,online,2026-10-16 23:44:59,153000.0,234.0,both,Kalimantan,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0281,2026-10-17,online,2026-10-17 23:46:25,161.87,235.7,online,2026-10-17 23:46:25,161870.0,235.7,both,Kalimantan,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0281,2026-10-18,online,2026-10-18 23:42:40,131.88,233.4,online,2026-10-18 23:42:40,131880.0,233.4,both,Kalimantan,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0281,2026-10-19,online,2026-10-19 23:53:11,172.01,235.6,online,2026-10-19 23:53:11,172010.0,235.6,both,Kalimantan,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0281,2026-10-20,online,2026-10-20 23:56:34,211.55,234.8,online,2026-10-20 23:56:34,211550.0,234.8,both,Kalimantan,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0281,2026-10-21,offline,2026-10-21 15:24:00,64.67,,offline,2026-10-21 15:24:00,64670.0,,both,Kalimantan,meter_B,v2.2,E_nilai_beda_x1000,False
+DV0282,2026-10-09,online,2026-10-09 23:57:08,17.02,236.4,online,2026-10-08 23:47:02,13.0,233.5,both,Sumatera,inverter_A,v2.2,F_nilai_beda_lain,False
+DV0282,2026-10-10,online,2026-10-10 23:40:01,9.94,233.8,online,2026-10-09 23:57:08,17.0,236.4,both,Sumatera,inverter_A,v2.2,F_nilai_beda_lain,False
+DV0282,2026-10-21,online,2026-10-21 23:41:39,12.77,234.2,online,2026-10-20 23:42:00,18.7,233.5,both,Sumatera,inverter_A,v2.2,F_nilai_beda_lain,False
+DV0283,2026-10-09,online,2026-10-09 23:47:43,33.09,224.3,online,2026-10-08 23:56:48,30.8,221.3,both,Sumatera,inverter_A,v2.3,F_nilai_beda_lain,False
+DV0283,2026-10-10,online,2026-10-10 23:40:32,21.58,224.4,online,2026-10-09 23:47:43,33.1,224.3,both,Sumatera,inverter_A,v2.3,F_nilai_beda_lain,False
+DV0283,2026-10-21,offline,2026-10-21 18:15:00,13.23,,online,2026-10-20 23:48:34,37.6,223.3,both,Sumatera,inverter_A,v2.3,D_status_beda,False
+DV0285,2026-10-02,online,2026-10-02 23:45:11,33.19,231.4,online,2026-10-02 23:45:11,,231.4,both,Sulawesi,inverter_C,v2.1,C_nilai_kosong,False
+DV0289,2026-10-16,online,2026-10-16 23:49:39,17.94,235.9,offline,2026-10-16 23:49:39,17.9,235.9,both,Jawa,inverter_A,v2.2,D_status_beda,False
+DV0290,2026-10-04,online,2026-10-04 23:50:05,25.38,229.6,online,2026-10-04 23:50:05,,229.6,both,Kalimantan,inverter_C,v2.2,C_nilai_kosong,False
+DV0294,2026-10-12,online,2026-10-12 23:41:37,20.37,228.5,offline,2026-10-12 23:41:37,20.4,228.5,both,Jawa,inverter_A,v2.3,D_status_beda,False
+DV0296,2026-10-10,online,2026-10-10 23:48:27,35.95,229.6,offline,2026-10-10 23:48:27,36.0,229.6,both,Jawa,inverter_A,v2.3,D_status_beda,False
+DV0297,2026-10-09,online,2026-10-09 23:45:08,94.12,236.8,online,2026-10-08 23:42:54,81.2,235.6,both,Sumatera,meter_B,v2.3,F_nilai_beda_lain,False
+DV0297,2026-10-10,online,2026-10-10 23:46:43,61.21,235.2,online,2026-10-09 23:45:08,94.1,236.8,both,Sumatera,meter_B,v2.3,F_nilai_beda_lain,False
+DV0297,2026-10-11,online,2026-10-11 23:57:33,83.36,235.4,offline,2026-10-11 23:57:33,83.4,235.4,both,Sumatera,meter_B,v2.3,D_status_beda,False
+DV0297,2026-10-12,online,2026-10-12 23:48:12,80.96,235.2,online,2026-10-12 23:48:12,80960.0,235.2,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0297,2026-10-13,online,2026-10-13 23:51:19,52.27,236.2,online,2026-10-13 23:51:19,52270.0,236.2,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0297,2026-10-14,online,2026-10-14 23:41:54,85.55,237.2,online,2026-10-14 23:41:54,85550.0,237.2,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0297,2026-10-15,online,2026-10-15 23:50:00,75.62,236.0,online,2026-10-15 23:50:00,75620.0,236.0,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0297,2026-10-16,online,2026-10-16 23:45:27,79.64,235.2,online,2026-10-16 23:45:27,79640.0,235.2,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0297,2026-10-17,online,2026-10-17 23:52:22,84.82,235.4,online,2026-10-17 23:52:22,84820.0,235.4,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0297,2026-10-18,online,2026-10-18 23:45:25,73.23,236.7,online,2026-10-18 23:45:25,73230.0,236.7,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0297,2026-10-19,online,2026-10-19 23:46:53,86.16,235.7,online,2026-10-19 23:46:53,86160.0,235.7,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0297,2026-10-20,online,2026-10-20 23:45:48,112.08,233.1,online,2026-10-20 23:45:48,112080.0,233.1,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0297,2026-10-21,online,2026-10-21 23:44:15,76.92,235.1,online,2026-10-20 23:45:48,112080.0,233.1,both,Sumatera,meter_B,v2.3,E_nilai_beda_x1000,False
+DV0297,2026-10-25,online,2026-10-25 23:51:40,58.67,236.2,offline,2026-10-25 23:51:40,58.7,236.2,both,Sumatera,meter_B,v2.3,D_status_beda,False
+DV0298,2026-10-02,online,2026-10-02 23:56:38,20.17,230.8,online,2026-10-02 23:56:38,,230.8,both,Sumatera,inverter_C,v2.2,C_nilai_kosong,False
+DV0298,2026-10-09,online,2026-10-09 23:51:20,36.52,230.1,online,2026-10-08 23:48:54,31.8,230.6,both,Sumatera,inverter_C,v2.2,F_nilai_beda_lain,False
+DV0298,2026-10-10,online,2026-10-10 23:44:15,20.08,229.2,online,2026-10-09 23:51:20,36.5,230.1,both,Sumatera,inverter_C,v2.2,F_nilai_beda_lain,False
+DV0298,2026-10-17,online,2026-10-17 23:54:28,31.82,231.8,online,2026-10-17 23:54:28,,231.8,both,Sumatera,inverter_C,v2.2,C_nilai_kosong,False
+DV0298,2026-10-21,online,2026-10-21 23:52:28,28.02,231.3,online,2026-10-20 23:47:37,41.2,229.3,both,Sumatera,inverter_C,v2.2,F_nilai_beda_lain,False
+DV0300,2026-10-08,online,2026-10-08 23:51:17,45.99,223.2,offline,2026-10-08 23:51:17,46.0,223.2,both,Kalimantan,inverter_A,v2.3,D_status_beda,False
+DV0300,2026-10-23,online,2026-10-23 23:45:28,39.51,224.4,offline,2026-10-23 23:45:28,39.5,224.4,both,Kalimantan,inverter_A,v2.3,D_status_beda,False

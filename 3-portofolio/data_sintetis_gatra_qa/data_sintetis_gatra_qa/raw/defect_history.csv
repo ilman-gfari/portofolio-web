@@ -1,0 +1,129 @@
+defect_id,changed_at,from_status,to_status,changed_by,note
+DEF001,2026-10-03 00:00:00,,open,QA-1,Temuan dicatat
+DEF001,2026-10-04 00:00:00,open,IN_PROGRESS,Dev-1,Dikerjakan
+DEF001,2026-10-07 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF001,2026-10-08 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF001,2026-10-23 16:00:00,retest,CLOSED,QA-1,Lolos uji ulang
+DEF002,2026-10-06 00:00:00,,open,QA-1,Temuan dicatat
+DEF003,2026-10-10 00:00:00,,open,QA-1,Temuan dicatat
+DEF003,2026-10-11 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF003,2026-10-17 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF003,2026-10-18 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF003,2026-10-24 16:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF004,2026-10-14 00:00:00,,OPEN,QA-1,Temuan dicatat
+DEF004,2026-10-15 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF004,2026-10-18 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF004,2026-10-19 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF004,2026-10-23 16:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF005,2026-10-08 00:00:00,,open,QA-1,Temuan dicatat
+DEF005,2026-10-09 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF005,2026-10-12 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R4
+DEF005,2026-10-13 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF005,2026-10-29 16:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF006,2026-10-15 00:00:00,,open,QA-1,Temuan dicatat
+DEF007,2026-10-12 00:00:00,,open,QA-1,Temuan dicatat
+DEF007,2026-10-13 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF007,2026-10-19 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF007,2026-10-20 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF007,2026-10-23 16:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF008,2026-10-04 00:00:00,,open,QA-1,Temuan dicatat
+DEF008,2026-10-05 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF008,2026-10-11 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk 
+DEF008,2026-10-12 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF008,2026-10-12 04:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF009,2026-10-09 00:00:00,,open,QA-1,Temuan dicatat
+DEF009,2026-10-10 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF009,2026-10-17 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF009,2026-10-18 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF009,2026-10-18 16:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF010,2026-10-13 00:00:00,,open,QA-1,Temuan dicatat
+DEF010,2026-10-14 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF010,2026-10-18 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF010,2026-10-19 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF010,2026-10-20 16:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF011,2026-10-02 00:00:00,,open,QA-1,Temuan dicatat
+DEF011,2026-10-03 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF011,2026-10-07 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF011,2026-10-08 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF011,2026-10-09 16:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF012,2026-10-17 00:00:00,,open,QA-1,Temuan dicatat
+DEF012,2026-10-18 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF012,2026-10-22 00:00:00,in_progress,FIXED,Dev-1,Perbaikan masuk R3
+DEF012,2026-10-23 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF012,2026-10-27 16:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF013,2026-10-13 00:00:00,,open,QA-1,Temuan dicatat
+DEF013,2026-10-14 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF013,2026-10-17 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF013,2026-10-18 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF014,2026-10-09 00:00:00,,open,QA-1,Temuan dicatat
+DEF014,2026-10-10 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF014,2026-10-13 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF014,2026-10-14 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF014,2026-10-14 16:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF015,2026-10-24 00:00:00,,open,QA-1,Temuan dicatat
+DEF015,2026-10-25 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF015,2026-10-31 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF015,2026-11-01 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF015,2026-11-03 16:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF016,27/10/2026 00:00,,open,QA-1,Temuan dicatat
+DEF016,2026-10-28 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF016,2026-11-01 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF016,2026-11-02 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF016,2026-11-07 16:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF017,2026-10-22 00:00:00,,open,QA-1,Temuan dicatat
+DEF017,2026-10-23 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF017,2026-10-29 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF017,2026-10-30 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF017,2026-10-30 04:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF018,2026-10-06 00:00:00,,open,QA-1,Temuan dicatat
+DEF018,2026-10-07 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF018,2026-10-12 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF018,2026-10-13 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF018,2026-10-13 16:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF019,2026-10-02 00:00:00,,open,QA-1,Temuan dicatat
+DEF020,2026-10-08 00:00:00,,open,QA-1,Temuan dicatat
+DEF020,2026-10-09 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF020,2026-10-12 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF020,2026-10-13 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF020,2026-10-13 04:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF021,2026-10-08 00:00:00,,open,QA-1,Temuan dicatat
+DEF022,2026-10-11 00:00:00,,open,QA-1,Temuan dicatat
+DEF022,2026-10-12 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF022,15/10/2026 00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF022,16/10/2026 00:00,fixed,retest,QA-1,Uji ulang
+DEF022,2026-10-22 16:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF023,2026-10-23 00:00:00,,open,QA-1,Temuan dicatat
+DEF023,2026-10-24 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF023,2026-10-29 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF023,2026-10-30 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF023,2026-10-30 04:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF024,2026-10-05 00:00:00,,open,QA-1,Temuan dicatat
+DEF024,2026-10-06 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF024,2026-10-09 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF024,2026-10-10 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF024,2026-10-10 16:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF025,2026-10-17 00:00:00,,open,QA-1,Temuan dicatat
+DEF025,2026-10-18 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF025,2026-10-25 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF025,2026-10-26 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF025,2026-10-26 16:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF026,21/10/2026 00:00,,open,QA-1,Temuan dicatat
+DEF026,2026-10-22 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF026,2026-10-28 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF026,2026-10-29 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF026,2026-10-31 16:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF027,2026-10-16 00:00:00,,open,QA-1,Temuan dicatat
+DEF027,2026-10-17 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF027,2026-10-23 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF027,2026-10-24 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF027,2026-10-24 04:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF028,2026-10-04 00:00:00,,open,QA-1,Temuan dicatat
+DEF028,2026-10-05 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF028,2026-10-09 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF028,2026-10-10 00:00:00,fixed,RETEST,QA-1,Uji ulang
+DEF028,2026-10-14 16:00:00,retest,closed,QA-1,Lolos uji ulang
+DEF029,2026-10-24 00:00:00,,open,QA-1,Temuan dicatat
+DEF029,2026-10-25 00:00:00,open,in_progress,Dev-1,Dikerjakan
+DEF029,2026-10-28 00:00:00,in_progress,fixed,Dev-1,Perbaikan masuk R3
+DEF029,2026-10-29 00:00:00,fixed,retest,QA-1,Uji ulang
+DEF030,2026-10-13 00:00:00,,open,QA-1,Temuan dicatat
