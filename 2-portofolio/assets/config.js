@@ -28,8 +28,8 @@ const SITE = {
   // --- Kontak (kosongkan "" untuk menyembunyikan) ---
   contact: {
     website: "",
-    linkedin: "https://www.linkedin.com/in/ilmangifari",
-    email: "gifariilman79@email.com",
+    linkedin: "",
+    email: "",
     github: ""
   },
 
