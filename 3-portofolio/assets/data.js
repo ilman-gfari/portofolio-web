@@ -7,85 +7,95 @@
 const DATA = {
 
   // Pertanyaan bisnis
-  pertanyaan: [
-    {
-      Lensa: "Operational Decomposition",
-      Metrik: "Total Revenue, Total Booking, Sesi Kehadiran, ARPV (Average Revenue per Visit)",
-      Catatan: "Mengidentifikasi akar masalah fluktuasi pendapatan secara presisi (apakah di volume atau nilai transaksi)."
-    },
-    {
-      Lensa: "Competitive Intelligence",
-      Metrik: "Pola Referral Source, Distribusi Asal Pasien, Price Point Pembanding",
-      Catatan: "Memahami siapa kompetitor langsung yang memperebutkan jalur rujukan dan segmen pasar yang sama."
-    },
-    {
-      Lensa: "Product Portfolio Optimization",
-      Metrik: "Kontribusi Revenue per Tier/Package, Completion Rate Sesi",
-      Catatan: "Menerapkan prinsip Pareto untuk mempertahankan layanan unggulan dan mengeliminasi layanan yang tidak efisien."
-    },
-    {
-      Lensa: "Spatial Feasibility & Expansion",
-      Metrik: "Konsentrasi Domisili Pasien (Domicile Area), Volume Pasien per Wilayah",
-      Catatan: "Menilai tingkat demand organik secara kuantitatif sebelum memutuskan investasi fisik cabang baru di lokasi target (misal: Muara Karang)."
-    }
-  ],
-
+pertanyaan: [
+  {
+    Lensa: "Operational Decomposition",
+    Metrik: "Total Revenue, Total Proyek Terpasang (MWp/kWp), Sesi Maintenance (O&M), ARPU (Average Revenue per User)",
+    Catatan: "Mengidentifikasi akar masalah fluktuasi pendapatan secara presisi (apakah di volume kapasitas instalasi atau nilai transaksi layanan)."
+  },
+  {
+    Lensa: "Competitive Intelligence",
+    Metrik: "Pola Referral Source, Distribusi Asal Klien/Korporat, Price Point Pembanding (Rp/kWp)",
+    Catatan: "Memahami siapa kompetitor langsung (seperti Xurya, Sun Energy, SolarKita) yang memperebutkan jalur rujukan B2B dan segmen pasar yang sama."
+  },
+  {
+    Lensa: "Product Portfolio Optimization",
+    Metrik: "Kontribusi Revenue per Tier/Package (Residensial vs Komersial vs Industri), Completion Rate Proyek",
+    Catatan: "Menerapkan prinsip Pareto untuk mempertahankan paket layanan unggulan (seperti PV Rooftop Komersial) dan mengevaluasi paket yang kurang efisien."
+  },
+  {
+    Lensa: "Spatial Feasibility & Expansion",
+    Metrik: "Konsentrasi Lokasi Klien (Commercial & Residential Hub), Volume Kebutuhan Daya per Wilayah",
+    Catatan: "Menilai tingkat demand organik secara kuantitatif sebelum memutuskan investasi fisik cabang baru atau depo teknis di lokasi target."
+  }
+],
   // Analisis kompetitor
   kompetitor: [
-    {
-      Kategori: "Olahraga",
-      Pelayanan: "Cedera otot, tulang, ligamen; pemulihan ACL dan patah tulang",
-      Positioning: "Spesialis Cedera & Performa Atlet",
-      Kompetitor_utama: "First Physio BSD, Movewell Physio, The Bali Physio, Kens Physio"
-    },
-    {
-      Kategori: "Pascaoperasi",
-      Pelayanan: "Rehabilitasi setelah operasi ortopedi",
-      Positioning: "Hospital-Standard Bridge Recovery (Alternatif & Pelengkap RS)",
-      Kompetitor_utama: "Sasana Husada (Cideng), Medifit, Araphysio"
-    },
-    {
-      Kategori: "Geriatri",
-      Pelayanan: "Fisioterapi lansia",
-      Positioning: "Functional Mobility & Independence",
-      Kompetitor_utama: "Klinik Medifit, ACESIO, PhysioHealth"
-    },
-    {
-      Kategori: "Nyeri dan tulang belakang",
-      Pelayanan: "Nyeri leher dan punggung, sendi, saraf",
-      Positioning: "Solusi Akar Penyebab Nyeri & Postur",
-      Kompetitor_utama: "Lentera Physio-Spine, BackFit HWS, PhysioHub, Kineo Clinic"
-    }
+  {
+    Kategori: "Residensial (PLTS Atap Perumahan)",
+    Pelayanan: "Pemasangan paket PV Rooftop rumah tangga, pemantauan energi harian via HP, pemeliharaan sistem",
+    Positioning: "Affordable & Reliable Smart Home Energy",
+    Kompetitor_utama: "SolarKita, Xurya, Sun Energy, Utomo SolaRUV"
+  },
+  {
+    Kategori: "Komersial & Bisnis (B2B Commercial)",
+    Pelayanan: "Solusi PV Rooftop perkantoran, perhotelan, retail, dan pusat perbelanjaan untuk efisiensi tagihan bulanan",
+    Positioning: "Green Building & Cost-Efficiency Solution",
+    Kompetitor_utama: "Sun Energy, Xurya Daya Indonesia, Caelus Energy, TotalEnergies ENEOS"
+  },
+  {
+    Kategori: "Industri & Manufaktur (B2B Industrial)",
+    Pelayanan: "Instalasi skala besar pada pabrik, pergudangan, dan kawasan industri guna menekan emisi karbon",
+    Positioning: "ESG & Net-Zero Transition Partner",
+    Kompetitor_utama: "Xurya, Sun Energy, Cleantech Solar, Amp Energy"
+  },
+  {
+    Kategori: "Konsultasi & Audit Energi",
+    Pelayanan: "Audit pemakaian daya, kalkulasi ROI sistem surya, perancangan sistem terintegrasi",
+    Positioning: "Data-Driven Energy Consultant",
+    Kompetitor_utama: "Energy Management Indonesia (EMI), SGS Indonesia, Bureau Veritas"
+  }
   ],
 
   // Laba per cabang (satuan: juta Rupiah)
-  kategori: [
-    { nama: "Cideng",           revenue: 610.5 },
-    { nama: "Karawaci",         revenue: 815.7 },
-    { nama: "Gading Serpong",   revenue: 711.4 },
-    { nama: "Simatupang",       revenue: 929.5 },
-    { nama: "PIK 2",            revenue: 671.1 },
-    { nama: "Gandaria",         revenue: 533.5 },
-    { nama: "Alam Sutera",      revenue: 262.2 },
-    { nama: "Surabaya Pakuwon", revenue: -38.5 },
-    { nama: "Kelapa Gading",    revenue: 167.9 },
-    { nama: "Meruya",           revenue: -190.1 },
-    { nama: "Bekasi",           revenue: -246.4 },
-    { nama: "Surabaya Samator", revenue: -135.2 },
-  ],
+  frameworkAnalisis: [
+  {
+    lensa: "Completeness Check",
+    fokus: "SUG vs Web DS Matching",
+    parameter: "Pengecekan null value / missing log, match jumlah baris (row count), filter anomali telemetri IoT inverter",
+    tindakan: "Escalate Bug (Log data missing ke ticketing Data Engineer)"
+  },
+  {
+    lensa: "Metric Integrity",
+    fokus: "Operational Decomposition",
+    parameter: "Rekonsiliasi Revenue vs Total Proyek Terpasang, validasi rumus ARPU & Completion Rate, audit korelasi alokasi CAC",
+    tindakan: "Logic Audit (Pastikan bebas dari calculation bias)"
+  },
+  {
+    lensa: "Spatial Discrepancy",
+    fokus: "Regional Expansion Feasibility",
+    parameter: "Cross-check persentase distribusi per pulau, filtering unassigned location, validasi pemisahan segmen B2B vs B2C",
+    tindakan: "Reconcile Location (Remap koordinat/wilayah yang belum ter-tag)"
+  },
+  {
+    lensa: "Competitor Benchmark",
+    fokus: "Competitive Intelligence",
+    parameter: "Audit data kompetitor (Xurya, Sun Energy, dll.), validasi unit rate pembanding (Rp/kWp), pembersihan data dummy",
+    tindakan: "Update Master (Sync master data market intelligence)"
+  }
+],
 
   // Distribusi channel pemasaran dan CAC
   // Share = persen dalam angka numerik
   // CAC = Rupiah dalam angka numerik
-  channel: [
-    { Channel: "Dokter Rujukan", Share: 17.00, CAC: 150533.14 },
-    { Channel: "Google Maps", Share: 13.91, CAC: 298156.48 },
-    { Channel: "Komunitas GYM", Share: 7.19, CAC: 198765.15 },
-    { Channel: "Kantor Korporat", Share: 6.71, CAC: 180763.18 },
-    { Channel: "Teman & Keluarga", Share: 23.22, CAC: 79749.45 },
-    { Channel: "Tidak Diketahui", Share: 5.00, CAC: 0.00 },
-    { Channel: "WhatsApp & Instagram", Share: 26.98, CAC: 249075.29 }
-  ],
+  distribusiwilayah : [
+  { Wilayah: "Jawa", Jumlah: 3150, Persentase: "39,00%" },
+  { Wilayah: "Sumatera", Jumlah: 2430, Persentase: "27,00%" },
+  { Wilayah: "Kalimantan", Jumlah: 1470, Persentase: "16,33%" },
+  { Wilayah: "Sulawesi", Jumlah: 930, Persentase: "10,33%" },
+  { Wilayah: "Bali-Nusra", Jumlah: 660, Persentase: "7.33%" },
+  { Wilayah: "Total", Jumlah: 9000, Persentase: "100.00%" }
+],
 
   // Pola transaksi per bulan
   transaksiperbulan: [
@@ -104,12 +114,13 @@ const DATA = {
   ],
 
 // Ranking pasien baru berdasarkan area (data terbaru)
-areapasiennew: [
-  { nama: "Kebayoran Baru", kategori: "Pasien Baru", qty: 648, revenue: 1 },
-  { nama: "Cilandak", kategori: "Pasien Baru", qty: 639, revenue: 2 },
-  { nama: "Curug", kategori: "Pasien Baru", qty: 598, revenue: 3 },
-  { nama: "Teluknaga", kategori: "Pasien Baru", qty: 345, revenue: 4 },
-  { nama: "Pesanggrahan", kategori: "Pasien Baru", qty: 339, revenue: 5 }
+issue: [
+    { Issue: "A_hilang_di_webds", qty: 105 },
+    { Issue: "D_status_beda", qty: 113 },
+    { Issue: "C_nilai_kosong", qty: 47 },
+    { Issue: "F_nilai_beda_lain", qty: 164 },
+    { Issue: "E_nilai_beda_x1000", qty: 547 },
+    { Issue: "B_ekstra_di_webds", qty: 78 }
 ],
   // Log data cleaning (data contoh / dummy)
   cleaning: [

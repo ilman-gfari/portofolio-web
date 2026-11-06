@@ -98,7 +98,7 @@ body {
 
 /* ---------- Tipografi ---------- */
 .eyebrow { color: var(--accent); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin: 0 0 6px; }
-li { max-width: 74ch; }
+li { max-width: 100%; }
 p {color: #64748b; font-size: 13px;}
 p.header {color: var(--surface);}
 
@@ -306,7 +306,7 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); transit
 
 
 /* Angka utama pada finding */
-.finding .big {font-size: 1.8rem;font-weight: 700;color: var(--accent);line-height: 1.1; padding: 10px;   margin: 0 auto;}
+.finding .big {font-size: 1.8rem;font-weight: 700;color: var(--text);line-height: 1.1; padding: 10px;   margin: 0 auto;}
 
 /* Label / badge */
 .tag {

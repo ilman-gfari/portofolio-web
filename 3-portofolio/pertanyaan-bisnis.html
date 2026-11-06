@@ -24,7 +24,7 @@
       </div>
 
   </div>
-  <p class="hero-description" style="color: var(--muted) ;">Sebagai Data Analyst Expansion di Physiorehab, tugasnya bukan cuma membuat dashboard, tapi menjawab pertanyaan yang mengubah keputusan: buka di mana, kapan, dengan sewa berapa, dan klinik mana yang perlu diperbaiki. Setiap pertanyaan punya pemangku kepentingan, keputusan yang bergantung padanya, dan data di paket ini yang bisa dipakai untuk menjawabnya. Jawabannya dari data ada tepat di bawah keempatnya</p>
+  <p class="hero-description" style="color: var(--muted) ;">Sebagai Quality Assurance & Dashboard Analyst di IconGreen, peran kita melampaui sekadar menyusun visualisasi; kita memastikan integritas data (SUG vs Web DS) untuk menjawab keputusan operasional yang krusial: di mana konsentrasi demand energi surya tertinggi, kapan penyesuaian anomali log inverter diselesaikan, dan segmen korporat mana yang memberikan return terbaik. Setiap pertanyaan didukung oleh audit trail dan data valid yang ada tepat di bawah.</p>
   <div class="section-heading">
     <h2 class="section-title">Pertanyaan Strategis</h2>
       <div class="section-divider"></div>
@@ -33,22 +33,24 @@
   <!-- EDIT: salin blok .card untuk menambah pertanyaan -->
   <div class="grid-content">
     <div class="card"><span class="tag">👤 Stakeholder: PIC · Pengembang</span>
-      <h4>Q1: Seberapa cocok data Web DS dengan SUG, dan di mana ketidakcocokannya?</h4>
-      <P>Klinik dibuka berdekatan di Jabodetabek. Kalau pasien baru jaringan tidak naik secepat jumlah klinik, pertumbuhan itu semu. Bandingkan klinik pada usia yang sama, bukan klinik baru dengan klinik matang.</P></div>
+      <h3>Q1: Seberapa cocok data Web DS dengan SUG, dan di mana ketidakcocokannya?</h3>
+      <P>Angka tunggal seperti “89% cocok” menyesatkan. Yang berguna: persentase cocok per kategori (hilang, ekstra, kosong, status beda, nilai beda) dan per wilayah, tipe perangkat, firmware, dan hari.</P></div>
     <div class="card"><span class="tag">👤 Stakeholder: Pengembang · Operasional</span>
-      <h4>Q2: Mana selisih yang cacat, mana yang wajar?</h4>
-      <P>Klinik baru yang lambat penuh bisa disebabkan tiga hal yang solusinya berbeda: kurang terapis (rekrutmen), kurang pasien baru (pemasaran), atau pasien hilang karena respons lambat (proses admin). Salah diagnosis berarti uang terbuang di tempat yang salah.</P></div>
+      <h3>Q2: Mana selisih yang cacat, mana yang wajar?</h3>
+      <P>Selisih pembulatan 1 desimal atau jeda beberapa menit bukan cacat. Tanpa aturan toleransi tertulis, laporan kamu dipenuhi kebisingan.</P></div>
+    <div class="card"><span class="tag">👤 Stakeholder: Tim integrasi</span>
+      <h3>Q3: Mana selisih yang cacat, mana yang wajar?</h3>
+      <P>Selisih yang menumpuk di satu wilayah dan hari tertentu biasanya punya satu penyebab. Cocokkan dengan log sinkron untuk membuktikannya.</P></div>
   </div>
 
   <h2>Framework Analisis</h2>
   <div class="section-divider"></div>
 
   <div class="table-wrap">
-    <table data-table="pertanyaan" data-cols="Lensa,Metrik,Catatan" data-heads="Lensa,Metrik,Catatan"></table>
+    <table data-table="frameworkAnalisis" data-cols="lensa,fokus,parameter,tindakan" data-heads="Lensa,Fokus,Parameter,Tindakan"></table>
   </div>
   <h3>Asumsi &amp; Batasan</h3>
-  <div class="callout warn"><p>Biaya pemasaran per sumber adalah alokasi sintetis; di data nyata, tanyakan ke Marketing bagaimana biaya iklan dipisah per sumber. Korelasi respons dan konversi tidak membuktikan sebab-akibat.</p></div>
-
+  <div class="callout warn"><p>Alokasi biaya pemasaran dan log telemetri inverter bersifat estimasi integrasi awal; di data nyata, verifikasi ulang dengan tim Engineering terkait sinkronisasi tabel SUG dan Web DS. Korelasi anomali data dan selisih metrik tidak serta-merta membuktikan adanya <Strong>bug</Strong> sistem tanpa audit <strong>audit trail</strong> mendalam.</p></div>
 </main>
 <script src="assets/config.js"></script>
 <script src="assets/data.js"></script>

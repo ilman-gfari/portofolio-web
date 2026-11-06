@@ -42,7 +42,7 @@
 
   <div class="chart-box">
     <h3>Laba Bersih per Cabang</h3>
-    <div class="canvas-h"><canvas id="cKategori"></canvas></div>
+    <div class="canvas-h"><canvas id="cIssue"></canvas></div>
     <p class="callout">Bekasi, Meruya dan Surabaya Samator tidak genap 1 tahun, tapi Gading Serpong bisa melampaui Laba bersih cabang matang.</p>
   </div>
 
@@ -78,8 +78,8 @@
   Chart.defaults.font.family = css.getPropertyValue("--font");
   const opt = { responsive: true, maintainAspectRatio: false };
 
-  new Chart(cKategori, { type: "bar", options: { ...opt, plugins: { legend: { display: false } } }, 
-    data: { labels: DATA.kategori.map(d => d.nama), datasets: [{ label: "Laba Bersih (juta Rp)", data: DATA.kategori.map(d => d.revenue), backgroundColor: DATA.kategori.map(d => d.revenue < 0 ? "#ef4444" : accent), borderRadius: 6 }] } });
+  new Chart(cIssue, { type: "bar", options: { ...opt, plugins: { legend: { display: false } } }, 
+    data: { labels: DATA.issue.map(d => d.Issue), datasets: [{ label: "Jumlah Issue", data: DATA.issue.map(d => d.qty), borderRadius: 6 }] } });
   
   new Chart(cChannel, { type: "doughnut", data: { labels: DATA.channel.map(d => d.Channel), 
     datasets: [{ data: DATA.channel.map(d => d.Share), backgroundColor: [accent, "#60a5fa", "#34d399", "#fbbf24", "#a78bfa", "#94a3b8", "#f472b6"], borderWidth: 2, borderColor: "#ffffff", hoverOffset: 6 }] }, 

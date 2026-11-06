@@ -98,7 +98,7 @@ body {
 
 /* ---------- Tipografi ---------- */
 .eyebrow { color: var(--accent); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin: 0 0 6px; }
-li { max-width: 74ch; }
+li { max-width: 100%; }
 p {color: #64748b; font-size: 13px;}
 p.header {color: var(--surface);}
 

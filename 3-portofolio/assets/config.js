@@ -7,7 +7,7 @@ const SITE = {
   // --- Identitas ---
   owner: "Ilman Gifari",
   role: "Operation Analyst",
-  company: "PT Gatra Wasana",            // perusahaan / studi kasus yang dianalisis
+  company: "PT PLN Icon Plus",            // perusahaan / studi kasus yang dianalisis
   logo: "assets/logo.png",                              // URL logo (opsional), contoh: "assets/logo.png"
   tagline: "",
   scope: "10 Cabang",         // baris kecil di bawah judul
@@ -27,7 +27,7 @@ const SITE = {
   id: "3-portofolio",
   enabled: true,                        // false = matikan fitur ini
   source: "../config.js",       // lokasi config landing (otomatis dicoba ../landing, ../../landing, ../../../landing)
-  match: "PT Gatra Wasana",                // paksa pilih kartu tertentu
+  match: "PT PLN Icon Plus",                // paksa pilih kartu tertentu
   color: "", logo: "", logoBg: ""       // isi untuk mengganti secara manual, tanpa membaca landing
  },
 
@@ -44,10 +44,10 @@ const SITE = {
 
   // --- KPI di halaman Index ---
   kpis: [
-    { value: "13",       label: "Cabang" },
-    { value: "96",    label: "Bulan History Data Penjualan" },
-    { value: "3",  label: "Paket Varian" },
-    { value: "333",        label: "Competitors" },
+    { value: "5",       label: "Regional" },
+    { value: "1",    label: "Bulan Data Operational" },
+    { value: "300",  label: "Divice" },
+    { value: "8940",        label: "Baris Data" },
   ],
 
   // --- Menu sidebar + kartu di Index ---
@@ -59,7 +59,7 @@ const SITE = {
     { group: "Portfolio", items: [
       { id: "index",              icon: "🏠", label: "Index",              href: "index.html" },
       { id: "konteks-bisnis",     icon: "🏢", label: "Konteks Bisnis",     href: "konteks-bisnis.html",
-        desc: "Profil perusahaan health service, 4 pelayanan, 13 cabang di 5 regional " },
+        desc: "Profil perusahaan Renewable Energy, PLTS Atap (Solar Power System / Solar Panel)" },
       { id: "pertanyaan-bisnis",  icon: "❓", label: "Pertanyaan Bisnis",  href: "pertanyaan-bisnis.html",
         desc: "Pertanyaan strategis dari stakeholder beserta framework analisis yang dipakai." },
       { id: "temuan",             icon: "💡", label: "Temuan & Rekom",     href: "temuan.html",
