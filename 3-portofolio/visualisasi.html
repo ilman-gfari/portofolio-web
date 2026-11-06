@@ -53,15 +53,15 @@
   </div>
 
   <div class="chart-box">
-    <h3>Pola Transaksi Harian</h3>
-    <div class="canvas-h"><canvas id="cTransaksi"></canvas></div>
-    <p class="callout">Mengingat lonjakan besar di Q4 (terutama November-Desember), pastikan infrastruktur (stok barang, server/sistem, dan layanan pelanggan) siap menghadapi lonjakan trafik yang tinggi.</p>
+    <h3>Issue by Hari</h3>
+    <div class="canvas-h"><canvas id="cIssueperhari"></canvas></div>
+    <p class="callout">Rabu mencatatkan jumlah issue tertinggi yaitu 194 kasus, diikuti dekat oleh Jumat dengan 166 kasus. Lonjakan di pertengahan dan menjelang akhir pekan ini mengindikasikan tingginya volume aktivitas operasional atau transaksi yang memicu celah error atau anomali data.</p>
   </div>
 
   <div class="chart-box">
-    <h3>Top Pasien New (area)</h3>
-    <div class="canvas-h"><canvas id="cMenu"></canvas></div>
-    <p class="callout">Kebayoran Baru ($648$ pasien baru) dan Cilandak ($639$ pasien baru) adalah pusat utama masuknya pasien baru. Ini menunjukkan bahwa penetrasi brand atau efektivitas pemasaran di wilayah Jakarta Selatan sangat mendominasi.</p>
+    <h3>Device Issue</h3>
+    <div class="canvas-h"><canvas id="cDeviceissue"></canvas></div>
+    <p class="callout">Kategori E (Nilai beda x1000): Menjadi kontributor issue terbanyak di hampir semua tipe perangkat (terutama pada perangkat dengan volume besar seperti Inverter dan C-Meter), yang kembali mengindikasikan masalah konversi satuan data atau perkalian faktor skala 1.000 antara sistem sumber dan webds.</p>
   </div>
 
 </main>
@@ -86,13 +86,14 @@
     options: { ...opt, cutout: "65%", plugins: { ...opt.plugins, legend: { display: true, position: "bottom", labels: {font: { size: 8 }, generateLabels: (chart) => { const data = chart.data; const values = data.datasets[0].data; const total = values.reduce((a, b) => a + b, 0); return data.labels.map((label, i) => ({ text: `${label} (${(values[i] / total * 100).toFixed(2)}%)`, 
     fillStyle: data.datasets[0].backgroundColor[i], strokeStyle: data.datasets[0].backgroundColor[i], index: i })); } } }, tooltip: { callbacks: { label: (ctx) => `${ctx.label}: ${ctx.raw.toLocaleString("id-ID", { minimumFractionDigits: 2 })}%` } } } } });
   
-  new Chart(cTransaksi, { type: "line", options: { ...opt, plugins: { legend: { display: false } } },
-    data: { labels: DATA.transaksiperbulan.map(d => d.bulan),
-            datasets: [{ label: "Indeks", data: DATA.transaksiperbulan.map(d => d.transaksi), borderColor: accent, backgroundColor: accent + "33", fill: true, tension: .3 }] } });
+  new Chart(cIssueperhari, { type: "line", options: { ...opt, plugins: { legend: { display: false } } },
+    data: { labels: DATA.issueperhari.map(d => d.hari),
+            datasets: [{ label: "Issue", data: DATA.issueperhari.map(d => d.issue), borderColor: accent, backgroundColor: accent + "33", fill: true, tension: .3 }] } });
 
-  new Chart(cMenu, { type: "bar", options: { ...opt, indexAxis: "y", plugins: { legend: { display: false } } },
-    data: { labels: DATA.areapasiennew.map(d => d.nama),
-            datasets: [{ label: "Pasien Baru", data: DATA.areapasiennew.map(d => d.qty), backgroundColor: accent, borderRadius: 6 }] } });
+  new Chart(cDeviceissue, { type: "bar", data: { labels: DATA.deviceIssue.map(d => d.device), datasets: [{ label: "A - Hilang di WebDS", data: DATA.deviceIssue.map(d => d.A_hilang_di_webds), 
+  backgroundColor: "#2563eb" }, { label: "D - Status Beda", data: DATA.deviceIssue.map(d => d.D_status_beda), backgroundColor: "#f59e0b" }, { label: "C - Nilai Kosong", data: DATA.deviceIssue.map(d => d.C_nilai_kosong), backgroundColor: "#10b981" },
+  { label: "F - Nilai Beda Lain", data: DATA.deviceIssue.map(d => d.F_nilai_beda_lain), backgroundColor: "#8b5cf6" }, { label: "E - Nilai Beda x1000", data: DATA.deviceIssue.map(d => d.E_nilai_beda_x1000), backgroundColor: "#ef4444" }, { label: "B - Ekstra di WebDS", 
+  data: DATA.deviceIssue.map(d => d.B_ekstra_di_webds), backgroundColor: "#64748b" }] }, options: { ...opt, indexAxis: "y", plugins: { legend: { display: true, position: "bottom" } } } });
 </script>
 </body>
 </html>
