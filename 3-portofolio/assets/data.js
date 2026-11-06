@@ -140,12 +140,12 @@ issue: [
   ],
 
   // Sebaran per kota (dummy)
-  kota: [
-    { nama: "Kota A", outlet: 90 },
-    { nama: "Kota B", outlet: 60 },
-    { nama: "Kota C", outlet: 40 },
-    { nama: "Kota D", outlet: 25 },
-    { nama: "Kota E", outlet: 18 }
+  issue_by_regional: [
+  { regional: "Sumatera", issue: 414, persentase: "39,28%" },
+  { regional: "Jawa", issue: 382, persentase: "36,24%" },
+  { regional: "Kalimantan", issue: 106, persentase: "10,06%" },
+  { regional: "Sulawesi", issue: 122, persentase: "11,57%" },
+  { regional: "Bali-Nusra", issue: 30, persentase: "2,85%" }
   ]
 
 };

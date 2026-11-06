@@ -48,7 +48,7 @@ const PROFILE = {
         logo : "3-portofolio/assets/logo.png", logoSize: "100px",
         desc: "Monitoring kepatuhan dan kualitas data lintas cabang.",
         href: "3-portofolio/index.html",
-        stats: [{ value: 557, suffix: "", label: "Cabang" }, { value: 4, suffix: "", label: "Dashboard" }, { value: 4, suffix: "", label: "Dashboard" },{ value: 4, suffix: "", label: "Temuan" }] },
+        stats: [{ value: 5, suffix: "", label: "Regional" }, { value: 9000, suffix: "", label: "Raw Data" }, { value: 4, suffix: "", label: "Dashboard" },{ value: 4, suffix: "", label: "Rekomendasi" }] },
       { company: "Perusahaan B", role: "Sales Data Analyst",
         desc: "Analisis penjualan kompetitif untuk perusahaan FMCG.",
         href: "#",
@@ -113,7 +113,7 @@ const ANIM = {
 
 /* Warna & font — ubah di sini, otomatis diterapkan ke CSS. */
 const THEME = {
-  defaultMode: "dark",     // "dark" atau "light"
+  defaultMode: "light",     // "dark" atau "light"
   accent:  "#7c9cff",
   accent2: "#5eead4",
   font: "Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif"

@@ -29,27 +29,27 @@
 
   <div class="grid"  style="text-align: center;">
     <div class="card finding" style="border-Top: 4px solid var(--bad);">
-      <div class="big">5</div><p class="hero-description">Regional Klinik</p><p style="color: var(--text-light);">Jakarta · Tangerang · Bekasi · Surabaya</p></div>
+      <div class="big">5</div><p class="hero-description">Regional</p><p style="color: var(--text-light);">Sumatera · Sulawesi · Kalimantan </p></div>
     <div class="card finding" style="border-Top: 4px solid var(--warn);"> 
-      <div class="big">10.626</div><p class="hero-description">Total Pasien Baru</p><p style="color: var(--text-light);">Curug · Tambora · Tanah Abang</p></div>
+      <div class="big">7.946</div><p class="hero-description">Total Data Bersih</p><p style="color: var(--text-light);">Curug · Tambora · Tanah Abang</p></div>
     <div class="card finding" style="border-Top: 4px solid var(--accent);">
-      <div class="big">15.725</div><p class="hero-description">Transaksi</p><p style="color: var(--text-light);">Clean data</p></div>
+      <div class="big">300</div><p class="hero-description">Device</p><p style="color: var(--text-light);">Clean data</p></div>
     <div class="card finding" style="border-Top: 4px solid var(--pink);">
-      <div class="big">13</div><p class="hero-description">Klinik Outlet</p><p style="color: var(--text-light);">Cideng, Karawaci, Gading Serpong</p></div>
+      <div class="big">5</div><p class="hero-description">Type Device</p><p style="color: var(--text-light);">Cideng, Karawaci, Gading Serpong</p></div>
           <div class="card finding" style="border-Top: 4px solid var(--muted);">
-      <div class="big">21,88%</div><p class="hero-description">Laba Bersih 2025 Physiorehab dari tahun 2024</p><p style="color: var(--text-light);">Rp 895,3 Juta</p></div>
+      <div class="big">127</div><p class="hero-description">Tracking Issue</p><p style="color: var(--text-light);">Rp 895,3 Juta</p></div>
   </div>
 
   <div class="chart-box">
-    <h3>Laba Bersih per Cabang</h3>
+    <h3>Issue Reconciliation</h3>
     <div class="canvas-h"><canvas id="cIssue"></canvas></div>
-    <p class="callout">Bekasi, Meruya dan Surabaya Samator tidak genap 1 tahun, tapi Gading Serpong bisa melampaui Laba bersih cabang matang.</p>
+    <p class="callout">Kategori E (Nilai beda x1000) menyumbang 547 dari 1.054 kasus, yang berarti lebih dari 51% (mayoritas mutlak) dari seluruh selisih data di sistem disebabkan oleh masalah pengalian/pembagian angka 1.000.</p>
   </div>
 
   <div class="chart-box">
-    <h3>Distribusi Channel</h3>
-    <div class="canvas-h"><canvas id="cChannel"></canvas></div>
-    <p class="callout">WhatsApp/IG dan Teman/Keluarga memperlihatkan kontras utama: Iklan digital mendatangkan volume tapi menguras margin, sementara kepuasan pelayanan mendatangkan volume secara murah.</p>
+    <h3>Issue by Regional</h3>
+    <div class="canvas-h"><canvas id="cIssue_by_regional"></canvas></div>
+    <p class="callout">Kedua wilayah ini menyumbang lebih dari 75% dari total seluruh masalah, sehingga tim operasional dan IT harus memprioritaskan investigasi akar masalah (root cause) di kedua regional ini terlebih dahulu agar dampaknya langsung terasa secara signifikan.</p>
   </div>
 
   <div class="chart-box">
@@ -81,8 +81,8 @@
   new Chart(cIssue, { type: "bar", options: { ...opt, plugins: { legend: { display: false } } }, 
     data: { labels: DATA.issue.map(d => d.Issue), datasets: [{ label: "Jumlah Issue", data: DATA.issue.map(d => d.qty), borderRadius: 6 }] } });
   
-  new Chart(cChannel, { type: "doughnut", data: { labels: DATA.channel.map(d => d.Channel), 
-    datasets: [{ data: DATA.channel.map(d => d.Share), backgroundColor: [accent, "#60a5fa", "#34d399", "#fbbf24", "#a78bfa", "#94a3b8", "#f472b6"], borderWidth: 2, borderColor: "#ffffff", hoverOffset: 6 }] }, 
+  new Chart(cIssue_by_regional, { type: "doughnut", data: { labels: DATA.issue_by_regional.map(d => d.regional), 
+    datasets: [{ data: DATA.issue_by_regional.map(d => d.issue), backgroundColor: [accent, "#60a5fa", "#34d399", "#fbbf24", "#a78bfa", "#94a3b8", "#f472b6"], borderWidth: 2, borderColor: "#ffffff", hoverOffset: 6 }] }, 
     options: { ...opt, cutout: "65%", plugins: { ...opt.plugins, legend: { display: true, position: "bottom", labels: {font: { size: 8 }, generateLabels: (chart) => { const data = chart.data; const values = data.datasets[0].data; const total = values.reduce((a, b) => a + b, 0); return data.labels.map((label, i) => ({ text: `${label} (${(values[i] / total * 100).toFixed(2)}%)`, 
     fillStyle: data.datasets[0].backgroundColor[i], strokeStyle: data.datasets[0].backgroundColor[i], index: i })); } } }, tooltip: { callbacks: { label: (ctx) => `${ctx.label}: ${ctx.raw.toLocaleString("id-ID", { minimumFractionDigits: 2 })}%` } } } } });
   
