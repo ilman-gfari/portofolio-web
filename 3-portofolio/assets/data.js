@@ -86,7 +86,7 @@ const DATA = {
   ],
 
 // Ranking pasien baru berdasarkan area (data terbaru)
-deviceIssue: [
+issue: [
     { Issue: "A_hilang_di_webds", qty: 105 },
     { Issue: "D_status_beda", qty: 113 },
     { Issue: "C_nilai_kosong", qty: 47 },
