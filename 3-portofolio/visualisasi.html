@@ -90,10 +90,7 @@
     data: { labels: DATA.issueperhari.map(d => d.hari),
             datasets: [{ label: "Issue", data: DATA.issueperhari.map(d => d.issue), borderColor: accent, backgroundColor: accent + "33", fill: true, tension: .3 }] } });
 
-  new Chart(cDeviceissue, { type: "bar", data: { labels: DATA.deviceIssue.map(d => d.device), datasets: [{ label: "A - Hilang di WebDS", data: DATA.deviceIssue.map(d => d.A_hilang_di_webds), 
-  backgroundColor: "#2563eb" }, { label: "D - Status Beda", data: DATA.deviceIssue.map(d => d.D_status_beda), backgroundColor: "#f59e0b" }, { label: "C - Nilai Kosong", data: DATA.deviceIssue.map(d => d.C_nilai_kosong), backgroundColor: "#10b981" },
-  { label: "F - Nilai Beda Lain", data: DATA.deviceIssue.map(d => d.F_nilai_beda_lain), backgroundColor: "#8b5cf6" }, { label: "E - Nilai Beda x1000", data: DATA.deviceIssue.map(d => d.E_nilai_beda_x1000), backgroundColor: "#ef4444" }, { label: "B - Ekstra di WebDS", 
-  data: DATA.deviceIssue.map(d => d.B_ekstra_di_webds), backgroundColor: "#64748b" }] }, options: { ...opt, indexAxis: "y", plugins: { legend: { display: true, position: "bottom" } } } });
+  new Chart(cDeviceissue, { type: "bar", data: { labels: DATA.deviceIssue.map(d => d.device), datasets: [{ label: "A - Hilang di WebDS", data: DATA.deviceIssue.map(d => d.A_hilang_di_webds), backgroundColor: "#2563eb" }, { label: "D - Status Beda", data: DATA.deviceIssue.map(d => d.D_status_beda), backgroundColor: "#f59e0b" }, { label: "C - Nilai Kosong", data: DATA.deviceIssue.map(d => d.C_nilai_kosong), backgroundColor: "#10b981" }, { label: "F - Nilai Beda Lain", data: DATA.deviceIssue.map(d => d.F_nilai_beda_lain), backgroundColor: "#8b5cf6" }, { label: "E - Nilai Beda x1000", data: DATA.deviceIssue.map(d => d.E_nilai_beda_x1000), backgroundColor: "#ef4444" }, { label: "B - Ekstra di WebDS", data: DATA.deviceIssue.map(d => d.B_ekstra_di_webds), backgroundColor: "#64748b" }] }, options: { ...opt, indexAxis: "y", plugins: { legend: { display: true, position: "bottom" } } } });
 </script>
 </body>
 </html>
