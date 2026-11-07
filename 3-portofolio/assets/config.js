@@ -37,8 +37,8 @@ const SITE = {
   // --- Kontak (kosongkan "" untuk menyembunyikan) ---
   contact: {
     website: "",
-    linkedin: "https://www.linkedin.com/in/ilmangifari",
-    email: "gifariilman79@email.com",
+    linkedin: "",
+    email: "",
     github: ""
   },
 
@@ -54,7 +54,7 @@ const SITE = {
   // id harus sama dengan atribut data-page di <body> tiap halaman.
   nav: [
      { group: "", items: [
-       { id: "",              icon: "🌐 ", label: "Ilman",              href: "" }
+       { id: "",              icon: "🌐 ", label: "Ilman",              href: "../index.html" }
      ]},
     { group: "Portfolio", items: [
       { id: "index",              icon: "🏠", label: "Index",              href: "index.html" },

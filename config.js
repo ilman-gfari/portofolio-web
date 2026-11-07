@@ -19,8 +19,8 @@ const PROFILE = {
   nav: [
     { label: "Portofolio",    href: "#work" },
     { label: "About",   href: "#approach" },
-    { label: "Contact", href: "#contact" },
-    { label: "Info Loker", href: "loker/index.html" }
+    { label: "Contact", href: "#contact" }
+    // { label: "Info Loker", href: "loker/index.html" }
   ],
 
   work: {
@@ -30,33 +30,25 @@ const PROFILE = {
     // Salin satu blok { ... } untuk menambah kartu.
     // stats.value berupa angka → otomatis count-up. stats.suffix opsional (mis. "%", "+").
     cases: [
-      { company: "TokoMart", role: "Operation Analyst", id: "1-portofolio",
-        desc: "Analisis tren penjualan bulanan untuk perusahaan retail",
-        color: "#c53b22",
-        logo: "🏪",
-        logoSize: "52px",
-        href: "1-portofolio/index.html",
-        stats: [{ value: 10, suffix: "", label: "Cabang" }, { value: 5145, suffix: "", label: "Data transaksi" }, { value: 4, suffix: "", label: "Temuan" },{ value: 4, suffix: "", label: "Temuan" }] },
+      // { company: "TokoMart", role: "Operation Analyst", id: "1-portofolio",
+      //   desc: "Analisis tren penjualan bulanan untuk perusahaan retail",
+      //   color: "#c53b22",
+      //   logo: "🏪",
+      //   logoSize: "52px",
+      //   href: "1-portofolio/index.html",
+      //   stats: [{ value: 10, suffix: "", label: "Cabang" }, { value: 5145, suffix: "", label: "Data transaksi" }, { value: 333, suffix: "", label: "Kompetitors" },{ value: 4, suffix: "", label: "Temuan" }] },
       { company: "PT Fisio Tunas Abadi", role: "Data Analyst – Expansion", id: "2-portofolio",
         color: "rgb(35, 178, 77)",
         logo : "2-portofolio/assets/logo.png", logoSize: "100px",
         desc: "Analisis wilayah berpotensi dan analisis lokasi untuk ekspansi.",
         href: "2-portofolio/index.html",
-        stats: [{ value: 557, suffix: "", label: "Cabang" }, { value: 4, suffix: "", label: "Dashboard" }, { value: 4, suffix: "", label: "Dashboard" },{ value: 4, suffix: "", label: "Temuan" }] },
+        stats: [{ value: 13, suffix: "", label: "Cabang" }, { value: 15725, suffix: "", label: "Data Transaksi" }, { value: 333, suffix: "", label: "Kompetitors" },{ value: 2, suffix: "", label: "Rekomendasi" }] },
       { company: "PT Icon Green Plus", role: "Integration & Dashboard Analyst",
         color: "rgb(35, 102, 178)",
         logo : "3-portofolio/assets/logo.png", logoSize: "100px",
         desc: "Monitoring Dashborad & Reconsilition Data Internal",
         href: "3-portofolio/index.html",
         stats: [{ value: 5, suffix: "", label: "Regional" }, { value: 9000, suffix: "", label: "Raw Data" }, { value: 4, suffix: "", label: "Dashboard" },{ value: 4, suffix: "", label: "Rekomendasi" }] },
-      { company: "Perusahaan B", role: "Sales Data Analyst",
-        desc: "Analisis penjualan kompetitif untuk perusahaan FMCG.",
-        href: "#",
-        stats: [{ value: 557, suffix: "", label: "Cabang" }, { value: 4, suffix: "", label: "Dashboard" }, { value: 4, suffix: "", label: "Dashboard" },{ value: 4, suffix: "", label: "Temuan" }] },
-      { company: "Perusahaan C", role: "Business Analyst",
-        desc: "Monitoring kepatuhan dan kualitas data lintas cabang.",
-        href: "#",
-        stats: [{ value: 557, suffix: "", label: "Cabang" }, { value: 4, suffix: "", label: "Dashboard" }, { value: 4, suffix: "", label: "Dashboard" },{ value: 4, suffix: "", label: "Temuan" }] }
     ]
   },
 

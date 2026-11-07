@@ -10,7 +10,7 @@ const SITE = {
   company: "PT Fisio Tunas Abadi",            // perusahaan / studi kasus yang dianalisis
   logo: "assets/logo.png",                              // URL logo (opsional), contoh: "assets/logo.png"
   tagline: "",
-  scope: "10 Cabang",         // baris kecil di bawah judul
+  scope: "13 Cabang",         // baris kecil di bawah judul
   updated: "Oktober 2026",
 
   // tambahkan thema
@@ -45,7 +45,7 @@ const SITE = {
   // id harus sama dengan atribut data-page di <body> tiap halaman.
   nav: [
      { group: "", items: [
-       { id: "",              icon: "🌐 ", label: "Ilman",              href: "" }
+       { id: "",              icon: "🌐 ", label: "Ilman",              href: "../index.html" }
      ]},
     { group: "Portfolio", items: [
       { id: "index",              icon: "🏠", label: "Index",              href: "index.html" },

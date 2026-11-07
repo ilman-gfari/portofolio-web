@@ -69,7 +69,7 @@ body {
   margin: 0 8px 6px; letter-spacing: .08em;
   text-transform: uppercase; color: var(--muted); font-weight: 600;
 }
-.brand span {color: #105637;}
+.brand span {color: rgb(35, 102, 178);}
 
 .nav-link {
   display: block; padding: 8px 10px; border-radius: 8px; color: var(--text);
