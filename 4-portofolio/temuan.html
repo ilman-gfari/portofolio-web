@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temuan &amp; Rekomendasi</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/page-transition.js"></script>
+</head>
+<body data-page="temuan">
+<main id="content">
+  <p class="eyebrow">03 · Temuan &amp; Rekomendasi</p>
+    <div class="hero">
+      <div class="hero-logo">
+        <img src="assets/logo_putih.png" alt="Logo perusahaan">
+      </div>
+      <div class="hero-content">
+        <h1>Temuan &amp; Rekomendasi</h1>
+        <p class="hero-description">
+        Temuan dan Rekomendasi berbasis data dari 12 bulan data di 25 kota dan 5 region
+        </p>
+      </div>
+
+  </div>
+  <p>Apa yang ditemukan, dan apa yang sebaiknya dilakukan.</p>
+  <div class="grid"  style="text-align: center;">
+    <div class="card finding" style="border-Top: 4px solid var(--bad);">
+      <div class="big">Rp71,43 B</div><p class="hero-description">Total Revenue</p><p style="color: var(--text-light);">12 bulan</p></div>
+    <div class="card finding" style="border-Top: 4px solid var(--warn);"> 
+      <div class="big">9,77%</div><p class="hero-description">Margin Bersih</p><p style="color: var(--text-light);">Rp 6,97B</p></div>
+    <div class="card finding" style="border-Top: 4px solid var(--accent);">
+      <div class="big">9.000</div><p class="hero-description">Raw Telematics</p><p style="color: var(--text-light);">Clean Data</p></div>
+    <div class="card finding" style="border-Top: 4px solid var(--pink);">
+      <div class="big">6</div><p class="hero-description">Issue Categori</p><p style="color: var(--text-light);">Status_beda · C_nilai_kosong · A_hilang_di_webds</p></div>
+          <div class="card finding" style="border-Top: 4px solid var(--muted);">
+      <div class="big">127</div><p class="hero-description">Tracking Issue</p><p style="color: var(--text-light);">Open until Closed</p></div>
+  </div>
+
+  <h3 style="margin-top: 45px;">Temuan 1: Kontras Kinerja Cabang: Antara Utilitas Sempurna dan Beban Biaya Aset Nganggur</h3>
+  <div class="section-divider "></div>
+  <p>88,29% cocok (7.946 dari 9.000 baris perangkat-hari); 1.054 baris berbeda. Lebih dari separuh selisih (547, atau 52%) satu masalah saja: energi meter_B x1000. Sumatera menyumbang 414 selisih (39%) dari sekitar 27% perangkat; Jawa 382 (39% perangkat), Sulawesi 122, Kalimantan 106, Bali-Nusra 30.</p>
+  <div class="callout">
+    <p>Keputusan: perbaiki dulu (1) satuan energi meter_B, lalu (2) sinkron Sumatera. Gabungan keduanya mencakup sekitar 76% selisih (804 dari 1.054).</p>
+  </div>
+
+  <!-- EDIT: ganti angka besar & penjelasan. Salin blok .card untuk menambah temuan -->
+  <h3>Temuan 2: Pendapatan tinggi bukan berarti margin tebal</h3>
+  <div class="section-divider "></div>
+  <p>Tanpa aturan ini, 6.003 baris tambahan tampil “berbeda” hanya karena pembulatan, hampir 6 kali lipat dari 1.054 temuan nyata.</p>
+  <div class="callout">
+    <p>Minta PIC menyetujui aturan toleransi tertulis, supaya laporan hanya berisi cacat.</p>
+  </div>
+
+  <h3>Rekomendasi</h3>
+  <div class="section-divider "></div>
+  <div class="callout" >
+    <p>Rekomendasi 1 ✅:</p>
+    <strong>Prioritaskan perbaikan sinkron di Sumatera.</strong>Tiga hari kegagalan menghasilkan 164 baris basi dan sebagian besar selisih status di wilayah itu. Satu perbaikan (retry dan alert) menutup banyak gejala.
+  </div>
+  <div class="callout" >
+    <p>Rekomendasi 2 ✅:</p>
+    <strong>Sepakati aturan toleransi tertulis.</strong>Pembulatan 1 desimal dan jeda last_seen beberapa menit dikecualikan agar laporan tidak berisik.
+  </div>
+  <div class="callout" >
+    <p>Rekomendasi 3 ✅:</p>
+    <strong>Prioritaskan Perbaikan Skala Data (Kategori E).</strong>Karena kategori ini mendominasi sebagian besar tipe perangkat, periksa kembali skrip ETL atau mapping kolom khusus untuk metrik pembacaan sensor/meteran di setiap perangkat tersebut.
+  </div>
+  <div class="callout" >
+    <p>Rekomendasi 4 ✅:</p>
+    <strong>Validasi Kolom Kosong.</strong>erapkan validasi ketat pada sistem input atau payload API agar parameter penting pada perangkat tidak mencatat nilai kosong.
+  </div>
+</main>
+<script src="assets/config.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/layout.js"></script>
+</body>
+</html>

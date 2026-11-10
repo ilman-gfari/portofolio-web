@@ -1,0 +1,79 @@
+/* ==========================================================
+   CONFIG UTAMA — edit file ini dulu.
+   Semua nama, kontak, KPI, dan menu sidebar diatur di sini.
+   ========================================================== */
+
+const SITE = {
+  // --- Identitas ---
+  owner: "Ilman Gifari",
+  role: "Data Analyst",
+  company: "PT Mitra Pinasthika Mustika Rent",            // perusahaan / studi kasus yang dianalisis
+  logo: "assets/logo.png",                              // URL logo (opsional), contoh: "assets/logo.png"
+  tagline: "",
+  scope: "10 Cabang",         // baris kecil di bawah judul
+  updated: "Oktober 2026",
+
+  // tambahkan thema
+  theme: {
+  id: "2-portofolio",
+  enabled: true,                        // false = matikan fitur ini
+  source: "../config.js",       // lokasi config landing (otomatis dicoba ../landing, ../../landing, ../../../landing)
+  match: "Physiorehab Clinic",                // paksa pilih kartu tertentu
+  color: "", logo: "", logoBg: ""       // isi untuk mengganti secara manual, tanpa membaca landing
+ },
+
+   // tambahkan thema
+  theme: {
+  id: "4-portofolio",
+  enabled: true,                        // false = matikan fitur ini
+  source: "../config.js",       // lokasi config landing (otomatis dicoba ../landing, ../../landing, ../../../landing)
+  match: "PT Mitra Pinasthika Mustika Rent",                // paksa pilih kartu tertentu
+  color: "", logo: "", logoBg: ""       // isi untuk mengganti secara manual, tanpa membaca landing
+ },
+
+  // Tampilkan badge "DATA CONTOH" di semua halaman. Ubah ke false kalau data sudah asli.
+  showSampleBadge: false,
+
+  // --- Kontak (kosongkan "" untuk menyembunyikan) ---
+  contact: {
+    website: "",
+    linkedin: "",
+    email: "",
+    github: ""
+  },
+
+  // --- KPI di halaman Index ---
+  kpis: [
+    { value: "5",       label: "Regional" },
+    { value: "1",    label: "Bulan Data Operational" },
+    { value: "300",  label: "Divice" },
+    { value: "8940",        label: "Baris Data" },
+  ],
+
+  // --- Menu sidebar + kartu di Index ---
+  // id harus sama dengan atribut data-page di <body> tiap halaman.
+  nav: [
+     { group: "", items: [
+       { id: "",              icon: "🌐 ", label: "Ilman",              href: "../index.html" }
+     ]},
+    { group: "Portfolio", items: [
+      { id: "index",              icon: "🏠", label: "Index",              href: "index.html" },
+      { id: "konteks-bisnis",     icon: "🏢", label: "Konteks Bisnis",     href: "konteks-bisnis.html",
+        desc: "Perusahaan penyedia jasa persewaan kendaraan dan solusi transportasi terkemuka di Indonesia" },
+      { id: "pertanyaan-bisnis",  icon: "❓", label: "Pertanyaan Bisnis",  href: "pertanyaan-bisnis.html",
+        desc: "Pertanyaan strategis dari stakeholder beserta framework analisis yang dipakai." },
+      { id: "temuan",             icon: "💡", label: "Temuan & Rekom",     href: "temuan.html",
+        desc: "Temuan utama yang terukur, ringkasan eksekutif, dan rekomendasi dengan proyeksi dampak." }
+    ]},
+    { group: "Reports", items: [
+      { id: "visualisasi",  icon: "📊", label: "Visualisasi",  href: "visualisasi.html",
+        desc: "Chart interaktif: revenue per kategori, distribusi channel, pola weekend, ranking menu." },
+      // { id: "report-data",  icon: "📋", label: "Report Data",  href: "report-data.html",
+      //   desc: "Log data cleaning, angka lengkap, ranking penuh — untuk verifikasi." }
+    ]},
+    { group: "Appendix", items: [
+      { id: "cara-kerja",    icon: "⚙️", label: "Cara Kerja",    href: "cara-kerja.html",
+        desc: "Metodologi: pipeline data, tools & stack, alur cleaning, reproducibility." }
+    ]}
+  ]
+};

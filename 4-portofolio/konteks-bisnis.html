@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Konteks Bisnis</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/page-transition.js"></script>
+</head>
+<body data-page="konteks-bisnis">
+<main id="content">
+  <p class="eyebrow">01 · Konteks Bisnis</p>
+  <div class="hero">
+      <div class="hero-logo">
+        <img src="assets/logo_putih.png" alt="Logo perusahaan">
+      </div>
+
+      <div class="hero-content">
+        <h1><span data-site="company"></span></h1>
+
+        <p class="hero-description">
+          Sebelum menyentuh data, pahami dulu bisnisnya - siapa mereka, apa yang dijual, dan tantangan apa yang dihadapai dipasar healthcare.
+        </p>
+
+      </div>
+
+  </div>
+    <p>PT Mitra Pinasthika Mustika Rent (MPMRent) adalah salah satu perusahaan penyedia jasa persewaan kendaraan dan solusi transportasi terkemuka di Indonesia. Perusahaan ini merupakan anak usaha dari PT Mitra Pinasthika Mustika Tbk (MPM Group)</p>
+
+  <h2>Brand Portofolio</h2>
+  <div class="section-divider "></div>
+  <div class="grid" style="text-align: center;">
+    <div class="card finding" style="border-top: 4px solid var(--bad);">
+      <div class="big">750</div>
+      <p class="hero-description">Unit Kendaraan</p>
+      <p style="color: var(--text-light);">MPV - Pickup - SUV - EV</p>
+    </div>
+    <div class="card finding" style="border-top: 4px solid var(--warn);"> 
+      <div class="big">25</div>
+      <p class="hero-description">Kota dari 5 Regional</p>
+      <p style="color: var(--text-light);">Jakarta - Banda Aceh - Samarinda</p>
+    </div>
+    <div class="card finding" style="border-top: 4px solid var(--accent);">
+      <div class="big">138</div>
+      <p class="hero-description">Client dari berbagai industri</p>
+      <p style="color: var(--text-light);">Perbankan - Manufaktur - Distribusi & Logistik</p>
+    </div>
+    <div class="card finding" style="border-top: 4px solid var(--pink);">
+      <div class="big">2</div>
+      <p class="hero-description">Pelayanan Terbaik</p>
+      <p style="color: var(--text-light);">Operating lease + fleet management</p>
+    </div>
+  </div>
+      <div class="table-wrap">
+    <table data-table="kompetitor" data-cols="Kategori,Pelayanan,Positioning,Kompetitor_utama" data-heads="KATEGORI,PELAYANAN,POSITIONING,KOMPETITOR BY GMAPS"></table>
+  </div>
+
+  <h2 style="margin-top: 35px;">Lanskap Kompetitor & Pemain Industri</h2>
+  <div class="section-divider "></div>
+<p> MPMRent beroperasi di salah satu pasar Sewa Armada & Manajemen Kendaraan B2B paling kompetitif di Indonesia. Kompetitor utama mereka meliputi: </p>
+  <ul style="font-size: 13px;">
+    <li><strong>TRAC (Astra Rent a Car)</strong> — Corporate Long-Term Lease & Commercial Fleet Services (Nasional, Jabodetabek, Surabaya, Medan, Makassar)</li>
+    <li><strong>Adi Sarana Armada (ASSA)</strong> — End-to-End Fleet Management, Corporate Rental & Logistics Support (Nasional & Kota-kota Besar)</li>
+    <li><strong>ORIX Indonesia</strong> — Long-Term Car Rental & Financial Lease Solutions for Corporations (Jakarta & Industrial Hubs)</li>
+    <li><strong>Indorent (Indomobil)</strong> — Commercial Vehicle Rental, Heavy Transport & Corporate Fleet Solutions (Jabodetabek & Regional Industri Utama)</li>
+    <li><strong>Transkon Jaya</strong> — Specialized Mining & Heavy Industry Operational Fleet Support (Kalimantan & Indonesia Timur)</li>
+  </ul>
+  <div class="callout blue">
+            <h4 style="color: var(--accent); margin-top: 0px;">📊 Sumber Data</h4>
+            <p style="margin-top: -10px;">Data kompetitor mencakup analisis lanskap pasar yang dikumpulkan melalui internet dan bantuan AI Gemini untuk menvalidasi.</p>
+  </div>
+
+  <h2 style="margin-top: 35px;">Distribusi Wilayah</h2>
+  <div class="section-divider "></div>
+  <div class="table-wrap">
+    <table data-table="distribusiwilayah" data-cols="Wilayah,Jumlah,Persentase" data-heads="Wilayah,Jumlah,Persentase"></table>
+  </div>
+
+  <h2 style="margin-top: 35px;">Tantangan Bisnis Utama (hipotesis)</h2>
+  <div class="section-divider "></div>
+  <ol>
+    <li><strong>Tidak semua selisih kilometer adalah anomali</strong> — Perbedaan zona waktu, jeda pelaporan GPS/telematika, dan pembulatan rute harian menghasilkan deviasi yang wajar. Kalau semuanya dilaporkan sebagai masalah, tim operasional akan kebal dan mengabaikan laporan.</li>
+    <li><strong>Sumber kebenaran tidak selalu jelas</strong> — Kadang data telematika kendaraan yang melapor keliru, bukan sistem pusat (*Dashboard*). Kamu perlu bukti silang (log GPS, catatan servis fisik, atau *driver check-in*) sebelum menyalahkan satu pihak.</li>
+    <li><strong>Satu akar masalah, banyak gejala</strong> — Satu modul GPS yang rusak atau modul seluler mati bisa tampak sebagai data idle palsu, laporan BBM tidak wajar, dan status unit hilang dari radar sekaligus. Kelompokkan berdasarkan akar masalah kendaraan, bukan jumlah baris error.</li>
+    <li><strong>Skala data operasional</strong> — Ratusan unit armada dikali harian berarti puluhan ribu baris log telematika dan finansial; pencocokan manual di spreadsheet tidak cukup, dan kamu butuh pipa data (*data pipeline*) yang otomatis serta bisa diulang.</li>
+  </ol>
+  
+
+
+</main>
+<script src="assets/config.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/layout.js"></script>
+</body>
+</html>
