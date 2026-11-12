@@ -17,10 +17,10 @@
   --bgtable: #f8fafc;
   --muted: #5c6776;
   --border: #e1e5eb;
-  --good: #1b7f5c;
-  --warn: #b7791f;
-  --bad: #b83a3a;
-  --pink:  #ff00aa;
+  --good: #00ffa6;
+  --warn: #ffbe5d;
+  --bad: #ff6969;
+  --pink:  #ff70cf;
   --blue:var(--accent);
   --sidebar-w: 200px;
   --radius: 12px;
@@ -30,7 +30,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --accent: #2563eb;
-    --accent-soft: #eff6ff;
+    --accent-soft: #a6b5c9;
     --bg: #f8fafc;
     --surface: #ffffff;
     --text: #1e293b;
@@ -122,7 +122,7 @@ p.header {color: var(--surface);}
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
   padding: 20px; text-decoration: none; color: inherit; display: block;
 }
-a.card:hover { border-color: var(--accent); transform: translateY(-2px); transition: .15s; }
+a.card:hover { border-color: var(--accent)}
 .card h3 { margin: 0 0 6px; }
 .card p { margin: 0; color: var(--muted); }
 .card .num { color: var(--accent); font-weight: 700;}
@@ -298,12 +298,16 @@ a.card:hover { border-color: var(--accent); transform: translateY(-2px); transit
   }
 }
 
-.callout { background: var(--accent-soft); border-left: 4px solid var(--accent); padding: 14px 18px; border-radius: 8px; margin: 18px 0; }
-.callout.good { border-color: var(--good); }
-.callout.warn { border-color: var(--warn); }
-.callout.blue { border-color: var(--accent); }
-.callout p { margin: 0; }
-
+.callout {border-left: 4px solid var(--accent); padding: 14px 18px; margin: 18px 0; }
+.callout.good {background-color: #eefff4;border-color: #3dca71;}
+.callout.warn {background-color: #fef3c7;border-color: #b45309;}
+.callout.blue {background-color: #e0f2fe;border-color: #0369a1;}
+.callout.pink {background-color: #fce7f3;border-color: #be185d;}
+.callout.orange {background-color: #ffedd5;border-color: #c2410c;}
+.callout.darkblue {background-color: #dbeafe;border-color: #1e40af;}
+.callout.bluelight {background-color: #cffafe;border-color: #0e7490;}
+.callout.jingga {background-color: #f3ecff;border-color: #990cea;}
+.callout p {margin: 0;}
 
 /* Angka utama pada finding */
 .finding .big {font-size: 1.8rem;font-weight: 700;color: var(--text);line-height: 1.1; padding: 10px;   margin: 0 auto;}
@@ -381,10 +385,10 @@ h1 { font-size: clamp(1.9rem, 4.2vw, 2.7rem); line-height: 1.15; }
 
 /* ---- Kartu bernomor ---- */
 .card { position: relative; padding: 22px 22px 24px; min-height: 150px; }
-.card .num { display: inline-grid; place-items: center; min-width: 30px; height: 24px; padding: 0 8px; border-radius: 7px;
+.card .num { display: inline-grid; place-items: center; min-width: 30px; height: 24px; padding: 0 8px; border-radius: 2px;
   background: var(--accent-soft); color: var(--accent); font-weight: 700; font-size: .78rem; margin-bottom: 12px; }
 .card h3 { font-size: 1.08rem; margin: 0 0 6px; }
-.card::after { content: "→"; position: absolute; right: 20px; top: 20px; color: var(--accent); opacity: 0; transform: translateX(-6px); transition: .2s; }
+.card::after { content: "→"; position: absolute; right: 20px; top: 20px; color: var(--accent); opacity: 0; }
 a.card:hover::after { opacity: 1; transform: none; }
 
 /* ---- Sidebar sedikit lebih rapi ---- */
