@@ -51,10 +51,17 @@ const PROFILE = {
         stats: [{ value: 5, suffix: "", label: "Regional" }, { value: 9000, suffix: "", label: "Raw Data" }, { value: 4, suffix: "", label: "Dashboard" },{ value: 4, suffix: "", label: "Rekomendasi" }] },
         { company: "PT Mitra Pinasthika Mustika Rent", role: "Data Analyst - Operations",
         color: "rgb(243, 112, 33)",
-        logo : "5-portofolio/assets/logo.png", logoSize: "100px",
+        logo : "4-portofolio/assets/logo.png", logoSize: "100px",
         desc: "Driving B2B Fleet Efficiency with Actionable Business Intelligence",
+        href: "4-portofolio/index.html",
+        stats: [{ value: 5, suffix: "", label: "Regional" }, { value: 9000, suffix: "", label: "Raw Data" }, { value: 4, suffix: "", label: "Dashboard" },{ value: 4, suffix: "", label: "Rekomendasi" }] },
+                { company: "PT Mitra Pinasthika Mustika Rent", role: "Data Analyst - Operations",
+        color: "rgb(176, 255, 186)",
+        logo : "", logoSize: "100px",
+        desc: "",
         href: "5-portofolio/report_flora_sales_performance.html",
         stats: [{ value: 5, suffix: "", label: "Regional" }, { value: 9000, suffix: "", label: "Raw Data" }, { value: 4, suffix: "", label: "Dashboard" },{ value: 4, suffix: "", label: "Rekomendasi" }] },
+
 
     ]
   },
