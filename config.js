@@ -89,7 +89,7 @@ const PROFILE = {
     heading: "Mari terhubung",
     text: "Terbuka untuk peluang di bidang data analytics.",
     email: "gifariilman79@email.com",                  // "" untuk menyembunyikan tombol
-    linkedin: "https://www.linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/ilman-gifari/",
     github: "https://github.com/ilman-gfari"
   },
 
